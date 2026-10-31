@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.legal-document-review
+version: 1.0.0
+name: {vi: "Soát tài liệu pháp lý", en: "Legal Document Review"}
+description: {vi: "Soát hợp đồng, tài liệu tố tụng, giấy tờ bất động sản: tóm tắt, đánh dấu điều khoản rủi ro, so các phiên bản hợp đồng và kiểm tuân thủ.",
+              en: "Comprehensive legal document review specialist for contracts, litigation documents, and real estate agreements - summarizing documents, flagging risk clauses, comparing contract versions, and checking compliance across any law firm size or practice area"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/legal-document-review.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-legal-document-review]

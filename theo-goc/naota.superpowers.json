@@ -1,0 +1,38 @@
+{
+  "_doc": "Ba skill giữ tiền tố sp- như bản cũ vì naota.hermes-dev có skill trùng tên, và để máy đã cài cập nhật được.",
+  "repo": "obra/superpowers",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "skills",
+      "den": "skills",
+      "doi_ten": {
+        "test-driven-development": "sp-test-driven-development",
+        "systematic-debugging": "sp-systematic-debugging",
+        "requesting-code-review": "sp-requesting-code-review"
+      }
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Superpowers",
+      "en": "Superpowers"
+    },
+    "description": {
+      "vi": "Bộ skill quy trình làm việc nổi nhất cho dân lập trình (obra/superpowers): brainstorm trước khi code, viết và thực thi plan, TDD, gỡ lỗi có hệ thống, review code hai chiều, git worktree, kiểm chứng trước khi báo xong.",
+      "en": "The most popular workflow skills for developers (obra/superpowers): brainstorm before coding, write and execute plans, TDD, systematic debugging, both sides of code review, git worktrees, verify before claiming done."
+    },
+    "author": "Jesse Vincent",
+    "category": "lap-trinh",
+    "category_label": {
+      "vi": "Lập trình",
+      "en": "Development"
+    },
+    "license": "MIT"
+  }
+}

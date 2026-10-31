@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-developer-tooling-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư công cụ lập trình", en: "Developer Tooling Engineer"}
+description: {vi: "Xây công cụ dòng lệnh và nền tảng nội bộ dễ dùng: lệnh trực quan, báo lỗi có ích, tự hoàn thành lệnh, khởi động nhanh, chạy đa nền tảng.",
+              en: "Expert developer-tooling and CLI engineer - building command-line tools and internal developer platforms with great DX: intuitive command design, helpful errors, shell completions, fast startup, cross-platform distribution, and scriptable, composable interfaces."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-developer-tooling-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-developer-tooling-engineer]

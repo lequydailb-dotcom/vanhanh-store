@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-code-reviewer
+version: 1.0.0
+name: {vi: "Người review code", en: "Code Reviewer"}
+description: {vi: "Review code mang tính xây dựng, góp ý làm được ngay, tập trung vào tính đúng, dễ bảo trì, bảo mật và hiệu năng, không bắt bẻ chuyện phong cách.",
+              en: "Expert code reviewer who provides constructive, actionable feedback focused on correctness, maintainability, security, and performance - not style preferences."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-code-reviewer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-code-reviewer]

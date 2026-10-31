@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.technical-artist
+version: 1.0.0
+name: {vi: "Hoạ sĩ kỹ thuật", en: "Technical Artist"}
+description: {vi: "Đường ống từ mỹ thuật vào engine: shader, hệ thống VFX, LOD, ngân sách hiệu năng và tối ưu tài nguyên trên nhiều engine.",
+              en: "Art-to-engine pipeline specialist - Masters shaders, VFX systems, LOD pipelines, performance budgeting, and cross-engine asset optimization"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/technical-artist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-technical-artist]

@@ -1,0 +1,32 @@
+{
+  "repo": "anthropics/knowledge-work-plugins",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "marketing/skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Claude cho Marketing",
+      "en": "Claude for Marketing"
+    },
+    "description": {
+      "vi": "8 skill marketing chính chủ Anthropic: lên kế hoạch chiến dịch, viết nội dung, chuỗi email, brief đối thủ, rà thương hiệu, kiểm tra SEO và báo cáo hiệu quả.",
+      "en": "8 official Anthropic marketing skills: campaign plans, content drafting, email sequences, competitive briefs, brand review, SEO audits and performance reports."
+    },
+    "author": "Anthropic",
+    "category": "marketing",
+    "category_label": {
+      "vi": "Marketing",
+      "en": "Marketing"
+    },
+    "license": "Apache-2.0"
+  }
+}

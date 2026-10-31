@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.ecc-backend-web
+version: 1.0.0
+name: {vi: "ECC: Backend & web", en: "ECC: Backend & web"}
+description: {vi: "11 skill mẫu thiết kế của ECC cho web app: REST API, backend Node, React/Next.js, Python và pytest, PostgreSQL, migration an toàn, triển khai CI/CD, Docker, test E2E bằng Playwright, viết MCP server.",
+              en: "11 ECC pattern skills for web apps: REST APIs, Node backends, React/Next.js, Python and pytest, PostgreSQL, safe migrations, CI/CD deployment, Docker, Playwright E2E tests, MCP servers."}
+author: {name: "Affaan Mustafa", url: "https://github.com/affaan-m/ECC"}
+license: MIT
+homepage: "https://github.com/affaan-m/ECC"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [api-design, backend-patterns, frontend-patterns, python-patterns, python-testing, postgres-patterns, database-migrations, deployment-patterns, docker-patterns, e2e-testing, mcp-server-patterns]

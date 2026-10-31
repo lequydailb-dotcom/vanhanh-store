@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.unreal-technical-artist
+version: 1.0.0
+name: {vi: "Hoạ sĩ kỹ thuật Unreal", en: "Unreal Technical Artist"}
+description: {vi: "Đường ống hình ảnh Unreal Engine: Material Editor, VFX Niagara, sinh nội dung thủ tục (PCG) và đưa mỹ thuật vào UE5.",
+              en: "Unreal Engine visual pipeline specialist - Masters the Material Editor, Niagara VFX, Procedural Content Generation, and the art-to-engine pipeline for UE5 projects"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/unreal-engine/unreal-technical-artist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-unreal-technical-artist]

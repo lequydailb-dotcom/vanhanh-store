@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.sales-pipeline-analyst
+version: 1.0.0
+name: {vi: "Chuyên viên phân tích pipeline", en: "Pipeline Analyst"}
+description: {vi: "Vận hành doanh thu: chẩn đoán sức khoẻ pipeline, tốc độ deal, độ chính xác dự báo. Biến dữ liệu CRM thành cảnh báo rủi ro trước khi trượt mục tiêu quý.",
+              en: "Revenue operations analyst specializing in pipeline health diagnostics, deal velocity analysis, forecast accuracy, and data-driven sales coaching. Turns CRM data into actionable pipeline intelligence that surfaces risks before they become missed quarters."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/sales/sales-pipeline-analyst.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-sales-pipeline-analyst]

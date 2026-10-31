@@ -1,0 +1,32 @@
+{
+  "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": ".claude/skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "UI/UX Pro Max: Thiết kế giao diện",
+      "en": "UI/UX Pro Max: Interface design"
+    },
+    "description": {
+      "vi": "Bộ skill thiết kế giao diện nổi nhất: kho phong cách, bảng màu, cặp font và quy tắc UX để AI dựng trang web, landing page, banner, slide và hệ thống thiết kế đẹp ngay lần đầu. Cần Python 3.",
+      "en": "The most popular interface design skills: a library of styles, palettes, font pairings and UX rules so the AI builds websites, landing pages, banners, slides and design systems that look right first time. Needs Python 3."
+    },
+    "author": "Next Level Builder",
+    "category": "website",
+    "category_label": {
+      "vi": "Website",
+      "en": "Website"
+    },
+    "license": "MIT"
+  }
+}

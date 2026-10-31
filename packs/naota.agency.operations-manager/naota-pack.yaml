@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.operations-manager
+version: 1.0.0
+name: {vi: "Quản lý vận hành", en: "Operations Manager"}
+description: {vi: "Áp dụng Lean, Six Sigma và tư duy hệ thống: vẽ quy trình, hoạch định công suất, quản trị KPI, quản lý nhà cung cấp. Biến vận hành phức tạp thành hiệu quả đo được, lặp lại được.",
+              en: "Business operations specialist who applies Lean, Six Sigma, and systems thinking to process mapping, capacity planning, KPI governance, vendor management, and organizational efficiency - turning operational complexity into repeatable, measurable performance."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/operations-manager.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-operations-manager]

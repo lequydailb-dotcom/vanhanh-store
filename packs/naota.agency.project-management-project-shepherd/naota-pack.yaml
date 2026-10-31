@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.project-management-project-shepherd
+version: 1.0.0
+name: {vi: "Người dẫn dắt dự án", en: "Project Shepherd"}
+description: {vi: "Điều phối dự án liên phòng ban, quản lý tiến độ, thống nhất các bên. Đưa dự án từ ý tưởng tới hoàn thành, lo cả nguồn lực, rủi ro và truyền thông.",
+              en: "Expert project manager specializing in cross-functional project coordination, timeline management, and stakeholder alignment. Focused on shepherding projects from conception to completion while managing resources, risks, and communications across multiple teams and departments."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/project-management/project-management-project-shepherd.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-project-management-project-shepherd]

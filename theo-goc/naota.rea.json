@@ -1,0 +1,36 @@
+{
+  "_doc": "Chỉ lấy skill chính; các skill rea-* còn lại là để bảo trì chính repo REA.",
+  "repo": "morluto/rea",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": ".agents/skills",
+      "den": "skills",
+      "chi": [
+        "reverse-engineer-anything"
+      ]
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "REA: Dịch ngược phần mềm",
+      "en": "REA: Reverse Engineer Anything"
+    },
+    "description": {
+      "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
+      "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
+    },
+    "author": "morluto",
+    "category": "lap-trinh",
+    "category_label": {
+      "vi": "Lập trình",
+      "en": "Development"
+    },
+    "license": "MIT"
+  }
+}

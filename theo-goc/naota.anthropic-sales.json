@@ -1,0 +1,32 @@
+{
+  "repo": "anthropics/knowledge-work-plugins",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "sales/skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Claude cho Bán hàng",
+      "en": "Claude for Sales"
+    },
+    "description": {
+      "vi": "Skill bán hàng chính chủ Anthropic: nghiên cứu khách hàng, chuẩn bị cuộc gọi, tóm tắt cuộc gọi, viết tin tiếp cận, xử lý từ chối, rà pipeline, dự báo doanh số, kế hoạch chốt đơn và tổng kết tuần.",
+      "en": "Official Anthropic sales skills: account research, call prep and summaries, outreach drafts, objection handling, pipeline review, forecasting, close plans and weekly wraps."
+    },
+    "author": "Anthropic",
+    "category": "ban-hang",
+    "category_label": {
+      "vi": "Bán hàng",
+      "en": "Sales"
+    },
+    "license": "Apache-2.0"
+  }
+}

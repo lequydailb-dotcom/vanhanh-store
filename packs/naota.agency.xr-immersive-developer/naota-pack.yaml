@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.xr-immersive-developer
+version: 1.0.0
+name: {vi: "Lập trình viên XR nhập vai", en: "XR Immersive Developer"}
+description: {vi: "WebXR và công nghệ nhập vai: ứng dụng AR/VR/XR chạy ngay trên trình duyệt.",
+              en: "Expert WebXR and immersive technology developer with specialization in browser-based AR/VR/XR applications"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/spatial-computing/xr-immersive-developer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-xr-immersive-developer]

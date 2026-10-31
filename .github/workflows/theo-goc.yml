@@ -1,0 +1,67 @@
+# Gói theo repo gốc: mỗi ngày so skill trong kho với repo GitHub của tác giả, có bản mới thì đóng gói lại.
+#
+# Lý do và luật chép ở đầu `tools/theo-goc.py`. Hai lượt:
+#   1. gói chỉ đổi chữ (.md, dữ liệu, ảnh): đẩy thẳng vào main, mọi máy Naota thấy bản mới ở lần làm mới kho kế tiếp;
+#   2. gói có tệp mã đổi: đóng gói trên nhánh theo-goc/tu-dong và mở Pull Request, chờ chủ kho đọc rồi mới trộn.
+# Trình kiểm `tools/kiem-tra.py` chạy trước mỗi lần đẩy; đỏ thì không đẩy gì cả.
+name: Theo repo gốc
+
+on:
+  schedule:
+    - cron: "43 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: theo-goc
+  cancel-in-progress: false
+
+jobs:
+  dong-bo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          git config user.name "naota-store-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: "Lượt 1: gói chỉ đổi chữ"
+        id: chu
+        run: python tools/theo-goc.py --khong-ma
+      - name: "Lượt 1: kiểm kho rồi đẩy vào main"
+        if: steps.chu.outputs.doi == '1'
+        env:
+          TOM_TAT: ${{ steps.chu.outputs.tom_tat }}
+        run: |
+          set -e
+          python tools/kiem-tra.py
+          git add -A
+          git commit -q -m "Theo repo gốc: $TOM_TAT"
+          git push -q origin HEAD:main
+
+      - name: "Lượt 2: gói có tệp mã đổi"
+        id: ma
+        if: steps.chu.outputs.cho_duyet != ''
+        run: python tools/theo-goc.py ${{ steps.chu.outputs.cho_duyet }}
+      - name: "Lượt 2: kiểm kho rồi mở Pull Request"
+        if: steps.ma.outputs.doi == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TOM_TAT: ${{ steps.ma.outputs.tom_tat }}
+        run: |
+          set -e
+          python tools/kiem-tra.py
+          git add -A
+          git commit -q -m "Theo repo gốc: $TOM_TAT (có tệp mã)"
+          git push -q --force origin HEAD:refs/heads/theo-goc/tu-dong
+          if [ "$(gh pr view theo-goc/tu-dong --json state -q .state 2>/dev/null)" != "OPEN" ]; then
+            gh pr create --head theo-goc/tu-dong --base main \
+              --title "Theo repo gốc: $TOM_TAT (có tệp mã, cần duyệt)" \
+              --body "Repo gốc đổi tệp mã trong skill. Đọc diff rồi trộn: Naota chỉ thấy bản mới sau khi PR vào main. Danh sách tệp mã nằm trong log của job Theo repo gốc."
+          fi

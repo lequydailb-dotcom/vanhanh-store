@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-sre
+version: 1.0.0
+name: {vi: "Kỹ sư độ tin cậy hệ thống (SRE)", en: "SRE (Site Reliability Engineer)"}
+description: {vi: "SLO, ngân sách lỗi, khả năng quan sát, thử nghiệm hỗn loạn và giảm việc tay chân cho hệ thống chạy thật ở quy mô lớn.",
+              en: "Expert site reliability engineer specializing in SLOs, error budgets, observability, chaos engineering, and toil reduction for production systems at scale."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-sre.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-sre]

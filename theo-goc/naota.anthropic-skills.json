@@ -1,0 +1,47 @@
+{
+  "_doc": "Chỉ lấy skill có giấy phép Apache-2.0. docx, pdf, pptx, xlsx là bản quyền Anthropic, cấm phát lại; doc-coauthoring không kèm giấy phép.",
+  "repo": "anthropics/skills",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "skills",
+      "den": "skills",
+      "chi": [
+        "algorithmic-art",
+        "brand-guidelines",
+        "canvas-design",
+        "claude-api",
+        "frontend-design",
+        "internal-comms",
+        "mcp-builder",
+        "skill-creator",
+        "slack-gif-creator",
+        "theme-factory",
+        "web-artifacts-builder",
+        "webapp-testing"
+      ]
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Anthropic Skills",
+      "en": "Anthropic Skills"
+    },
+    "description": {
+      "vi": "12 skill chính chủ Anthropic (anthropics/skills): thiết kế giao diện đẹp, poster và ảnh nghệ thuật, nhận diện thương hiệu, bộ theme, văn bản nội bộ, dựng trang web, kiểm thử web, viết MCP và tự tạo skill mới.",
+      "en": "12 official Anthropic skills (anthropics/skills): polished front-end design, posters and generative art, brand guidelines, theme sets, internal comms, web artifacts, web app testing, building MCP servers and creating new skills."
+    },
+    "author": "Anthropic",
+    "category": "tro-ly-ai",
+    "category_label": {
+      "vi": "Trợ lý AI",
+      "en": "AI assistants"
+    },
+    "license": "Apache-2.0"
+  }
+}

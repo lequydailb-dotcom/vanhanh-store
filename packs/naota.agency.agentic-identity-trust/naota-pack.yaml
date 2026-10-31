@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.agentic-identity-trust
+version: 1.0.0
+name: {vi: "Kiến trúc sư danh tính và tin cậy cho agent", en: "Agentic Identity & Trust Architect"}
+description: {vi: "Thiết kế hệ thống danh tính, xác thực và kiểm chứng tin cậy cho AI agent tự hành, để agent chứng minh được mình là ai, được làm gì và đã làm gì.",
+              en: "Designs identity, authentication, and trust verification systems for autonomous AI agents operating in multi-agent environments. Ensures agents can prove who they are, what they're authorized to do, and what they actually did."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/agentic-identity-trust.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-agentic-identity-trust]

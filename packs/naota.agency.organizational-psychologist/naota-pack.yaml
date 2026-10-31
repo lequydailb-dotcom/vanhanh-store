@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.organizational-psychologist
+version: 1.0.0
+name: {vi: "Nhà tâm lý học tổ chức", en: "Organizational Psychologist"}
+description: {vi: "Chẩn đoán động lực đội nhóm, an toàn tâm lý, nguy cơ kiệt sức và sức khoẻ văn hoá, giúp lãnh đạo xây tổ chức hiệu suất cao, bền bỉ.",
+              en: "Applied organizational psychologist who diagnoses team dynamics, psychological safety, burnout risk, and culture health - using evidence-based frameworks to help leaders build high-performing, resilient, and psychologically safe organizations."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/organizational-psychologist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-organizational-psychologist]

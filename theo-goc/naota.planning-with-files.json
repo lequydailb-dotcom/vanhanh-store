@@ -1,0 +1,32 @@
+{
+  "repo": "OthmanAdi/planning-with-files",
+  "ref": "master",
+  "chep": [
+    {
+      "tu": "skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Lập kế hoạch bằng tệp",
+      "en": "Planning with files"
+    },
+    "description": {
+      "vi": "Skill lập kế hoạch kiểu Manus: việc dài được chia thành kế hoạch, ghi chú và tiến độ trong tệp markdown, nên AI không quên mục tiêu giữa chừng và làm tiếp được sau khi gián đoạn.",
+      "en": "Manus-style planning: long tasks keep their plan, findings and progress in markdown files, so the AI does not lose the goal halfway and can pick up after an interruption."
+    },
+    "author": "Ahmad Othman Adi",
+    "category": "tro-ly-ai",
+    "category_label": {
+      "vi": "Trợ lý AI",
+      "en": "AI assistants"
+    },
+    "license": "MIT"
+  }
+}

@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-private-domain-operator
+version: 1.0.0
+name: {vi: "Vận hành kênh riêng (private domain)", en: "Private Domain Operator"}
+description: {vi: "Xây hệ sinh thái khách hàng riêng trên WeCom: hệ thống SCRM, vận hành cộng đồng theo nhóm, bán hàng qua Mini Program, quản lý vòng đời và tối ưu cả phễu.",
+              en: "Expert in building enterprise WeChat (WeCom) private domain ecosystems, with deep expertise in SCRM systems, segmented community operations, Mini Program commerce integration, user lifecycle management, and full-funnel conversion optimization."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-private-domain-operator.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-private-domain-operator]

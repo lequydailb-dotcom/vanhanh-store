@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.product-feedback-synthesizer
+version: 1.0.0
+name: {vi: "Người tổng hợp phản hồi", en: "Feedback Synthesizer"}
+description: {vi: "Thu thập, phân tích và tổng hợp phản hồi người dùng từ nhiều kênh. Biến ý kiến định tính thành ưu tiên định lượng và đề xuất chiến lược.",
+              en: "Expert in collecting, analyzing, and synthesizing user feedback from multiple channels to extract actionable product insights. Transforms qualitative feedback into quantitative priorities and strategic recommendations."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/product/product-feedback-synthesizer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-product-feedback-synthesizer]

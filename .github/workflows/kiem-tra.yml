@@ -1,0 +1,75 @@
+# Kiểm mọi gói trước khi trộn vào kho.
+#
+# Vì sao kho cần CI dù nó chỉ là dữ liệu: gói trong đây tới máy người dùng mà KHÔNG qua một bản
+# Naota mới. Không có lần phát hành nào đứng chắn phía sau, nên chỗ chắn duy nhất là đây.
+#
+# Không cài gì cả - `tools/kiem-tra.py` chỉ dùng thư viện chuẩn. Chạy hết trong vài giây.
+name: Kiểm kho
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  # Gói có mã gọi vào module của lõi Naota (zalo_cli, image_vision...). Lõi đổi mà gói gãy thì phải
+  # biết trong một ngày, không phải đợi tới lúc có người sửa kho.
+  schedule:
+    - cron: "17 2 * * *"
+
+jobs:
+  kiem-tra:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Kiểm cấu trúc gói, an toàn quyền, và danh mục
+        run: python tools/kiem-tra.py
+
+  # Test của gói CÓ MÃ (tests/<id gói>/test_*.py). Plugin trong gói chạy BÊN TRONG máy chủ Naota và import
+  # module của nó, nên test chạy trên bản naota mới nhất (nhánh main).
+  test-goi-co-ma:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: vuongtex/naota
+          path: naota
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Cài thư viện của NAOTA
+        run: pip install -r naota/requirements.txt
+      - name: Chạy test các gói có mã
+        env:
+          NAOTA_OS_DIR: ${{ github.workspace }}/naota
+        run: |
+          set -e
+          shopt -s nullglob
+          for f in tests/*/test_*.py; do echo "== $f"; python "$f"; done
+
+  # MCP bên thứ 3 đi theo bản chính thức mới nhất (@latest), nên bên đó ra bản mới là mọi máy chạy
+  # bản đó ngay. Job này chạy thử bản mới nhất THẬT của từng MCP, phân loại tool thật bằng đúng hàm
+  # của Naota, và đỏ khi có tool phá huỷ hay tiêu tiền chưa được xếp vào nhóm nguy hiểm. Chạy mỗi
+  # ngày (lịch ở trên) là để bản mới của bên thứ 3 lộ ra trong một ngày.
+  soi-ban-moi:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: vuongtex/naota
+          path: naota
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: astral-sh/setup-uv@v6
+      - name: Soi bản mới nhất của từng MCP bên thứ 3
+        env:
+          NAOTA_OS_DIR: ${{ github.workspace }}/naota
+        run: python tools/soi-ban-moi.py

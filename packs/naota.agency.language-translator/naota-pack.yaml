@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.language-translator
+version: 1.0.0
+name: {vi: "Người phiên dịch", en: "Language Translator"}
+description: {vi: "Dịch Tây Ban Nha và tiếng Anh theo thời gian thực, hiểu ngữ cảnh văn hoá và phương ngữ, kèm câu giao tiếp khi đi du lịch, đúng giọng cho đời thường, công việc, lúc khẩn cấp.",
+              en: "Real-time Spanish ↔ English translation specialist with cultural context, regional dialect awareness, travel phrase guidance, and tone-appropriate communication for everyday, business, and emergency situations"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/language-translator.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-language-translator]

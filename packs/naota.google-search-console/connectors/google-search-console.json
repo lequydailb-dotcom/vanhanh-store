@@ -1,0 +1,42 @@
+{
+  "id": "google-search-console",
+  "name": "Google Search Console",
+  "icon": "assets/google-search-console.png",
+  "category": "Marketing",
+  "description": "Số liệu SEO website: khách tìm từ khoá gì ra trang của bạn, lượt hiển thị, lượt bấm, trang top.",
+  "status": "beta",
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "mcp-server-gsc@latest"
+  ],
+  "lenh_cu": [
+    {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-gsc"
+      ]
+    }
+  ],
+  "requires": {
+    "node": ">=18"
+  },
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "service_account",
+        "label": "Service account JSON (dán TOÀN BỘ nội dung file key)",
+        "placeholder": "Ví dụ: { \"type\": \"service_account\", ... }",
+        "file": true,
+        "env": "GOOGLE_APPLICATION_CREDENTIALS",
+        "multiline": true
+      }
+    ],
+    "guide": "Làm 1 lần:\n1. Tạo service account + key JSON trong Google Cloud Console, nhớ bật Search Console API.\n2. Vào Search Console > Cài đặt > Người dùng và quyền, thêm email của service account.\n3. Dán nội dung file JSON vào đây.",
+    "guide_url": "https://github.com/ahonn/mcp-server-gsc"
+  },
+  "default_perm": "readonly"
+}

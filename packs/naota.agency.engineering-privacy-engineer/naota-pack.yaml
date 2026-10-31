@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-privacy-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư quyền riêng tư", en: "Privacy Engineer"}
+description: {vi: "Đưa quyền riêng tư vào code: tìm và phân loại dữ liệu cá nhân, thu tối thiểu, ép tuân thủ đồng ý ở tầng API, tự xử lý yêu cầu xoá dữ liệu, mã hoá danh tính, tự động hết hạn lưu trữ.",
+              en: "Expert privacy engineer who implements privacy in code - PII discovery and classification, data minimization, consent enforcement at the API layer, automated DSAR and deletion across services, pseudonymization/tokenization, and retention automation. Builds the technical controls a privacy policy..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-privacy-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-privacy-engineer]

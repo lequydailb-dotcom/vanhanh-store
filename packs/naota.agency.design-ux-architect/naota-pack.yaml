@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.design-ux-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư UX", en: "UX Architect"}
+description: {vi: "Chuyên gia kiến trúc kỹ thuật và UX: cho lập trình viên nền móng vững, hệ thống CSS và hướng dẫn triển khai rõ ràng.",
+              en: "Technical architecture and UX specialist who provides developers with solid foundations, CSS systems, and clear implementation guidance"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/design/design-ux-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-design-ux-architect]

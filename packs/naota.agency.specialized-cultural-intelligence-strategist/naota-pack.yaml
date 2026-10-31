@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.specialized-cultural-intelligence-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia trí tuệ văn hoá", en: "Cultural Intelligence Strategist"}
+description: {vi: "Phát hiện sự loại trừ vô hình, nghiên cứu bối cảnh toàn cầu, đảm bảo phần mềm phù hợp thật sự với nhiều nhóm bản sắc khác nhau.",
+              en: "CQ specialist that detects invisible exclusion, researches global context, and ensures software resonates authentically across intersectional identities."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/specialized-cultural-intelligence-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-specialized-cultural-intelligence-strategist]

@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.specialized-strategy-duel-agent
+version: 1.0.0
+name: {vi: "Đấu trí chiến lược", en: "Strategy Duel Agent"}
+description: {vi: "Đấu chiến lược trực tiếp bằng lý thuyết trò chơi và 36 kế binh pháp Trung Hoa.",
+              en: "Conducts live strategy duels using game theory and the 36 Chinese stratagems"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/specialized-strategy-duel-agent.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-specialized-strategy-duel-agent]

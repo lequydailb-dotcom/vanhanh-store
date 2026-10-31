@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.academic-psychologist
+version: 1.0.0
+name: {vi: "Nhà tâm lý học", en: "Psychologist"}
+description: {vi: "Hành vi con người, lý thuyết nhân cách, động lực và mẫu nhận thức. Dựng nhân vật và tương tác đáng tin về tâm lý, dựa trên khung lâm sàng và nghiên cứu.",
+              en: "Expert in human behavior, personality theory, motivation, and cognitive patterns - builds psychologically credible characters and interactions grounded in clinical and research frameworks"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/academic/academic-psychologist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-academic-psychologist]

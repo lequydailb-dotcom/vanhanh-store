@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-database-optimizer
+version: 1.0.0
+name: {vi: "Người tối ưu cơ sở dữ liệu", en: "Database Optimizer"}
+description: {vi: "Thiết kế schema, tối ưu truy vấn, chiến lược index và tinh chỉnh hiệu năng cho PostgreSQL, MySQL và các nền tảng mới như Supabase, PlanetScale.",
+              en: "Expert database specialist focusing on schema design, query optimization, indexing strategies, and performance tuning for PostgreSQL, MySQL, and modern databases like Supabase and PlanetScale."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-database-optimizer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-database-optimizer]

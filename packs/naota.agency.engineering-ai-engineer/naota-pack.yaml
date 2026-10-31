@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-ai-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư AI", en: "AI Engineer"}
+description: {vi: "Kỹ sư AI/ML: phát triển, triển khai và tích hợp mô hình máy học vào hệ thống thật. Xây tính năng thông minh, đường ống dữ liệu và ứng dụng AI thực tế, mở rộng được.",
+              en: "Expert AI/ML engineer specializing in machine learning model development, deployment, and integration into production systems. Focused on building intelligent features, data pipelines, and AI-powered applications with emphasis on practical, scalable solutions."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-ai-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-ai-engineer]

@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.pancake-pos
+version: 1.0.0
+name: {vi: "Pancake POS"}
+description: {vi: "Đơn hàng, doanh thu, khách hàng, tồn kho, quảng cáo từ Pancake POS. Mỗi cửa hàng 1 API key - thêm nhiều tài khoản cho nhiều shop."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/pancake-pos.json]

@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.systeme-io
+version: 1.0.0
+name: {vi: "Systeme.io"}
+description: {vi: "Quản lý liên hệ, tag, trường tuỳ biến, newsletter và phễu từ Systeme.io qua MCP chính chủ. Dán MCP key là xong (key có hạn tối đa 90 ngày, tối đa 2 key mỗi tài khoản)."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/systeme-io.json]

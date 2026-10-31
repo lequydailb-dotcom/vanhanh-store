@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-finops-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư FinOps", en: "FinOps Engineer"}
+description: {vi: "Tối ưu chi phí đám mây AWS/GCP/Azure: phân bổ và gắn nhãn chi phí, chọn cỡ máy đúng, cam kết dùng dài hạn, tối ưu băng thông và lưu trữ, bảng chi phí theo đơn vị.",
+              en: "Expert cloud cost engineer for AWS/GCP/Azure - cost allocation and tagging, rightsizing, commitment planning (reserved instances/savings plans), egress and storage optimization, and unit-economics dashboards that tie spend to business value."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-finops-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-finops-engineer]

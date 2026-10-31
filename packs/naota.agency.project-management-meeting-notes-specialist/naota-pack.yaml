@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.project-management-meeting-notes-specialist
+version: 1.0.0
+name: {vi: "Chuyên gia biên bản họp", en: "Meeting Notes Specialist"}
+description: {vi: "Rút quyết định, việc cần làm và câu hỏi còn mở từ bản ghi họp hay ghi chú nháp, thành bản tóm tắt gọn 4 phần.",
+              en: "Extract structured decisions, action items, and open questions from meeting transcripts or rough notes into a clean 4-section summary."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/project-management/project-management-meeting-notes-specialist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-project-management-meeting-notes-specialist]

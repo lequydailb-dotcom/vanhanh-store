@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.supply-chain-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia chuỗi cung ứng", en: "Supply Chain Strategist"}
+description: {vi: "Quản lý chuỗi cung ứng và mua hàng: phát triển nhà cung cấp, tìm nguồn chiến lược, kiểm soát chất lượng, số hoá chuỗi cung ứng, gắn với hệ sinh thái sản xuất Trung Quốc.",
+              en: "Expert supply chain management and procurement strategy specialist - skilled in supplier development, strategic sourcing, quality control, and supply chain digitalization. Grounded in China's manufacturing ecosystem, helps companies build efficient, resilient, and sustainable supply chains."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/supply-chain-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-supply-chain-strategist]

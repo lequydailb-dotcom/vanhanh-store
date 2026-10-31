@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-cross-border-ecommerce
+version: 1.0.0
+name: {vi: "Chuyên gia thương mại điện tử xuyên biên giới", en: "Cross-Border E-Commerce Specialist"}
+description: {vi: "Amazon, Shopee, Lazada, AliExpress, Temu, TikTok Shop: logistics quốc tế, kho nước ngoài, thuế và tuân thủ, tối ưu sản phẩm đa ngôn ngữ, đưa thương hiệu ra toàn cầu.",
+              en: "Full-funnel cross-border e-commerce strategist covering Amazon, Shopee, Lazada, AliExpress, Temu, and TikTok Shop operations, international logistics and overseas warehousing, compliance and taxation, multilingual listing optimization, brand globalization, and DTC independent site development."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-cross-border-ecommerce.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-cross-border-ecommerce]

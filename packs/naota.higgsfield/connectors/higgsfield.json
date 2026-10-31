@@ -1,0 +1,56 @@
+{
+  "id": "higgsfield",
+  "name": "Higgsfield",
+  "icon": "assets/higgsfield.png",
+  "category": "Sáng tạo",
+  "description": "Tạo và chỉnh ảnh/video bằng AI của Higgsfield qua MCP chính chủ: sinh ảnh, sinh video, nâng nét (upscale), mở rộng khung hình, xoá nền, cắt nhân vật, điều khiển chuyển động. Đăng nhập Higgsfield 1 chạm - không cần tạo app hay dán key. Lưu ý: mỗi lần tạo/chỉnh tiêu credit Higgsfield của bạn.",
+  "status": "beta",
+  "transport": "http",
+  "url": "https://mcp.higgsfield.ai/mcp",
+  "auth": {
+    "type": "oauth",
+    "fields": [],
+    "guide": "Bấm Kết nối rồi đăng nhập tài khoản Higgsfield và cấp quyền.\n\nNaota tự đăng ký ứng dụng theo chuẩn OAuth của Higgsfield, không cần tạo app hay dán key.\n\nCần có credit trong tài khoản Higgsfield để tạo ảnh hoặc video. Xong là Naota vẽ được ngay trong chat.",
+    "guide_url": "https://higgsfield.ai/mcp"
+  },
+  "tool_meta": {
+    "read": [
+      "*list*",
+      "*get*",
+      "*status*",
+      "*history*",
+      "*balance*",
+      "*credit*",
+      "*info*",
+      "*fetch*",
+      "*result*"
+    ],
+    "write": [
+      "*generate*",
+      "*create*",
+      "*image*",
+      "*video*",
+      "*upscale*",
+      "*expand*",
+      "*reframe*",
+      "*recast*",
+      "*motion*",
+      "*remove*",
+      "*edit*",
+      "*clip*",
+      "*run*",
+      "*submit*",
+      "*enhance*",
+      "*restyle*"
+    ],
+    "danger": [
+      "*delete*",
+      "*cancel*",
+      "*billing*",
+      "*purchase*",
+      "*subscription*"
+    ]
+  },
+  "default_perm": "safe",
+  "risk": "Higgsfield là công cụ TẠO nội dung: mỗi lần sinh hoặc chỉnh ảnh, video sẽ TIÊU CREDIT trả trước trong tài khoản Higgsfield của bạn.\n\nMặc định để mức Ghi nháp để Naota tạo được nội dung ngay, đồng thời chặn các thao tác xoá và thanh toán.\n\nMuốn Naota chỉ xem lịch sử và kết quả mà không tự tạo (đỡ tốn credit) thì hạ xuống Chỉ đọc. Muốn mở tất cả thì nâng Toàn quyền.\n\nTên tool chính xác của Higgsfield chưa công bố nên phân loại quyền dựa trên heuristic."
+}

@@ -1,0 +1,18 @@
+{
+  "_doc": "Skill của Lemomo: dựng phim ngắn hoàn toàn bằng code theo 59 phong cách. Skill chỉ là lối vào: lần đầu dùng nó tự tải thư viện phong cách về ~/lemo-opuscar và tự cập nhật thư viện đó mỗi lần chạy.",
+  "repo": "lemomo-ai/lemo-opuscar",
+  "ref": "main",
+  "chep": [{"tu": "plugin/skills", "den": "skills"}],
+  "giay_phep": ["LICENSE"],
+  "goi": {
+    "name": {"vi": "Lemo-Opuscar: Phim ngắn bằng code", "en": "Lemo-Opuscar: Short films in code"},
+    "description": {
+      "vi": "Skill của Lemomo dựng phim ngắn hoàn toàn bằng code theo 59 phong cách (sơn dầu, màu nước, ukiyo-e, ảnh vệ tinh...): kịch bản, hình, nhạc, lồng tiếng. Cần Node 20+, ffmpeg, Python 3.11+; chạy tốt nhất với Claude.",
+      "en": "Lemomo's skill for short films made entirely in code in 59 styles (oil paint, watercolor, ukiyo-e, satellite...): story, picture, score, narration. Needs Node 20+, ffmpeg, Python 3.11+; tuned for Claude."
+    },
+    "author": "Lemomo",
+    "category": "sang-tao",
+    "category_label": {"vi": "Sáng tạo", "en": "Creative"},
+    "license": "MIT"
+  }
+}

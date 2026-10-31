@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.founder
+version: 1.0.0
+name: {vi: "Founder: Thử ý tưởng kinh doanh", en: "Founder: Test a business idea"}
+description: {vi: "11 skill của Jake Schincariol (founder-skill) thử một ý tưởng kinh doanh trước khi bỏ tiền: hội đồng quản trị 3 góc nhìn, dò đối thủ, hội đồng 100 người mua giả lập, định giá, dựng offer, CFO tính biên lợi nhuận và điểm hoà vốn, marketing, thương hiệu, vận hành, kế hoạch ra mắt, và bản kế hoạch kinh doanh có kết luận tính từ số.",
+              en: "11 skills by Jake Schincariol (founder-skill) that test a business idea before you spend: a 3-lens board, a competitor scout, a panel of 100 simulated buyers, pricing, the offer, a CFO for margins and break-even, marketing, brand, operations, a launch plan, and a business plan with a computed verdict."}
+author: {name: "Jake Schincariol", url: "https://github.com/Jakeschincariol/founder-skill"}
+license: MIT
+homepage: "https://github.com/Jakeschincariol/founder-skill"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [founder-board, founder-competitors, founder-consumer, founder-pricing, founder-offer, founder-cfo, founder-marketing, founder-brand, founder-ops, founder-launch, founder-plan]

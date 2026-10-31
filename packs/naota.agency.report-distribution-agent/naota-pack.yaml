@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.report-distribution-agent
+version: 1.0.0
+name: {vi: "Trợ lý phân phối báo cáo", en: "Report Distribution Agent"}
+description: {vi: "Tự gửi báo cáo bán hàng tổng hợp tới từng nhân viên theo khu vực phụ trách.",
+              en: "AI agent that automates distribution of consolidated sales reports to representatives based on territorial parameters"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/report-distribution-agent.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-report-distribution-agent]

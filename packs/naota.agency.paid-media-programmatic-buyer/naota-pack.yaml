@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.paid-media-programmatic-buyer
+version: 1.0.0
+name: {vi: "Người mua quảng cáo hiển thị", en: "Programmatic & Display Buyer"}
+description: {vi: "Quảng cáo hiển thị và mua tự động: vị trí chọn sẵn, Google Display Network, DV360, các trade desk, báo chí đối tác và quảng cáo ABM.",
+              en: "Display advertising and programmatic media buying specialist covering managed placements, Google Display Network, DV360, trade desk platforms, partner media (newsletters, sponsored content), and ABM display strategies via platforms like Demandbase and 6Sense."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/paid-media/paid-media-programmatic-buyer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-paid-media-programmatic-buyer]

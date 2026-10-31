@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-drupal-performance
+version: 1.0.0
+name: {vi: "Kỹ sư hiệu năng Drupal", en: "Drupal Performance Engineer"}
+description: {vi: "Drupal 10/11: Core Web Vitals, cache trang và cache động, BigPipe, cache tag, tối ưu truy vấn và Views, gộp CSS/JS, ảnh responsive, lazy load, CDN.",
+              en: "Expert Drupal 10/11 performance engineer specializing in Core Web Vitals, render and dynamic page caching, BigPipe, cache tags and contexts, database query and Views optimization, CSS/JS aggregation, responsive images and lazy loading, CDN integration, and opcache/PHP-FPM tuning for fast..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-drupal-performance.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-drupal-performance]

@@ -1,0 +1,32 @@
+{
+  "repo": "anthropics/knowledge-work-plugins",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "small-business/skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Claude cho Doanh nghiệp nhỏ",
+      "en": "Claude for Small Business"
+    },
+    "description": {
+      "vi": "44 skill chính chủ Anthropic cho chủ doanh nghiệp nhỏ: tình hình kinh doanh, dòng tiền, đòi công nợ, trả hoá đơn, quảng cáo, nội dung mạng xã hội, tìm khách, tuyển người, tồn kho, chốt sổ tháng và thuế.",
+      "en": "44 official Anthropic skills for small business owners: business pulse, cash flow, invoice chasing, paying bills, ads, social content, finding leads, hiring, inventory, month-end close and taxes."
+    },
+    "author": "Anthropic",
+    "category": "ban-hang",
+    "category_label": {
+      "vi": "Bán hàng",
+      "en": "Sales"
+    },
+    "license": "Apache-2.0"
+  }
+}

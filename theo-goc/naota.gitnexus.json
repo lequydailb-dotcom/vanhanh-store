@@ -1,0 +1,33 @@
+{
+  "_doc": "Skill của GitNexus (bản trong plugin Claude Code của họ). GitNexus dùng giấy phép PolyForm Noncommercial: chỉ dùng phi thương mại.",
+  "repo": "abhigyanpatwari/GitNexus",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "gitnexus-claude-plugin/skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "GitNexus: Bản đồ mã nguồn",
+      "en": "GitNexus: Code knowledge graph"
+    },
+    "description": {
+      "vi": "12 skill của GitNexus: dựng đồ thị phụ thuộc của cả codebase rồi dùng nó để khám phá mã, gỡ lỗi, đánh giá tác động trước khi sửa, refactor, review PR. Cần chạy npx gitnexus analyze. Giấy phép chỉ cho dùng phi thương mại.",
+      "en": "12 GitNexus skills: index the whole codebase into a dependency graph and use it to explore code, debug, check impact before an edit, refactor and review PRs. Needs npx gitnexus analyze. Licensed for noncommercial use only."
+    },
+    "author": "Abhigyan Patwari",
+    "category": "lap-trinh",
+    "category_label": {
+      "vi": "Lập trình",
+      "en": "Development"
+    },
+    "license": "PolyForm-Noncommercial-1.0.0"
+  }
+}

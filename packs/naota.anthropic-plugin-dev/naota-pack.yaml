@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.anthropic-plugin-dev
+version: 1.0.0
+name: {vi: "Claude: Viết plugin", en: "Claude: Plugin development"}
+description: {vi: "7 skill chính chủ Anthropic để viết plugin cho Claude Code: cấu trúc plugin, slash command, subagent, hook, tích hợp MCP, cài đặt người dùng chỉnh được, và cách viết SKILL.md.",
+              en: "Anthropic's 7 official skills for building Claude Code plugins: plugin structure, slash commands, subagents, hooks, MCP integration, user-configurable settings, and writing SKILL.md files."}
+author: {name: "Anthropic", url: "https://github.com/anthropics/claude-plugins-official"}
+license: Apache-2.0
+homepage: "https://github.com/anthropics/claude-plugins-official"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [plugin-structure, command-development, agent-development, hook-development, mcp-integration, plugin-settings, skill-development]

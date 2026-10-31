@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.project-management-studio-producer
+version: 1.0.0
+name: {vi: "Nhà sản xuất studio", en: "Studio Producer"}
+description: {vi: "Điều phối dự án sáng tạo và kỹ thuật cấp cao, phân bổ nguồn lực, quản lý danh mục nhiều dự án, nối tầm nhìn sáng tạo với mục tiêu kinh doanh.",
+              en: "Senior strategic leader specializing in high-level creative and technical project orchestration, resource allocation, and multi-project portfolio management. Focused on aligning creative vision with business objectives while managing complex cross-functional initiatives and ensuring optimal..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/project-management/project-management-studio-producer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-project-management-studio-producer]

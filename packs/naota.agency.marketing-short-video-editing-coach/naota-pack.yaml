@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-short-video-editing-coach
+version: 1.0.0
+name: {vi: "Huấn luyện viên dựng video ngắn", en: "Short-Video Editing Coach"}
+description: {vi: "Hậu kỳ video ngắn từ đầu đến cuối: CapCut Pro, Premiere Pro, DaVinci Resolve, Final Cut Pro, bố cục, chỉnh màu, âm thanh, chuyển động, hiệu ứng và phụ đề.",
+              en: "Hands-on short-video editing coach covering the full post-production pipeline, with mastery of CapCut Pro, Premiere Pro, DaVinci Resolve, and Final Cut Pro across composition and camera language, color grading, audio engineering, motion graphics and VFX, subtitle design, multi-platform export..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-short-video-editing-coach.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-short-video-editing-coach]

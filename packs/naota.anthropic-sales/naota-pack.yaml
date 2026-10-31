@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.anthropic-sales
+version: 1.0.0
+name: {vi: "Claude cho Bán hàng", en: "Claude for Sales"}
+description: {vi: "Skill bán hàng chính chủ Anthropic: nghiên cứu khách hàng, chuẩn bị cuộc gọi, tóm tắt cuộc gọi, viết tin tiếp cận, xử lý từ chối, rà pipeline, dự báo doanh số, kế hoạch chốt đơn và tổng kết tuần.",
+              en: "Official Anthropic sales skills: account research, call prep and summaries, outreach drafts, objection handling, pipeline review, forecasting, close plans and weekly wraps."}
+author: {name: "Anthropic", url: "https://github.com/anthropics/knowledge-work-plugins"}
+license: Apache-2.0
+homepage: "https://github.com/anthropics/knowledge-work-plugins"
+compat: {app: ">=1.0.0"}
+# Gói theo repo gốc: thư mục skills/ do tools/theo-goc.py chép nguyên văn, đừng sửa tay.
+upstream: {repo: "anthropics/knowledge-work-plugins", ref: "main"}
+provides:
+  skills: [account-context, account-plan, account-research, account-tiering, call-prep, call-summary, close-plan, competitive-intelligence, create-an-asset, crm-hygiene-check, customer-health, customer-voice, daily-briefing, deal-advance-gap, deal-review, deal-signals, deal-slip-scenario, draft-outreach, end-of-day, expansion-whitespace, forecast, handle-objection, inbox-sweep, lead-triage, log-activity, pipeline-review, renewal-radar, rep-context, route-lead, schedule-meeting, setup, stakeholder-map, team-pipeline, update-opportunity, weekly-wrap, win-loss-review]

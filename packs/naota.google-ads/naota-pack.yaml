@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.google-ads
+version: 1.0.1
+name: {vi: "Google Ads"}
+description: {vi: "Số liệu Google Ads qua MCP chính chủ của Google (chỉ đọc): chiến dịch, chi phí, chuyển đổi, từ khoá qua truy vấn GAQL. Chạy local; cần developer token + Google Cloud, cài 1 lần hơi kỹ thuật."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/google-ads.json]

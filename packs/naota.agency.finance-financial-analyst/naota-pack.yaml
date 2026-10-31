@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.finance-financial-analyst
+version: 1.0.0
+name: {vi: "Chuyên viên phân tích tài chính", en: "Financial Analyst"}
+description: {vi: "Mô hình tài chính, dự báo, phân tích kịch bản, hỗ trợ ra quyết định bằng dữ liệu. Biến số liệu tài chính thô thành thông tin kinh doanh dùng được ngay.",
+              en: "Expert financial analyst specializing in financial modeling, forecasting, scenario analysis, and data-driven decision support. Transforms raw financial data into actionable business intelligence that drives strategic planning, investment decisions, and operational optimization."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/finance/finance-financial-analyst.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-finance-financial-analyst]

@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-app-store-optimizer
+version: 1.0.0
+name: {vi: "Tối ưu kho ứng dụng (ASO)", en: "App Store Optimizer"}
+description: {vi: "Marketing trên kho ứng dụng: tối ưu ASO, tỉ lệ chuyển đổi trang app và khả năng được tìm thấy.",
+              en: "Expert app store marketing specialist focused on App Store Optimization (ASO), conversion rate optimization, and app discoverability"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-app-store-optimizer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-app-store-optimizer]

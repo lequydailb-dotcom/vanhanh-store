@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-universal-document-compiler
+version: 1.0.0
+name: {vi: "Bộ dựng tài liệu đa năng", en: "Universal Document Compiler"}
+description: {vi: "Kiến trúc AST tài liệu không phụ thuộc schema, tự suy bố cục theo hình dạng dữ liệu, đồng bộ hai chiều giữa mã và khung vẽ, xuất bản tài liệu dàn trang.",
+              en: "Architect of schema-agnostic document ASTs, algorithmic data-shape layout inference, bidirectional CST-to-canvas synchronization, and universal paged document publishing."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-universal-document-compiler.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-universal-document-compiler]

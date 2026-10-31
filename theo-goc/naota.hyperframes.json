@@ -1,0 +1,32 @@
+{
+  "repo": "heygen-com/hyperframes",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "HyperFrames: Video từ HTML",
+      "en": "HyperFrames: Video from HTML"
+    },
+    "description": {
+      "vi": "Bộ skill của HeyGen để AI làm video bằng HTML: lên ý tưởng, dựng cảnh, hoạt hình, slideshow, lấy thiết kế từ Figma, chuyển dự án Remotion sang, rồi xuất video. Cần Node 22+ và ffmpeg.",
+      "en": "HeyGen's skills for making video in HTML: plan, build scenes, animate, slideshows, pull designs from Figma, migrate Remotion projects, then render. Needs Node 22+ and ffmpeg."
+    },
+    "author": "HeyGen",
+    "category": "sang-tao",
+    "category_label": {
+      "vi": "Sáng tạo",
+      "en": "Creative"
+    },
+    "license": "Apache-2.0"
+  }
+}

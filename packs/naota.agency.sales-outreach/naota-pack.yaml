@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.sales-outreach
+version: 1.0.0
+name: {vi: "Tiếp cận khách hàng B2B", en: "Sales Outreach"}
+description: {vi: "Tìm khách lạnh, bám khách tiềm năng, xử lý từ chối, viết đề xuất, quản lý pipeline. Kết hợp nhắm chọn bằng dữ liệu với xây quan hệ thật để mở cửa và chốt deal.",
+              en: "Consultative B2B sales outreach specialist for cold prospecting, lead follow-up, objection handling, proposal writing, and pipeline management - combining data-driven targeting with genuine relationship-building to open doors and close deals"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/sales-outreach.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-sales-outreach]

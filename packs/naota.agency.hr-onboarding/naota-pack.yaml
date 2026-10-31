@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.hr-onboarding
+version: 1.0.0
+name: {vi: "Nhân sự hội nhập nhân viên mới", en: "HR Onboarding"}
+description: {vi: "Định hướng nhân viên mới, quản lý giấy tờ, theo dõi tuân thủ, đăng ký phúc lợi, hoà nhập văn hoá. Trải nghiệm trơn tru từ ngày đầu tới năm đầu, giữ chân người giỏi.",
+              en: "Comprehensive HR onboarding specialist for employee orientation, documentation management, compliance tracking, benefits enrollment, culture integration, and new hire support - delivering a seamless first-day-to-first-year experience that drives retention and productivity"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/hr-onboarding.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-hr-onboarding]

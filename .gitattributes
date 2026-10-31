@@ -1,0 +1,14 @@
+# Mã nguồn gói LUÔN dùng LF, trên mọi hệ điều hành.
+#
+# Không ràng buộc chỗ này thì Windows checkout ra CRLF, `tools/dong-goi.py` đóng gói đúng những
+# byte đó, và tệp .zip ra một `sha256` KHÁC con số trong index.json - dù không ai sửa một chữ
+# nào. Naota đối chiếu dấu vân tay ngay khi tải xong nên nó sẽ từ chối cài, và người đóng góp
+# không tài nào hiểu vì sao.
+* text=auto eol=lf
+
+# Tệp phát hành là nhị phân - đụng vào một byte là hỏng cả gói.
+*.zip binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.webp binary

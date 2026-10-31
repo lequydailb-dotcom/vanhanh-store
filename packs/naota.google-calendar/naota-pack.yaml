@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.google-calendar
+version: 1.0.0
+name: {vi: "Google Calendar"}
+description: {vi: "Lịch Google qua MCP chính chủ của Google: xem lịch, tìm chỗ trống, tạo/sửa sự kiện, nhắc hẹn. Đăng nhập Google trong dashboard, chạy được cả trên VPS. Cần tạo OAuth client + ghi danh Developer Preview của Google 1 lần (~10 phút)."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/google-calendar.json]

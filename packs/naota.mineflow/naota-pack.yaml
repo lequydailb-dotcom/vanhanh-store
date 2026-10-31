@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.mineflow
+version: 1.0.0
+name: {vi: "Mineflow"}
+description: {vi: "Nền tảng dữ liệu khách hàng (CDP) & tự động hóa marketing all-in-one trên Zalo, qua MCP chính chủ của Mineflow. Để AI xem và dựng landing page, mini app, biểu mẫu, bảng dữ liệu khách hàng và workflow tự động hóa trên Zalo. Đăng nhập Mineflow 1 chạm - không cần dán key. Ưu đãi riêng cho người dùng Naota: tặng 3 tháng gói Pro và các gói setup Zalo OA, ZNS, Mini App - xem hướng dẫn."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/mineflow.json]

@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.legal-client-intake
+version: 1.0.0
+name: {vi: "Tiếp nhận khách hàng pháp lý", en: "Legal Client Intake"}
+description: {vi: "Sàng lọc khách tiềm năng, thu thông tin vụ việc, đặt lịch tư vấn, kiểm xung đột lợi ích và tóm tắt hồ sơ sẵn cho luật sư, mọi lĩnh vực và cỡ văn phòng.",
+              en: "Comprehensive legal client intake specialist for qualifying prospects, collecting case information, scheduling consultations, managing conflict checks, and delivering attorney-ready intake summaries across any practice area and firm size"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/legal-client-intake.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-legal-client-intake]

@@ -1,0 +1,29 @@
+name: TTS Dropship
+slug: tts-dropship
+version: 1.1.1
+description: Bán dropship trên sàn thitruongsi.com - tìm hàng theo lợi nhuận, tách địa chỉ khách, tạo khách, báo giá ship, lên đơn, theo dõi vận đơn, xem tiền về. Dùng token của kết nối "TTS Dropship".
+author: Naota
+enabled: true
+min_mode: full
+tools:
+  - tts_products
+  - tts_suppliers
+  - tts_cart
+  - tts_customers
+  - tts_shipping_rates
+  - tts_orders
+  - tts_finance
+  - tts_listings
+  - tts_wishlist
+  - tts_health_check
+  - tts_cart_update
+  - tts_customer_write
+  - tts_listing_write
+  - tts_wishlist_write
+  - tts_supplier_follow
+  - tts_graphql
+  - tts_create_order
+  - tts_cancel_order
+  - tts_order_action
+  - tts_listing_delete
+hooks: []

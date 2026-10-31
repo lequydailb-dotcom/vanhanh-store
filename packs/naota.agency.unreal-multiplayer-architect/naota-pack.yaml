@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.unreal-multiplayer-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư nhiều người chơi Unreal", en: "Unreal Multiplayer Architect"}
+description: {vi: "Mạng trong Unreal Engine: đồng bộ Actor, kiến trúc GameMode/GameState, gameplay do server quyết, dự đoán mạng và dựng dedicated server cho UE5.",
+              en: "Unreal Engine networking specialist - Masters Actor replication, GameMode/GameState architecture, server-authoritative gameplay, network prediction, and dedicated server setup for UE5"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/unreal-engine/unreal-multiplayer-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-unreal-multiplayer-architect]

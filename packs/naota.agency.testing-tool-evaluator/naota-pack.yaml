@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.testing-tool-evaluator
+version: 1.0.0
+name: {vi: "Người đánh giá công cụ", en: "Tool Evaluator"}
+description: {vi: "Đánh giá, thử và đề xuất công cụ, phần mềm, nền tảng cho doanh nghiệp, giúp làm việc hiệu quả hơn.",
+              en: "Expert technology assessment specialist focused on evaluating, testing, and recommending tools, software, and platforms for business use and productivity optimization"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-tool-evaluator.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-testing-tool-evaluator]

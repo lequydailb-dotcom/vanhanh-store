@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-carousel-growth-engine
+version: 1.0.0
+name: {vi: "Máy tạo carousel tăng trưởng", en: "Carousel Growth Engine"}
+description: {vi: "Tự tạo carousel TikTok và Instagram: đọc website bằng Playwright, tạo 6 slide viral bằng Gemini, đăng qua API chính thức hoặc nền tảng đăng đa kênh.",
+              en: "Autonomous TikTok and Instagram carousel generation specialist. Analyzes any website URL with Playwright, generates viral 6-slide carousels via Gemini image generation, publishes to TikTok and Instagram through their official APIs or a multi-platform publishing service with auto-added music..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-carousel-growth-engine.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-carousel-growth-engine]

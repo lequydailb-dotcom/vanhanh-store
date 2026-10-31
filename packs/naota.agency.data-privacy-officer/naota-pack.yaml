@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.data-privacy-officer
+version: 1.0.0
+name: {vi: "Cán bộ bảo vệ dữ liệu (DPO)", en: "Data Privacy Officer"}
+description: {vi: "Xây chương trình tuân thủ GDPR, CCPA và quyền riêng tư toàn cầu: bản đồ dữ liệu, đánh giá tác động, quản lý đồng ý, xử lý rò rỉ, thẩm định nhà cung cấp.",
+              en: "Corporate data privacy specialist and DPO who builds GDPR, CCPA, and global privacy compliance programs - covering data mapping, privacy impact assessments, consent management, breach response, vendor due diligence, and regulatory engagement."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/data-privacy-officer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-data-privacy-officer]

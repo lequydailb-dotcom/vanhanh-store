@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-it-service-manager
+version: 1.0.0
+name: {vi: "Quản lý dịch vụ IT", en: "IT Service Manager"}
+description: {vi: "Quản lý dịch vụ IT theo ITIL 4: danh mục dịch vụ, xử lý sự cố và vấn đề, kiểm soát thay đổi, quản trị SLA, CMDB và cải tiến liên tục.",
+              en: "Expert IT service management specialist using ITIL 4 framework for service catalog design, incident and problem management, change control, SLA governance, CMDB maintenance, and continual service improvement - ensuring IT delivers reliable, measurable business value across any organization size"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-it-service-manager.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-it-service-manager]

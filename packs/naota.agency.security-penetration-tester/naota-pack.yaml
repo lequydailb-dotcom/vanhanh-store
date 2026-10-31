@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.security-penetration-tester
+version: 1.0.0
+name: {vi: "Chuyên gia kiểm thử xâm nhập", en: "Penetration Tester"}
+description: {vi: "Kiểm thử xâm nhập có ủy quyền, diễn tập red team và đánh giá lỗ hổng trên mạng, ứng dụng web và hạ tầng đám mây.",
+              en: "Offensive security specialist conducting authorized penetration tests, red team operations, and vulnerability assessments across networks, web applications, and cloud infrastructure."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-penetration-tester.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-security-penetration-tester]

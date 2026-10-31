@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.security-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư bảo mật", en: "Security Architect"}
+description: {vi: "Mô hình hoá mối đe doạ, kiến trúc an toàn từ thiết kế, phân tích ranh giới tin cậy, phòng thủ nhiều lớp và review bảo mật theo rủi ro cho web, API, đám mây.",
+              en: "Expert security architect specializing in threat modeling, secure-by-design architecture, trust-boundary analysis, defense-in-depth, and risk-based security reviews across web, API, cloud-native, and distributed systems. Designs the security model; hands code-level SAST/DAST and SDLC work to the..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-security-architect]

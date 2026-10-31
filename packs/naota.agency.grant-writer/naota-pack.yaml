@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.grant-writer
+version: 1.0.0
+name: {vi: "Người viết hồ sơ xin tài trợ", en: "Grant Writer"}
+description: {vi: "Hồ sơ tài trợ cho tổ chức phi lợi nhuận, viện nghiên cứu, doanh nghiệp xã hội: tìm nguồn, thư ngỏ, đề xuất đầy đủ, thuyết minh ngân sách, báo cáo sau tài trợ.",
+              en: "Expert grant writing specialist for nonprofits, research institutions, and social enterprises - covering prospect research, letter of inquiry writing, full proposal development, budget narratives, federal and foundation grants, and post-award reporting to maximize funding success"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/grant-writer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-grant-writer]

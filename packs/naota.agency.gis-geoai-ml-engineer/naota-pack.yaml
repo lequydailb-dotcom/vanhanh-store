@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.gis-geoai-ml-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư GeoAI/ML", en: "GeoAI/ML Engineer"}
+description: {vi: "Máy học cho dữ liệu không gian: mô hình trích đối tượng, nhận diện vật thể, phân vùng ảnh và phân loại lớp phủ đất từ ảnh vệ tinh, ảnh hàng không.",
+              en: "Geospatial machine learning specialist who builds models for feature extraction, object detection, image segmentation, and land cover classification from satellite and aerial imagery."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-geoai-ml-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-gis-geoai-ml-engineer]

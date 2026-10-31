@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.anthropic-chat-channels
+version: 1.0.0
+name: {vi: "Claude: Kênh chat (Discord/Telegram/iMessage)", en: "Claude: Chat channels (Discord/Telegram/iMessage)"}
+description: {vi: "6 skill từ plugin đối tác trong kho Anthropic: thiết lập và quản lý quyền truy cập cho ba kênh chat Discord, Telegram, iMessage - duyệt ghép cặp, sửa allowlist, đặt chính sách DM/nhóm.",
+              en: "6 skills from partner plugins in Anthropic's directory: set up and manage access for the Discord, Telegram and iMessage channels - approve pairings, edit allowlists, set DM/group policy."}
+author: {name: "Anthropic", url: "https://github.com/anthropics/claude-plugins-official"}
+license: Apache-2.0
+homepage: "https://github.com/anthropics/claude-plugins-official"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [discord-configure, discord-access, telegram-configure, telegram-access, imessage-configure, imessage-access]

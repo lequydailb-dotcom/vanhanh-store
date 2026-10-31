@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-codebase-onboarding-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư dẫn nhập codebase", en: "Codebase Onboarding Engineer"}
+description: {vi: "Giúp kỹ sư mới hiểu nhanh một codebase lạ: đọc mã nguồn, lần theo luồng chạy và chỉ nói điều có căn cứ trong code.",
+              en: "Expert developer onboarding specialist who helps new engineers understand unfamiliar codebases fast by reading source code, tracing code paths, and stating only facts grounded in the code."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-codebase-onboarding-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-codebase-onboarding-engineer]

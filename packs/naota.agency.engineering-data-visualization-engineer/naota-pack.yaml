@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-data-visualization-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư trực quan hoá dữ liệu", en: "Data Visualization Engineer"}
+description: {vi: "Chọn loại biểu đồ theo dữ liệu và câu hỏi, mã hoá trung thực, bảng màu an toàn cho người mù màu, biểu đồ tương tác, vẽ dữ liệu lớn mượt bằng D3, Vega.",
+              en: "Expert data visualization engineer - chart-type selection by data and question, perceptually honest encodings, colorblind-safe data palettes, accessible and interactive charts, and rendering large datasets performantly with D3, Vega, and charting libraries."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-data-visualization-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-data-visualization-engineer]

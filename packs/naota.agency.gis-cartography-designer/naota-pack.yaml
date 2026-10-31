@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.gis-cartography-designer
+version: 1.0.0
+name: {vi: "Nhà thiết kế bản đồ", en: "Cartography Designer"}
+description: {vi: "Bản đồ đẹp, dễ đọc, hiệu quả: lý thuyết màu, chữ, đặt nhãn, chọn bản đồ nền và thứ bậc thị giác cho bản in lẫn bản web.",
+              en: "Map aesthetics specialist who designs beautiful, readable, and effective maps - color theory, typography, label placement, basemap selection, and visual hierarchy for both print and web."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-cartography-designer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-gis-cartography-designer]

@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.hermes-productivity
+version: 1.0.0
+name: {vi: "Hermes: Năng suất & công cụ", en: "Hermes: Productivity tools"}
+description: {vi: "8 skill năng suất của Hermes Agent: Airtable, Box, Notion, Obsidian, Google Workspace, Microsoft Teams, bản đồ OpenStreetMap, và quy trình tổng kết tuần.",
+              en: "8 productivity skills from Hermes Agent: Airtable, Box, Notion, Obsidian, Google Workspace, Microsoft Teams, OpenStreetMap routing, and a weekly review routine."}
+author: {name: "Nous Research", url: "https://github.com/NousResearch/hermes-agent"}
+license: MIT
+homepage: "https://github.com/NousResearch/hermes-agent/tree/main/skills"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [airtable, box, notion, obsidian, google-workspace, teams-meeting-pipeline, maps, weekly-review-planning]

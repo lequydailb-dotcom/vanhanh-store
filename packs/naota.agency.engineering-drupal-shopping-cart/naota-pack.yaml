@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-drupal-shopping-cart
+version: 1.0.0
+name: {vi: "Kỹ sư giỏ hàng Drupal", en: "Drupal Shopping Cart Engineer"}
+description: {vi: "Thương mại điện tử bằng Drupal Commerce: danh mục sản phẩm, cổng thanh toán, luồng checkout, quản lý đơn, thuế và khuyến mãi, cửa hàng chạy ổn định.",
+              en: "Expert Drupal e-commerce engineer specializing in Drupal Commerce for product catalog management, payment gateway integration, checkout workflow design, order management, tax and promotion configuration, and high-reliability storefront delivery on Drupal 10/11"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-drupal-shopping-cart.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-drupal-shopping-cart]

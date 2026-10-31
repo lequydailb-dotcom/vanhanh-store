@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.xr-cockpit-interaction-specialist
+version: 1.0.0
+name: {vi: "Chuyên gia tương tác buồng lái XR", en: "XR Cockpit Interaction Specialist"}
+description: {vi: "Thiết kế và phát triển hệ điều khiển dạng buồng lái nhập vai cho môi trường XR.",
+              en: "Specialist in designing and developing immersive cockpit-based control systems for XR environments"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/spatial-computing/xr-cockpit-interaction-specialist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-xr-cockpit-interaction-specialist]

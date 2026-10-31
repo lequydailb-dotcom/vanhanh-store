@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-solidity-smart-contract-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư hợp đồng thông minh Solidity", en: "Solidity Smart Contract Engineer"}
+description: {vi: "Kiến trúc hợp đồng EVM, tối ưu gas, proxy nâng cấp được, phát triển giao thức DeFi, thiết kế hợp đồng đặt bảo mật lên đầu trên Ethereum và L2.",
+              en: "Expert Solidity developer specializing in EVM smart contract architecture, gas optimization, upgradeable proxy patterns, DeFi protocol development, and security-first contract design across Ethereum and L2 chains."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-solidity-smart-contract-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-solidity-smart-contract-engineer]

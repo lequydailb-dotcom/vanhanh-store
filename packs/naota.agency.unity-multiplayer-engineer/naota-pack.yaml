@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.unity-multiplayer-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư nhiều người chơi Unity", en: "Unity Multiplayer Engineer"}
+description: {vi: "Gameplay qua mạng: Netcode for GameObjects, Unity Gaming Services (Relay, Lobby), quyền client và server, bù trễ, đồng bộ trạng thái.",
+              en: "Networked gameplay specialist - Masters Netcode for GameObjects, Unity Gaming Services (Relay/Lobby), client-server authority, lag compensation, and state synchronization"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/unity/unity-multiplayer-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-unity-multiplayer-engineer]

@@ -1,0 +1,72 @@
+{
+  "id": "tiktok-ads",
+  "name": "TikTok Ads",
+  "icon": "assets/tiktok-ads.webp",
+  "category": "Quảng cáo",
+  "description": "Số liệu quảng cáo TikTok (chỉ đọc): tài khoản, chiến dịch, nhóm quảng cáo, creative, báo cáo hiệu suất. Server cộng đồng chạy local trên Marketing API chính thức - dán App ID + Secret + Access Token.",
+  "status": "beta",
+  "transport": "stdio",
+  "command": "uvx",
+  "args": [
+    "--with",
+    "mcp<2",
+    "tiktok-ads-mcp@latest"
+  ],
+  "lenh_cu": [
+    {
+      "command": "uvx",
+      "args": [
+        "--with",
+        "mcp<2",
+        "tiktok-ads-mcp"
+      ]
+    },
+    {
+      "command": "uvx",
+      "args": [
+        "tiktok-ads-mcp"
+      ]
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "app_id",
+        "label": "App ID (TikTok for Business Developers)",
+        "placeholder": "Ví dụ: 7123456789...",
+        "env": "TIKTOK_APP_ID"
+      },
+      {
+        "key": "app_secret",
+        "label": "App Secret",
+        "placeholder": "Dán secret của app...",
+        "env": "TIKTOK_SECRET"
+      },
+      {
+        "key": "access_token",
+        "label": "Access Token (long-term)",
+        "placeholder": "Dán access token đã authorize với tài khoản quảng cáo...",
+        "env": "TIKTOK_ACCESS_TOKEN"
+      }
+    ],
+    "guide": "Cần trước: cài uv (winget install astral-sh.uv).\n\nLàm 1 lần:\n1. Vào business-api.tiktok.com > My Apps, tạo app loại Marketing API với quyền đọc Ads Management + Reporting.\n2. Duyệt xong lấy App ID + Secret.\n3. Authorize app với tài khoản quảng cáo của bạn để lấy long-term Access Token. Token Marketing API không tự hết hạn.\n\nChi tiết từng bước xem link hướng dẫn.",
+    "guide_url": "https://github.com/ysntony/tiktok-ads-mcp#readme"
+  },
+  "validate": {
+    "tool": "get_authorized_ad_accounts_tool",
+    "args": {},
+    "label_paths": [
+      "data.list.0.advertiser_name",
+      "list.0.advertiser_name",
+      "0.advertiser_name",
+      "advertiser_name"
+    ]
+  },
+  "tool_meta": {
+    "read": [
+      "get_*"
+    ]
+  },
+  "default_perm": "readonly"
+}

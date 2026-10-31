@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.video-use
+version: 1.0.0
+name: {vi: "Video Use: Dựng video từ cảnh quay", en: "Video Use: Edit raw footage"}
+description: {vi: "Skill của Browser Use để AI dựng video từ một thư mục cảnh quay thô: cắt chỗ ngập ngừng và khoảng lặng, chỉnh màu, chèn phụ đề, cùng skill làm video giải thích bằng Manim. Cần Python, ffmpeg.",
+              en: "Browser Use's skill for editing a folder of raw footage: cut filler words and dead air, grade colour, burn in subtitles, plus a Manim explainer-video skill. Needs Python and ffmpeg."}
+author: {name: "Browser Use", url: "https://github.com/browser-use/video-use"}
+license: MIT
+homepage: "https://github.com/browser-use/video-use"
+compat: {app: ">=1.0.0"}
+# Gói theo repo gốc: thư mục skills/ do tools/theo-goc.py chép nguyên văn, đừng sửa tay.
+upstream: {repo: "browser-use/video-use", ref: "main"}
+provides:
+  skills: [video-use, manim-video]

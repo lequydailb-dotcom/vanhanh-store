@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-payments-billing-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư thanh toán và hoá đơn", en: "Payments & Billing Engineer"}
+description: {vi: "Tích hợp cổng thanh toán (Stripe, Adyen, Braintree, PayPal), luồng thanh toán không trùng lặp, webhook, thu phí định kỳ, SCA/3DS, thu hẹp phạm vi PCI, đối soát.",
+              en: "Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree, PayPal), idempotent payment flows, webhook processing, subscription billing, SCA/3DS, PCI scope reduction, and financial reconciliation."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-payments-billing-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-payments-billing-engineer]

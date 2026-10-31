@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-data-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư dữ liệu", en: "Data Engineer"}
+description: {vi: "Xây đường ống dữ liệu tin cậy, kiến trúc lakehouse, hạ tầng dữ liệu mở rộng được. Thành thạo ETL/ELT, Spark, dbt, streaming để biến dữ liệu thô thành dữ liệu phân tích được.",
+              en: "Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT, Apache Spark, dbt, streaming systems, and cloud data platforms to turn raw data into trusted, analytics-ready assets."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-data-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-data-engineer]

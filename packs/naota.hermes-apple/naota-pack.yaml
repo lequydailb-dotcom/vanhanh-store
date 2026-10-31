@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.hermes-apple
+version: 1.0.0
+name: {vi: "Hermes: Apple (chỉ macOS)", en: "Hermes: Apple (macOS only)"}
+description: {vi: "4 skill Apple của Hermes Agent: Notes, Reminders, Find My và iMessage/SMS. CHỈ CHẠY TRÊN macOS - mỗi skill cần một CLI riêng cài sẵn trên máy (memo, remindctl, imsg).",
+              en: "4 Apple skills from Hermes Agent: Notes, Reminders, Find My and iMessage/SMS. macOS ONLY - each one needs its own CLI installed on the machine (memo, remindctl, imsg)."}
+author: {name: "Nous Research", url: "https://github.com/NousResearch/hermes-agent"}
+license: MIT
+homepage: "https://github.com/NousResearch/hermes-agent/tree/main/skills"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [apple-notes, apple-reminders, findmy, apple-imessage]

@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.lsp-index-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư LSP và lập chỉ mục", en: "LSP/Index Engineer"}
+description: {vi: "Language Server Protocol: xây hệ thống hiểu code thống nhất bằng cách điều phối LSP client và lập chỉ mục ngữ nghĩa.",
+              en: "Language Server Protocol specialist building unified code intelligence systems through LSP client orchestration and semantic indexing"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/lsp-index-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-lsp-index-engineer]

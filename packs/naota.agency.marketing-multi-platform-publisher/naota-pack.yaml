@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-multi-platform-publisher
+version: 1.0.0
+name: {vi: "Người đăng bài đa nền tảng", en: "Multi-Platform Publisher"}
+description: {vi: "Đăng một bài lên nhiều nền tảng blog Trung Quốc (Zhihu, Xiaohongshu, CSDN, Bilibili, WeChat, Juejin) bằng một cú bấm, tự chỉnh nội dung theo từng nơi.",
+              en: "Expert orchestrator for one-click Chinese blog publishing. Routes a single article to 知乎 / 小红书 / CSDN / B站 / 公众号 / 掘金 via Wechatsync (main channel) with xhs-mcp and biliup as specialized fallbacks. Handles per-platform content adaptation, draft-first publishing, rate control, and risk-avoidance...."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-multi-platform-publisher.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-multi-platform-publisher]

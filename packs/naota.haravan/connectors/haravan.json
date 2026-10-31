@@ -1,0 +1,152 @@
+{
+  "id": "haravan",
+  "name": "Haravan",
+  "icon": "assets/haravan.png",
+  "category": "Bán hàng",
+  "description": "Đơn hàng, sản phẩm, khách hàng, tồn kho và báo cáo doanh thu, phân nhóm khách, gợi ý nhập hàng từ Haravan. Tạo một ứng dụng riêng trong Haravan, dán Access Token là xong.",
+  "status": "beta",
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "--package=https://raw.githubusercontent.com/vuongtex/naota-store/main/mcp/haravan-mcp-0.1.0-c915ce0.tgz",
+    "haravan-mcp",
+    "mcp",
+    "--tools",
+    "all"
+  ],
+  "ngoai_le_ban_chinh_thuc": "haravan-mcp (của pluginmd) chưa phát hành bản nào lên npm, và npx không chạy được thẳng từ GitHub vì gói cần build TypeScript lúc cài. Kho build một lần từ commit ghim trong mcp/nguon.json rồi chạy tệp đó, xem tools/mcp_dong_goi.py.",
+  "requires": {
+    "node": ">=18"
+  },
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "access_token",
+        "label": "Access Token (ứng dụng riêng)",
+        "placeholder": "Dán Access Token...",
+        "env": "HARAVAN_ACCESS_TOKEN"
+      }
+    ],
+    "guide": "Làm 1 lần trong trang quản trị Haravan:\n1. Vào Ứng dụng > Ứng dụng riêng (Private apps) > Tạo ứng dụng riêng.\n2. Đặt tên (ví dụ 'Naota') và chọn quyền. Chỉ cần xem số liệu thì chỉ tick quyền đọc (read) cho đơn hàng, sản phẩm, khách hàng, tồn kho, cửa hàng.\n3. Lưu lại, copy Access Token rồi dán vào ô dưới.\n\nQuyền tick trong Haravan là hàng rào thứ hai: chỉ tick quyền đọc thì dù Naota ở mức nào cũng không sửa được gì.\n\nToken thấy mọi dữ liệu theo quyền đã tick. Lộ thì xoá ứng dụng riêng đó và tạo cái mới.",
+    "guide_url": "https://github.com/pluginmd/Haravan-MCP",
+    "steps": [
+      {
+        "text": "Mở trang quản trị Haravan, vào Ứng dụng > Ứng dụng riêng > Tạo ứng dụng riêng."
+      },
+      {
+        "text": "Đặt tên và tick quyền. Chỉ xem số liệu thì tick quyền đọc cho đơn hàng, sản phẩm, khách hàng, tồn kho, cửa hàng."
+      },
+      {
+        "text": "Lưu lại, copy Access Token, dán vào ô dưới rồi bấm Kết nối.",
+        "link": "https://github.com/pluginmd/Haravan-MCP",
+        "link_label": "Trang của MCP Haravan"
+      }
+    ]
+  },
+  "validate": {
+    "tool": "haravan_shop_get",
+    "args": {},
+    "label_paths": [
+      "shop.name",
+      "name",
+      "data.shop.name"
+    ]
+  },
+  "tool_meta": {
+    "read": [
+      "hrv_orders_summary",
+      "hrv_top_products",
+      "hrv_order_cycle_time",
+      "hrv_inventory_health",
+      "hrv_stock_reorder_plan",
+      "hrv_inventory_imbalance",
+      "hrv_customer_segments",
+      "haravan_customers_list",
+      "haravan_customers_search",
+      "haravan_customers_count",
+      "haravan_customers_get",
+      "haravan_customers_groups",
+      "haravan_customer_addresses_list",
+      "haravan_customer_addresses_get",
+      "haravan_orders_list",
+      "haravan_orders_count",
+      "haravan_orders_get",
+      "haravan_transactions_list",
+      "haravan_transactions_get",
+      "haravan_products_list",
+      "haravan_products_count",
+      "haravan_products_get",
+      "haravan_variants_list",
+      "haravan_variants_count",
+      "haravan_variants_get",
+      "haravan_inventory_adjustments_list",
+      "haravan_inventory_adjustments_count",
+      "haravan_inventory_adjustments_get",
+      "haravan_inventory_locations",
+      "haravan_shop_get",
+      "haravan_locations_list",
+      "haravan_locations_get",
+      "haravan_users_list",
+      "haravan_users_get",
+      "haravan_shipping_rates_get",
+      "haravan_webhooks_list",
+      "haravan_pages_list",
+      "haravan_pages_get",
+      "haravan_blogs_list",
+      "haravan_articles_list",
+      "haravan_articles_get",
+      "haravan_script_tags_list"
+    ],
+    "write": [
+      "haravan_customers_create",
+      "haravan_customers_update",
+      "haravan_customer_addresses_create",
+      "haravan_customer_addresses_update",
+      "haravan_customer_addresses_set_default",
+      "haravan_products_create",
+      "haravan_products_update",
+      "haravan_variants_create",
+      "haravan_variants_update",
+      "haravan_inventory_adjust_or_set",
+      "haravan_pages_create",
+      "haravan_pages_update"
+    ],
+    "danger": [
+      "haravan_customers_delete",
+      "haravan_customer_addresses_delete",
+      "haravan_orders_create",
+      "haravan_orders_update",
+      "haravan_orders_confirm",
+      "haravan_orders_close",
+      "haravan_orders_open",
+      "haravan_orders_cancel",
+      "haravan_orders_assign",
+      "haravan_transactions_create",
+      "haravan_products_delete",
+      "haravan_webhooks_subscribe",
+      "haravan_webhooks_unsubscribe",
+      "haravan_pages_delete",
+      "haravan_script_tags_create",
+      "haravan_script_tags_delete",
+      "*delete*",
+      "*cancel*",
+      "*orders_*",
+      "*transactions_*",
+      "*webhooks_*",
+      "*script_tags_*"
+    ]
+  },
+  "default_perm": "readonly",
+  "risk": "Mức Chỉ đọc (mặc định) chỉ xem đơn, sản phẩm, khách hàng, tồn kho, giao dịch và các báo cáo tổng hợp. An toàn.\n\nMức Ghi nháp cho phép Naota TẠO và SỬA sản phẩm, biến thể, khách hàng, trang nội dung, và ĐIỀU CHỈNH TỒN KHO thật trên cửa hàng.\n\nMức Toàn quyền thêm: tạo, sửa, xác nhận, đóng và HUỶ ĐƠN HÀNG; ghi GIAO DỊCH THANH TOÁN; xoá sản phẩm, khách hàng, trang.\nNguy hiểm nhất là webhook và script tag: webhook gửi dữ liệu đơn hàng, khách hàng tới một địa chỉ bên ngoài; script tag gắn mã JavaScript vào website bán hàng của bạn, chạy trên máy MỌI khách truy cập.\n\nChỉ nâng quyền khi bạn thật sự cần Naota thao tác thay mình.",
+  "ghi_da_can_nhac": [
+    "hrv_orders_summary",
+    "hrv_order_cycle_time",
+    "hrv_stock_reorder_plan",
+    "haravan_orders_list",
+    "haravan_orders_count",
+    "haravan_orders_get"
+  ],
+  "ghi_chu_tool_meta": "Chạy với --tools all (70 tool, haravan-mcp 0.1.0). Mặc định của MCP chỉ có 17 tool đọc; mở hết để mức quyền của Naota là chỗ chặn, không phải bộ lọc của MCP. Mẫu `*orders_*`, `*webhooks_*`, `*script_tags_*` ở nhóm danger chỉ áp cho tool KHÔNG có tên trong nhóm đọc, nên tool đơn hàng mới thêm sau tự rơi về danger."
+}

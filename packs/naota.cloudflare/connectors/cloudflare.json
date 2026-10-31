@@ -1,0 +1,58 @@
+{
+  "id": "cloudflare",
+  "name": "Cloudflare",
+  "icon": "assets/cloudflare.jpg",
+  "category": "Lập trình",
+  "description": "Toàn bộ API Cloudflare ngay trong chat qua MCP chính chủ: DNS, Workers, Pages, KV, R2, D1, tường lửa, SSL, cache, thống kê lưu lượng, Zero Trust. Dán API token là xong, quyền của token quyết định Naota được làm gì.",
+  "status": "beta",
+  "transport": "http",
+  "url": "https://mcp.cloudflare.com/mcp",
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "api_token",
+        "label": "API token (Cloudflare)",
+        "placeholder": "Dán API token tạo ở dash.cloudflare.com...",
+        "header": "Authorization: Bearer {api_token}"
+      },
+      {
+        "key": "account_id",
+        "label": "Account ID (tuỳ chọn)",
+        "placeholder": "Chỉ cần khi token thấy nhiều tài khoản. Lấy ở trang tổng quan Cloudflare, cột bên phải",
+        "optional": true
+      }
+    ],
+    "guide": "Làm 1 lần:\n1. Vào dash.cloudflare.com > Hồ sơ (My Profile) > API Tokens > Create Token.\n2. Muốn Naota làm được mọi việc thì chọn Create Custom Token, thêm quyền Edit cho những mảng bạn dùng (Zone, DNS, Workers Scripts, Pages, Workers KV, R2, D1, Firewall...) và Account Resources : Read. Chỉ muốn xem thì chọn quyền Read.\n3. Ở Zone Resources chọn All zones hoặc đúng các tên miền cần quản lý.\n4. Muốn deploy bằng gói 'Cloudflare Deploy (Wrangler)' thì token cần thêm Workers Scripts : Edit và Cloudflare Pages : Edit.\n5. KHÔNG bật lọc theo IP (Client IP Address Filtering): MCP của Cloudflare chưa hỗ trợ token có lọc IP.\n6. Bấm tạo, copy token NGAY lúc đó (đóng là không xem lại được) rồi dán vào ô dưới. Ô Account ID chỉ cần điền khi token thấy nhiều tài khoản.\n\nToken là hàng rào thật: Naota chỉ làm được đúng những gì token cho phép. Lỡ lộ token thì vào lại trang đó bấm Roll hoặc Delete.",
+    "guide_url": "https://github.com/cloudflare/mcp#readme",
+    "steps": [
+      {
+        "text": "Mở trang API Tokens của Cloudflare rồi bấm Create Token.",
+        "link": "https://dash.cloudflare.com/profile/api-tokens",
+        "link_label": "Mở trang API Tokens"
+      },
+      {
+        "text": "Chọn Create Custom Token. Muốn toàn quyền thì cấp Edit cho các mảng bạn dùng (Zone, DNS, Workers, Pages, KV, R2, D1, Firewall) và thêm Account Resources : Read. Chỉ xem thì cấp Read."
+      },
+      {
+        "text": "Không bật lọc theo IP: MCP của Cloudflare chưa nhận token có lọc IP."
+      },
+      {
+        "text": "Copy token ngay khi hiện ra, dán vào ô bên dưới rồi bấm Kết nối.",
+        "link": "https://github.com/cloudflare/mcp#readme",
+        "link_label": "Hướng dẫn của Cloudflare"
+      }
+    ]
+  },
+  "tool_meta": {
+    "read": [
+      "docs",
+      "search"
+    ],
+    "danger": [
+      "execute"
+    ]
+  },
+  "default_perm": "readonly",
+  "risk": "MCP của Cloudflare chỉ có 3 công cụ: docs (tra tài liệu), search (tìm API cần gọi) và execute (chạy đoạn mã gọi API Cloudflare thật).\n\nexecute gọi được MỌI API mà token cho phép, từ đọc thống kê tới XOÁ tên miền, sửa DNS, deploy Worker, xoá bucket R2. Naota không phân biệt được một lần execute là đọc hay xoá, nên nó nằm ở nhóm nguy hiểm.\n\nMức Chỉ đọc và Ghi nháp: Naota chỉ tra tài liệu và tìm API, chưa đụng tới tài khoản.\n\nMức Toàn quyền: Naota tự thao tác thật. Sai một bản ghi DNS là website hoặc email tắt ngay, xoá Worker hay bucket là mất dữ liệu.\n\nCách an toàn nhất: muốn Naota chỉ đọc số liệu thì tạo token CHỈ CÓ quyền Read rồi mới nâng Toàn quyền. Khi đó execute có chạy cũng không sửa được gì."
+}

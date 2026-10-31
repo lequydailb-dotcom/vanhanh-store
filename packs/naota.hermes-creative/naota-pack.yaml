@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.hermes-creative
+version: 1.0.0
+name: {vi: "Hermes: Sáng tạo & thiết kế", en: "Hermes: Creative & design"}
+description: {vi: "10 skill sáng tạo của Hermes Agent (Nous Research): sơ đồ kiến trúc SVG, infographic, HTML artifact, video Manim, sketch p5.js, 54 design system thật, viết lời nhạc Suno, và bộ lọc bỏ giọng văn AI.",
+              en: "10 creative skills from Hermes Agent: SVG architecture diagrams, infographics, HTML artifacts, Manim videos, p5.js sketches, 54 real design systems, Suno song prompts, and an AI-slop remover."}
+author: {name: "Nous Research", url: "https://github.com/NousResearch/hermes-agent"}
+license: MIT
+homepage: "https://github.com/NousResearch/hermes-agent/tree/main/skills"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [architecture-diagram, ascii-video, baoyu-infographic, claude-design, design-md, humanizer, manim-video, p5js, popular-web-designs, songwriting-and-ai-music]

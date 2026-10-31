@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.roblox-avatar-creator
+version: 1.0.0
+name: {vi: "Người tạo avatar Roblox", en: "Roblox Avatar Creator"}
+description: {vi: "Đường ống UGC và avatar Roblox: hệ thống avatar, tạo vật phẩm UGC, gắn khung phụ kiện, chuẩn texture và quy trình nộp lên Creator Marketplace.",
+              en: "Roblox UGC and avatar pipeline specialist - Masters Roblox's avatar system, UGC item creation, accessory rigging, texture standards, and the Creator Marketplace submission pipeline"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/roblox-studio/roblox-avatar-creator.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-roblox-avatar-creator]

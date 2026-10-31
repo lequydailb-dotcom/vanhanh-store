@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.hermes-dev
+version: 1.0.0
+name: {vi: "Hermes: Quy trình lập trình", en: "Hermes: Dev workflow"}
+description: {vi: "8 skill quy trình code của Hermes Agent: GitHub qua gh CLI, TDD RED-GREEN-REFACTOR, gỡ lỗi 4 pha tìm gốc rễ, review trước khi commit, dọn code, spike thử ý tưởng, đo quy mô codebase, và điều phối Kanban.",
+              en: "8 engineering-workflow skills from Hermes Agent: GitHub via gh CLI, RED-GREEN-REFACTOR TDD, 4-phase root-cause debugging, pre-commit review, code cleanup, spikes, codebase sizing, and Kanban handoffs."}
+author: {name: "Nous Research", url: "https://github.com/NousResearch/hermes-agent"}
+license: MIT
+homepage: "https://github.com/NousResearch/hermes-agent/tree/main/skills"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [github, test-driven-development, systematic-debugging, requesting-code-review, simplify-code, spike, codebase-inspection, sdlc-review]

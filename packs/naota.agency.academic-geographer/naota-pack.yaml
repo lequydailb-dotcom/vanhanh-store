@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.academic-geographer
+version: 1.0.0
+name: {vi: "Nhà địa lý", en: "Geographer"}
+description: {vi: "Chuyên gia địa lý tự nhiên và nhân văn, khí hậu, bản đồ, phân tích không gian. Dựng thế giới có địa hình, khí hậu, tài nguyên và làng mạc hợp lý khoa học.",
+              en: "Expert in physical and human geography, climate systems, cartography, and spatial analysis - builds geographically coherent worlds where terrain, climate, resources, and settlement patterns make scientific sense"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/academic/academic-geographer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-academic-geographer]

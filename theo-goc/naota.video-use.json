@@ -1,0 +1,44 @@
+{
+  "_doc": "Skill chính nằm ở gốc repo, kèm helpers/ là script Python nó gọi.",
+  "repo": "browser-use/video-use",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": ".",
+      "den": "skills",
+      "ten": "video-use",
+      "bo_tep": [
+        "tests",
+        "static",
+        "poster.html",
+        "skills"
+      ]
+    },
+    {
+      "tu": "skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Video Use: Dựng video từ cảnh quay",
+      "en": "Video Use: Edit raw footage"
+    },
+    "description": {
+      "vi": "Skill của Browser Use để AI dựng video từ một thư mục cảnh quay thô: cắt chỗ ngập ngừng và khoảng lặng, chỉnh màu, chèn phụ đề, cùng skill làm video giải thích bằng Manim. Cần Python, ffmpeg.",
+      "en": "Browser Use's skill for editing a folder of raw footage: cut filler words and dead air, grade colour, burn in subtitles, plus a Manim explainer-video skill. Needs Python and ffmpeg."
+    },
+    "author": "Browser Use",
+    "category": "sang-tao",
+    "category_label": {
+      "vi": "Sáng tạo",
+      "en": "Creative"
+    },
+    "license": "MIT"
+  }
+}

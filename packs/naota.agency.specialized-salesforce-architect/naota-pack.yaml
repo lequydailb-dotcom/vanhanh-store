@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.specialized-salesforce-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư Salesforce", en: "Salesforce Architect"}
+description: {vi: "Kiến trúc giải pháp Salesforce: thiết kế đa cloud, mẫu tích hợp, giới hạn governor, chiến lược triển khai và quản trị mô hình dữ liệu cho tổ chức lớn.",
+              en: "Solution architecture for Salesforce platform - multi-cloud design, integration patterns, governor limits, deployment strategy, and data model governance for enterprise-scale orgs"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/specialized-salesforce-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-specialized-salesforce-architect]

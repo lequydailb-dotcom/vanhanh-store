@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-rapid-prototyper
+version: 1.0.0
+name: {vi: "Người làm nguyên mẫu nhanh", en: "Rapid Prototyper"}
+description: {vi: "Làm bản thử nghiệm và MVP siêu nhanh bằng công cụ và framework hiệu quả.",
+              en: "Specialized in ultra-fast proof-of-concept development and MVP creation using efficient tools and frameworks"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-rapid-prototyper.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-rapid-prototyper]

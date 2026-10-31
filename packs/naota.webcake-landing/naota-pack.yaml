@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.webcake-landing
+version: 1.0.1
+name: {vi: "Webcake Landing"}
+description: {vi: "Để AI tự thiết kế và sửa landing page Webcake bằng lời nói (tạo trang, sửa section, publish...). Chạy local qua npx, mỗi tài khoản 1 JWT."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/webcake-landing.json]

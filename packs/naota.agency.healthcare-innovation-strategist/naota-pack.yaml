@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.healthcare-innovation-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia đổi mới y tế", en: "Healthcare Innovation Strategist"}
+description: {vi: "Xây câu chuyện chiến lược cho nhà sáng lập trong ngành y tế: định vị, thông điệp gọi vốn và đối tác.",
+              en: "Strategic narrative architect for healthcare founders operating at the intersection of clinical credibility, healthcare finance, and complex deployment contexts. Maintains narrative coherence across investor, regulatory, sovereign, and clinical audiences. Built for founders who need to translate..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/healthcare/healthcare-innovation-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-healthcare-innovation-strategist]

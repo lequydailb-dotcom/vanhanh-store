@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-wordpress-performance
+version: 1.0.0
+name: {vi: "Kỹ sư hiệu năng WordPress", en: "WordPress Performance Engineer"}
+description: {vi: "WordPress nhanh hơn: Core Web Vitals, object cache (Redis/Memcached), cache trang, tối ưu database và WP_Query, Transients, nén và hoãn tài nguyên, tối ưu ảnh, CDN.",
+              en: "Expert WordPress performance engineer specializing in Core Web Vitals, object caching (Redis/Memcached), page caching, database and WP_Query optimization, the Transients API, asset minification/deferral/critical CSS, image optimization and lazy loading, CDN integration, plugin performance..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-wordpress-performance.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-wordpress-performance]

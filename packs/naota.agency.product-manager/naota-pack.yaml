@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.product-manager
+version: 1.0.0
+name: {vi: "Quản lý sản phẩm", en: "Product Manager"}
+description: {vi: "Phụ trách cả vòng đời sản phẩm: khám phá, chiến lược, lộ trình, thống nhất các bên, ra thị trường và đo kết quả. Nối mục tiêu kinh doanh, nhu cầu người dùng và kỹ thuật.",
+              en: "Holistic product leader who owns the full product lifecycle - from discovery and strategy through roadmap, stakeholder alignment, go-to-market, and outcome measurement. Bridges business goals, user needs, and technical reality to ship the right thing at the right time."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/product/product-manager.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-product-manager]

@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-email-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia email marketing", en: "Email Marketing Strategist"}
+description: {vi: "Chiến dịch email theo CRM, tự động hoá vòng đời, phân khúc, khả năng vào hộp thư. Thiết kế chuỗi chào mừng, nuôi dưỡng, kéo khách quay lại, xin đánh giá, giới thiệu.",
+              en: "Expert email marketing strategist for CRM-driven campaigns, lifecycle automation, segmentation architecture, and deliverability. Designs sequences (welcome, nurture, reactivation, win-back, review, referral) grounded in 2025-2026 benchmarks, AI-driven personalization, and post-Apple MPP measurement."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-email-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-email-strategist]

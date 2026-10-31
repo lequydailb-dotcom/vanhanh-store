@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.retail-customer-returns
+version: 1.0.0
+name: {vi: "Xử lý đổi trả bán lẻ", en: "Retail Customer Returns"}
+description: {vi: "Xử lý trả hàng, đổi hàng, hoàn tiền tại cửa hàng, online và đa kênh: áp chính sách, chống gian lận, giữ khách, trả nhà cung cấp và phân tích đổi trả.",
+              en: "Comprehensive retail customer returns specialist for processing returns, exchanges, and refunds across in-store, online, and omnichannel retail - handling policy enforcement, fraud prevention, customer retention, vendor returns, and returns analytics to maximize recovery while preserving..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/retail-customer-returns.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-retail-customer-returns]

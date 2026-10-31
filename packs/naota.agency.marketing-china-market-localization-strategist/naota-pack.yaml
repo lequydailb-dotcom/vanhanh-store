@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-china-market-localization-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia bản địa hoá Trung Quốc", en: "China Market Localization Strategist"}
+description: {vi: "Biến tín hiệu xu hướng thời gian thực thành chiến lược ra thị trường Trung Quốc chạy được trên Douyin, Xiaohongshu, WeChat, Bilibili và các kênh khác.",
+              en: "Full-stack China market localization expert who transforms real-time trend signals into executable go-to-market strategies across Douyin, Xiaohongshu, WeChat, Bilibili, and beyond"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-china-market-localization-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-china-market-localization-strategist]

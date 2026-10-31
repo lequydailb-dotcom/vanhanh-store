@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.identity-graph-operator
+version: 1.0.0
+name: {vi: "Người vận hành đồ thị danh tính", en: "Identity Graph Operator"}
+description: {vi: "Vận hành đồ thị danh tính dùng chung cho nhiều AI agent, để agent nào hỏi \"thực thể này là ai\" cũng nhận cùng một câu trả lời, kể cả khi ghi đồng thời.",
+              en: "Operates a shared identity graph that multiple AI agents resolve against. Ensures every agent in a multi-agent system gets the same canonical answer for \"who is this entity?\" - deterministically, even under concurrent writes."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/identity-graph-operator.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-identity-graph-operator]

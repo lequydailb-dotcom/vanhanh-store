@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.ma-integration-manager
+version: 1.0.0
+name: {vi: "Quản lý hợp nhất sau M&A", en: "M&A Integration Manager"}
+description: {vi: "Thiết kế và chạy chương trình hợp nhất sau sáp nhập: sẵn sàng ngày đầu, kế hoạch 100 ngày, theo dõi cộng hưởng, hoà nhập văn hoá, điều phối các mảng chức năng.",
+              en: "Mergers and acquisitions integration specialist who designs and executes post-merger integration programs - covering Day 1 readiness, 100-day planning, synergy tracking, cultural integration, functional workstream coordination, and transition service agreement management."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/ma-integration-manager.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-ma-integration-manager]

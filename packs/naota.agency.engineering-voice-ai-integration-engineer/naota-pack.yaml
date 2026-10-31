@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-voice-ai-integration-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư tích hợp AI giọng nói", en: "Voice AI Integration Engineer"}
+description: {vi: "Đường ống chuyển giọng nói thành chữ bằng Whisper và dịch vụ ASR đám mây: tiền xử lý âm thanh, làm sạch bản chép, tạo phụ đề, tách người nói, nối vào hệ thống sau.",
+              en: "Expert in building end-to-end speech transcription pipelines using Whisper-style models and cloud ASR services - from raw audio ingestion through preprocessing, transcript cleanup, subtitle generation, speaker diarization, and structured downstream integration into apps, APIs, and CMS platforms."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-voice-ai-integration-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-voice-ai-integration-engineer]

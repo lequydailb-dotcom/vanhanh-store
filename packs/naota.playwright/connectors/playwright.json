@@ -1,0 +1,125 @@
+{
+  "id": "playwright",
+  "name": "Playwright",
+  "icon": "assets/playwright.png",
+  "category": "Website",
+  "description": "Điều khiển trình duyệt thật qua Playwright MCP chính chủ của Microsoft: mở trang, đọc cấu trúc trang, tìm phần tử, điền form, bấm nút, chụp màn hình, xuất PDF, quay video, chạy kiểm thử đầu-cuối. Không cần API key. Mặc định chạy hồ sơ TÁCH BIỆT và ẩn cửa sổ.",
+  "status": "beta",
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@playwright/mcp@latest"
+  ],
+  "requires": {
+    "node": ">=18"
+  },
+  "risk": "Playwright lái một trình duyệt THẬT trên máy đang chạy Naota, nên mọi thao tác đều có hậu quả thật: bấm nút là gửi form, là đặt hàng, là xoá dữ liệu trên trang đó.\n\nMức Chỉ đọc (mặc định) chỉ cho xem: đọc cấu trúc trang, tìm phần tử, đọc log và danh sách request. Không bấm, không gõ, không mở trang.\n\nMức Ghi nháp mở thêm phần điều khiển vô hại: mở trang, đổi cỡ cửa sổ, chụp màn hình, xuất PDF, quay video.\n\nMức Toàn quyền mới mở bấm/gõ/điền form, chạy mã trong trang, tải tệp lên, và đọc ghi cookie. Cookie là phiên đăng nhập: đọc được là mạo danh được, nên nó nằm ở mức này chứ không phải mức đọc.",
+  "auth": {
+    "type": "none",
+    "fields": [
+      {
+        "key": "isolated",
+        "label": "Hồ sơ tách biệt (true = không dùng chung dữ liệu đăng nhập với trình duyệt của bạn)",
+        "optional": true,
+        "default": "true",
+        "env": "PLAYWRIGHT_MCP_ISOLATED"
+      },
+      {
+        "key": "headless",
+        "label": "Ẩn cửa sổ trình duyệt (true = chạy ngầm, false = hiện ra để bạn nhìn)",
+        "optional": true,
+        "default": "true",
+        "env": "PLAYWRIGHT_MCP_HEADLESS"
+      },
+      {
+        "key": "browser",
+        "label": "Trình duyệt (chrome, firefox, webkit, msedge)",
+        "optional": true,
+        "default": "chrome",
+        "env": "PLAYWRIGHT_MCP_BROWSER"
+      },
+      {
+        "key": "allowed_origins",
+        "label": "Chỉ cho vào những tên miền này (ngăn cách bằng dấu chấm phẩy, bỏ trống = cho vào mọi trang)",
+        "optional": true,
+        "default": "",
+        "env": "PLAYWRIGHT_MCP_ALLOWED_ORIGINS"
+      }
+    ],
+    "guide": "Không cần API key, không cần tài khoản. Bấm Kết nối là xong.\n\nLần chạy đầu npx tải @playwright/mcp về, và Playwright tự tải trình duyệt nếu máy chưa có, nên lần đầu hơi lâu. Máy chạy Naota phải có Node 18 trở lên.\n\nBốn ô dưới đã điền sẵn mức an toàn, không rõ thì để nguyên:\n- Hồ sơ tách biệt = true: Playwright mở một hồ sơ trống, KHÔNG đụng vào các phiên đăng nhập sẵn có trong trình duyệt của bạn. Đổi thành false là nó dùng hồ sơ lưu trên đĩa, tức mọi trang bạn đang đăng nhập đều nằm trong tầm với của nó.\n- Ẩn cửa sổ = true: chạy ngầm. Đổi thành false khi bạn muốn nhìn nó thao tác.\n- Ô tên miền: điền vào là khoá Playwright trong đúng những trang đó. Đây là hàng rào mềm của Playwright, không phải tường lửa, nhưng vẫn đáng điền khi bạn chỉ định dùng cho một site.",
+    "guide_url": "https://github.com/microsoft/playwright-mcp#configuration",
+    "steps": [
+      {
+        "text": "Kiểm tra máy chạy Naota đã có Node 18 trở lên (gõ `node -v`)."
+      },
+      {
+        "text": "Bốn ô dưới đã điền sẵn mức an toàn, cứ để nguyên nếu bạn không có nhu cầu riêng."
+      },
+      {
+        "text": "Bấm Kết nối. Lần đầu Playwright tải trình duyệt về nên chờ hơi lâu.",
+        "link": "https://github.com/microsoft/playwright-mcp",
+        "link_label": "Trang Playwright MCP"
+      }
+    ]
+  },
+  "tool_meta": {
+    "read": [
+      "browser_snapshot",
+      "browser_find",
+      "browser_console_messages",
+      "browser_network_requests",
+      "browser_get_config",
+      "browser_generate_locator",
+      "browser_verify_*",
+      "browser_wait_for",
+      "browser_route_list",
+      "browser_highlight",
+      "browser_hide_highlight"
+    ],
+    "write": [
+      "browser_navigate",
+      "browser_navigate_back",
+      "browser_resize",
+      "browser_close",
+      "browser_resume",
+      "browser_tabs",
+      "browser_annotate",
+      "browser_network_state_set",
+      "browser_take_screenshot",
+      "browser_pdf_save",
+      "browser_start_recording",
+      "browser_stop_recording",
+      "browser_start_tracing",
+      "browser_stop_tracing",
+      "browser_start_video",
+      "browser_stop_video",
+      "browser_video_chapter",
+      "browser_video_hide_actions",
+      "browser_video_show_actions"
+    ],
+    "danger": [
+      "browser_run_code_unsafe",
+      "browser_evaluate",
+      "browser_file_upload",
+      "browser_click",
+      "browser_type",
+      "browser_fill_form",
+      "browser_press_key",
+      "browser_select_option",
+      "browser_hover",
+      "browser_drag",
+      "browser_drop",
+      "browser_handle_dialog",
+      "browser_mouse_*",
+      "browser_network_request",
+      "browser_route",
+      "browser_unroute",
+      "browser_cookie_*",
+      "browser_localstorage_*",
+      "browser_sessionstorage_*",
+      "browser_storage_state",
+      "browser_set_storage_state"
+    ]
+  }
+}

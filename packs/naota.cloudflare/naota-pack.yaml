@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.cloudflare
+version: 1.0.0
+name: {vi: "Cloudflare"}
+description: {vi: "Toàn bộ API Cloudflare ngay trong chat qua MCP chính chủ: DNS, Workers, Pages, KV, R2, D1, tường lửa, SSL, cache, thống kê lưu lượng, Zero Trust. Dán API token là xong, quyền của token quyết định Naota được làm gì."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/cloudflare.json]

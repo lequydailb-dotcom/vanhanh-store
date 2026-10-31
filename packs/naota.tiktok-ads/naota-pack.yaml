@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.tiktok-ads
+version: 1.0.1
+name: {vi: "TikTok Ads"}
+description: {vi: "Số liệu quảng cáo TikTok (chỉ đọc): tài khoản, chiến dịch, nhóm quảng cáo, creative, báo cáo hiệu suất. Server cộng đồng chạy local trên Marketing API chính thức - dán App ID + Secret + Access Token."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/tiktok-ads.json]

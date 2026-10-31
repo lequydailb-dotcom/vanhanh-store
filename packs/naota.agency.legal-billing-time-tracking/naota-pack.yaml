@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.legal-billing-time-tracking
+version: 1.0.0
+name: {vi: "Tính phí và chấm giờ pháp lý", en: "Legal Billing & Time Tracking"}
+description: {vi: "Ghi giờ làm chính xác, lập hoá đơn, viết mô tả phí, quản lý thu nợ, tuân thủ tài khoản ký quỹ và phân tích phí cho văn phòng luật.",
+              en: "Comprehensive legal billing and time tracking specialist for accurate time capture, invoice generation, billing narrative writing, collections management, trust account compliance, and billing analysis - maximizing revenue recovery while maintaining client relationships and ethical compliance..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/legal-billing-time-tracking.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-legal-billing-time-tracking]

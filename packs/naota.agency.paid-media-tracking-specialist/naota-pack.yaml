@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.paid-media-tracking-specialist
+version: 1.0.0
+name: {vi: "Chuyên gia đo lường chuyển đổi", en: "Tracking & Measurement Specialist"}
+description: {vi: "Kiến trúc đo chuyển đổi, quản lý thẻ và mô hình phân bổ trên GTM, GA4, Google Ads, Meta CAPI, LinkedIn Insight Tag và đo phía máy chủ. Đếm đúng mọi chuyển đổi.",
+              en: "Expert in conversion tracking architecture, tag management, and attribution modeling across Google Tag Manager, GA4, Google Ads, Meta CAPI, LinkedIn Insight Tag, and server-side implementations. Ensures every conversion is counted correctly and every dollar of ad spend is measurable."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/paid-media/paid-media-tracking-specialist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-paid-media-tracking-specialist]

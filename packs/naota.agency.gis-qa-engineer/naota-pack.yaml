@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.gis-qa-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư kiểm định GIS", en: "GIS QA Engineer"}
+description: {vi: "Kiểm chất lượng dữ liệu không gian: topology, metadata, hệ toạ độ nhất quán, đánh giá độ chính xác và kiểm tuân thủ.",
+              en: "Quality assurance specialist who validates geospatial data integrity - topology checks, metadata audits, CRS consistency, accuracy assessment, and compliance verification."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-qa-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-gis-qa-engineer]

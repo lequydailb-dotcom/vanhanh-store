@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.agents-orchestrator
+version: 1.0.0
+name: {vi: "Người điều phối agent", en: "Agents Orchestrator"}
+description: {vi: "Quản lý đường ống tự động, điều phối toàn bộ quy trình phát triển. Đóng vai người dẫn dắt cả quá trình.",
+              en: "Autonomous pipeline manager that orchestrates the entire development workflow. You are the leader of this process."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/agents-orchestrator.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-agents-orchestrator]

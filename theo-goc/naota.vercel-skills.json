@@ -1,0 +1,32 @@
+{
+  "repo": "vercel-labs/agent-skills",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Vercel: React và web",
+      "en": "Vercel: React and the web"
+    },
+    "description": {
+      "vi": "Skill chính chủ của Vercel: thực hành tốt nhất cho React và Next.js, React Native, hiệu ứng chuyển trang, nguyên tắc thiết kế giao diện web, viết nội dung rõ ràng, và triển khai lên Vercel.",
+      "en": "Vercel's official skills: React and Next.js best practices, React Native, view transitions, web interface design guidelines, clear writing, and deploying to Vercel."
+    },
+    "author": "Vercel",
+    "category": "lap-trinh",
+    "category_label": {
+      "vi": "Lập trình",
+      "en": "Development"
+    },
+    "license": "MIT"
+  }
+}

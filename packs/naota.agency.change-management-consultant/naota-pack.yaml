@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.change-management-consultant
+version: 1.0.0
+name: {vi: "Tư vấn quản trị thay đổi", en: "Change Management Consultant"}
+description: {vi: "Dùng ADKAR, Kotter, Prosci dẫn tổ chức qua triển khai công nghệ, tái cấu trúc, đổi văn hoá và sáp nhập: xử lý kháng cự, tăng mức chấp nhận.",
+              en: "Expert change management specialist using ADKAR, Kotter, and Prosci frameworks to guide organizations through technology implementations, restructuring, culture transformation, and M&A integration - managing resistance, building adoption, and ensuring changes stick long after go-live"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/change-management-consultant.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-change-management-consultant]

@@ -1,0 +1,47 @@
+{
+  "id": "webcake-landing-web",
+  "name": "Webcake Landing (đăng nhập web)",
+  "icon": "assets/webcake.jpg",
+  "category": "Marketing",
+  "description": "Cùng bộ công cụ landing Webcake nhưng chạy trên máy chủ sẵn: bấm Kết nối rồi đăng nhập, không dán JWT, không cần Node.js trên máy.",
+  "group": "webcake",
+  "group_line": "Đăng nhập trên web: một chạm, không dán token, không cần Node.js. Kết nối đi qua máy chủ trung gian của tác giả công cụ.",
+  "status": "beta",
+  "transport": "http",
+  "url": "https://mcp.toolvn.io.vn/mcp",
+  "auth": {
+    "type": "oauth",
+    "fields": [],
+    "guide": "Bấm Kết nối rồi đăng nhập Webcake và cấp quyền. Naota tự đăng ký ứng dụng theo chuẩn OAuth nên bạn không phải tạo app hay dán JWT, và máy không cần cài Node.js.\n\nCách này đi qua máy chủ trung gian mcp.toolvn.io.vn, do tác giả công cụ Webcake Landing MCP vận hành và được Pancake dẫn link trong tài liệu.\n\nĐó không phải hạ tầng chính chủ Pancake, nghĩa là bạn uỷ quyền tài khoản Webcake cho máy chủ đó.\n\nMuốn token chỉ nằm trên máy mình thì chọn cách Chạy trên máy và dán JWT.",
+    "guide_url": "https://docs.pancake.biz/landing/st-f7/st-p3?lang=vi"
+  },
+  "validate": {
+    "tool": "list_organizations",
+    "args": {},
+    "label_paths": [
+      "organizations.0.name",
+      "data.0.name",
+      "0.name",
+      "name"
+    ]
+  },
+  "tool_meta": {
+    "write": [
+      "create_page",
+      "update_page",
+      "patch_page",
+      "add_section",
+      "new_element",
+      "new_page_skeleton",
+      "layout",
+      "ingest_html",
+      "ingest_url",
+      "upload_images"
+    ],
+    "danger": [
+      "publish_page"
+    ]
+  },
+  "risk": "Mức Ghi nháp (mặc định) cho phép Naota TẠO và SỬA trang landing thật trong tài khoản của bạn, kể cả trang đang có.\n\nMức Toàn quyền thêm quyền ĐĂNG trang lên công khai. Trang đã đăng là người ngoài xem được ngay.\n\nRiêng cách này: kết nối chạy qua máy chủ trung gian mcp.toolvn.io.vn của tác giả công cụ, nên quyền vào tài khoản Webcake của bạn được giữ ở máy chủ đó chứ không nằm trên máy bạn.\n\nCần chắc chắn token không rời máy thì dùng cách Chạy trên máy.",
+  "default_perm": "safe"
+}

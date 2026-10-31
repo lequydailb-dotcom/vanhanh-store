@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.mattpocock
+version: 1.0.2
+name: {vi: "Matt Pocock: Skill kỹ sư", en: "Matt Pocock: Engineering skills"}
+description: {vi: "Bộ skill của Matt Pocock: thiết kế codebase, chẩn đoán lỗi, TDD, viết spec và chia ticket, review code, nguyên mẫu nhanh, cùng các skill làm việc như hỏi vặn ý tưởng (grill-me), bàn giao, viết cho AI agent.",
+              en: "Matt Pocock's skills: codebase design, diagnosing bugs, TDD, writing specs and splitting tickets, code review, quick prototypes, plus working skills such as grill-me, handoffs and writing for agents."}
+author: {name: "Matt Pocock", url: "https://github.com/mattpocock/skills"}
+license: MIT
+homepage: "https://github.com/mattpocock/skills"
+compat: {app: ">=1.0.0"}
+# Gói theo repo gốc: thư mục skills/ do tools/theo-goc.py chép nguyên văn, đừng sửa tay.
+upstream: {repo: "mattpocock/skills", ref: "main"}
+provides:
+  skills: [ask-matt, code-review, codebase-design, diagnosing-bugs, domain-modeling, grill-with-docs, implement, implement-spec, improve-codebase-architecture, pr, prototype, research, retro, setup-matt-pocock-skills, tdd, to-spec, to-tickets, triage, wayfinder, wizard, grill-me, grilling, handoff, teach, to-questionnaire, wait-what, writing-for-agents]

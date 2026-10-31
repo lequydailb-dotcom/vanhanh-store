@@ -1,0 +1,68 @@
+{
+  "_doc": "MCP bên thứ 3 chưa phát hành lên npm, kho build từ đúng commit ghim dưới đây. Lý do và cách build lại: tools/mcp_dong_goi.py. `va` là mọi chỗ kho sửa so với bản gốc; rỗng là y nguyên.",
+  "mcp": [
+    {
+      "ten": "kiotviet-mcp",
+      "repo": "https://github.com/haudnn/kiotviet-mcp",
+      "commit": "ba00e4a1bf142350715d04d6745a00dd0a31143f",
+      "phien_ban": "0.1.0",
+      "giay_phep": "MIT",
+      "lenh": [
+        "kiotviet-mcp",
+        "mcp"
+      ],
+      "va": [],
+      "sha256": "2b0f02ce0edf6f9dd2975af6bc1748e5e9cd9312bfec4c62ba54364f396a6139"
+    },
+    {
+      "ten": "haravan-mcp",
+      "repo": "https://github.com/pluginmd/Haravan-MCP",
+      "commit": "c915ce03e1355b7344f0b5c91099aa02eb02809e",
+      "phien_ban": "0.1.0",
+      "giay_phep": "MIT",
+      "lenh": [
+        "haravan-mcp",
+        "mcp",
+        "--tools",
+        "all"
+      ],
+      "va": [],
+      "sha256": "8a9f0ab1304c433a3ca4549b337edcf9c3d12556655570645bc5570c35edea72"
+    },
+    {
+      "ten": "nhanh-mcp",
+      "repo": "https://github.com/Junokyo/nhanh-mcp",
+      "commit": "aa47d76f59e2e2fc08c32f10ccc546fdbfa9e933",
+      "phien_ban": "1.0.0",
+      "giay_phep": "ISC",
+      "lenh": [
+        "nhanh-mcp"
+      ],
+      "va": [
+        {
+          "loai": "bin",
+          "ten": "nhanh-mcp",
+          "tep": "index.js",
+          "vi_sao": "Bản gốc không khai `bin`, nên npx không có lệnh nào để chạy."
+        },
+        {
+          "loai": "shebang",
+          "tep": "index.js",
+          "vi_sao": "Lệnh `bin` trên Linux/macOS cần dòng #!/usr/bin/env node."
+        }
+      ],
+      "sha256": "31bee95c2afd8d7811a0b92e76f8cd3139f9b279089fe1409c6ffbc226860aa1"
+    },
+    {
+      "ten": "pancake-chat-mcp",
+      "thu_muc": "mcp-nguon/pancake-chat-mcp",
+      "phien_ban": "1.1.0",
+      "giay_phep": "Proprietary",
+      "ghi_chu": "Kho tự viết: không có MCP Pancake hội thoại nào dùng được.",
+      "lenh": [
+        "pancake-chat-mcp"
+      ],
+      "sha256": "984baaa9aa6cc9060fc7782cd152f01b1de25fc77983661ab849a4a50666ee0b"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.specialized-master-plan-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư kế hoạch tổng thể", en: "Master Plan Architect"}
+description: {vi: "Giảng giải kiến trúc sâu, phản biện kế hoạch không khoan nhượng (red team) và viết kế hoạch triển khai đầy đủ bằng Markdown, không chạy code.",
+              en: "Master planning architect, technical educator, and ruthless plan critic who specializes in deep architectural teaching, Red Teaming / risk critique, and crafting comprehensive Implementation Plans in Markdown with ZERO code execution."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/specialized-master-plan-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-specialized-master-plan-architect]

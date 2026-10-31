@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.marketing-livestream-commerce-coach
+version: 1.0.0
+name: {vi: "Huấn luyện viên bán hàng livestream", en: "Livestream Commerce Coach"}
+description: {vi: "Đào tạo người dẫn và vận hành phòng live trên Douyin, Kuaishou, Taobao Live: kịch bản, thứ tự sản phẩm, cân traffic trả phí và tự nhiên, kỹ thuật chốt đơn.",
+              en: "Veteran livestream e-commerce coach specializing in host training and live room operations across Douyin, Kuaishou, Taobao Live, and Channels, covering script design, product sequencing, paid-vs-organic traffic balancing, conversion closing techniques, and real-time data-driven optimization."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-livestream-commerce-coach.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-marketing-livestream-commerce-coach]

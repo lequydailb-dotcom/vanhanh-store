@@ -1,0 +1,19 @@
+{
+  "_doc": "Skill chính chủ của Remotion (làm video bằng React). Repo remotion-dev/skills là bản Remotion tự phát hành từ packages/skills trong repo chính remotion-dev/remotion, đúng đường `npx skills add remotion-dev/skills` họ hướng dẫn.",
+  "repo": "remotion-dev/skills",
+  "ref": "main",
+  "chep": [{"tu": "skills", "den": "skills"}],
+  "giay_phep": ["LICENSE.md", "LICENSE"],
+  "_giay_phep": "Repo skills không kèm tệp giấy phép; Remotion dùng Remotion License: miễn phí cho cá nhân và công ty tới 3 người, công ty lớn hơn cần mua giấy phép công ty (remotion.pro).",
+  "goi": {
+    "name": {"vi": "Remotion: Làm video bằng code", "en": "Remotion: Videos in code"},
+    "description": {
+      "vi": "Bộ skill chính chủ của Remotion (remotion.dev): tạo dự án video bằng React, hoạt hình, chữ và hiệu ứng, phụ đề, bản đồ, xem trước và xuất video. Theo repo gốc, cập nhật mỗi khi Remotion sửa skill.",
+      "en": "Remotion's official skills (remotion.dev): create React video projects, animation, type and effects, captions, maps, preview and render. Follows the source repo and updates whenever Remotion changes its skills."
+    },
+    "author": "Remotion",
+    "category": "sang-tao",
+    "category_label": {"vi": "Sáng tạo", "en": "Creative"},
+    "license": "Remotion License"
+  }
+}

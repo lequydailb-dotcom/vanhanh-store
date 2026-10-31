@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-platform-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư nền tảng", en: "Platform Engineer"}
+description: {vi: "Nền tảng lập trình nội bộ (IDP): lối đi chuẩn, hạ tầng tự phục vụ giúp cả đội kỹ sư làm nhanh hơn nhiều lần.",
+              en: "Expert internal developer platform (IDP) engineer specializing in golden paths, paved roads, and self-serve infrastructure that multiplies engineering velocity."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-platform-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-platform-engineer]

@@ -1,0 +1,37 @@
+{
+  "_doc": [
+    "Bốn truy vấn GraphQL của TTS Dropship, tách ra thành DỮ LIỆU chứ không nhúng cứng vào mã.",
+    "",
+    "Bản 1.1.0 viết lại cả bốn theo lược đồ THẬT của api.thitruongsi.com, soi bằng __schema ngày",
+    "27/09/2026 (sàn để mở introspection), rồi chạy thử bằng dữ liệu thật. Bản cũ chọn những",
+    "trường sàn không có: `shop { id }` trên SearchProductShop, `badges` thiếu khối con,",
+    "`dropship_selling_price` trên OrderLineItem, `bill_of_lading` thiếu khối con, và gọi",
+    "`searchShop` trong khi sàn đặt tên là `searchShops`.",
+    "",
+    "Khi sàn đổi tiếp, plugin TỰ soi lược đồ, bỏ trường không còn, lồng lại lớp bọc nếu có,",
+    "thử lại một lần và ghi bản sửa ra thư mục state. Bản sửa mang theo `_ban` của tệp này:",
+    "lên bản gói mới thì bản sửa cũ tự bị bỏ qua, để một bản vá cũ không đè lên truy vấn mới.",
+    "",
+    "`root` là tên trường gốc trong kết quả, dùng để bóc dữ liệu ra khỏi lớp `data`.",
+    "Mọi operation đều nhận đúng một biến $query kiểu String, và chuỗi đó là một QUERY STRING",
+    "kiểu `?keyword=...&limit=40`, MÃ HOÁ ĐẦY ĐỦ. Chữ có dấu hay dấu cách để thô là sàn chết",
+    "với câu lỗi rỗng. Xem `_build_qs` trong plugin.py."
+  ],
+  "_ban": "1.1.0",
+  "searchProductsQuery": {
+    "root": "searchProducts",
+    "doc": "query searchProductsQuery($query: String!) { searchProducts(query: $query) { total products { id product_id shop_id title slug image_thumb price dropship_price dropship_profit market_price stock unit_name min_order_quantity can_dropship rating_avg rating_count total_sales shop { name city response_rate } } } }"
+  },
+  "ProductById": {
+    "root": "product",
+    "doc": "query ProductById($id: String!) { product(id: $id) { id id_number title url features unit_name category_lv1 category_lv2 allow_purchase can_dropship dropship_status available dropship_price dropship_profit dropship_selling_price_min market_price sales rating_avg rating_count shop_id image { src } prices { start_quantity end_quantity price } options { name values } variants { id title option1 option2 option3 sku inventory_quantity dropship_price dropship_profit dropship_selling_price_min market_price } shop { id name slug phone_number response_rate total_dropship_products rating_avg full_address province { name } district { name } } } }"
+  },
+  "searchShopQuery": {
+    "root": "searchShops",
+    "doc": "query searchShopQuery($query: String!) { searchShops(query: $query) { total shops { id name slug logo city province address response_rate total_products total_sales rating_avg rating_count mall main_products } } }"
+  },
+  "OrderListQuery": {
+    "root": "orders",
+    "doc": "query OrderListQuery($query: String!) { orders(query: $query) { items { id name order_number status status_label confirm_status financial_status fulfillment_status shipment_status shipment_status_text total_price dropship_profit dropship_promo_bonus total_dropship_supplier_price payment_method source_name source_identifier created_at escrow_release_at rate_expires_at rated_at shop_id shop { name } customer { id name phone } shipping_address { name phone address1 ward province city } line_items { product_id variant_id title variant_title quantity price dropship_price } shipping { carrier price pay_by bill_of_lading { bill_of_lading } } } extensions { totalItems currentPage currentLimit totalPages } } }"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "_doc": "Skill của FlowKit nằm phẳng ở skills/fk-*.md (không phải thư mục có SKILL.md), nên chép kiểu `phang`. Skill chỉ là công thức gọi máy chủ FlowKit ở 127.0.0.1:8100 và script trong repo: người dùng phải tự cài FlowKit (máy chủ Python + tiện ích Chrome), xem huong-dan/flowkit.md. skills/song-templates là dữ liệu của máy chủ, không phải skill, nên không chép.",
+  "repo": "crisng95/flowkit",
+  "ref": "main",
+  "chep": [{"tu": "skills", "den": "skills", "phang": true}],
+  "giay_phep": ["LICENSE"],
+  "goi": {
+    "name": {"vi": "FlowKit: Làm video AI bằng Google Flow", "en": "FlowKit: AI video with Google Flow"},
+    "description": {
+      "vi": "41 skill của FlowKit để AI làm video bằng Google Flow (Veo 3, Omni): viết kịch bản, nhân vật nhất quán, hình cảnh, clip 8 giây, lồng tiếng, nhạc Suno, ghép phim, thumbnail, đăng YouTube. Cần cài FlowKit (máy chủ Python + tiện ích Chrome).",
+      "en": "FlowKit's 41 skills for AI video with Google Flow (Veo 3, Omni): scripts, consistent characters, scene images, 8-second clips, narration, Suno music, final cut, thumbnails, YouTube upload. Needs FlowKit (Python server + Chrome extension)."
+    },
+    "author": "crisng95",
+    "category": "sang-tao",
+    "category_label": {"vi": "Sáng tạo", "en": "Creative"},
+    "license": "MIT"
+  }
+}

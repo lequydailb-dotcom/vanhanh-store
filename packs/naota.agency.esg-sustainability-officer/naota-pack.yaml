@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.esg-sustainability-officer
+version: 1.0.0
+name: {vi: "Cán bộ ESG và phát triển bền vững", en: "ESG & Sustainability Officer"}
+description: {vi: "Xây chương trình môi trường, xã hội, quản trị (ESG), quản lý công bố thông tin, thúc đẩy giảm phát thải và gắn chiến lược kinh doanh với kỳ vọng các bên.",
+              en: "Corporate sustainability strategist and ESG reporting specialist who builds environmental, social, and governance programs, manages disclosures, drives decarbonization initiatives, and aligns business strategy with stakeholder and regulatory expectations."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/esg-sustainability-officer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-esg-sustainability-officer]

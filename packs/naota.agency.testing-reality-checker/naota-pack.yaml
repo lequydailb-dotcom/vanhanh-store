@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.testing-reality-checker
+version: 1.0.0
+name: {vi: "Người soát thực tế", en: "Reality Checker"}
+description: {vi: "Chặn những cái gật đầu viển vông, chỉ chứng nhận theo bằng chứng. Mặc định là \"CẦN LÀM THÊM\", cần bằng chứng áp đảo mới cho là sẵn sàng chạy thật.",
+              en: "Stops fantasy approvals, evidence-based certification - Default to \"NEEDS WORK\", requires overwhelming proof for production readiness"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-reality-checker.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-testing-reality-checker]

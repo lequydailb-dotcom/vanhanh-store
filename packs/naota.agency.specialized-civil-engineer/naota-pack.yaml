@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.specialized-civil-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư xây dựng", en: "Civil Engineer"}
+description: {vi: "Kết cấu và xây dựng theo chuẩn quốc tế (Eurocode, ACI, AISC, ASCE, GB...): phân tích kết cấu, địa kỹ thuật, hồ sơ thi công, tuân thủ quy chuẩn.",
+              en: "Expert civil and structural engineer with global standards coverage - Eurocode, DIN, ACI, AISC, ASCE, AS/NZS, CSA, GB, IS, AIJ, and more. Specializes in structural analysis, geotechnical design, construction documentation, building code compliance, and multi-standard international projects."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/specialized-civil-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-specialized-civil-engineer]

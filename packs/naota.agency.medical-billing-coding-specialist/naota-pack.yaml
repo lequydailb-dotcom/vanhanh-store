@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.medical-billing-coding-specialist
+version: 1.0.0
+name: {vi: "Chuyên gia mã hoá và thanh toán y tế", en: "Medical Billing & Coding Specialist"}
+description: {vi: "Mã ICD-10, CPT, HCPCS, nộp hồ sơ thanh toán, xử lý từ chối, tối ưu chu trình doanh thu, kiểm tuân thủ và phân tích hợp đồng với bên chi trả.",
+              en: "Expert medical billing and coding specialist for ICD-10-CM/PCS, CPT, and HCPCS coding, claim submission, denial management, revenue cycle optimization, compliance auditing, and payer contract analysis - maximizing clean claim rates and revenue recovery for healthcare providers of all sizes"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/medical-billing-coding-specialist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-medical-billing-coding-specialist]

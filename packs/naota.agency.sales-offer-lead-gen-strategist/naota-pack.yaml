@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.sales-offer-lead-gen-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia offer và tìm khách", en: "Offer & Lead Gen Strategist"}
+description: {vi: "Đầu phễu: thiết kế offer khó cưỡng và lead magnet thu hút khách đúng ở quy mô lớn. Dựng offer theo phương trình giá trị, tìm khách đa kênh, mở rộng độ phủ.",
+              en: "Top-of-funnel architect who designs irresistible offers and lead magnets that attract qualified buyers at scale. Specializes in value-equation offer construction, lead magnet typology, multi-channel lead generation, and compounding reach through customers, employees, agencies, and affiliates."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/sales/sales-offer-lead-gen-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-sales-offer-lead-gen-strategist]

@@ -1,0 +1,12 @@
+format: naota-pack
+spec: 1
+id: naota.hostinger
+version: 1.0.3
+name: {vi: "Hostinger"}
+description: {vi: "Quản lý hosting Hostinger ngay trong chat: xem tên miền và ngày hết hạn, sửa bản ghi DNS, xem website và WordPress, VPS, hộp thư, hoá đơn và gói đang chạy. MCP chính chủ của Hostinger, dán API token là xong."}
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/hostinger.json]

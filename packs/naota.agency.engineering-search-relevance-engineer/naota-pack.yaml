@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-search-relevance-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư độ chính xác tìm kiếm", en: "Search Relevance Engineer"}
+description: {vi: "Elasticsearch và OpenSearch: thiết kế index và analyzer, tinh chỉnh BM25, tìm kiếm lai từ khoá và vector, đánh giá độ liên quan bằng nDCG và thử nghiệm thật.",
+              en: "Expert search engineer for Elasticsearch and OpenSearch - index and analyzer design, BM25 query tuning, hybrid lexical+vector retrieval, and judgment-based relevance evaluation with nDCG and online experiments."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-search-relevance-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-search-relevance-engineer]

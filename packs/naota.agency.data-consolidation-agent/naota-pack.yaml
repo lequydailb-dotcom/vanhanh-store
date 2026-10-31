@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.data-consolidation-agent
+version: 1.0.0
+name: {vi: "Trợ lý gom dữ liệu", en: "Data Consolidation Agent"}
+description: {vi: "Gom dữ liệu bán hàng đã trích xuất vào bảng báo cáo trực tiếp, kèm tóm tắt theo khu vực, nhân viên và pipeline.",
+              en: "AI agent that consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/data-consolidation-agent.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-data-consolidation-agent]

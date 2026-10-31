@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.macos-spatial-metal-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư Metal và không gian macOS", en: "macOS Spatial/Metal Engineer"}
+description: {vi: "Swift và Metal native: hệ thống dựng hình 3D hiệu năng cao và trải nghiệm điện toán không gian cho macOS và Vision Pro.",
+              en: "Native Swift and Metal specialist building high-performance 3D rendering systems and spatial computing experiences for macOS and Vision Pro"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/spatial-computing/macos-spatial-metal-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-macos-spatial-metal-engineer]

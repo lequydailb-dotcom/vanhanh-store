@@ -1,0 +1,13 @@
+format: naota-pack
+spec: 1
+id: naota.hermes-research
+version: 1.0.0
+name: {vi: "Hermes: Nghiên cứu & theo dõi", en: "Hermes: Research & monitoring"}
+description: {vi: "5 skill nghiên cứu của Hermes Agent: tìm bài arXiv, theo dõi tin đối thủ, canh giá sản phẩm/vé máy bay, dựng wiki kiến thức kiểu Karpathy, và ép mọi câu trả lời phải có nguồn kiểm chứng được.",
+              en: "5 research skills from Hermes Agent: arXiv search, competitor news monitoring, price watching, a Karpathy-style LLM wiki, and grounding every answer in verifiable citations."}
+author: {name: "Nous Research", url: "https://github.com/NousResearch/hermes-agent"}
+license: MIT
+homepage: "https://github.com/NousResearch/hermes-agent/tree/main/skills"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [arxiv, competitor-news-monitor, grounded-citations, llm-wiki, product-price-monitor]

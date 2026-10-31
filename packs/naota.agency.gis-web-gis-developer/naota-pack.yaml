@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.gis-web-gis-developer
+version: 1.0.0
+name: {vi: "Lập trình viên Web GIS", en: "Web GIS Developer"}
+description: {vi: "Ứng dụng bản đồ tương tác trên web: MapLibre GL JS, ArcGIS JS API, Leaflet, bảng điều khiển thời gian thực, tích hợp REST API và dịch vụ web địa lý.",
+              en: "Full-stack web GIS engineer who builds interactive mapping applications - MapLibre GL JS, ArcGIS JS API, Leaflet, real-time dashboards, REST API integration, and geospatial web services."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-web-gis-developer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-gis-web-gis-developer]

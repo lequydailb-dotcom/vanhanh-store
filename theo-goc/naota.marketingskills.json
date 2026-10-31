@@ -1,0 +1,32 @@
+{
+  "repo": "coreyhaines31/marketingskills",
+  "ref": "main",
+  "chep": [
+    {
+      "tu": "skills",
+      "den": "skills"
+    }
+  ],
+  "giay_phep": [
+    "LICENSE",
+    "LICENSE.md",
+    "LICENSE.txt"
+  ],
+  "goi": {
+    "name": {
+      "vi": "Marketing Skills",
+      "en": "Marketing Skills"
+    },
+    "description": {
+      "vi": "52 skill marketing của Corey Haines, repo marketing nhiều sao nhất: viết copy, tối ưu chuyển đổi, SEO và SEO cho AI, quảng cáo, email, định giá, ra mắt sản phẩm, giới thiệu bạn bè, đo lường, chống rời bỏ.",
+      "en": "Corey Haines's 52 marketing skills, the most-starred marketing repo: copywriting, conversion, SEO and AI search, ads, email, pricing, launches, referrals, analytics and churn prevention."
+    },
+    "author": "Corey Haines",
+    "category": "marketing",
+    "category_label": {
+      "vi": "Marketing",
+      "en": "Marketing"
+    },
+    "license": "MIT"
+  }
+}

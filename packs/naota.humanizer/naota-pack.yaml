@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.humanizer
+version: 1.0.0
+name: {vi: "Humanizer: Bỏ giọng văn AI", en: "Humanizer: Remove AI writing tells"}
+description: {vi: "Skill sửa văn bản cho bớt mùi AI: nhận ra và gỡ các dấu hiệu quen thuộc (từ sáo rỗng, câu ba vế, kết luận chung chung) để bài viết đọc như người thật viết. Dùng tốt nhất với nội dung tiếng Anh.",
+              en: "Edits text so it stops sounding like AI: spots and removes the familiar tells (stock words, rule of three, vague wrap-ups) so the piece reads as written by a person. Works best on English."}
+author: {name: "Siqi Chen", url: "https://github.com/blader/humanizer"}
+license: MIT
+homepage: "https://github.com/blader/humanizer"
+compat: {app: ">=1.0.0"}
+# Gói theo repo gốc: thư mục skills/ do tools/theo-goc.py chép nguyên văn, đừng sửa tay.
+upstream: {repo: "blader/humanizer", ref: "main"}
+provides:
+  skills: [humanizer]

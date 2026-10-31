@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.agency.engineering-prompt-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư prompt", en: "Prompt Engineer"}
+description: {vi: "Viết, thử và tối ưu prompt cho LLM một cách bài bản, biến chỉ dẫn mơ hồ thành hành vi AI ổn định, dùng được trong sản phẩm thật.",
+              en: "Specialist in crafting, testing, and systematically optimizing prompts for LLMs - turning vague instructions into reliable, production-grade AI behaviors."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-prompt-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc naota.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: naota.agency-agents
+provides:
+  agents: [agency-engineering-prompt-engineer]
