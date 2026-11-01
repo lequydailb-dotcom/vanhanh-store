@@ -1,7 +1,7 @@
 {
   "format": "naota-pack-index",
   "format_version": 1,
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "store": {
     "name": "Kho cài đặt Naota",
     "url": "https://github.com/vuongtex/naota-store"
@@ -3301,7 +3301,7 @@
         "vi": "12 skill của GitNexus: dựng đồ thị phụ thuộc của cả codebase rồi dùng nó để khám phá mã, gỡ lỗi, đánh giá tác động trước khi sửa, refactor, review PR. Cần chạy npx gitnexus analyze. Giấy phép chỉ cho dùng phi thương mại.",
         "en": "12 GitNexus skills: index the whole codebase into a dependency graph and use it to explore code, debug, check impact before an edit, refactor and review PRs. Needs npx gitnexus analyze. Licensed for noncommercial use only."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Abhigyan Patwari",
         "url": "https://github.com/abhigyanpatwari/GitNexus"
@@ -3313,15 +3313,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-28",
+      "updated": "2026-11-01",
       "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.gitnexus",
       "source": "https://github.com/abhigyanpatwari/GitNexus",
       "license": "PolyForm-Noncommercial-1.0.0",
       "upstream": {
         "repo": "abhigyanpatwari/GitNexus",
         "ref": "main",
-        "commit": "51ce19d77abe86978e34d89dd77188c4dba3ba53",
-        "synced": "2026-10-28"
+        "commit": "21298f24234e538dc0d0b5369c410e76da77e70e",
+        "synced": "2026-11-01"
       },
       "provides": {
         "skills": [
@@ -3340,9 +3340,9 @@
         ]
       },
       "download": {
-        "url": "dist/naota-gitnexus-1.0.0.zip",
-        "sha256": "b5a2ab0a26de8a376e3d61e0d8856b5349b8ae7cf063780e51486d46e3391bac",
-        "size": 149855
+        "url": "dist/naota-gitnexus-1.0.1.zip",
+        "sha256": "bf3f7fb0cf090b6e87e2ae39f38be79b3403f791158f083ef85ab12608ab50c0",
+        "size": 149947
       }
     },
     {
@@ -3615,7 +3615,7 @@
         "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
         "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
       },
-      "version": "1.0.3",
+      "version": "1.0.4",
       "author": {
         "name": "morluto",
         "url": "https://github.com/morluto/rea"
@@ -3627,15 +3627,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-31",
+      "updated": "2026-11-01",
       "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.rea",
       "source": "https://github.com/morluto/rea",
       "license": "MIT",
       "upstream": {
         "repo": "morluto/rea",
         "ref": "main",
-        "commit": "23de10bb2849cdce8ddbe70504aa7cc57de75a98",
-        "synced": "2026-10-31"
+        "commit": "1aa6beb5dc937a19e87df70b56df48f0d4e09541",
+        "synced": "2026-11-01"
       },
       "provides": {
         "skills": [
@@ -3643,9 +3643,9 @@
         ]
       },
       "download": {
-        "url": "dist/naota-rea-1.0.3.zip",
-        "sha256": "bc30f22af4edd3b6933a56940c400544df5983a077aff1e078c5330fa396cf07",
-        "size": 62654
+        "url": "dist/naota-rea-1.0.4.zip",
+        "sha256": "572f5946c6d3a335abefb7d873058d5397a679412449922bc005d19af5b696b4",
+        "size": 64335
       }
     },
     {
