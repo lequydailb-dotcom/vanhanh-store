@@ -29,20 +29,35 @@ jobs:
 
   # Test của gói CÓ MÃ (tests/<id gói>/test_*.py). Plugin trong gói chạy BÊN TRONG máy chủ Naota và import
   # module của nó, nên test chạy trên bản naota mới nhất (nhánh main).
+  #
+  # Kho naota để riêng tư nên cần secret NAOTA_TOKEN (token chỉ đọc kho naota). Chưa có secret thì
+  # hai job dưới bỏ qua và ghi chú lại, không đỏ.
   test-goi-co-ma:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - id: quyen
+        env:
+          NAOTA_TOKEN: ${{ secrets.NAOTA_TOKEN }}
+        run: |
+          if [ -n "$NAOTA_TOKEN" ]; then echo "co=1" >> "$GITHUB_OUTPUT"
+          else echo "::notice::Chưa có secret NAOTA_TOKEN nên bỏ qua test gói có mã"; fi
+      - if: steps.quyen.outputs.co == '1'
+        uses: actions/checkout@v4
+      - if: steps.quyen.outputs.co == '1'
+        uses: actions/checkout@v4
         with:
           repository: vuongtex/naota
+          token: ${{ secrets.NAOTA_TOKEN }}
           path: naota
-      - uses: actions/setup-python@v5
+      - if: steps.quyen.outputs.co == '1'
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Cài thư viện của NAOTA
+        if: steps.quyen.outputs.co == '1'
         run: pip install -r naota/requirements.txt
       - name: Chạy test các gói có mã
+        if: steps.quyen.outputs.co == '1'
         env:
           NAOTA_OS_DIR: ${{ github.workspace }}/naota
         run: |
@@ -57,19 +72,32 @@ jobs:
   soi-ban-moi:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - id: quyen
+        env:
+          NAOTA_TOKEN: ${{ secrets.NAOTA_TOKEN }}
+        run: |
+          if [ -n "$NAOTA_TOKEN" ]; then echo "co=1" >> "$GITHUB_OUTPUT"
+          else echo "::notice::Chưa có secret NAOTA_TOKEN nên bỏ qua soi bản mới MCP"; fi
+      - if: steps.quyen.outputs.co == '1'
+        uses: actions/checkout@v4
+      - if: steps.quyen.outputs.co == '1'
+        uses: actions/checkout@v4
         with:
           repository: vuongtex/naota
+          token: ${{ secrets.NAOTA_TOKEN }}
           path: naota
-      - uses: actions/setup-python@v5
+      - if: steps.quyen.outputs.co == '1'
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - uses: actions/setup-node@v4
+      - if: steps.quyen.outputs.co == '1'
+        uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - uses: astral-sh/setup-uv@v6
+      - if: steps.quyen.outputs.co == '1'
+        uses: astral-sh/setup-uv@v6
       - name: Soi bản mới nhất của từng MCP bên thứ 3
+        if: steps.quyen.outputs.co == '1'
         env:
           NAOTA_OS_DIR: ${{ github.workspace }}/naota
         run: python tools/soi-ban-moi.py
