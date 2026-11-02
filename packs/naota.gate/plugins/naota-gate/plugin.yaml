@@ -1,0 +1,14 @@
+name: Naota Gate
+slug: naota-gate
+version: 2.1.0
+description: Cổng cho ChatGPT, Claude và AI khác làm việc cùng Naota qua connector MCP có OAuth. AI đó đọc hội thoại và nhắn vào khung chat như bạn gõ. Bấm Mở trang để lấy địa chỉ, chọn mức quyền, ngắt kết nối.
+author: Naota
+enabled: true
+# Gói không thêm tool vào bộ tool của Naota: nó mở một CỬA để AI bên ngoài gọi các tool Naota đã có
+# qua hub, cộng bốn tool chat chỉ có ở cửa này (lõi Naota cấp). Mức quyền từng lượt gọi do chủ chọn
+# trên trang của gói (hub ép ở lớp cứng).
+min_mode: readonly
+tools: []
+hooks: []
+# Trang riêng của gói: thẻ plugin có nút "Mở trang" trỏ vào /ext/naota-gate/
+page: ""

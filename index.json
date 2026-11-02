@@ -9,7 +9,7 @@
   "_doc": "Danh mục Naota đọc thẳng. Thêm một mục ở đây là mọi máy đang chạy Naota thấy ngay, không cần bản cập nhật. Cách gửi gói: xem CONTRIBUTING.md. Trường _doc và mọi khoá lạ khác đều bị Naota bỏ qua khi đọc.",
   "packs": [
     {
-      "id": "naota.tinh-gia",
+      "id": "naota.pricing",
       "kind": "tool",
       "name": {
         "vi": "Tính giá bán",
@@ -19,7 +19,7 @@
         "vi": "Từ giá vốn ra giá niêm yết: chọn biên lợi nhuận hoặc markup, cộng VAT, làm tròn lên số đẹp. Trả về biên thực tế sau khi làm tròn.",
         "en": "Turn cost into a shelf price: margin or markup, VAT, rounded up to a tidy number. Reports the real margin after rounding."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Naota"
       },
@@ -30,26 +30,29 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-09-04",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.tinh-gia",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.pricing",
       "download": {
-        "url": "dist/naota-tinh-gia-1.0.0.zip",
-        "sha256": "704d4857f2581f5390b28edbf87d7875d8fd7488d3dd308cd73297c42e1d4e1f",
-        "size": 5276
-      }
+        "url": "dist/naota-pricing-1.1.0.zip",
+        "sha256": "36265d1eb88f6e74d815eca649d0a7878559a2d54fc788d64be9fcb13c1a31f9",
+        "size": 5284
+      },
+      "replaces": [
+        "naota.tinh-gia"
+      ]
     },
     {
-      "id": "naota.khach-hang-crm",
+      "id": "naota.crm",
       "kind": "bundle",
       "name": {
         "vi": "Quản lý khách hàng (CRM)",
         "en": "Customer management (CRM)"
       },
       "description": {
-        "vi": "Sổ khách hàng đặt lên trang Hội thoại: khách từ Telegram, Zalo Bot, Zalo cá nhân; hồ sơ và lịch sử từng người, gắn tag, ghi chú, khách chờ trả lời, thống kê, xuất Excel. Kèm trợ lý CSKH và quy trình rà soát mỗi ngày. Cần Naota 1.0.0 trở lên.",
-        "en": "A customer book on top of the Conversations page: customers from Telegram, Zalo Bot and personal Zalo; per-person profile and history, tags, notes, unanswered queue, stats, Excel export. Ships a support agent and a daily review workflow. Needs Naota 1.0.0 or newer."
+        "vi": "Sổ khách hàng đặt lên trang Hội thoại: khách từ Telegram, Zalo Bot, Zalo cá nhân; hồ sơ và lịch sử từng người, gắn tag, ghi chú, khách chờ trả lời, thống kê, xuất Excel. Kèm trợ lý CSKH và quy trình rà soát mỗi ngày. Cần Naota 1.1.0 trở lên.",
+        "en": "A customer book on top of the Conversations page: customers from Telegram, Zalo Bot and personal Zalo; per-person profile and history, tags, notes, unanswered queue, stats, Excel export. Ships a support agent and a daily review workflow. Needs Naota 1.1.0 or newer."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Naota"
       },
@@ -60,14 +63,17 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-09-20",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.khach-hang-crm",
-      "icon": "packs/naota.khach-hang-crm/assets/khach-hang-crm.png",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.crm",
+      "icon": "packs/naota.crm/assets/crm.png",
       "download": {
-        "url": "dist/naota-khach-hang-crm-1.0.0.zip",
-        "sha256": "5fa44c61a706aef0a9ce8a2d345749dab8a72d1b7e6b403f14c3dc0cc55655d3",
-        "size": 13965
-      }
+        "url": "dist/naota-crm-1.1.0.zip",
+        "sha256": "6c24b38c6810f9f89c440a6d848127949fcc7cc3c5a640fcd3309a9724aa4ea0",
+        "size": 13897
+      },
+      "replaces": [
+        "naota.khach-hang-crm"
+      ]
     },
     {
       "id": "naota.composio",
@@ -532,15 +538,15 @@
       }
     },
     {
-      "id": "naota.meta-ads",
+      "id": "naota.meta-ads-graph",
       "kind": "connector",
       "name": {
         "vi": "Meta Ads (Facebook & Instagram)"
       },
       "description": {
-        "vi": "Số liệu quảng cáo Facebook/Instagram qua MCP chính chủ của Meta (tài khoản ads, hiệu suất chiến dịch, benchmark ngành, catalog sản phẩm). LƯU Ý: đang là beta GIỚI HẠN của Meta - chỉ vài ứng dụng được Meta cấp phép sẵn kết nối được, kết nối tự phục vụ CHƯA khả dụng."
+        "vi": "Xem tài khoản quảng cáo, chiến dịch và hiệu suất Facebook, Instagram bằng app Meta của chính bạn (dán App ID và App Secret). Chỉ đọc: không tạo, không sửa chiến dịch, không tiêu tiền. Một app Meta dùng chung được cho mọi thẻ Meta và kênh Messenger."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Naota"
       },
@@ -550,40 +556,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.meta-ads",
-      "icon": "packs/naota.meta-ads/assets/meta-ads.webp",
-      "provides": {
-        "connectors": [
-          "meta-ads"
-        ]
-      },
-      "download": {
-        "url": "dist/naota-meta-ads-1.0.0.zip",
-        "sha256": "84f33166e8d9f5fd24a738e22b403e111e06beb61b717aa3e0ef20c82f992a99",
-        "size": 16916
-      }
-    },
-    {
-      "id": "naota.meta-ads-graph",
-      "kind": "connector",
-      "name": {
-        "vi": "Meta Ads (tự tạo app - Graph API)"
-      },
-      "description": {
-        "vi": "Số liệu quảng cáo Facebook/Instagram gọi THẲNG Marketing API của Meta (KHÔNG qua MCP beta bị khoá). Bạn tạo 1 Facebook App, dán App ID + App Secret, Naota đọc tài khoản ads, chiến dịch và hiệu suất của bạn. CHỈ ĐỌC - không tạo/sửa chiến dịch, không tiêu tiền. Đây là cách các nền tảng như Composio dùng."
-      },
-      "version": "1.0.0",
-      "author": {
-        "name": "Naota"
-      },
-      "category": "quang-cao",
-      "category_label": {
-        "vi": "Quảng cáo"
-      },
-      "tier": "data",
-      "verified": true,
-      "updated": "2026-09-05",
+      "updated": "2026-11-01",
       "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.meta-ads-graph",
       "icon": "packs/naota.meta-ads-graph/assets/meta-ads.webp",
       "provides": {
@@ -592,42 +565,9 @@
         ]
       },
       "download": {
-        "url": "dist/naota-meta-ads-graph-1.0.0.zip",
-        "sha256": "07254799736f25e2223483cf8c6a54a1f3528df61945efd911095ae01caec05d",
-        "size": 18739
-      }
-    },
-    {
-      "id": "naota.facebook-pages",
-      "kind": "connector",
-      "name": {
-        "vi": "Facebook Trang (tự tạo app - Graph API)"
-      },
-      "description": {
-        "vi": "Quản lý Trang/Fanpage Facebook của bạn qua Graph API chính chủ: xem danh sách Trang, đọc bài và bình luận (chỉ đọc), đăng bài chữ, ẢNH, ALBUM nhiều ảnh, VIDEO, SỬA bài đã đăng và trả lời bình luận (toàn quyền). Bạn tạo 1 Facebook App (dùng lại app đang có cho Meta Ads cũng được), dán App ID + App Secret. Đăng và sửa bài là hành động THẬT nên chỉ chạy ở mức Toàn quyền, không tự làm lén."
-      },
-      "version": "1.0.0",
-      "author": {
-        "name": "Naota"
-      },
-      "category": "mang-xa-hoi",
-      "category_label": {
-        "vi": "Mạng xã hội"
-      },
-      "tier": "data",
-      "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.facebook-pages",
-      "icon": "packs/naota.facebook-pages/assets/meta-ads.webp",
-      "provides": {
-        "connectors": [
-          "facebook-pages"
-        ]
-      },
-      "download": {
-        "url": "dist/naota-facebook-pages-1.0.0.zip",
-        "sha256": "0b740387e9adedff4932449609b9fad98bbca135fbcbeaf479b09931f1198305",
-        "size": 18946
+        "url": "dist/naota-meta-ads-graph-1.0.1.zip",
+        "sha256": "c565dbe57a5fd91dfcd5cc6664e39be538d7c55454011be01651405cc20d7480",
+        "size": 18638
       }
     },
     {
@@ -2011,7 +1951,7 @@
       }
     },
     {
-      "id": "naota.quang-cao-so-lieu",
+      "id": "naota.ads-analytics",
       "kind": "workflow",
       "name": {
         "vi": "Quảng cáo & số liệu",
@@ -2021,7 +1961,7 @@
         "vi": "3 trợ lý và 3 quy trình đọc số quảng cáo: báo cáo Meta/Google/TikTok Ads hàng tuần, săn ngân sách đang đốt vô ích, và đọc Google Search Console hàng tháng. Mọi con số đều phải chỉ ra nguồn, và bước cuối luôn có một trợ lý kiểm chứng độc lập.",
         "en": "3 agents and 3 workflows for ad analytics: weekly Meta/Google/TikTok reports, wasted-spend hunting, and a monthly Search Console read. Every number must cite its source, and an independent verifier checks the final step."
       },
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": {
         "name": "Naota"
       },
@@ -2031,8 +1971,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.quang-cao-so-lieu",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ads-analytics",
       "license": "MIT",
       "provides": {
         "agents": [
@@ -2047,13 +1987,16 @@
         ]
       },
       "download": {
-        "url": "dist/naota-quang-cao-so-lieu-1.0.1.zip",
-        "sha256": "e0aba4a9172e1c789443d6bc00f3e7d722c407058a492ec9348d099e92bea181",
-        "size": 8126
-      }
+        "url": "dist/naota-ads-analytics-1.1.0.zip",
+        "sha256": "cac0ce0f0a0df872d1a6b585ae0f0fe33fffa4434199361dd11c65787b750ef1",
+        "size": 8140
+      },
+      "replaces": [
+        "naota.quang-cao-so-lieu"
+      ]
     },
     {
-      "id": "naota.noi-dung-social",
+      "id": "naota.content-social",
       "kind": "workflow",
       "name": {
         "vi": "Nội dung & mạng xã hội",
@@ -2063,7 +2006,7 @@
         "vi": "4 trợ lý và 3 quy trình làm nội dung: từ một ý tưởng ra bài đăng hoàn chỉnh, bẻ bài dài thành chuỗi post, và lên lịch nội dung một tháng. Có bước tìm góc tiếp cận trước khi viết, và bước biên tập cắt chữ thừa sau khi viết.",
         "en": "4 agents and 3 workflows for content: turn one idea into a finished post, split a long piece into a post series, and plan a month of content. Angle-finding before writing, editing after."
       },
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": {
         "name": "Naota"
       },
@@ -2073,8 +2016,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.noi-dung-social",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.content-social",
       "license": "MIT",
       "provides": {
         "agents": [
@@ -2090,13 +2033,16 @@
         ]
       },
       "download": {
-        "url": "dist/naota-noi-dung-social-1.0.1.zip",
-        "sha256": "8f540d511976d7637de6a6149286e7885a8c5dad9a9aa75a79b5e13ca6c19693",
-        "size": 9093
-      }
+        "url": "dist/naota-content-social-1.1.0.zip",
+        "sha256": "97d9927f6fac4dec1fedda0b2f291c29b3f324fedd7d9420667491e4a004261a",
+        "size": 9106
+      },
+      "replaces": [
+        "naota.noi-dung-social"
+      ]
     },
     {
-      "id": "naota.email-pheu",
+      "id": "naota.email-funnel",
       "kind": "workflow",
       "name": {
         "vi": "Email & phễu",
@@ -2106,7 +2052,7 @@
         "vi": "3 trợ lý và 3 quy trình cho email marketing: chuỗi email nuôi dưỡng sau khi khách tải tài liệu miễn phí, chuỗi kích hoạt lại danh sách đã nguội, và chẩn đoán phễu đang rò ở khâu nào. Viết chuỗi mà không lộ hết nội dung sản phẩm trả phí.",
         "en": "3 agents and 3 workflows for email marketing: a nurture sequence after a lead magnet, a re-engagement sequence for a cold list, and a funnel leak diagnosis."
       },
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": {
         "name": "Naota"
       },
@@ -2116,8 +2062,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.email-pheu",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.email-funnel",
       "license": "MIT",
       "provides": {
         "agents": [
@@ -2132,13 +2078,16 @@
         ]
       },
       "download": {
-        "url": "dist/naota-email-pheu-1.0.1.zip",
-        "sha256": "3ee02aab2187d54e8e5c384e5c06c15e17d003111be63523ddc8d1f357540cd3",
-        "size": 7869
-      }
+        "url": "dist/naota-email-funnel-1.1.0.zip",
+        "sha256": "a1b5e7fc523aa9e5640619d0749059ed0291905a83c8d5a0f21504c38660bc4c",
+        "size": 7882
+      },
+      "replaces": [
+        "naota.email-pheu"
+      ]
     },
     {
-      "id": "naota.san-pham-ban-hang",
+      "id": "naota.digital-products",
       "kind": "workflow",
       "name": {
         "vi": "Sản phẩm số & bán hàng",
@@ -2148,7 +2097,7 @@
         "vi": "4 trợ lý và 3 quy trình cho sản phẩm số: từ kỹ năng sẵn có ra ý tưởng sản phẩm bán được, dựng trang bán hàng từ hồ sơ khách, và chuỗi chăm khách sau mua để đổi lấy lời chứng thực. Mọi lời hứa bán hàng đều bị soát lại xem sản phẩm có giao nổi không.",
         "en": "4 agents and 3 workflows for digital products: turn existing skills into a sellable product, build a sales page from a customer profile, and run a post-purchase sequence that earns testimonials."
       },
-      "version": "1.0.1",
+      "version": "1.1.0",
       "author": {
         "name": "Naota"
       },
@@ -2159,8 +2108,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.san-pham-ban-hang",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.digital-products",
       "license": "MIT",
       "provides": {
         "agents": [
@@ -2176,13 +2125,16 @@
         ]
       },
       "download": {
-        "url": "dist/naota-san-pham-ban-hang-1.0.1.zip",
-        "sha256": "2e3f015878f387a84fa7afa989f802d504743cda25eced7eee1227f766fc53f0",
-        "size": 9407
-      }
+        "url": "dist/naota-digital-products-1.1.0.zip",
+        "sha256": "8c4505eae4d26ad3450da711d7382b8f3773597a8d9ce547c7d6bf278933126e",
+        "size": 9430
+      },
+      "replaces": [
+        "naota.san-pham-ban-hang"
+      ]
     },
     {
-      "id": "naota.tro-ly-hang-ngay",
+      "id": "naota.everyday-assistants",
       "kind": "agent",
       "name": {
         "vi": "Trợ lý hàng ngày",
@@ -2192,7 +2144,7 @@
         "vi": "3 trợ lý dùng mỗi ngày, không cần quy trình đi kèm: một thư ký dọn hộp thư và sắp việc trong ngày, một người tóm tắt tài liệu dài thành quyết định và việc cần làm, một người phản biện soi lỗ hổng trong kế hoạch trước khi bạn bắt tay vào làm.",
         "en": "3 everyday agents that work standalone: a secretary who triages the inbox and orders the day, a summariser who turns long documents into decisions and actions, and a devil's advocate who finds the holes in a plan before you commit to it."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Naota"
       },
@@ -2203,8 +2155,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.tro-ly-hang-ngay",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.everyday-assistants",
       "license": "MIT",
       "provides": {
         "agents": [
@@ -2214,13 +2166,16 @@
         ]
       },
       "download": {
-        "url": "dist/naota-tro-ly-hang-ngay-1.0.0.zip",
-        "sha256": "7e6937d03063b1bb930ccf5315e91bcae9e78fdb2efee0cff34f4859da4d986a",
-        "size": 5280
-      }
+        "url": "dist/naota-everyday-assistants-1.1.0.zip",
+        "sha256": "455b8f03d97ff0d7f7bd692810758cc0c0354c9e237d2b70e03af7949cf5a190",
+        "size": 5295
+      },
+      "replaces": [
+        "naota.tro-ly-hang-ngay"
+      ]
     },
     {
-      "id": "naota.tro-ly-nghien-cuu",
+      "id": "naota.research-assistants",
       "kind": "agent",
       "name": {
         "vi": "Trợ lý nghiên cứu & ngôn ngữ",
@@ -2230,7 +2185,7 @@
         "vi": "3 trợ lý cho việc học và việc viết đa ngôn ngữ: một người nghiên cứu trả lời có trích dẫn rồi nạp vào Second Brain, một người dịch và bản địa hoá nội dung marketing Việt-Anh giữ nguyên sức bán, một người bóc khái niệm khó thành thứ hiểu được rồi mới dùng.",
         "en": "3 agents for learning and multilingual writing: a researcher who answers with citations and files findings into the Second Brain, a translator who localises marketing copy between Vietnamese and English without losing its selling power, and an explainer who unpacks a hard concept before you rely on it."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Naota"
       },
@@ -2241,8 +2196,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-09-05",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.tro-ly-nghien-cuu",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.research-assistants",
       "license": "MIT",
       "provides": {
         "agents": [
@@ -2252,10 +2207,13 @@
         ]
       },
       "download": {
-        "url": "dist/naota-tro-ly-nghien-cuu-1.0.0.zip",
-        "sha256": "f5ab4296eabd61403c7b3297be65f6fca7f91c8553ebe0d25591713d88a3afb4",
-        "size": 5308
-      }
+        "url": "dist/naota-research-assistants-1.1.0.zip",
+        "sha256": "26aa51adf0793af26f6ff0e1188c507a8a88f5c00901ff1625193442be2b6db1",
+        "size": 5326
+      },
+      "replaces": [
+        "naota.tro-ly-nghien-cuu"
+      ]
     },
     {
       "id": "naota.tts-dropship",
@@ -2291,17 +2249,17 @@
       }
     },
     {
-      "id": "naota.naota-trong-chatgpt",
+      "id": "naota.gate",
       "kind": "tool",
       "name": {
-        "vi": "Naota trong ChatGPT",
-        "en": "Naota in ChatGPT"
+        "vi": "Naota Gate",
+        "en": "Naota Gate"
       },
       "description": {
-        "vi": "Chat trên chatgpt.com bằng gói ChatGPT của bạn, và ChatGPT tự gọi công cụ của Naota: số liệu, brain, nhắc lịch, Zalo. Chọn mức quyền, ngắt kết nối bất cứ lúc nào. Cần Naota 1.0.0 trở lên, mật khẩu quản trị và tên miền https.",
-        "en": "Chat on chatgpt.com with your own ChatGPT plan while ChatGPT calls Naota's tools: numbers, brain, reminders, Zalo. Pick the permission level, disconnect any time. Needs Naota 1.0.0 or newer, an admin password and an https domain."
+        "vi": "Cổng cho ChatGPT, Claude và AI khác làm việc cùng Naota. AI đó đọc hội thoại của Naota, tư vấn cho bạn, và khi bạn đồng ý thì nhắn thẳng vào khung chat để Naota làm tiếp. Bạn xem được tiến độ, Naota nhớ lại cho lần sau. Cần Naota 1.1.0 trở lên, mật khẩu quản trị và tên miền https.",
+        "en": "A gate for ChatGPT, Claude and other AIs to work with Naota. The AI reads your Naota chats, advises you, and once you agree posts straight into the chat so Naota carries on. You watch the progress, Naota remembers it next time. Needs Naota 1.1.0 or newer, an admin password and an https domain."
       },
-      "version": "1.0.0",
+      "version": "2.1.0",
       "author": {
         "name": "Naota"
       },
@@ -2312,14 +2270,17 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-09-24",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.naota-trong-chatgpt",
-      "icon": "packs/naota.naota-trong-chatgpt/assets/naota-trong-chatgpt.png",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.gate",
+      "icon": "packs/naota.gate/assets/naota-gate.png",
       "download": {
-        "url": "dist/naota-naota-trong-chatgpt-1.0.0.zip",
-        "sha256": "166503cf39b33881cc7d82799d7fa08663b20a00d64107536403922eb8098944",
-        "size": 43536
-      }
+        "url": "dist/naota-gate-2.1.0.zip",
+        "sha256": "df9654fe70b12f4eb87df351c03c7f9d87898506d5c105d66bef882b8b992006",
+        "size": 29202
+      },
+      "replaces": [
+        "naota.naota-trong-chatgpt"
+      ]
     },
     {
       "id": "naota.github",
@@ -2542,7 +2503,7 @@
       }
     },
     {
-      "id": "naota.ecc-kinh-doanh",
+      "id": "naota.ecc-business",
       "kind": "skill",
       "name": {
         "vi": "ECC: Kinh doanh & chiến lược",
@@ -2552,7 +2513,7 @@
         "vi": "12 skill kinh doanh của ECC: nghiên cứu thị trường, quy trình phân tích đối thủ 3 bước, thẩm định sản phẩm trước khi làm, tài liệu và thư gọi vốn, tìm khách tiềm năng, hội đồng 4 góc nhìn để ra quyết định, dự báo tồn kho, xử lý đổi trả.",
         "en": "12 business skills from ECC: market research, a 3-step competitor analysis pipeline, product validation, investor materials and outreach, lead intelligence, a 4-voice decision council, demand planning, returns handling."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Affaan Mustafa",
         "url": "https://github.com/affaan-m/ECC"
@@ -2564,8 +2525,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-18",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-kinh-doanh",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-business",
       "source": "https://github.com/affaan-m/ECC",
       "license": "MIT",
       "provides": {
@@ -2585,13 +2546,16 @@
         ]
       },
       "download": {
-        "url": "dist/naota-ecc-kinh-doanh-1.0.0.zip",
-        "sha256": "4fb93a47d88016b43f376855a751e9a9714926e54498295a22a28fc1a409da09",
-        "size": 62894
-      }
+        "url": "dist/naota-ecc-business-1.1.0.zip",
+        "sha256": "2da37461acfd3513423b9b84f29abd5ac53a8f9bd52c1b2fda78a528d8c7c3b4",
+        "size": 62906
+      },
+      "replaces": [
+        "naota.ecc-kinh-doanh"
+      ]
     },
     {
-      "id": "naota.ecc-nghien-cuu",
+      "id": "naota.ecc-research",
       "kind": "skill",
       "name": {
         "vi": "ECC: Nghiên cứu & thu thập dữ liệu",
@@ -2601,7 +2565,7 @@
         "vi": "6 skill nghiên cứu của ECC: báo cáo nghiên cứu sâu có trích dẫn, tìm kiếm Exa, tổng quan tài liệu khoa học, chấm chất lượng bài nghiên cứu, dựng agent cào dữ liệu công khai theo lịch, bóc tách văn bản có cấu trúc rẻ mà chuẩn.",
         "en": "6 research skills from ECC: cited deep-research reports, Exa search, literature reviews, scholarly evaluation, a scheduled public-data scraping agent, and cheap accurate structured-text extraction."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Affaan Mustafa",
         "url": "https://github.com/affaan-m/ECC"
@@ -2613,8 +2577,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-18",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-nghien-cuu",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-research",
       "source": "https://github.com/affaan-m/ECC",
       "license": "MIT",
       "provides": {
@@ -2628,10 +2592,13 @@
         ]
       },
       "download": {
-        "url": "dist/naota-ecc-nghien-cuu-1.0.0.zip",
-        "sha256": "2d48275bc99b98969f92f89b60044cb12735c5a3f33b7aa794c18c57d6234afa",
-        "size": 27173
-      }
+        "url": "dist/naota-ecc-research-1.1.0.zip",
+        "sha256": "0ddb2113180c48401ff085c8ef323dcdaf5e6749584802928ac5287250cd13a2",
+        "size": 27179
+      },
+      "replaces": [
+        "naota.ecc-nghien-cuu"
+      ]
     },
     {
       "id": "naota.ecc-ai-agents",
@@ -2683,7 +2650,7 @@
       }
     },
     {
-      "id": "naota.ecc-code-chat-luong",
+      "id": "naota.ecc-code-quality",
       "kind": "skill",
       "name": {
         "vi": "ECC: Code chất lượng",
@@ -2693,7 +2660,7 @@
         "vi": "9 skill giữ chất lượng code của ECC: chuẩn viết code chung, xử lý lỗi, soát bảo mật, vòng kiểm chứng 6 bước trước khi mở PR, TDD, soát sẵn sàng chạy thật, tìm thư viện có sẵn trước khi tự viết, làm quen codebase lạ, quy trình git.",
         "en": "9 code-quality skills from ECC: coding standards, error handling, security review, a 6-phase verification loop before a PR, TDD, production readiness audits, search before building, codebase onboarding, git workflow."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Affaan Mustafa",
         "url": "https://github.com/affaan-m/ECC"
@@ -2705,8 +2672,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-18",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-code-chat-luong",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-code-quality",
       "source": "https://github.com/affaan-m/ECC",
       "license": "MIT",
       "provides": {
@@ -2723,10 +2690,13 @@
         ]
       },
       "download": {
-        "url": "dist/naota-ecc-code-chat-luong-1.0.0.zip",
-        "sha256": "24b1b5653b6ae90e3b05b4f2ff1589f969883403a317be8f5a3ba7f14afe9626",
-        "size": 50592
-      }
+        "url": "dist/naota-ecc-code-quality-1.1.0.zip",
+        "sha256": "7bb53650de60b59e3309ad5f4547a27ffa987098b16d2b93a0e8769ec36b96a5",
+        "size": 50602
+      },
+      "replaces": [
+        "naota.ecc-code-chat-luong"
+      ]
     },
     {
       "id": "naota.ecc-backend-web",
@@ -2777,7 +2747,7 @@
       }
     },
     {
-      "id": "naota.ecc-tro-ly-kinh-doanh",
+      "id": "naota.ecc-business-agents",
       "kind": "agent",
       "name": {
         "vi": "ECC: Trợ lý marketing & điều hành",
@@ -2787,7 +2757,7 @@
         "vi": "4 trợ lý của ECC: chiến lược gia marketing lo trọn chiến dịch từ định vị tới bản copy, chuyên gia SEO soát kỹ thuật và nội dung, chánh văn phòng phân loại tin nhắn đa kênh rồi soạn trả lời, và người chấm chất lượng đầu ra theo 5 tiêu chí.",
         "en": "4 ECC agents: a marketing strategist who runs a campaign from positioning to copy, an SEO specialist, a chief of staff who triages multi-channel messages and drafts replies, and an evaluator who scores output on 5 axes."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Affaan Mustafa",
         "url": "https://github.com/affaan-m/ECC"
@@ -2799,8 +2769,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-18",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-tro-ly-kinh-doanh",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-business-agents",
       "source": "https://github.com/affaan-m/ECC",
       "license": "MIT",
       "provides": {
@@ -2812,13 +2782,16 @@
         ]
       },
       "download": {
-        "url": "dist/naota-ecc-tro-ly-kinh-doanh-1.0.0.zip",
-        "sha256": "e4b7927a9c896a54533205e1ef6083e728c721f1704cab239c334e32136fabff",
-        "size": 17443
-      }
+        "url": "dist/naota-ecc-business-agents-1.1.0.zip",
+        "sha256": "90db3d85938e626d8a2b36b62718868aa2bf532e0ef434f081875cb27486dc1a",
+        "size": 17456
+      },
+      "replaces": [
+        "naota.ecc-tro-ly-kinh-doanh"
+      ]
     },
     {
-      "id": "naota.ecc-doi-lap-trinh",
+      "id": "naota.ecc-engineering-team",
       "kind": "agent",
       "name": {
         "vi": "ECC: Đội lập trình",
@@ -2828,7 +2801,7 @@
         "vi": "17 trợ lý lập trình của ECC: lập kế hoạch, kiến trúc, review code, soát bảo mật, sửa lỗi build, đơn giản hoá code, săn lỗi bị nuốt, tối ưu hiệu năng, review database, Python, TypeScript, React, TDD, dọn code chết, cập nhật tài liệu, test E2E, tra tài liệu thư viện.",
         "en": "17 ECC engineering agents: planner, architect, code reviewer, security reviewer, build fixer, code simplifier, silent-failure hunter, performance, database, Python, TypeScript and React reviewers, TDD guide, dead-code cleaner, doc updater, E2E runner, docs lookup."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Affaan Mustafa",
         "url": "https://github.com/affaan-m/ECC"
@@ -2840,8 +2813,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-18",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-doi-lap-trinh",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.ecc-engineering-team",
       "source": "https://github.com/affaan-m/ECC",
       "license": "MIT",
       "provides": {
@@ -2866,10 +2839,13 @@
         ]
       },
       "download": {
-        "url": "dist/naota-ecc-doi-lap-trinh-1.0.0.zip",
-        "sha256": "f32eba3a2fc86fd40cbbd8a1f23da567a6695fa794d3aa7f11e316bc69520387",
-        "size": 66315
-      }
+        "url": "dist/naota-ecc-engineering-team-1.1.0.zip",
+        "sha256": "150d0954bc956542ec6173829c29742e661e7bfa5dca6554582011664368cb24",
+        "size": 66331
+      },
+      "replaces": [
+        "naota.ecc-doi-lap-trinh"
+      ]
     },
     {
       "id": "naota.founder",
@@ -3925,7 +3901,7 @@
       }
     },
     {
-      "id": "naota.linh-hon-naota-an",
+      "id": "naota.naota-an-soul",
       "kind": "agent",
       "name": {
         "vi": "Linh Hồn Naota An",
@@ -3935,7 +3911,7 @@
         "vi": "Vũ là cộng sự chăm sóc khách hàng dùng được cho mọi ngành: nhắn tin ngắn gọn như người thật, hài hước nhẹ nhàng mà không lố, giữ đúng mạch chuyện, không bao giờ bịa giá hay khuyến mãi. Bạn điền hồ sơ cửa hàng, thêm sản phẩm, gắn vào Chatbot Zalo hay Telegram là Vũ vào ca trực.",
         "en": "Vu is a customer-care partner for any kind of business: short, human-sounding replies, gentle humour that never overdoes it, follows the thread of the chat, and never makes up a price or a promotion. Fill in your shop profile, add your products, attach it to a Zalo or Telegram chatbot and Vu starts the shift."
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Hoàng Ngọc Vương"
       },
@@ -3946,8 +3922,8 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
-      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.linh-hon-naota-an",
+      "updated": "2026-11-02",
+      "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/naota.naota-an-soul",
       "license": "MIT",
       "provides": {
         "agents": [
@@ -3955,10 +3931,13 @@
         ]
       },
       "download": {
-        "url": "dist/naota-linh-hon-naota-an-1.0.0.zip",
-        "sha256": "520a712c095b66073aa94013e3b9151bf315961985ccdc7efe71160a4b771252",
-        "size": 8246
-      }
+        "url": "dist/naota-naota-an-soul-1.1.0.zip",
+        "sha256": "18047b35ee0cbade0988d8c586c5ef3d718241d10c6c98ec01ce843557f54fda",
+        "size": 8257
+      },
+      "replaces": [
+        "naota.linh-hon-naota-an"
+      ]
     },
     {
       "id": "naota.agency-agents",

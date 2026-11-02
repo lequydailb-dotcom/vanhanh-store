@@ -1,0 +1,22 @@
+format: naota-pack
+spec: 1
+id: naota.email-funnel
+version: 1.1.0
+replaces:
+  - naota.email-pheu
+name:
+  vi: Email & phễu
+  en: Email & funnel
+description:
+  vi: '3 trợ lý và 3 quy trình cho email marketing: chuỗi email nuôi dưỡng sau khi khách tải tài liệu
+    miễn phí, chuỗi kích hoạt lại danh sách đã nguội, và chẩn đoán phễu đang rò ở khâu nào. Viết chuỗi
+    mà không lộ hết nội dung sản phẩm trả phí.'
+  en: '3 agents and 3 workflows for email marketing: a nurture sequence after a lead magnet, a re-engagement
+    sequence for a cold list, and a funnel leak diagnosis.'
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.1.0"}
+provides:
+  agents: [em-chien-luoc-pheu, em-viet-email, em-kiem-chung]
+  workflows: [chuoi-email-sau-lead-magnet, kich-hoat-lai-danh-sach, chan-doan-pheu]

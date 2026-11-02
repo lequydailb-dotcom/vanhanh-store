@@ -1,0 +1,22 @@
+format: naota-pack
+spec: 1
+id: naota.research-assistants
+version: 1.1.0
+replaces:
+  - naota.tro-ly-nghien-cuu
+name:
+  vi: Trợ lý nghiên cứu & ngôn ngữ
+  en: Research & language assistants
+description:
+  vi: '3 trợ lý cho việc học và việc viết đa ngôn ngữ: một người nghiên cứu trả lời có trích dẫn rồi nạp
+    vào Second Brain, một người dịch và bản địa hoá nội dung marketing Việt-Anh giữ nguyên sức bán, một
+    người bóc khái niệm khó thành thứ hiểu được rồi mới dùng.'
+  en: '3 agents for learning and multilingual writing: a researcher who answers with citations and files
+    findings into the Second Brain, a translator who localises marketing copy between Vietnamese and English
+    without losing its selling power, and an explainer who unpacks a hard concept before you rely on it.'
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.1.0"}
+provides:
+  agents: [tl-nghien-cuu, tl-dich-ban-dia, tl-giai-thich]

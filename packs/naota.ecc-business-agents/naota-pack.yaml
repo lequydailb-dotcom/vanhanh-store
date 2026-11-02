@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.ecc-business-agents
+version: 1.1.0
+replaces:
+  - naota.ecc-tro-ly-kinh-doanh
+name: {vi: "ECC: Trợ lý marketing & điều hành", en: "ECC: Marketing & operations agents"}
+description: {vi: "4 trợ lý của ECC: chiến lược gia marketing lo trọn chiến dịch từ định vị tới bản copy, chuyên gia SEO soát kỹ thuật và nội dung, chánh văn phòng phân loại tin nhắn đa kênh rồi soạn trả lời, và người chấm chất lượng đầu ra theo 5 tiêu chí.",
+              en: "4 ECC agents: a marketing strategist who runs a campaign from positioning to copy, an SEO specialist, a chief of staff who triages multi-channel messages and drafts replies, and an evaluator who scores output on 5 axes."}
+author: {name: "Affaan Mustafa", url: "https://github.com/affaan-m/ECC"}
+license: MIT
+homepage: "https://github.com/affaan-m/ECC"
+compat: {app: ">=1.1.0"}
+provides:
+  agents: [ecc-marketing, ecc-seo, ecc-chanh-van-phong, ecc-cham-chat-luong]

@@ -1,0 +1,15 @@
+format: naota-pack
+spec: 1
+id: naota.ecc-business
+version: 1.1.0
+replaces:
+  - naota.ecc-kinh-doanh
+name: {vi: "ECC: Kinh doanh & chiến lược", en: "ECC: Business & strategy"}
+description: {vi: "12 skill kinh doanh của ECC: nghiên cứu thị trường, quy trình phân tích đối thủ 3 bước, thẩm định sản phẩm trước khi làm, tài liệu và thư gọi vốn, tìm khách tiềm năng, hội đồng 4 góc nhìn để ra quyết định, dự báo tồn kho, xử lý đổi trả.",
+              en: "12 business skills from ECC: market research, a 3-step competitor analysis pipeline, product validation, investor materials and outreach, lead intelligence, a 4-voice decision council, demand planning, returns handling."}
+author: {name: "Affaan Mustafa", url: "https://github.com/affaan-m/ECC"}
+license: MIT
+homepage: "https://github.com/affaan-m/ECC"
+compat: {app: ">=1.1.0"}
+provides:
+  skills: [market-research, competitive-platform-analysis, benchmark-methodology, competitive-report-structure, product-lens, investor-materials, investor-outreach, lead-intelligence, council, customer-billing-ops, inventory-demand-planning, returns-reverse-logistics]

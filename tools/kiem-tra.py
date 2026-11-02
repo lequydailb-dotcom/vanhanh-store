@@ -39,6 +39,9 @@ Kiểm những gì
    `mcp_dong_goi.py`.
 10. Gói theo repo gốc: mục `upstream` trong danh mục khớp `theo-goc/<id>.json`, và gói lẻ tách ra từ
     một gói gộp (`thuoc_goi`) trỏ đúng gói gộp đó. Lý do ở `theo-goc.py`.
+11. Mã gói bằng tiếng Anh (Naota dùng ở nhiều nước). Mã là đường dẫn và tên trong
+    mọi máy, đổi về sau phải đi qua `replaces` (Naota 1.1.0), nên chặn ngay từ lúc thêm gói. Tên hiển
+    thị vẫn có cả tiếng Việt lẫn tiếng Anh như cũ.
 """
 import hashlib
 import json
@@ -87,7 +90,7 @@ def doc_manifest(thu_muc: Path):
         """Gộp các dòng thụt vào của một khoá thành list hoặc map.
 
         Ba hình dạng gặp thật trong kho: list phẳng (`- a`), map phẳng (`vi: ...`), và map của
-        list (`plugins:` rồi `- plugins/tinh-gia`). Không đi sâu hơn hai tầng - gói nào cần thế
+        list (`plugins:` rồi `- plugins/pricing`). Không đi sâu hơn hai tầng - gói nào cần thế
         thì đã vượt khỏi đặc tả spec 1.
         """
         if khoa is None or not khoi:
@@ -146,9 +149,19 @@ thu_muc_goi = sorted(p for p in (GOC / "packs").iterdir() if p.is_dir())
 if not thu_muc_goi:
     sai("thư mục packs/ rỗng")
 
+# 11. Mã gói tiếng Anh. Không đoán được ngôn ngữ của một chuỗi không dấu, nên soi theo những âm tiết
+# chỉ tiếng Việt mới có (đã gặp thật trong kho trước 02/11). Tên thương hiệu là danh từ riêng, giữ nguyên.
+AM_TIET_VIET = {"tro", "khach", "noi", "dung", "quang", "lieu", "pham", "tinh", "nghien", "cuu", "kinh",
+                "doanh", "trinh", "luong", "linh", "viet", "trong", "pheu", "ngay", "cham", "hoi", "thoai",
+                "nguoi", "tien", "hieu", "nhan", "tuong", "chien", "dich", "giao", "nhom"}
+MA_THUONG_HIEU = {"naota.nhanh", "naota.kiotviet", "naota.haravan", "naota.sapo", "naota.lemo-opuscar"}
+
 connector_theo_goi = {}
 for tm in thu_muc_goi:
     ten = tm.name
+    if ten not in MA_THUONG_HIEU:
+        viet = sorted(set(re.split(r"[.-]", ten)) & AM_TIET_VIET)
+        check(f"{ten}: mã gói bằng tiếng Anh (đổi mã cũ thì khai `replaces` trong manifest)", not viet, viet)
     man = doc_manifest(tm)
     if not check(f"{ten}: có naota-pack.yaml đọc được", man is not None):
         continue

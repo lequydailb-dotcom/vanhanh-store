@@ -1,0 +1,36 @@
+# Gói "Quản lý khách hàng": tầng CRM cắm vào kho hội thoại khách đa kênh của NAOTA
+# (trang Hội thoại). Gói KHÔNG tự đọc tin từ Telegram hay Zalo; việc đó là của
+# lõi Naota. Gói chỉ đọc kho đã có, gắn tag và ghi chú lên khách, tìm khách chờ trả lời, xuất
+# danh sách. Nên nó không cần token nào và không mở kết nối ra ngoài.
+format: naota-pack
+spec: 1
+
+id: naota.crm
+version: 1.1.0
+replaces:
+  - naota.khach-hang-crm
+name:
+  vi: Quản lý khách hàng (CRM)
+  en: Customer management (CRM)
+description:
+  vi: Xem khách từ mọi kênh chat, hồ sơ và lịch sử từng người, gắn tag, ghi chú, tìm khách chờ trả lời, thống kê và xuất CSV. Cần Naota 1.1.0 trở lên.
+  en: Customers from every chat channel, per-person profile and history, tags, notes, unanswered queue, stats and CSV export. Needs Naota 1.1.0 or newer.
+
+author:
+  name: Naota
+license: MIT
+homepage: https://github.com/vuongtex/naota-store
+
+# Cần tầng CRM của kho hội thoại (server/conversations.py) trong lõi.
+compat:
+  app: ">=1.1.0"
+
+provides:
+  plugins:
+    - plugins/crm
+  skills:
+    - skills/cham-soc-khach-hang
+  agents:
+    - cs-cham-soc-khach
+  workflows:
+    - ra-soat-khach-hang-ngay

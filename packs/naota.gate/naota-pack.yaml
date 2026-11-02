@@ -1,0 +1,34 @@
+# Gói "Naota Gate": cổng cho ChatGPT, Claude và AI khác làm việc cùng Naota.
+#
+# Tiền thân là "Naota trong ChatGPT" (mã cũ naota.naota-trong-chatgpt, plugin naota-trong-chatgpt).
+# 2.0.0 đổi mã sang tiếng Anh, thêm Claude, và cho AI bên ngoài nhắn thẳng vào hội thoại của Naota
+# (Naota 1.1.0) thay vì giao việc qua Kanban. `replaces` báo cho Naota biết đây là bản cập nhật của
+# gói cũ: cài lên là token, mức quyền và địa chỉ đã dán vào ChatGPT được giữ nguyên.
+format: naota-pack
+spec: 1
+
+id: naota.gate
+version: 2.1.0
+replaces:
+  - naota.naota-trong-chatgpt
+
+name:
+  vi: Naota Gate
+  en: Naota Gate
+description:
+  vi: Cổng cho ChatGPT, Claude và AI khác làm việc cùng Naota. AI đó đọc hội thoại của Naota, tư vấn cho bạn, và khi bạn đồng ý thì nhắn thẳng vào khung chat để Naota làm tiếp. Bạn xem được tiến độ, Naota nhớ lại cho lần sau. Cần Naota 1.1.0 trở lên, mật khẩu quản trị và tên miền https.
+  en: A gate for ChatGPT, Claude and other AIs to work with Naota. The AI reads your Naota chats, advises you, and once you agree posts straight into the chat so Naota carries on. You watch the progress, Naota remembers it next time. Needs Naota 1.1.0 or newer, an admin password and an https domain.
+
+author:
+  name: Naota
+license: MIT
+homepage: https://github.com/vuongtex/naota-store/tree/main/packs/naota.gate
+
+# 1.1.0 mở bốn tool chat cho cửa Gate (`mcp_hub.tra_loi_jsonrpc(gate=...)`) và cơ chế đổi mã gói
+# (`replaces`). Bản cũ hơn thì gói bị tắt kèm lý do đọc được.
+compat:
+  app: ">=1.1.0"
+
+provides:
+  plugins:
+    - plugins/naota-gate

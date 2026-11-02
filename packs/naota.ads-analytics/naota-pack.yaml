@@ -1,0 +1,23 @@
+format: naota-pack
+spec: 1
+id: naota.ads-analytics
+version: 1.1.0
+replaces:
+  - naota.quang-cao-so-lieu
+name:
+  vi: Quảng cáo & số liệu
+  en: Ads & analytics
+description:
+  vi: '3 trợ lý và 3 quy trình đọc số quảng cáo: báo cáo Meta/Google/TikTok Ads hàng tuần, săn ngân sách
+    đang đốt vô ích, và đọc Google Search Console hàng tháng. Mọi con số đều phải chỉ ra nguồn, và bước
+    cuối luôn có một trợ lý kiểm chứng độc lập.'
+  en: '3 agents and 3 workflows for ad analytics: weekly Meta/Google/TikTok reports, wasted-spend hunting,
+    and a monthly Search Console read. Every number must cite its source, and an independent verifier
+    checks the final step.'
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.1.0"}
+provides:
+  agents: [qc-phan-tich-quang-cao, qc-phan-tich-so-lieu, qc-kiem-chung]
+  workflows: [bao-cao-quang-cao-tuan, san-ngan-sach-lang-phi, doc-search-console-thang]

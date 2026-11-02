@@ -1,9 +1,9 @@
 format: naota-pack
 spec: 1
 id: naota.meta-ads-graph
-version: 1.0.0
-name: {vi: "Meta Ads (tự tạo app - Graph API)"}
-description: {vi: "Số liệu quảng cáo Facebook/Instagram gọi THẲNG Marketing API của Meta (KHÔNG qua MCP beta bị khoá). Bạn tạo 1 Facebook App, dán App ID + App Secret, Naota đọc tài khoản ads, chiến dịch và hiệu suất của bạn. CHỈ ĐỌC - không tạo/sửa chiến dịch, không tiêu tiền. Đây là cách các nền tảng như Composio dùng."}
+version: 1.0.1
+name: {vi: "Meta Ads (Facebook & Instagram)"}
+description: {vi: "Xem tài khoản quảng cáo, chiến dịch và hiệu suất Facebook, Instagram bằng app Meta của chính bạn (dán App ID và App Secret). Chỉ đọc: không tạo, không sửa chiến dịch, không tiêu tiền. Một app Meta dùng chung được cho mọi thẻ Meta và kênh Messenger."}
 author: {name: Naota}
 license: MIT
 homepage: "https://github.com/vuongtex/naota-store"

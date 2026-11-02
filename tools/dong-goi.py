@@ -1,6 +1,6 @@
 """Đóng một thư mục gói thành .zip và in dấu vân tay để dán vào danh mục kho.
 
-    python examples/packs/dong-goi.py naota.tinh-gia
+    python tools/dong-goi.py naota.pricing
 
 Có script này thay vì một dòng `zip -r` trong tài liệu vì ba lý do nhỏ mà mỗi cái đều đủ
 làm hỏng một lần phát hành:

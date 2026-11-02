@@ -1,0 +1,22 @@
+format: naota-pack
+spec: 1
+id: naota.digital-products
+version: 1.1.0
+replaces:
+  - naota.san-pham-ban-hang
+name:
+  vi: Sản phẩm số & bán hàng
+  en: Digital products & sales
+description:
+  vi: '4 trợ lý và 3 quy trình cho sản phẩm số: từ kỹ năng sẵn có ra ý tưởng sản phẩm bán được, dựng trang
+    bán hàng từ hồ sơ khách, và chuỗi chăm khách sau mua để đổi lấy lời chứng thực. Mọi lời hứa bán hàng
+    đều bị soát lại xem sản phẩm có giao nổi không.'
+  en: '4 agents and 3 workflows for digital products: turn existing skills into a sellable product, build
+    a sales page from a customer profile, and run a post-purchase sequence that earns testimonials.'
+author: {name: Naota}
+license: MIT
+homepage: "https://github.com/vuongtex/naota-store"
+compat: {app: ">=1.1.0"}
+provides:
+  agents: [bh-chien-luoc-offer, bh-viet-ban-hang, bh-cham-khach, bh-kiem-chung]
+  workflows: [y-tuong-thanh-san-pham-so, dung-trang-ban-hang, cham-khach-sau-mua]
