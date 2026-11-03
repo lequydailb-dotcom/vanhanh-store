@@ -1,0 +1,118 @@
+{
+  "id": "google-workspace",
+  "name": "Google Workspace (Gmail, Lịch, Drive, Docs)",
+  "icon": "assets/google-workspace.png",
+  "group": "google",
+  "group_line": "Gộp Gmail, Lịch, Drive, Docs, Sheets vào MỘT kết nối. Cần máy có màn hình; VPS thì dùng thẻ Lịch và Gmail riêng.",
+  "category": "Văn phòng",
+  "description": "Gmail, Calendar, Drive, Docs, Sheets, Slides, Forms, Tasks... trong MỘT kết nối. Tạo OAuth client 1 lần, khoảng 10 phút, có hướng dẫn từng bước. Lần đầu gọi tool Google, trình duyệt TRÊN MÁY CHẠY VANHANH mở ra để bấm đồng ý, nên máy phải có màn hình.",
+  "status": "beta",
+  "transport": "stdio",
+  "command": "uvx",
+  "args": [
+    "workspace-mcp@latest",
+    "--tool-tier",
+    "core"
+  ],
+  "lenh_cu": [
+    {
+      "command": "uvx",
+      "args": [
+        "workspace-mcp",
+        "--tool-tier",
+        "core"
+      ]
+    }
+  ],
+  "env": {
+    "OAUTHLIB_INSECURE_TRANSPORT": "1"
+  },
+  "needs_local_browser": true,
+  "cred_dir": {
+    "env": "WORKSPACE_MCP_CREDENTIALS_DIR"
+  },
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "client_id",
+        "label": "OAuth Client ID",
+        "placeholder": "Ví dụ: xxxx.apps.googleusercontent.com",
+        "env": "GOOGLE_OAUTH_CLIENT_ID"
+      },
+      {
+        "key": "client_secret",
+        "label": "OAuth Client Secret",
+        "placeholder": "Ví dụ: GOCSPX-...",
+        "env": "GOOGLE_OAUTH_CLIENT_SECRET"
+      },
+      {
+        "key": "user_email",
+        "label": "Email Google của bạn (nên điền - bỏ trống thì mỗi lần gọi tool lại phải khai email)",
+        "placeholder": "Ví dụ: ten@gmail.com",
+        "env": "USER_GOOGLE_EMAIL",
+        "optional": true
+      }
+    ],
+    "guide": "Kết nối này chạy TRÊN MÁY CÀI VANHANH: lần đầu gọi tool Google, trình duyệt của chính máy đó\nmở ra để bạn bấm đồng ý. Máy không có màn hình (VPS) thì dùng hai thẻ Lịch và Gmail riêng,\nhai thẻ đó đăng nhập gọn trong dashboard.\n\nLàm 1 lần, khoảng 10 phút:\n1. Vào console.cloud.google.com tạo project mới, hoặc dùng lại project đã tạo cho thẻ Lịch/Gmail.\n2. Bật API cho từng dịch vụ muốn dùng. Bốn cái cơ bản: Gmail API, Google Calendar API,\nGoogle Drive API, Google Docs API.\nMuốn Vanhanh đụng tới Sheets, Slides, Forms, Danh bạ, Việc cần làm thì bật thêm Google Sheets API,\nGoogle Slides API, Google Forms API, People API, Google Tasks API.\nQuên bật cái nào thì đúng nhóm tool đó báo lỗi, phần còn lại vẫn chạy bình thường.\n3. Màn hình đồng ý OAuth: chọn External rồi thêm email Google của bạn vào Test users.\nBỏ bước này là Google chặn ngay lúc đăng nhập.\n4. Tạo OAuth client, chọn loại 'Ứng dụng dành cho máy tính' (Desktop app).\nLoại này KHÔNG phải khai URI chuyển hướng nào cả - khác thẻ Lịch/Gmail, thấy trống là đúng.\n5. Tải file JSON của client rồi kéo thả vào ô bên dưới (tự điền Client ID + Secret),\nhoặc copy tay hai giá trị đó.\n6. Điền luôn ô email Google rồi bấm Kết nối.\n\nLần đầu Vanhanh gọi tool Google, trình duyệt trên máy chạy Vanhanh mở ra. Gặp cảnh báo 'ứng dụng chưa\nđược xác minh' thì bấm Nâng cao rồi Tiếp tục, vì đây là app của chính bạn. Nhớ TICK HẾT các ô\nquyền: bỏ ô nào là đúng nhóm tool đó chết.",
+    "guide_url": "https://github.com/taylorwilsdon/google_workspace_mcp",
+    "steps": [
+      {
+        "text": "TRƯỚC KHI LÀM: kết nối chạy trên chính máy cài Vanhanh, lần đầu gọi tool nó mở trình duyệt CỦA MÁY ĐÓ để bạn bấm đồng ý. Vanhanh trên VPS không màn hình thì bỏ thẻ này, dùng hai thẻ Google Calendar và Gmail riêng, hai thẻ đó đăng nhập gọn trong dashboard."
+      },
+      {
+        "text": "Vào Google Cloud tạo một project mới, hoặc dùng lại project bạn đã tạo cho thẻ Lịch/Gmail.",
+        "link": "https://console.cloud.google.com/projectcreate",
+        "link_label": "Tạo project"
+      },
+      {
+        "text": "Bật API cho từng dịch vụ bạn muốn dùng. Bốn cái cơ bản: Gmail API, Google Calendar API, Google Drive API, Google Docs API. Muốn Vanhanh đụng tới Sheets, Slides, Forms, Danh bạ hay Việc cần làm thì bật thêm Google Sheets API, Google Slides API, Google Forms API, People API, Google Tasks API. Quên bật cái nào thì đúng nhóm tool đó báo lỗi, phần còn lại vẫn chạy.",
+        "link": "https://console.cloud.google.com/apis/library",
+        "link_label": "Mở thư viện API"
+      },
+      {
+        "text": "Màn hình đồng ý OAuth: chọn External rồi thêm email Google của bạn vào Test users. Bỏ bước này là Google chặn ngay lúc đăng nhập.",
+        "link": "https://console.cloud.google.com/auth/audience",
+        "link_label": "Mở màn hình đồng ý"
+      },
+      {
+        "text": "Tạo OAuth client, chọn loại 'Ứng dụng dành cho máy tính' (Desktop app). Loại này KHÔNG phải khai URI chuyển hướng nào cả - khác thẻ Lịch/Gmail, nên thấy phần đó trống là đúng, đừng đi tìm.",
+        "link": "https://console.cloud.google.com/apis/credentials/oauthclient",
+        "link_label": "Tạo OAuth client"
+      },
+      {
+        "text": "Tải file JSON của client rồi kéo thả vào ô bên dưới, Vanhanh tự điền Client ID + Secret. Hoặc copy tay hai giá trị đó vào hai ô."
+      },
+      {
+        "text": "Điền luôn ô email Google rồi bấm Kết nối. Bỏ trống ô email thì mỗi lần gọi tool, server lại hỏi ngược xem dùng tài khoản nào."
+      },
+      {
+        "text": "Lần đầu Vanhanh gọi tool Google, trình duyệt trên máy chạy Vanhanh mở ra. Gặp cảnh báo 'ứng dụng chưa được xác minh' thì bấm Nâng cao rồi Tiếp tục, vì đây là app của chính bạn. Nhớ TICK HẾT các ô quyền, bỏ ô nào là đúng nhóm tool đó chết."
+      }
+    ]
+  },
+  "tool_meta": {
+    "write": [
+      "*create*",
+      "*update*",
+      "*upload*",
+      "*draft*",
+      "*modify*",
+      "*move*",
+      "*add*",
+      "*set*",
+      "*manage*",
+      "import_*"
+    ],
+    "danger": [
+      "*send*",
+      "*delete*",
+      "run_*"
+    ]
+  },
+  "default_perm": "safe",
+  "risk": "Mức Ghi nháp (mặc định) cho phép Vanhanh soạn nháp thư, tạo lịch, tạo tài liệu, và cả SỬA tài liệu có sẵn lẫn DI CHUYỂN file trong Drive.\nCác tool gộp (manage_event, manage_task...) cũng thuộc mức này, nên Vanhanh sửa và xoá được từng sự kiện lịch hay việc cần làm lẻ.\n\nMức Toàn quyền thêm quyền GỬI EMAIL THẬT và XOÁ file, thư bằng tài khoản Google của bạn.\n\nChỉ cần đọc thì hạ xuống Chỉ đọc.",
+  "ghi_da_can_nhac": [
+    "generate_trigger_code"
+  ]
+}

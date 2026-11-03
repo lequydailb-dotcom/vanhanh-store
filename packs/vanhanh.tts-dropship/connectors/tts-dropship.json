@@ -1,0 +1,109 @@
+{
+  "id": "tts-dropship",
+  "name": "TTS Dropship (thitruongsi.com)",
+  "icon": "assets/tts-dropship.png",
+  "category": "Bán hàng",
+  "description": "Bán dropship trên sàn TTS: tìm hàng theo lợi nhuận, thêm vào giỏ, tách địa chỉ từ tin nhắn khách, tạo khách hàng, báo giá vận chuyển, LÊN ĐƠN, theo dõi vận đơn và xem tiền về. Đăng nhập bằng token lấy từ trình duyệt (sàn không phát hành API key), dán thêm refresh token là Vanhanh tự gia hạn. Mặc định Chỉ đọc. Tạo đơn và huỷ đơn là tiền thật nên luôn phải xác nhận hai bước.",
+  "status": "beta",
+  "transport": "http",
+  "url": "",
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "access_token",
+        "label": "Token đăng nhập (@publicToken)",
+        "placeholder": "eyJhbGciOi... (dán kết quả của copy(localStorage.getItem('@publicToken')))",
+        "multiline": true
+      },
+      {
+        "key": "refresh_token",
+        "label": "Refresh token (@refreshToken) - nên có để tự gia hạn",
+        "placeholder": "Dán kết quả của copy(localStorage.getItem('@refreshToken'))",
+        "optional": true,
+        "multiline": true
+      },
+      {
+        "key": "refresh_url",
+        "label": "Địa chỉ gia hạn token (để trống)",
+        "placeholder": "Để trống: Vanhanh dùng sẵn địa chỉ gia hạn của sàn",
+        "optional": true
+      }
+    ],
+    "guide": "Hướng dẫn có từng bước: https://github.com/lequydailb-dotcom/vanhanh-store/blob/main/huong-dan/tts-dropship.md\n\nSàn TTS Dropship KHÔNG phát hành API key công khai, nên Vanhanh dùng đúng phiên đăng nhập của bạn trên trình duyệt. Làm 1 lần, khoảng 3 phút, trên máy tính.\n\n1. Mở https://dropship.thitruongsi.com và đăng nhập.\n2. Bấm F12 (máy Mac: Cmd + Option + J), chọn thẻ Console, dán dòng sau rồi Enter:\n   copy(localStorage.getItem('@publicToken'))\n   Chrome không cho dán thì gõ tay allow pasting, Enter, rồi dán lại.\n3. Dán vào ô 'Token đăng nhập' bên dưới.\n4. Quay lại Console, chạy copy(localStorage.getItem('@refreshToken')) rồi dán vào ô 'Refresh token'.\n5. Ô 'Địa chỉ gia hạn token' để trống. Bấm Lưu, rồi nhắn Vanhanh: Kiểm tra kết nối TTS Dropship.\n\nTỰ GIA HẠN: token của sàn sống khoảng 3 ngày. Có refresh token thì Vanhanh tự xin token mới trước khi hết hạn, và tự xin lại ngay khi sàn báo token hỏng, đúng như trang web của sàn làm. Không có thì cứ 3 ngày phải dán lại.\n\nBẢO MẬT: hai chuỗi này mở được tài khoản bán hàng của bạn, hãy coi như mật khẩu. Vanhanh mã hoá trước khi ghi xuống đĩa và không bao giờ ghi nó vào log.",
+    "guide_url": "https://github.com/lequydailb-dotcom/vanhanh-store/blob/main/huong-dan/tts-dropship.md",
+    "steps": [
+      {
+        "text": "Đọc hướng dẫn có từng bước và câu lệnh để copy.",
+        "link": "https://github.com/lequydailb-dotcom/vanhanh-store/blob/main/huong-dan/tts-dropship.md",
+        "link_label": "Mở hướng dẫn"
+      },
+      {
+        "text": "Mở trang dropship của TTS trên máy tính và đăng nhập bằng tài khoản bán hàng của bạn.",
+        "link": "https://dropship.thitruongsi.com",
+        "link_label": "Mở TTS Dropship"
+      },
+      {
+        "text": "Bấm F12 (máy Mac: Cmd + Option + J), chọn thẻ Console, dán copy(localStorage.getItem('@publicToken')) rồi Enter. Chrome không cho dán thì gõ allow pasting, Enter, rồi dán lại."
+      },
+      {
+        "text": "Dán vào ô 'Token đăng nhập'. Chuỗi rất dài, bắt đầu bằng eyJ, dán nguyên văn."
+      },
+      {
+        "text": "Quay lại Console, chạy copy(localStorage.getItem('@refreshToken')) rồi dán vào ô 'Refresh token'. Có ô này Vanhanh tự gia hạn, khỏi phải làm lại mỗi 3 ngày."
+      },
+      {
+        "text": "Ô 'Địa chỉ gia hạn token' để trống. Bấm Lưu, rồi nhắn Vanhanh: Kiểm tra kết nối TTS Dropship. Vanhanh thử tìm hàng, giỏ, khách và đơn, rồi báo việc nào chạy."
+      }
+    ],
+    "setup": {
+      "links": [
+        {
+          "label": "Hướng dẫn kết nối",
+          "url": "https://github.com/lequydailb-dotcom/vanhanh-store/blob/main/huong-dan/tts-dropship.md"
+        },
+        {
+          "label": "Mở TTS Dropship",
+          "url": "https://dropship.thitruongsi.com"
+        },
+        {
+          "label": "Danh sách đơn",
+          "url": "https://dropship.thitruongsi.com/orders"
+        }
+      ]
+    }
+  },
+  "tool_meta": {
+    "read": [
+      "tts_products",
+      "tts_suppliers",
+      "tts_cart",
+      "tts_customers",
+      "tts_shipping_rates",
+      "tts_orders",
+      "tts_finance",
+      "tts_listings",
+      "tts_wishlist",
+      "tts_health_check"
+    ],
+    "write": [
+      "tts_cart_update",
+      "tts_customer_write",
+      "tts_listing_write",
+      "tts_wishlist_write",
+      "tts_supplier_follow",
+      "tts_graphql"
+    ],
+    "danger": [
+      "tts_create_order",
+      "tts_cancel_order",
+      "tts_order_action",
+      "tts_listing_delete"
+    ]
+  },
+  "ghi_da_can_nhac": [
+    "tts_orders"
+  ],
+  "default_perm": "readonly",
+  "risk": "Mức Chỉ đọc (mặc định) chỉ xem sản phẩm, đơn hàng, vận đơn, khách hàng và tiền về. An toàn.\n\nMức Ghi nháp thêm quyền thêm/sửa giỏ hàng, TẠO KHÁCH HÀNG MỚI, viết bài đăng bán, lưu sản phẩm và theo dõi nhà cung cấp. Sàn TTS KHÔNG có đường sửa hay xoá khách hàng, nên một khách tạo nhầm sẽ nằm lại trong danh sách vĩnh viễn. Vanhanh tự chặn tạo khách trùng số điện thoại và tự đối chiếu địa chỉ với danh mục của sàn trước khi tạo.\n\nMức Toàn quyền cho phép Vanhanh TẠO ĐƠN HÀNG THẬT (sàn thu tiền COD của khách và trừ tiền hàng của bạn), HUỶ ĐƠN, ĐÁNH GIÁ đơn, mở KHIẾU NẠI và xoá bài đăng bán.\n\nBa điều không hoàn tác được, cần biết trước:\n1. Đơn đã tạo thì KHÔNG SỬA ĐƯỢC. Sàn không có đường cập nhật đơn, sai một chữ trong địa chỉ là phải huỷ rồi lên lại từ đầu.\n2. Đánh giá đơn chỉ gửi được một lần và nó mở khoá tiền đối soát.\n3. Huỷ đơn là dứt điểm, không khôi phục lại được.\n\nVì vậy tts_create_order, tts_cancel_order và tts_order_action luôn bắt xác nhận hai bước: lần gọi đầu chỉ trả về bản xem trước, phải gọi lại với confirm=true mới chạy thật. Gọi lại y hệt một đơn vừa tạo thì Vanhanh tự chặn để khỏi ra hai đơn, và lệnh tạo đơn không bao giờ tự gửi lại khi mạng chập chờn. Loop chạy nền không bao giờ được tự lên đơn, kể cả khi kết nối đã ở mức Toàn quyền.\n\nGói này KHÔNG có tool rút tiền. Nó chỉ đọc được biểu phí rút, cố ý bỏ hẳn đường chuyển tiền ra ngoài."
+}

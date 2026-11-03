@@ -1,7 +1,7 @@
 # Kiểm mọi gói trước khi trộn vào kho.
 #
 # Vì sao kho cần CI dù nó chỉ là dữ liệu: gói trong đây tới máy người dùng mà KHÔNG qua một bản
-# Naota mới. Không có lần phát hành nào đứng chắn phía sau, nên chỗ chắn duy nhất là đây.
+# Vanhanh mới. Không có lần phát hành nào đứng chắn phía sau, nên chỗ chắn duy nhất là đây.
 #
 # Không cài gì cả - `tools/kiem-tra.py` chỉ dùng thư viện chuẩn. Chạy hết trong vài giây.
 name: Kiểm kho
@@ -11,7 +11,7 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
-  # Gói có mã gọi vào module của lõi Naota (zalo_cli, image_vision...). Lõi đổi mà gói gãy thì phải
+  # Gói có mã gọi vào module của lõi Vanhanh (zalo_cli, image_vision...). Lõi đổi mà gói gãy thì phải
   # biết trong một ngày, không phải đợi tới lúc có người sửa kho.
   schedule:
     - cron: "17 2 * * *"
@@ -27,39 +27,39 @@ jobs:
       - name: Kiểm cấu trúc gói, an toàn quyền, và danh mục
         run: python tools/kiem-tra.py
 
-  # Test của gói CÓ MÃ (tests/<id gói>/test_*.py). Plugin trong gói chạy BÊN TRONG máy chủ Naota và import
-  # module của nó, nên test chạy trên bản naota mới nhất (nhánh main).
+  # Test của gói CÓ MÃ (tests/<id gói>/test_*.py). Plugin trong gói chạy BÊN TRONG máy chủ Vanhanh và import
+  # module của nó, nên test chạy trên bản vanhanh mới nhất (nhánh main).
   #
-  # Kho naota để riêng tư nên cần secret NAOTA_TOKEN (token chỉ đọc kho naota). Chưa có secret thì
+  # Kho vanhanh để riêng tư nên cần secret VANHANH_TOKEN (token chỉ đọc kho vanhanh). Chưa có secret thì
   # hai job dưới bỏ qua và ghi chú lại, không đỏ.
   test-goi-co-ma:
     runs-on: ubuntu-latest
     steps:
       - id: quyen
         env:
-          NAOTA_TOKEN: ${{ secrets.NAOTA_TOKEN }}
+          VANHANH_TOKEN: ${{ secrets.VANHANH_TOKEN }}
         run: |
-          if [ -n "$NAOTA_TOKEN" ]; then echo "co=1" >> "$GITHUB_OUTPUT"
-          else echo "::notice::Chưa có secret NAOTA_TOKEN nên bỏ qua test gói có mã"; fi
+          if [ -n "$VANHANH_TOKEN" ]; then echo "co=1" >> "$GITHUB_OUTPUT"
+          else echo "::notice::Chưa có secret VANHANH_TOKEN nên bỏ qua test gói có mã"; fi
       - if: steps.quyen.outputs.co == '1'
         uses: actions/checkout@v4
       - if: steps.quyen.outputs.co == '1'
         uses: actions/checkout@v4
         with:
-          repository: vuongtex/naota
-          token: ${{ secrets.NAOTA_TOKEN }}
-          path: naota
+          repository: lequydailb-dotcom/vanhanh
+          token: ${{ secrets.VANHANH_TOKEN }}
+          path: vanhanh
       - if: steps.quyen.outputs.co == '1'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Cài thư viện của NAOTA
+      - name: Cài thư viện của VANHANH
         if: steps.quyen.outputs.co == '1'
-        run: pip install -r naota/requirements.txt
+        run: pip install -r vanhanh/requirements.txt
       - name: Chạy test các gói có mã
         if: steps.quyen.outputs.co == '1'
         env:
-          NAOTA_OS_DIR: ${{ github.workspace }}/naota
+          VANHANH_OS_DIR: ${{ github.workspace }}/vanhanh
         run: |
           set -e
           shopt -s nullglob
@@ -67,25 +67,25 @@ jobs:
 
   # MCP bên thứ 3 đi theo bản chính thức mới nhất (@latest), nên bên đó ra bản mới là mọi máy chạy
   # bản đó ngay. Job này chạy thử bản mới nhất THẬT của từng MCP, phân loại tool thật bằng đúng hàm
-  # của Naota, và đỏ khi có tool phá huỷ hay tiêu tiền chưa được xếp vào nhóm nguy hiểm. Chạy mỗi
+  # của Vanhanh, và đỏ khi có tool phá huỷ hay tiêu tiền chưa được xếp vào nhóm nguy hiểm. Chạy mỗi
   # ngày (lịch ở trên) là để bản mới của bên thứ 3 lộ ra trong một ngày.
   soi-ban-moi:
     runs-on: ubuntu-latest
     steps:
       - id: quyen
         env:
-          NAOTA_TOKEN: ${{ secrets.NAOTA_TOKEN }}
+          VANHANH_TOKEN: ${{ secrets.VANHANH_TOKEN }}
         run: |
-          if [ -n "$NAOTA_TOKEN" ]; then echo "co=1" >> "$GITHUB_OUTPUT"
-          else echo "::notice::Chưa có secret NAOTA_TOKEN nên bỏ qua soi bản mới MCP"; fi
+          if [ -n "$VANHANH_TOKEN" ]; then echo "co=1" >> "$GITHUB_OUTPUT"
+          else echo "::notice::Chưa có secret VANHANH_TOKEN nên bỏ qua soi bản mới MCP"; fi
       - if: steps.quyen.outputs.co == '1'
         uses: actions/checkout@v4
       - if: steps.quyen.outputs.co == '1'
         uses: actions/checkout@v4
         with:
-          repository: vuongtex/naota
-          token: ${{ secrets.NAOTA_TOKEN }}
-          path: naota
+          repository: lequydailb-dotcom/vanhanh
+          token: ${{ secrets.VANHANH_TOKEN }}
+          path: vanhanh
       - if: steps.quyen.outputs.co == '1'
         uses: actions/setup-python@v5
         with:
@@ -99,5 +99,5 @@ jobs:
       - name: Soi bản mới nhất của từng MCP bên thứ 3
         if: steps.quyen.outputs.co == '1'
         env:
-          NAOTA_OS_DIR: ${{ github.workspace }}/naota
+          VANHANH_OS_DIR: ${{ github.workspace }}/vanhanh
         run: python tools/soi-ban-moi.py

@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-wechat-mini-program-developer
+version: 1.0.0
+name: {vi: "Lập trình viên mini program WeChat", en: "WeChat Mini Program Developer"}
+description: {vi: "Phát triển mini program WeChat bằng WXML/WXSS/WXS, tích hợp API WeChat, thanh toán, tin nhắn đăng ký và cả hệ sinh thái WeChat.",
+              en: "Expert WeChat Mini Program developer specializing in 小程序 development with WXML/WXSS/WXS, WeChat API integration, payment systems, subscription messaging, and the full WeChat ecosystem."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-wechat-mini-program-developer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-wechat-mini-program-developer]

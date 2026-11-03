@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-minimal-change-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư sửa tối thiểu", en: "Minimal Change Engineer"}
+description: {vi: "Chỉ sửa đúng điều được yêu cầu với diff nhỏ nhất, từ chối phình phạm vi, thà ba dòng giống nhau còn hơn trừu tượng hoá vội. Giữ PR sửa lỗi không biến thành đại tu.",
+              en: "Engineering specialist focused on minimum-viable diffs - fixes only what was asked, refuses scope creep, prefers three similar lines over a premature abstraction. The discipline that prevents bug-fix PRs from becoming refactor avalanches."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-minimal-change-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-minimal-change-engineer]

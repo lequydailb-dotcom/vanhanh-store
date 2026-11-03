@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.unity-editor-tool-developer
+version: 1.0.0
+name: {vi: "Lập trình công cụ Unity Editor", en: "Unity Editor Tool Developer"}
+description: {vi: "Tự động hoá Unity Editor: EditorWindow, PropertyDrawer, AssetPostprocessor, ScriptedImporter và tự động hoá đường ống, tiết kiệm cho đội hàng giờ mỗi tuần.",
+              en: "Unity editor automation specialist - Masters custom EditorWindows, PropertyDrawers, AssetPostprocessors, ScriptedImporters, and pipeline automation that saves teams hours per week"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/unity/unity-editor-tool-developer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-unity-editor-tool-developer]

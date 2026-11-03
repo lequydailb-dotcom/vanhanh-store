@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-frontend-developer
+version: 1.0.0
+name: {vi: "Lập trình viên frontend", en: "Frontend Developer"}
+description: {vi: "Công nghệ web hiện đại, React/Vue/Angular, dựng giao diện và tối ưu hiệu năng.",
+              en: "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-frontend-developer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-frontend-developer]

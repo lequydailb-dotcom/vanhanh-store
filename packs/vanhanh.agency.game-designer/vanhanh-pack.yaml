@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.game-designer
+version: 1.0.0
+name: {vi: "Nhà thiết kế game", en: "Game Designer"}
+description: {vi: "Kiến trúc hệ thống và cơ chế chơi: viết tài liệu thiết kế (GDD), tâm lý người chơi, cân bằng kinh tế, thiết kế vòng lặp chơi cho mọi engine và thể loại.",
+              en: "Systems and mechanics architect - Masters GDD authorship, player psychology, economy balancing, and gameplay loop design across all engines and genres"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/game-designer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-game-designer]

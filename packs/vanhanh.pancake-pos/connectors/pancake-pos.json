@@ -1,0 +1,76 @@
+{
+  "id": "pancake-pos",
+  "name": "Pancake POS",
+  "icon": "assets/pancake-pos.png",
+  "category": "Bán hàng",
+  "description": "Đơn hàng, doanh thu, khách hàng, tồn kho, quảng cáo từ Pancake POS. Mỗi cửa hàng 1 API key - thêm nhiều tài khoản cho nhiều shop.",
+  "status": "ready",
+  "transport": "http",
+  "url": "https://mcp-pos.pancake.biz/mcp",
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "api_key",
+        "label": "API key của cửa hàng",
+        "placeholder": "Dán API key Pancake POS...",
+        "header": "Authorization: Bearer {api_key}"
+      }
+    ],
+    "guide": "Mở Pancake POS > Cấu hình cửa hàng > Ứng dụng & API > tạo API key, rồi dán vào đây.\n\nVanhanh sẽ tự kiểm tra và lấy tên cửa hàng.",
+    "guide_url": "https://docs.pancake.biz/pos/st-f13/st-p2?lang=vi"
+  },
+  "validate": {
+    "tool": "pos_shop",
+    "args": {
+      "action": "list"
+    },
+    "label_paths": [
+      "name",
+      "shop.name",
+      "data.name",
+      "shops.0.name",
+      "data.shops.0.name",
+      "data.0.name"
+    ]
+  },
+  "arg_rules": {
+    "param": "action",
+    "read_prefixes": [
+      "list",
+      "get",
+      "search",
+      "describe",
+      "count",
+      "stat",
+      "read",
+      "history",
+      "export"
+    ],
+    "read_values": [
+      "create_orders_get_tracking_url",
+      "create_products_get_logistics_shipping_document",
+      "create_orders_get_promotion_advance_active"
+    ]
+  },
+  "tool_meta": {
+    "read": [
+      "pos_describe",
+      "pos_statistics",
+      "pos_statistics_inventory_analytics",
+      "pos_export"
+    ],
+    "danger": [
+      "pos_order",
+      "pos_purchase",
+      "pos_transaction",
+      "pos_debt",
+      "pos_e_invoice",
+      "pos_ads_manager",
+      "pos_voucher",
+      "pos_promotion"
+    ]
+  },
+  "risk": "Mức Chỉ đọc (mặc định) chỉ xem đơn, doanh thu, tồn kho, khách hàng. An toàn.\n\nMức Toàn quyền cho phép Vanhanh TẠO ĐƠN HÀNG, ghi GIAO DỊCH THU CHI, sửa CÔNG NỢ, xuất HOÁ ĐƠN ĐIỆN TỬ, chạy QUẢNG CÁO và tạo voucher/khuyến mãi.\n\nĐây là tiền thật và đơn thật của cửa hàng, nhiều thao tác không hoàn tác được. Chỉ nâng quyền khi bạn thật sự cần Vanhanh thao tác thay mình.\n\nLoop chạy nền không bao giờ được tự tạo đơn hay tiêu tiền, kể cả khi kết nối đã ở mức Toàn quyền.",
+  "default_perm": "readonly"
+}

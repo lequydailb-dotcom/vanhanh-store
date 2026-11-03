@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.sales-deal-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia deal", en: "Deal Strategist"}
+description: {vi: "Đánh giá deal theo MEDDPICC, định vị cạnh tranh, kế hoạch thắng cho chu kỳ bán B2B phức tạp. Chấm điểm cơ hội, chỉ ra rủi ro pipeline.",
+              en: "Senior deal strategist specializing in MEDDPICC qualification, competitive positioning, and win planning for complex B2B sales cycles. Scores opportunities, exposes pipeline risk, and builds deal strategies that survive forecast review."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/sales/sales-deal-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-sales-deal-strategist]

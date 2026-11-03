@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.healthcare-marketing-compliance
+version: 1.0.0
+name: {vi: "Chuyên gia tuân thủ marketing y tế", en: "Healthcare Marketing Compliance Specialist"}
+description: {vi: "Tuân thủ marketing y tế tại Trung Quốc: Luật Quảng cáo, quy định quảng cáo y tế, Luật Dược, áp dụng cho thuốc, thiết bị y tế và dịch vụ.",
+              en: "Expert in healthcare marketing compliance in China, proficient in the Advertising Law, Medical Advertisement Management Measures, Drug Administration Law, and related regulations - covering pharmaceuticals, medical devices, medical aesthetics, health supplements, and internet healthcare across..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/healthcare-marketing-compliance.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-healthcare-marketing-compliance]

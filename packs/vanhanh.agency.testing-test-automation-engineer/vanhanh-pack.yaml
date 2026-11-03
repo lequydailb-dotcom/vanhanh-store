@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.testing-test-automation-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư tự động hoá kiểm thử", en: "Test Automation Engineer"}
+description: {vi: "Kiểm thử đầu cuối tự động bằng Playwright và Cypress: selector bền, diệt test chập chờn, dữ liệu test cách ly, chạy song song trên CI, gỡ lỗi bằng trace.",
+              en: "Expert end-to-end test automation engineer for Playwright and Cypress - resilient selectors, flake elimination, isolated test data, CI parallelization, and trace-driven failure debugging."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-test-automation-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-testing-test-automation-engineer]

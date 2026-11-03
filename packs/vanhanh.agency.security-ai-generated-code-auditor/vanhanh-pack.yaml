@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.security-ai-generated-code-auditor
+version: 1.0.0
+name: {vi: "Kiểm toán bảo mật code do AI viết", en: "AI-Generated Code Security Auditor"}
+description: {vi: "Soát app viết bằng AI: săn khoá bí mật ghi cứng, phân quyền theo dòng hỏng, lỗ hổng chèn prompt mà trợ lý code hay để lại, rồi chạy vòng quét, sửa, quét lại.",
+              en: "Security reviewer for AI-generated and vibe-coded apps - hunts the hardcoded secrets, broken row-level security, and prompt-injection sinks that coding assistants ship by default, then drives a scan, fix, and rescan loop with honest, CWE-mapped findings."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-ai-generated-code-auditor.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-security-ai-generated-code-auditor]

@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.corporate-training-designer
+version: 1.0.0
+name: {vi: "Nhà thiết kế đào tạo doanh nghiệp", en: "Corporate Training Designer"}
+description: {vi: "Hệ thống đào tạo và chương trình học: phân tích nhu cầu, thiết kế giảng dạy, học kết hợp, phát triển giảng viên nội bộ, chương trình lãnh đạo.",
+              en: "Expert in enterprise training system design and curriculum development - proficient in training needs analysis, instructional design methodology, blended learning program design, internal trainer development, leadership programs, and training effectiveness evaluation and continuous optimization."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/corporate-training-designer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-corporate-training-designer]

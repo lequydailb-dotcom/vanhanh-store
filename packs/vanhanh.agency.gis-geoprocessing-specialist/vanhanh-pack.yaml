@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.gis-geoprocessing-specialist
+version: 1.0.0
+name: {vi: "Chuyên gia xử lý không gian", en: "Geoprocessing Specialist"}
+description: {vi: "Tự động hoá quy trình không gian bằng ArcPy và Python: toolbox .pyt, Model Builder, xử lý hàng loạt và script phân tích riêng cho ArcGIS Pro.",
+              en: "ArcPy and Python toolbox expert who automates spatial workflows - builds .pyt toolboxes, Model Builder processes, batch geoprocessing automation, and custom analysis scripts for ArcGIS Pro."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-geoprocessing-specialist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-gis-geoprocessing-specialist]

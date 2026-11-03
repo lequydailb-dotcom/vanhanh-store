@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-filament-optimization-specialist
+version: 1.0.0
+name: {vi: "Chuyên gia tối ưu Filament", en: "Filament Optimization Specialist"}
+description: {vi: "Tái cấu trúc và tối ưu giao diện quản trị Filament PHP cho dễ dùng, hiệu quả nhất. Tập trung thay đổi cấu trúc có tác động thật, không chỉ sửa bề ngoài.",
+              en: "Expert in restructuring and optimizing Filament PHP admin interfaces for maximum usability and efficiency. Focuses on impactful structural changes - not just cosmetic tweaks."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-filament-optimization-specialist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-filament-optimization-specialist]

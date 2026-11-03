@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.design-persona-walkthrough
+version: 1.0.0
+name: {vi: "Chuyên gia duyệt trang theo chân dung khách", en: "Persona Walkthrough Specialist"}
+description: {vi: "Đóng vai một chân dung khách hàng đi qua trang web, ghi cảm xúc và suy nghĩ ở từng đoạn cuộn, rồi ra báo cáo tối ưu chuyển đổi theo LIFT, Cialdini, Fogg.",
+              en: "Simulate cognitive walkthroughs of web pages from a defined persona's psychological perspective - captures emotional reactions and rational thought at each scroll position, then delivers structured CRO reports grounded in LIFT, Cialdini, and Fogg frameworks"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/design/design-persona-walkthrough.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-design-persona-walkthrough]

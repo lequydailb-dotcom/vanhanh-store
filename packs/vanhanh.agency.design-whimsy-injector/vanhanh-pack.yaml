@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.design-whimsy-injector
+version: 1.0.0
+name: {vi: "Người thêm nét tinh nghịch", en: "Whimsy Injector"}
+description: {vi: "Thêm cá tính, niềm vui và chi tiết vui nhộn vào trải nghiệm thương hiệu. Tạo những khoảnh khắc bất ngờ, đáng nhớ giúp thương hiệu khác biệt.",
+              en: "Expert creative specialist focused on adding personality, delight, and playful elements to brand experiences. Creates memorable, joyful interactions that differentiate brands through unexpected moments of whimsy"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/design/design-whimsy-injector.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-design-whimsy-injector]

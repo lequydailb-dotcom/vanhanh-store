@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.blender-addon-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư add-on Blender", en: "Blender Add-on Engineer"}
+description: {vi: "Viết add-on Python cho Blender, công cụ kiểm tài nguyên, bộ xuất file và tự động hoá đường ống, biến việc lặp lại thành thao tác một cú bấm.",
+              en: "Blender tooling specialist - Builds Python add-ons, asset validators, exporters, and pipeline automations that turn repetitive DCC work into reliable one-click workflows"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/blender/blender-addon-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-blender-addon-engineer]

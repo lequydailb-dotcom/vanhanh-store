@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.design-image-prompt-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư prompt ảnh", en: "Image Prompt Engineer"}
+description: {vi: "Viết prompt chi tiết, giàu hình ảnh cho AI tạo ảnh. Biến ý tưởng thị giác thành câu lệnh chính xác để ra ảnh chụp đẹp, chuyên nghiệp.",
+              en: "Expert photography prompt engineer specializing in crafting detailed, evocative prompts for AI image generation. Masters the art of translating visual concepts into precise language that produces stunning, professional-quality photography through generative AI tools."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/design/design-image-prompt-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-design-image-prompt-engineer]

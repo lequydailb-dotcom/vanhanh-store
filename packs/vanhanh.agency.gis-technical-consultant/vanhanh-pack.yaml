@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.gis-technical-consultant
+version: 1.0.0
+name: {vi: "Tư vấn kỹ thuật GIS", en: "Technical Consultant"}
+description: {vi: "Cố vấn chiến lược GIS: biến bài toán kinh doanh thành giải pháp không gian, phân tích khoảng trống, lộ trình công nghệ, trả lời hồ sơ mời thầu, chuyển đổi số.",
+              en: "Strategic GIS advisor who translates business problems into geospatial solutions - gap analysis, technology roadmaps, RFP responses, and digital transformation strategy across Esri and open-source ecosystems."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-technical-consultant.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-gis-technical-consultant]

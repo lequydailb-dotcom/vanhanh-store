@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.security-secrets-credential-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư quản lý khoá bí mật", en: "Secrets & Credential Hygiene Engineer"}
+description: {vi: "Lo trọn vòng đời khoá bí mật và thông tin đăng nhập: phát hiện, phòng ngừa, cất két, xoay vòng, xử lý rò rỉ. Ứng dụng chạy bằng khoá ngắn hạn, quyền tối thiểu, không nằm trong code.",
+              en: "Owns the full lifecycle of secrets and credentials - detection, prevention, vaulting, rotation, and leak response - so an application runs on short-lived, least-privilege credentials that are never in the code and are already rotated by the time a leak is found."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-secrets-credential-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-security-secrets-credential-engineer]

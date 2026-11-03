@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.product-dx-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư trải nghiệm lập trình viên (DX)", en: "DX Engineer"}
+description: {vi: "Bỏ mọi bước thừa giữa lập trình viên và lần thành công đầu tiên: mẫu SDK, luồng làm quen, thông báo lỗi và vòng phản hồi.",
+              en: "Removes every unnecessary step between a developer and their first success - SDK samples, onboarding flows, error messages, and the feedback loops that make products feel like they were built by someone who's used them."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/product/product-dx-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-product-dx-engineer]

@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.gitnexus
+version: 1.0.1
+name: {vi: "GitNexus: Bản đồ mã nguồn", en: "GitNexus: Code knowledge graph"}
+description: {vi: "12 skill của GitNexus: dựng đồ thị phụ thuộc của cả codebase rồi dùng nó để khám phá mã, gỡ lỗi, đánh giá tác động trước khi sửa, refactor, review PR. Cần chạy npx gitnexus analyze. Giấy phép chỉ cho dùng phi thương mại.",
+              en: "12 GitNexus skills: index the whole codebase into a dependency graph and use it to explore code, debug, check impact before an edit, refactor and review PRs. Needs npx gitnexus analyze. Licensed for noncommercial use only."}
+author: {name: "Abhigyan Patwari", url: "https://github.com/abhigyanpatwari/GitNexus"}
+license: PolyForm-Noncommercial-1.0.0
+homepage: "https://github.com/abhigyanpatwari/GitNexus"
+compat: {app: ">=1.0.0"}
+# Gói theo repo gốc: thư mục skills/ do tools/theo-goc.py chép nguyên văn, đừng sửa tay.
+upstream: {repo: "abhigyanpatwari/GitNexus", ref: "main"}
+provides:
+  skills: [gitnexus-cli, gitnexus-debugging, gitnexus-exploring, gitnexus-guide, gitnexus-impact-analysis, gitnexus-lfg, gitnexus-pdg-query, gitnexus-plan, gitnexus-refactoring, gitnexus-review, gitnexus-taint-analysis, gitnexus-work]

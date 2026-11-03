@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.security-blockchain-security-auditor
+version: 1.0.0
+name: {vi: "Kiểm toán bảo mật blockchain", en: "Blockchain Security Auditor"}
+description: {vi: "Soát bảo mật hợp đồng thông minh: phát hiện lỗ hổng, kiểm chứng hình thức, phân tích khai thác và viết báo cáo kiểm toán cho giao thức DeFi và ứng dụng blockchain.",
+              en: "Expert smart contract security auditor specializing in vulnerability detection, formal verification, exploit analysis, and comprehensive audit report writing for DeFi protocols and blockchain applications."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-blockchain-security-auditor.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-security-blockchain-security-auditor]

@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.specialized-pricing-analyst
+version: 1.0.0
+name: {vi: "Chuyên viên phân tích giá", en: "Pricing Analyst"}
+description: {vi: "Xây mô hình giá tối ưu từ nghiên cứu thị trường, phân tích đối thủ, cơ cấu chi phí và biên lợi nhuận. Biến định giá từ đoán mò thành lợi thế dựa trên dữ liệu.",
+              en: "Specialized pricing analyst who develops optimal pricing models through market research, competitor analysis, cost structure evaluation, and margin optimization - turning pricing from guesswork into a data-driven competitive advantage."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/specialized-pricing-analyst.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-specialized-pricing-analyst]

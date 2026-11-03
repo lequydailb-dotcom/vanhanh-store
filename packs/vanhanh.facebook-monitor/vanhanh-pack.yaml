@@ -1,0 +1,12 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.facebook-monitor
+version: 1.0.0
+name: {vi: "Theo dõi Facebook (Apify)"}
+description: {vi: "Theo dõi Trang và Nhóm CÔNG KHAI trên Facebook để tìm bài viral (nhiều share), qua dịch vụ quét Apify. KHÔNG dùng tài khoản cá nhân của bạn nên không lo khoá; chạy tốt trên VPS 24/7. Trả về bài kèm số share/react/bình luận để lọc bài hot. Cần token Apify (đăng ký free, trả theo lượt quét ~2.6 USD/1000 bài). Nhóm KÍN là bước sau (cần thêm cookie)."}
+author: {name: Vanhanh}
+license: MIT
+homepage: "https://github.com/lequydailb-dotcom/vanhanh-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/facebook-monitor.json]

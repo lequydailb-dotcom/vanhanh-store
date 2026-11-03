@@ -1,0 +1,30 @@
+{
+  "id": "facebook-monitor",
+  "name": "Theo dõi Facebook (Apify)",
+  "icon": "assets/meta-ads.webp",
+  "category": "Mạng xã hội",
+  "description": "Theo dõi Trang và Nhóm CÔNG KHAI trên Facebook để tìm bài viral (nhiều share), qua dịch vụ quét Apify. KHÔNG dùng tài khoản cá nhân của bạn nên không lo khoá; chạy tốt trên VPS 24/7. Trả về bài kèm số share/react/bình luận để lọc bài hot. Cần token Apify (đăng ký free, trả theo lượt quét ~2.6 USD/1000 bài). Nhóm KÍN là bước sau (cần thêm cookie).",
+  "status": "beta",
+  "transport": "http",
+  "url": "",
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "apify_token",
+        "label": "Apify API token",
+        "placeholder": "Ví dụ: apify_api_xxxxxxxx",
+        "env": "APIFY_TOKEN"
+      }
+    ],
+    "guide": "Làm 1 lần:\n1. Vào apify.com đăng ký tài khoản (có gói free + trả theo lượng dùng).\n2. Vào Console > Settings > API & Integrations, copy 'Personal API token'.\n3. Dán vào ô dưới rồi bấm Kết nối.\n\nChi phí quét tính theo lượt, khoảng 2.6 USD cho 1000 bài với actor mặc định. Vanhanh chỉ quét khi bạn hoặc loop yêu cầu.\n\nV1 hỗ trợ Trang và Nhóm CÔNG KHAI, không cần cookie. Nhóm KÍN sẽ bổ sung sau, cần thêm cookie của tài khoản là thành viên.",
+    "guide_url": "https://console.apify.com/settings/integrations"
+  },
+  "tool_meta": {
+    "read": [
+      "fb_monitor"
+    ]
+  },
+  "default_perm": "readonly",
+  "risk": "Connector này CHỈ ĐỌC: quét dữ liệu CÔNG KHAI qua dịch vụ Apify, KHÔNG đụng tài khoản Facebook của bạn.\n\nKhông đăng, không bình luận, nên không có rủi ro khoá tài khoản.\n\nLưu ý mỗi lượt quét tốn một ít phí Apify tính theo số bài."
+}

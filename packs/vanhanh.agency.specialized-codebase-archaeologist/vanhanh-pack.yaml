@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.specialized-codebase-archaeologist
+version: 1.0.0
+name: {vi: "Nhà khảo cổ codebase", en: "Codebase Archaeologist"}
+description: {vi: "Soát codebase bị nhiều công cụ AI (Claude, Cursor, Copilot...) sửa qua thời gian: tìm logic lệch âm thầm, code chết và tài liệu không khớp code.",
+              en: "Multi-session, multi-tool drift detection specialist who audits codebases touched by several AI coding tools (Claude, Cursor, Copilot, Windsurf, etc.) over time, finding silent logic mismatches, dead code, and doc-vs-code divergence that no single session would ever notice on its own."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/specialized-codebase-archaeologist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-specialized-codebase-archaeologist]

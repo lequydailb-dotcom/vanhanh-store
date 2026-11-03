@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.ui-ux-pro-max
+version: 1.0.0
+name: {vi: "UI/UX Pro Max: Thiết kế giao diện", en: "UI/UX Pro Max: Interface design"}
+description: {vi: "Bộ skill thiết kế giao diện nổi nhất: kho phong cách, bảng màu, cặp font và quy tắc UX để AI dựng trang web, landing page, banner, slide và hệ thống thiết kế đẹp ngay lần đầu. Cần Python 3.",
+              en: "The most popular interface design skills: a library of styles, palettes, font pairings and UX rules so the AI builds websites, landing pages, banners, slides and design systems that look right first time. Needs Python 3."}
+author: {name: "Next Level Builder", url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"}
+license: MIT
+homepage: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+compat: {app: ">=1.0.0"}
+# Gói theo repo gốc: thư mục skills/ do tools/theo-goc.py chép nguyên văn, đừng sửa tay.
+upstream: {repo: "nextlevelbuilder/ui-ux-pro-max-skill", ref: "main"}
+provides:
+  skills: [banner-design, brand, design, design-system, slides, ui-styling, ui-ux-pro-max]

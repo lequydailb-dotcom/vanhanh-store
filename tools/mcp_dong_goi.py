@@ -55,7 +55,7 @@ THU_MUC = GOC / "mcp"
 NGUON = THU_MUC / "nguon.json"
 # Địa chỉ connector dùng để tải tệp. Nhánh `main`: tệp trong `mcp/` không bao giờ bị ghi đè, nên
 # URL theo tên tệp đã là URL bất biến.
-URL_GOC = "https://raw.githubusercontent.com/vuongtex/naota-store/main/mcp/"
+URL_GOC = "https://raw.githubusercontent.com/lequydailb-dotcom/vanhanh-store/main/mcp/"
 
 
 def doc_nguon():
@@ -202,7 +202,7 @@ def dong(ten):
     if m.get("thu_muc"):
         THU_MUC.mkdir(exist_ok=True)
         dich = THU_MUC / ten_tep(m)
-        with tempfile.TemporaryDirectory(prefix="naota-mcp-") as tmp:
+        with tempfile.TemporaryDirectory(prefix="vanhanh-mcp-") as tmp:
             moi = Path(tmp) / dich.name
             _dong_tu_thu_muc(GOC / m["thu_muc"], moi)
             if dich.exists() and sha256(dich) != sha256(moi):
@@ -210,7 +210,7 @@ def dong(ten):
                                  f"trong mcp/nguon.json và package.json (không ghi đè tệp đã phát hành)")
             shutil.copyfile(moi, dich)
         return _xong(ds, m, dich)
-    with tempfile.TemporaryDirectory(prefix="naota-mcp-") as tmp:
+    with tempfile.TemporaryDirectory(prefix="vanhanh-mcp-") as tmp:
         src = Path(tmp) / "src"
         _chay(["git", "clone", "-q", m["repo"], str(src)], tmp)
         _chay(["git", "checkout", "-q", m["commit"]], src)

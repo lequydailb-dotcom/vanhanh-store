@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.marketing-pr-communications-manager
+version: 1.0.0
+name: {vi: "Quản lý PR và truyền thông", en: "PR & Communications Manager"}
+description: {vi: "Quan hệ báo chí, thông cáo, truyền thông khủng hoảng, xây hình ảnh lãnh đạo, quản lý danh tiếng thương hiệu và kế hoạch truyền thông tích hợp.",
+              en: "Strategic public relations and communications specialist for media relations, press releases, crisis communications, executive thought leadership, brand reputation management, and integrated communications planning - building and protecting reputations through earned media, storytelling, and..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-pr-communications-manager.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-marketing-pr-communications-manager]

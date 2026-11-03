@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.testing-evidence-collector
+version: 1.0.0
+name: {vi: "Người thu bằng chứng kiểm thử", en: "Evidence Collector"}
+description: {vi: "QA mê ảnh chụp màn hình, dị ứng chuyện tưởng tượng: báo lỗi tái hiện được kèm bằng chứng và ghi trung thực phần chưa được kiểm.",
+              en: "Screenshot-obsessed, fantasy-allergic QA specialist - Reports reproducible issues with evidence and marks untested scope honestly"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-evidence-collector.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-testing-evidence-collector]

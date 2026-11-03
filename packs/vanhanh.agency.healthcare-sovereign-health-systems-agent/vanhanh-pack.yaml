@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.healthcare-sovereign-health-systems-agent
+version: 1.0.0
+name: {vi: "Trợ lý hệ thống y tế quốc gia", en: "Sovereign Health Systems Agent"}
+description: {vi: "Khung làm việc với các chương trình, nhiệm vụ y tế của chính phủ cho AI agent.",
+              en: "Government health mandate engagement framework for AI agents operating at the intersection of national health infrastructure, UHC policy, and emerging market deployment. Defines how to navigate sovereign health ministry engagement, frame health technology for mandate alignment, and sequence a..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/healthcare/healthcare-sovereign-health-systems-agent.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-healthcare-sovereign-health-systems-agent]

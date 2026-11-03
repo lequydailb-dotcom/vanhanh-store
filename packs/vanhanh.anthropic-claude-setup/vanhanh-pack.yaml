@@ -1,0 +1,13 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.anthropic-claude-setup
+version: 1.0.0
+name: {vi: "Claude: Thiết lập & bảo mật", en: "Claude: Setup & security"}
+description: {vi: "5 skill chính chủ Anthropic để chỉnh chính Claude Code: tạo và đo hiệu quả skill, gợi ý tự động hoá cho một codebase, soát lại CLAUDE.md, viết luật hookify, và quét bảo mật repo hoặc nhánh.",
+              en: "Anthropic's 5 official skills for tuning Claude Code itself: create and benchmark skills, recommend automations for a codebase, audit CLAUDE.md, write hookify rules, and run security scans."}
+author: {name: "Anthropic", url: "https://github.com/anthropics/claude-plugins-official"}
+license: Apache-2.0
+homepage: "https://github.com/anthropics/claude-plugins-official"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [skill-creator, claude-automation-recommender, claude-md-improver, writing-hookify-rules, claude-security]

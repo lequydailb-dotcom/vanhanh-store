@@ -1,0 +1,12 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.haravan
+version: 1.0.0
+name: {vi: "Haravan"}
+description: {vi: "Đơn hàng, sản phẩm, khách hàng, tồn kho và báo cáo doanh thu, phân nhóm khách, gợi ý nhập hàng từ Haravan. Tạo một ứng dụng riêng trong Haravan, dán Access Token là xong."}
+author: {name: Vanhanh}
+license: MIT
+homepage: "https://github.com/lequydailb-dotcom/vanhanh-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/haravan.json]

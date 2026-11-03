@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.specialized-focus-music-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư nhạc tập trung", en: "Focus Music Architect"}
+description: {vi: "Nhạc không lời giúp tập trung: viết prompt cho AI tạo nhạc, kiến trúc âm cảnh, đường cong BPM và lớp âm binaural cho trạng thái làm việc sâu.",
+              en: "Instrumental focus music specialist and neuroacoustic prompt engineer - crafts high-yield prompts, soundscape architectures, BPM curves, and binaural layers for deep cognitive flow and generative audio models."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/specialized-focus-music-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-specialized-focus-music-architect]

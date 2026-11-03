@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-feishu-integration-developer
+version: 1.0.0
+name: {vi: "Lập trình viên tích hợp Feishu", en: "Feishu Integration Developer"}
+description: {vi: "Nền tảng mở Feishu (Lark): bot, mini program, quy trình duyệt, Bitable, thẻ tin nhắn tương tác, webhook, đăng nhập SSO và tự động hoá quy trình.",
+              en: "Full-stack integration expert specializing in the Feishu (Lark) Open Platform - proficient in Feishu bots, mini programs, approval workflows, Bitable (multidimensional spreadsheets), interactive message cards, Webhooks, SSO authentication, and workflow automation, building enterprise-grade..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-feishu-integration-developer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-feishu-integration-developer]

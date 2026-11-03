@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.security-incident-responder
+version: 1.0.0
+name: {vi: "Người ứng cứu sự cố bảo mật", en: "Incident Responder"}
+description: {vi: "Điều tra số và ứng cứu sự cố: dẫn dắt điều tra rò rỉ, khoanh vùng mối đe doạ đang diễn ra, điều phối xử lý khủng hoảng và viết báo cáo để không lặp lại.",
+              en: "Digital forensics and incident response specialist who leads breach investigations, contains active threats, coordinates crisis response, and writes post-mortems that prevent recurrence."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-incident-responder.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-security-incident-responder]

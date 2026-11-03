@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-rust-refactoring-specialist
+version: 1.0.0
+name: {vi: "Chuyên gia tái cấu trúc Rust", en: "Rust Refactoring Specialist"}
+description: {vi: "Tái cấu trúc Rust cả kho mã: đổi tên an toàn, sắp lại module, bỏ trùng lặp, chống panic, cải thiện ownership, xử lý cảnh báo compiler và Clippy.",
+              en: "Expert Rust engineer for repository-scale refactoring, safe renames, module restructuring, duplication removal, panic hardening, ownership improvements, and compiler or Clippy remediation."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-rust-refactoring-specialist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-rust-refactoring-specialist]

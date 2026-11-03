@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.economy-designer
+version: 1.0.0
+name: {vi: "Nhà thiết kế kinh tế game", en: "Economy Designer"}
+description: {vi: "Kiến trúc kinh tế ảo: hệ tiền tệ, nguồn vào và nguồn tiêu, mô hình kiếm tiền, kiểm soát lạm phát và cân bằng kinh tế theo dữ liệu cho game vận hành lâu dài.",
+              en: "Virtual economy architect - Masters currency systems, sources and sinks, monetization modeling, inflation control, and data-driven economic balancing for live games"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/economy-designer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-economy-designer]

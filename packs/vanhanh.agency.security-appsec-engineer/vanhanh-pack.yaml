@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.security-appsec-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư bảo mật ứng dụng", en: "Application Security Engineer"}
+description: {vi: "Bảo mật cả vòng đời phát triển: mô hình hoá mối đe doạ, review code an toàn, tích hợp SAST/DAST và dạy lập trình viên để code an toàn thành mặc định.",
+              en: "AppSec specialist who secures the software development lifecycle through threat modeling, secure code review, SAST/DAST integration, and developer security education that makes secure code the default."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-appsec-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-security-appsec-engineer]

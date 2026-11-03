@@ -1,0 +1,12 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.notebooklm
+version: 1.0.3
+name: {vi: "Google NotebookLM"}
+description: {vi: "Đọc và thao tác notebook trên Google NotebookLM: liệt kê notebook, đọc nguồn, hỏi đáp ngay trong notebook, thêm nguồn, lưu ghi chú, tạo tóm tắt/audio ở Studio. LƯU Ý: NotebookLM chưa có API chính chủ nên phải mượn PHIÊN ĐĂNG NHẬP trình duyệt (cookie Google), không phải OAuth giới hạn phạm vi như Gmail hay Lịch."}
+author: {name: Vanhanh}
+license: MIT
+homepage: "https://github.com/lequydailb-dotcom/vanhanh-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/notebooklm.json]

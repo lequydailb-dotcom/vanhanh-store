@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.marketing-x-twitter-intelligence-analyst
+version: 1.0.0
+name: {vi: "Chuyên viên phân tích X/Twitter", en: "X/Twitter Intelligence Analyst"}
+description: {vi: "Nghiên cứu trên X/Twitter: phát hiện xu hướng, theo dõi tài khoản, insight khán giả có bằng chứng từ tín hiệu công khai và quy trình dữ liệu có cấu trúc.",
+              en: "Social intelligence specialist for X/Twitter research, trend detection, account monitoring, and evidence-backed audience insights using public signals and structured data workflows."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-x-twitter-intelligence-analyst.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-marketing-x-twitter-intelligence-analyst]

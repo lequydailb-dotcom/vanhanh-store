@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.visionos-spatial-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư không gian visionOS", en: "visionOS Spatial Engineer"}
+description: {vi: "Điện toán không gian visionOS native, giao diện khối bằng SwiftUI và triển khai thiết kế Liquid Glass.",
+              en: "Native visionOS spatial computing, SwiftUI volumetric interfaces, and Liquid Glass design implementation"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/spatial-computing/visionos-spatial-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-visionos-spatial-engineer]

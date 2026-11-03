@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.security-threat-intelligence-analyst
+version: 1.0.0
+name: {vi: "Chuyên viên tình báo mối đe doạ", en: "Threat Intelligence Analyst"}
+description: {vi: "Theo dõi các nhóm tấn công, gắn chiến dịch vào MITRE ATT&CK, viết báo cáo tình báo dùng được ngay và xây luật phát hiện bắt được mối đe doạ thật.",
+              en: "Cyber threat intelligence specialist who tracks adversary groups, maps attack campaigns to MITRE ATT&CK, produces actionable intelligence reports, and builds detection rules that catch real threats."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-threat-intelligence-analyst.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-security-threat-intelligence-analyst]

@@ -1,0 +1,40 @@
+{
+  "id": "composio",
+  "name": "Composio",
+  "icon": "assets/composio.png",
+  "category": "Kho ứng dụng",
+  "description": "Cổng đa ứng dụng của Composio: một kết nối mở ra hơn 500 app (Gmail, Notion, Google Sheets, GitHub, Linear, Slack...). Vanhanh tìm tool, nối tài khoản từng app và chạy hành động qua Composio, không cần Vanhanh viết connector riêng cho mỗi app. Dán API key (ck_...) là xong.",
+  "status": "beta",
+  "transport": "http",
+  "url": "https://connect.composio.dev/mcp",
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "api_key",
+        "label": "API key (Composio)",
+        "placeholder": "Ví dụ: ck_...",
+        "header": "x-consumer-api-key: {api_key}"
+      }
+    ],
+    "guide": "Làm 1 lần:\n1. Vào platform.composio.dev, đăng ký hoặc đăng nhập (có gói miễn phí).\n2. Tạo một MCP server (mục MCP) rồi copy API key dạng ck_... ở bước cấu hình client.\n3. Dán key vào đây, bấm Kết nối.\n\nSau khi đấu, muốn dùng app nào (Gmail, Notion, Sheets...) thì bảo Vanhanh ngay trong chat, vd 'nối Notion qua Composio'. Composio đưa link đăng nhập app đó, bạn tự đăng nhập xong là dùng được.\n\nLƯU Ý: mọi hành động của app (kể cả đọc dữ liệu) đều chạy qua một tool chung của Composio, nên muốn Vanhanh thật sự thao tác thì kết nối này cần mức Toàn quyền. Mức Chỉ đọc chỉ tìm và xem mô tả tool.",
+    "guide_url": "https://docs.composio.dev/"
+  },
+  "tool_meta": {
+    "read": [
+      "COMPOSIO_SEARCH_TOOLS",
+      "COMPOSIO_GET_TOOL_SCHEMAS",
+      "COMPOSIO_WAIT_FOR_CONNECTIONS"
+    ],
+    "write": [
+      "COMPOSIO_MANAGE_CONNECTIONS"
+    ],
+    "danger": [
+      "COMPOSIO_MULTI_EXECUTE_TOOL",
+      "COMPOSIO_REMOTE_BASH_TOOL",
+      "COMPOSIO_REMOTE_WORKBENCH"
+    ]
+  },
+  "default_perm": "readonly",
+  "risk": "Composio là cổng đa ứng dụng: mọi hành động lên app thật (đọc mail, gửi mail, sửa sheet, tạo issue...) đều chạy qua MỘT tool chung nên Vanhanh KHÔNG tách được lệnh đọc với lệnh ghi bên trong.\n\nMức Chỉ đọc: chỉ tìm và xem mô tả tool, chưa chạy được hành động nào.\n\nMức Ghi nháp: thêm quyền nối app mới (Composio đưa link đăng nhập, bạn tự đăng nhập, Vanhanh không thấy mật khẩu).\n\nMức Toàn quyền: Vanhanh chạy được MỌI hành động của các app bạn đã nối qua Composio, kể cả gửi tin, sửa và xoá dữ liệu thật.\nChỉ nâng khi thật sự cần; phạm vi đúng bằng quyền bạn đã cấp cho từng app bên Composio."
+}

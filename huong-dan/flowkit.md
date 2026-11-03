@@ -1,12 +1,12 @@
-# Dùng FlowKit với Naota
+# Dùng FlowKit với Vanhanh
 
 [FlowKit](https://github.com/crisng95/flowkit) là bộ công cụ làm video AI bằng Google Flow (Veo 3,
 Omni): từ ý tưởng, kịch bản, nhân vật, hình cảnh, clip 8 giây, lồng tiếng, nhạc, ghép phim tới
 thumbnail và đăng YouTube.
 
-Gói **FlowKit** trong Kho cài đặt chỉ mang **41 skill** (công thức làm việc) vào Naota. Skill gọi
+Gói **FlowKit** trong Kho cài đặt chỉ mang **41 skill** (công thức làm việc) vào Vanhanh. Skill gọi
 tới máy chủ FlowKit chạy trên chính máy bạn, nên bạn cần cài FlowKit một lần theo các bước dưới.
-Chưa cài thì skill vẫn hiện trong Naota nhưng không tạo được hình hay video.
+Chưa cài thì skill vẫn hiện trong Vanhanh nhưng không tạo được hình hay video.
 
 ## Cần chuẩn bị
 
@@ -51,18 +51,18 @@ curl http://127.0.0.1:8100/health
 
 Thấy `"extension_connected": true` là xong.
 
-## Bước 4. Cài gói trong Naota
+## Bước 4. Cài gói trong Vanhanh
 
-1. Mở Naota, vào **Kỹ năng**, tab **Kho cài đặt**, mục **Repo khuyên dùng**.
+1. Mở Vanhanh, vào **Kỹ năng**, tab **Kho cài đặt**, mục **Repo khuyên dùng**.
 2. Chọn **FlowKit: Làm video AI bằng Google Flow**, bấm **Cài đặt**.
-3. Khi làm việc, cho Naota chạy lệnh **trong thư mục `~/flowkit`**: nhiều skill gọi script có sẵn
+3. Khi làm việc, cho Vanhanh chạy lệnh **trong thư mục `~/flowkit`**: nhiều skill gọi script có sẵn
    trong repo (ví dụ `scripts/`, `youtube/`).
 
-Rồi nói với Naota bằng lời thường, ví dụ: "Làm cho mình video 3 cảnh về chú mèo phi hành gia, khổ dọc,
-phong cách hoạt hình 3D". Naota sẽ dùng `fk-pipeline` để đi hết các bước, hoặc bạn gọi từng skill như
+Rồi nói với Vanhanh bằng lời thường, ví dụ: "Làm cho mình video 3 cảnh về chú mèo phi hành gia, khổ dọc,
+phong cách hoạt hình 3D". Vanhanh sẽ dùng `fk-pipeline` để đi hết các bước, hoặc bạn gọi từng skill như
 `fk-create-project`, `fk-gen-images`, `fk-gen-videos`, `fk-concat`.
 
-Gặp lỗi gì thì bảo Naota dùng `fk-doctor`: skill này biết hết các lỗi thường gặp và cách sửa.
+Gặp lỗi gì thì bảo Vanhanh dùng `fk-doctor`: skill này biết hết các lỗi thường gặp và cách sửa.
 
 ## Lưu ý về tài khoản Google
 
@@ -74,7 +74,7 @@ Nên:
 
 ## Cập nhật
 
-Gói đi theo repo gốc: mỗi ngày kho so lại với FlowKit, có bản mới thì Naota báo trong chuông, bạn
+Gói đi theo repo gốc: mỗi ngày kho so lại với FlowKit, có bản mới thì Vanhanh báo trong chuông, bạn
 bấm **Cập nhật**. Phần máy chủ FlowKit trên máy bạn thì tự cập nhật:
 
 ```bash

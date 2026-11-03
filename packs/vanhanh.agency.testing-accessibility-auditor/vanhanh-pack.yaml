@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.testing-accessibility-auditor
+version: 1.0.0
+name: {vi: "Kiểm toán khả năng tiếp cận", en: "Accessibility Auditor"}
+description: {vi: "Soát giao diện theo WCAG, thử bằng công nghệ hỗ trợ, đảm bảo thiết kế cho mọi người. Mặc định là tìm rào cản: chưa thử bằng trình đọc màn hình là chưa đạt.",
+              en: "Expert accessibility specialist who audits interfaces against WCAG standards, tests with assistive technologies, and ensures inclusive design. Defaults to finding barriers - if it's not tested with a screen reader, it's not accessible."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-accessibility-auditor.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-testing-accessibility-auditor]

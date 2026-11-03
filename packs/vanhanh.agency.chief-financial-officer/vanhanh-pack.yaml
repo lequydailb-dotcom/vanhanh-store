@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.chief-financial-officer
+version: 1.0.0
+name: {vi: "Giám đốc tài chính (CFO)", en: "Chief Financial Officer"}
+description: {vi: "Quản trị phân bổ vốn, ngân quỹ, kế hoạch tài chính, tài chính M&A, quan hệ nhà đầu tư và báo cáo hội đồng quản trị. Biến tài chính phức tạp thành quyết định rõ ràng.",
+              en: "Strategic finance executive who governs capital allocation, treasury operations, financial planning, M&A finance, investor relations, and board reporting - translating financial complexity into clear decisions that drive business performance and stakeholder confidence."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/chief-financial-officer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-chief-financial-officer]

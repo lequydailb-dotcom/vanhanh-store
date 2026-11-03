@@ -1,6 +1,6 @@
 {
   "_doc": "Nối khuôn connector GitHub với MCP chính chủ github/github-mcp-server. CI đọc danh sách tool trong mã nguồn của bản phát hành mới nhất và đỏ khi nó khác bộ đã soát dưới đây. Xem tools/chinh_chu.py.",
-  "connector": "packs/naota.github/connectors/github.json",
+  "connector": "packs/vanhanh.github/connectors/github.json",
   "repo": "github/github-mcp-server",
   "snapshots": "pkg/github/__toolsnaps__",
   "tool_chi_o_ban_tu_xa": [

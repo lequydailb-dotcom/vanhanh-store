@@ -1,0 +1,12 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.webcake-landing-web
+version: 1.0.0
+name: {vi: "Webcake Landing (đăng nhập web)"}
+description: {vi: "Cùng bộ công cụ landing Webcake nhưng chạy trên máy chủ sẵn: bấm Kết nối rồi đăng nhập, không dán JWT, không cần Node.js trên máy."}
+author: {name: Vanhanh}
+license: MIT
+homepage: "https://github.com/lequydailb-dotcom/vanhanh-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/webcake-landing-web.json]

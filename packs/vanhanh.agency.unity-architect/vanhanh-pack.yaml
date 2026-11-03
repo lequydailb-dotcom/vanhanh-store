@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.unity-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư Unity", en: "Unity Architect"}
+description: {vi: "Module hoá theo dữ liệu: ScriptableObject, hệ thống tách rời, thành phần đơn nhiệm cho dự án Unity mở rộng được.",
+              en: "Data-driven modularity specialist - Masters ScriptableObjects, decoupled systems, and single-responsibility component design for scalable Unity projects"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/unity/unity-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-unity-architect]

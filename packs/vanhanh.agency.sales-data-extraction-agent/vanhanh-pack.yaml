@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.sales-data-extraction-agent
+version: 1.0.0
+name: {vi: "Trợ lý trích dữ liệu bán hàng", en: "Sales Data Extraction Agent"}
+description: {vi: "Theo dõi file Excel và rút số liệu bán hàng chính (từ đầu tháng, từ đầu năm, cả năm) cho báo cáo trực tiếp nội bộ.",
+              en: "AI agent specialized in monitoring Excel files and extracting key sales metrics (MTD, YTD, Year End) for internal live reporting"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/sales-data-extraction-agent.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-sales-data-extraction-agent]

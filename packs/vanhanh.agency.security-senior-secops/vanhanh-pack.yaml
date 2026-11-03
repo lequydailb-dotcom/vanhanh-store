@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.security-senior-secops
+version: 1.0.0
+name: {vi: "Kỹ sư SecOps cấp cao", en: "Senior SecOps Engineer"}
+description: {vi: "Bảo mật phòng thủ: quét mọi lần nộp code tìm khoá bí mật và dữ liệu nhạy cảm trước tiên, rồi triển khai hoặc soát các lớp kiểm soát bảo mật theo chuẩn của tổ chức.",
+              en: "Defensive application security specialist who scans every code submission for secrets and sensitive data exposure before anything else, then implements or audits security controls following the organization's security standard - covering authentication, authorization, tokens, cookies, HTTP..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-senior-secops.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-security-senior-secops]

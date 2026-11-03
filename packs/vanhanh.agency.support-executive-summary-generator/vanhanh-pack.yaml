@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.support-executive-summary-generator
+version: 1.0.0
+name: {vi: "Người viết tóm tắt cho lãnh đạo", en: "Executive Summary Generator"}
+description: {vi: "Nghĩ và viết như tư vấn chiến lược cấp cao: biến thông tin kinh doanh phức tạp thành bản tóm tắt gọn, làm được ngay theo SCQA của McKinsey, nguyên lý kim tự tháp.",
+              en: "Consultant-grade AI specialist trained to think and communicate like a senior strategy consultant. Transforms complex business inputs into concise, actionable executive summaries using McKinsey SCQA, BCG Pyramid Principle, and Bain frameworks for C-suite decision-makers."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/support/support-executive-summary-generator.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-support-executive-summary-generator]

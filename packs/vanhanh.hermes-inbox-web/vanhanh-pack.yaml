@@ -1,0 +1,13 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.hermes-inbox-web
+version: 1.0.0
+name: {vi: "Hermes: Hộp thư & web", en: "Hermes: Inbox & web"}
+description: {vi: "4 skill hộp thư và web của Hermes Agent: phân loại inbox rồi soạn thư nháp an toàn, đọc/gửi mail IMAP-SMTP bằng Himalaya CLI, dùng X/Twitter qua xurl, và cứu trang bị chặn 403/429/paywall/WAF.",
+              en: "4 inbox and web skills from Hermes Agent: triage an inbox and draft replies safely, IMAP/SMTP mail via the Himalaya CLI, X/Twitter via xurl, and recovering pages blocked by 403/429, paywalls or WAFs."}
+author: {name: "Nous Research", url: "https://github.com/NousResearch/hermes-agent"}
+license: MIT
+homepage: "https://github.com/NousResearch/hermes-agent/tree/main/skills"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [email-inbox-triage, himalaya, xurl, blocked-page-recovery]

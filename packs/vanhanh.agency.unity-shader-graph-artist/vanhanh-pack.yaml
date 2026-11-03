@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.unity-shader-graph-artist
+version: 1.0.0
+name: {vi: "Hoạ sĩ Shader Graph Unity", en: "Unity Shader Graph Artist"}
+description: {vi: "Hiệu ứng và vật liệu: Unity Shader Graph, HLSL, đường ống dựng hình URP/HDRP và custom pass cho hiệu ứng thời gian thực.",
+              en: "Visual effects and material specialist - Masters Unity Shader Graph, HLSL, URP/HDRP rendering pipelines, and custom pass authoring for real-time visual effects"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/unity/unity-shader-graph-artist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-unity-shader-graph-artist]

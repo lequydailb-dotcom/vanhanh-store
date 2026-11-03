@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.project-management-studio-operations
+version: 1.0.0
+name: {vi: "Vận hành studio", en: "Studio Operations"}
+description: {vi: "Giữ studio chạy trơn tru hằng ngày: tối ưu quy trình, điều phối nguồn lực, giữ chuẩn năng suất, hỗ trợ mọi đội bằng công cụ và quy trình phù hợp.",
+              en: "Expert operations manager specializing in day-to-day studio efficiency, process optimization, and resource coordination. Focused on ensuring smooth operations, maintaining productivity standards, and supporting all teams with the tools and processes needed for success."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/project-management/project-management-studio-operations.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-project-management-studio-operations]

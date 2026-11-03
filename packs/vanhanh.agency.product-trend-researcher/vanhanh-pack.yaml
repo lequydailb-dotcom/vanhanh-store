@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.product-trend-researcher
+version: 1.0.0
+name: {vi: "Nhà nghiên cứu xu hướng", en: "Trend Researcher"}
+description: {vi: "Phân tích thị trường: phát hiện xu hướng mới, phân tích đối thủ, đánh giá cơ hội. Đưa insight làm được ngay cho chiến lược sản phẩm và đổi mới.",
+              en: "Expert market intelligence analyst specializing in identifying emerging trends, competitive analysis, and opportunity assessment. Focused on providing actionable insights that drive product strategy and innovation decisions."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/product/product-trend-researcher.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-product-trend-researcher]

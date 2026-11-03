@@ -1,0 +1,13 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.ecc-ai-agents
+version: 1.0.0
+name: {vi: "ECC: Xây và vận hành AI agent", en: "ECC: Building and running AI agents"}
+description: {vi: "12 skill của ECC cho người dựng hệ thống AI agent: kiến trúc hệ điều hành đa agent, vòng lặp tự chạy có cổng kiểm, soát lỗi thiết kế vòng lặp, tự gỡ lỗi agent, thiết kế bộ tool, bảo mật agent, giảm chi phí LLM, prompt caching, eval, kiểm chéo hai người duyệt.",
+              en: "12 ECC skills for people building AI agent systems: multi-agent OS architecture, gated autonomous loops, loop design review, agent self-debugging, tool design, agent security, LLM cost, prompt caching, evals, dual-reviewer verification."}
+author: {name: "Affaan Mustafa", url: "https://github.com/affaan-m/ECC"}
+license: MIT
+homepage: "https://github.com/affaan-m/ECC"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [agentic-os, continuous-agent-loop, loop-design-check, agent-introspection-debugging, agent-harness-construction, agent-security-hardening, cost-aware-llm-pipeline, prompt-caching-strategy, eval-harness, santa-method, iterative-retrieval, token-budget-advisor]

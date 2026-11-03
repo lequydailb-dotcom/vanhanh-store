@@ -1,0 +1,12 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.higgsfield
+version: 1.0.0
+name: {vi: "Higgsfield"}
+description: {vi: "Tạo và chỉnh ảnh/video bằng AI của Higgsfield qua MCP chính chủ: sinh ảnh, sinh video, nâng nét (upscale), mở rộng khung hình, xoá nền, cắt nhân vật, điều khiển chuyển động. Đăng nhập Higgsfield 1 chạm - không cần tạo app hay dán key. Lưu ý: mỗi lần tạo/chỉnh tiêu credit Higgsfield của bạn."}
+author: {name: Vanhanh}
+license: MIT
+homepage: "https://github.com/lequydailb-dotcom/vanhanh-store"
+compat: {app: ">=1.0.0"}
+provides:
+  connectors: [connectors/higgsfield.json]

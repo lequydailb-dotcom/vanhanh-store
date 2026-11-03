@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.marketing-twitter-engager
+version: 1.0.0
+name: {vi: "Người tương tác trên Twitter", en: "Twitter Engager"}
+description: {vi: "Tương tác thời gian thực, khẳng định chuyên môn và tăng trưởng nhờ cộng đồng trên Twitter. Xây uy tín bằng những cuộc trò chuyện thật và chuỗi thread viral.",
+              en: "Expert Twitter marketing specialist focused on real-time engagement, thought leadership building, and community-driven growth. Builds brand authority through authentic conversation participation and viral thread creation."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-twitter-engager.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-marketing-twitter-engager]

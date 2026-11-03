@@ -1,9 +1,9 @@
 {
   "name": "pancake-chat-mcp",
   "version": "1.1.0",
-  "description": "MCP server for one Pancake page's conversations (pages.fm public Page API). Built for the Naota store.",
+  "description": "MCP server for one Pancake page's conversations (pages.fm public Page API). Built for the Vanhanh store.",
   "license": "SEE LICENSE IN LICENSE",
-  "author": "Hoang Ngoc Vuong (https://vuong.ai)",
+  "author": "Dai Le (https://lequydai.com)",
   "type": "commonjs",
   "bin": { "pancake-chat-mcp": "index.js" },
   "files": ["index.js", "README.md", "LICENSE"],

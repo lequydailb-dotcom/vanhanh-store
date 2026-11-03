@@ -1,0 +1,54 @@
+{
+  "_doc": "agency-agents của msitarzewski: mỗi agent là một tệp .md có frontmatter kiểu Claude Code, xếp theo thư mục nhóm. Chép kiểu `agents` (thân prompt nguyên văn, phần đầu tệp thêm khoá cho Vanhanh) và `tach` mỗi agent thành một gói lẻ trong Store. Không chép integrations/ (bản chuyển đổi cho công cụ khác), strategy/ (sổ tay, không phải agent), examples/, scripts/. Tên và mô tả tiếng Việt ở theo-goc/dich/vanhanh.agency-agents.json.",
+  "repo": "msitarzewski/agency-agents",
+  "ref": "main",
+  "tien_to": "agency-",
+  "tach": "vanhanh.agency.",
+  "the": "Agency Agents",
+  "nhom_kho": {
+    "lap-trinh": {"vi": "Lập trình", "en": "Development"},
+    "sang-tao": {"vi": "Sáng tạo", "en": "Creative"},
+    "marketing": {"vi": "Marketing", "en": "Marketing"},
+    "quang-cao": {"vi": "Quảng cáo", "en": "Advertising"},
+    "ban-hang": {"vi": "Bán hàng", "en": "Sales"},
+    "van-phong": {"vi": "Văn phòng", "en": "Office"},
+    "nghien-cuu": {"vi": "Nghiên cứu", "en": "Research"},
+    "tai-chinh": {"vi": "Tài chính", "en": "Finance"},
+    "bao-mat": {"vi": "Bảo mật", "en": "Security"},
+    "game": {"vi": "Làm game", "en": "Games"},
+    "quan-ly": {"vi": "Quản lý", "en": "Management"},
+    "chuyen-gia": {"vi": "Chuyên gia ngành", "en": "Industry experts"}
+  },
+  "chep": [
+    {"tu": "engineering", "den": "agents", "nhan": {"vi": "Lập trình", "en": "Engineering"}, "category": "lap-trinh"},
+    {"tu": "testing", "den": "agents", "nhan": {"vi": "Kiểm thử", "en": "Testing"}, "category": "lap-trinh"},
+    {"tu": "gis", "den": "agents", "nhan": {"vi": "Bản đồ GIS", "en": "GIS"}, "category": "lap-trinh"},
+    {"tu": "spatial-computing", "den": "agents", "nhan": {"vi": "Điện toán không gian", "en": "Spatial computing"}, "category": "lap-trinh"},
+    {"tu": "design", "den": "agents", "nhan": {"vi": "Thiết kế", "en": "Design"}, "category": "sang-tao"},
+    {"tu": "marketing", "den": "agents", "nhan": {"vi": "Marketing", "en": "Marketing"}, "category": "marketing"},
+    {"tu": "paid-media", "den": "agents", "nhan": {"vi": "Quảng cáo trả phí", "en": "Paid media"}, "category": "quang-cao"},
+    {"tu": "sales", "den": "agents", "nhan": {"vi": "Bán hàng", "en": "Sales"}, "category": "ban-hang"},
+    {"tu": "support", "den": "agents", "nhan": {"vi": "Hỗ trợ vận hành", "en": "Support"}, "category": "van-phong"},
+    {"tu": "product", "den": "agents", "nhan": {"vi": "Sản phẩm", "en": "Product"}, "category": "quan-ly"},
+    {"tu": "project-management", "den": "agents", "nhan": {"vi": "Quản lý dự án", "en": "Project management"}, "category": "quan-ly"},
+    {"tu": "finance", "den": "agents", "nhan": {"vi": "Tài chính", "en": "Finance"}, "category": "tai-chinh"},
+    {"tu": "security", "den": "agents", "nhan": {"vi": "Bảo mật", "en": "Security"}, "category": "bao-mat"},
+    {"tu": "game-development", "den": "agents", "nhan": {"vi": "Làm game", "en": "Game development"}, "category": "game"},
+    {"tu": "academic", "den": "agents", "nhan": {"vi": "Học thuật", "en": "Academic"}, "category": "nghien-cuu"},
+    {"tu": "research", "den": "agents", "nhan": {"vi": "Nghiên cứu", "en": "Research"}, "category": "nghien-cuu"},
+    {"tu": "healthcare", "den": "agents", "nhan": {"vi": "Y tế", "en": "Healthcare"}, "category": "chuyen-gia"},
+    {"tu": "specialized", "den": "agents", "nhan": {"vi": "Chuyên gia ngành", "en": "Specialists"}, "category": "chuyen-gia"}
+  ],
+  "giay_phep": ["LICENSE"],
+  "goi": {
+    "name": {"vi": "Agency Agents: Cả một công ty AI", "en": "Agency Agents: A whole AI agency"},
+    "description": {
+      "vi": "Trọn bộ agency-agents, hơn 280 agent chuyên gia theo 18 nhóm: lập trình, thiết kế, marketing, quảng cáo, bán hàng, tài chính, bảo mật, làm game, bản đồ GIS, chuyên gia ngành. Mỗi agent có tính cách, quy trình và đầu ra rõ ràng. Muốn cài lẻ từng agent thì tìm ở tab Agent.",
+      "en": "The full agency-agents set, 280+ expert agents in 18 divisions: engineering, design, marketing, paid media, sales, finance, security, game development, GIS, industry specialists. Each has a personality, process and clear deliverables. To install one at a time, see the Agents tab."
+    },
+    "author": "msitarzewski",
+    "category": "tro-ly-ai",
+    "category_label": {"vi": "Trợ lý AI", "en": "AI assistants"},
+    "license": "MIT"
+  }
+}

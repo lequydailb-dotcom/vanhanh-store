@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.paid-media-auditor
+version: 1.0.0
+name: {vi: "Kiểm toán quảng cáo trả phí", en: "Paid Media Auditor"}
+description: {vi: "Soát tài khoản Google Ads, Microsoft Ads và Meta qua hơn 200 điểm: cấu trúc, đo lường, đặt giá thầu, mẫu quảng cáo, tệp khách, vị thế cạnh tranh. Ra báo cáo làm được ngay.",
+              en: "Comprehensive paid media auditor who systematically evaluates Google Ads, Microsoft Ads, and Meta accounts across 200+ checkpoints spanning account structure, tracking, bidding, creative, audiences, and competitive positioning. Produces actionable audit reports with prioritized recommendations..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/paid-media/paid-media-auditor.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-paid-media-auditor]

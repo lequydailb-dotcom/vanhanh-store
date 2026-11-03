@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-video-streaming-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư phát video trực tuyến", en: "Video Streaming Engineer"}
+description: {vi: "Phát video theo bitrate thích ứng: đóng gói HLS/DASH, bậc chuyển mã ffmpeg, CMAF độ trễ thấp, DRM, phân phối qua CDN và tinh chỉnh trình phát theo trải nghiệm.",
+              en: "Expert video streaming engineer for adaptive bitrate delivery - HLS/DASH packaging, ffmpeg transcode ladders, CMAF low-latency, DRM, CDN delivery, and QoE-driven player tuning."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-video-streaming-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-video-streaming-engineer]

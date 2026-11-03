@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.gis-spatial-data-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư dữ liệu không gian", en: "Spatial Data Engineer"}
+description: {vi: "ETL dữ liệu không gian: biến dữ liệu địa lý lộn xộn thành bộ dữ liệu sạch, chuẩn, dùng được ngay. Đổi định dạng, chiếu lại toạ độ, chuẩn hoá thuộc tính, tự động hoá.",
+              en: "ETL specialist who transforms messy geospatial data from any source into clean, standardized, production-ready datasets - format conversion, CRS reprojection, attribute normalization, and automated pipelines."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-spatial-data-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-gis-spatial-data-engineer]

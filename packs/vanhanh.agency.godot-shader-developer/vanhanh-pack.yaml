@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.godot-shader-developer
+version: 1.0.0
+name: {vi: "Lập trình shader Godot", en: "Godot Shader Developer"}
+description: {vi: "Hiệu ứng hình ảnh Godot 4: ngôn ngữ shader của Godot, VisualShader, shader CanvasItem và Spatial, hậu kỳ và tối ưu hiệu năng cho hiệu ứng 2D/3D.",
+              en: "Godot 4 visual effects specialist - Masters the Godot Shading Language (GLSL-like), VisualShader editor, CanvasItem and Spatial shaders, post-processing, and performance optimization for 2D/3D effects"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/godot/godot-shader-developer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-godot-shader-developer]

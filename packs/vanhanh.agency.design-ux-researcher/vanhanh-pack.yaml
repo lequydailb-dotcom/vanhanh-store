@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.design-ux-researcher
+version: 1.0.0
+name: {vi: "Nhà nghiên cứu UX", en: "UX Researcher"}
+description: {vi: "Phân tích hành vi người dùng, kiểm thử khả năng dùng, rút insight thiết kế từ dữ liệu. Đưa ra phát hiện làm được ngay để sản phẩm dễ dùng hơn.",
+              en: "Expert user experience researcher specializing in user behavior analysis, usability testing, and data-driven design insights. Provides actionable research findings that improve product usability and user satisfaction"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/design/design-ux-researcher.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-design-ux-researcher]

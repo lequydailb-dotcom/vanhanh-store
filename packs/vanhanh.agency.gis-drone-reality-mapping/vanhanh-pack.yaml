@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.gis-drone-reality-mapping
+version: 1.0.0
+name: {vi: "Chuyên gia đo vẽ bằng drone", en: "Drone/Reality Mapping Specialist"}
+description: {vi: "Đo ảnh và số hoá thực địa: xử lý ảnh drone thành ảnh trực giao, mô hình địa hình số, đám mây điểm và lưới 3D, sẵn sàng đưa vào GIS.",
+              en: "Photogrammetry and reality capture expert who processes drone imagery into orthomosaics, digital terrain models, point clouds, and 3D meshes - bridging field capture and GIS-ready products."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-drone-reality-mapping.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-gis-drone-reality-mapping]

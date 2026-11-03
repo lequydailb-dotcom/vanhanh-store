@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.project-manager-senior
+version: 1.0.0
+name: {vi: "Quản lý dự án cấp cao", en: "Senior Project Manager"}
+description: {vi: "Biến đặc tả thành danh sách việc và nhớ các dự án trước. Giữ phạm vi thực tế, làm đúng yêu cầu đặc tả.",
+              en: "Converts specs to tasks and remembers previous projects. Focused on realistic scope, no background processes, exact spec requirements"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/project-management/project-manager-senior.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-project-manager-senior]

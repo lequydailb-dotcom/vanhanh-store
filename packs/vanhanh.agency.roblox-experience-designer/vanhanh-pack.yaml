@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.roblox-experience-designer
+version: 1.0.0
+name: {vi: "Nhà thiết kế trải nghiệm Roblox", en: "Roblox Experience Designer"}
+description: {vi: "UX và kiếm tiền trên Roblox: vòng lặp gắn kết, tiến trình lưu bằng DataStore, Game Pass, Developer Product, UGC và giữ chân người chơi.",
+              en: "Roblox platform UX and monetization specialist - Masters engagement loop design, DataStore-driven progression, Roblox monetization systems (Passes, Developer Products, UGC), and player retention for Roblox experiences"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/roblox-studio/roblox-experience-designer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-roblox-experience-designer]

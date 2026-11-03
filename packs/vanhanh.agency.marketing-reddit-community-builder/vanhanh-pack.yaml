@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.marketing-reddit-community-builder
+version: 1.0.0
+name: {vi: "Người xây cộng đồng Reddit", en: "Reddit Community Builder"}
+description: {vi: "Marketing trên Reddit bằng tương tác thật với cộng đồng, nội dung có giá trị và quan hệ lâu dài. Hiểu và đi đúng văn hoá Reddit.",
+              en: "Expert Reddit marketing specialist focused on authentic community engagement, value-driven content creation, and long-term relationship building. Masters Reddit culture navigation."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/marketing/marketing-reddit-community-builder.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-marketing-reddit-community-builder]

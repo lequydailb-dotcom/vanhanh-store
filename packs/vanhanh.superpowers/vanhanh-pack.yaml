@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.superpowers
+version: 1.0.1
+name: {vi: "Superpowers", en: "Superpowers"}
+description: {vi: "Bộ skill quy trình làm việc nổi nhất cho dân lập trình (obra/superpowers): brainstorm trước khi code, viết và thực thi plan, TDD, gỡ lỗi có hệ thống, review code hai chiều, git worktree, kiểm chứng trước khi báo xong.",
+              en: "The most popular workflow skills for developers (obra/superpowers): brainstorm before coding, write and execute plans, TDD, systematic debugging, both sides of code review, git worktrees, verify before claiming done."}
+author: {name: "Jesse Vincent", url: "https://github.com/obra/superpowers"}
+license: MIT
+homepage: "https://github.com/obra/superpowers"
+compat: {app: ">=1.0.0"}
+# Gói theo repo gốc: thư mục skills/ do tools/theo-goc.py chép nguyên văn, đừng sửa tay.
+upstream: {repo: "obra/superpowers", ref: "main"}
+provides:
+  skills: [brainstorming, diagnosing-superpowers, dispatching-parallel-agents, executing-plans, finishing-a-development-branch, receiving-code-review, sp-requesting-code-review, subagent-driven-development, sp-systematic-debugging, sp-test-driven-development, using-git-worktrees, using-superpowers, verification-before-completion, writing-plans, writing-skills]

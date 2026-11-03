@@ -1,9 +1,9 @@
-"""Sinh gói connector từ `system/mcp-catalog.json` của NAOTA.
+"""Sinh gói connector từ `system/mcp-catalog.json` của VANHANH.
 
-    python tools/tu-catalog.py <đường dẫn tới naota>
+    python tools/tu-catalog.py <đường dẫn tới vanhanh>
 
 Vì sao có script này thay vì chép tay 26 lần: mỗi connector là vài chục dòng khai báo, chép tay
-thì sai một chỗ không ai thấy, và mỗi lần Naota sửa một connector lại phải chép lại. Chạy lại
+thì sai một chỗ không ai thấy, và mỗi lần Vanhanh sửa một connector lại phải chép lại. Chạy lại
 lệnh này là gói khớp catalog, không phải đi dò từng trường.
 
 Bốn chỗ script phải xử lý, và mỗi chỗ đều là một luật thật của `server/packs.py`:
@@ -68,7 +68,7 @@ def slug(s: str) -> str:
 
 def lam_goi(c: dict, logo_dir: Path) -> tuple:
     cid = c["id"]
-    pid = "naota." + cid
+    pid = "vanhanh." + cid
     thu_muc = NGUON / pid
     if thu_muc.exists():
         shutil.rmtree(thu_muc)
@@ -93,16 +93,16 @@ def lam_goi(c: dict, logo_dir: Path) -> tuple:
     mo_ta = con.get("description", "")
     nhom = con.get("category", "Khác")
     j = lambda v: json.dumps(v, ensure_ascii=False)   # noqa: E731
-    (thu_muc / "naota-pack.yaml").write_text(
-        "format: naota-pack\n"
+    (thu_muc / "vanhanh-pack.yaml").write_text(
+        "format: vanhanh-pack\n"
         "spec: 1\n"
         "id: " + pid + "\n"
         "version: 1.0.0\n"
         "name: {vi: " + j(ten_hien) + "}\n"
         "description: {vi: " + j(mo_ta) + "}\n"
-        "author: {name: Naota}\n"
+        "author: {name: Vanhanh}\n"
         "license: MIT\n"
-        'homepage: "https://github.com/vuongtex/naota-store"\n'
+        'homepage: "https://github.com/lequydailb-dotcom/vanhanh-store"\n'
         # 1.0.0 là bản đầu đọc đúng phiên bản của CHÍNH NÓ; bản trước đó từ chối MỌI gói có
         # khai `compat`, kèm câu "bản này là " bỏ trống.
         'compat: {app: ">=1.0.0"}\n'
@@ -117,11 +117,11 @@ def lam_goi(c: dict, logo_dir: Path) -> tuple:
         "name": {"vi": ten_hien},
         "description": {"vi": mo_ta},
         "version": "1.0.0",
-        "author": {"name": "Naota"},
+        "author": {"name": "Vanhanh"},
         "category": slug(nhom), "category_label": {"vi": nhom},
         "tier": "code" if code else "data",
         "verified": True, "updated": "2026-09-05",
-        "homepage": "https://github.com/vuongtex/naota-store/tree/main/packs/" + pid,
+        "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/" + pid,
         # Id connector gói này cấp. Kho dùng nó để KHÔNG hiện hai thẻ cho cùng một dịch vụ khi
         # app vẫn còn bản của mình - và để biết thẻ nào trở nên cài được sau khi app bỏ nó đi.
         "provides": {"connectors": [cid]},
@@ -131,7 +131,7 @@ def lam_goi(c: dict, logo_dir: Path) -> tuple:
 
 def main() -> int:
     if len(sys.argv) < 2:
-        raise SystemExit("Cách dùng: python tools/tu-catalog.py <đường dẫn naota>")
+        raise SystemExit("Cách dùng: python tools/tu-catalog.py <đường dẫn vanhanh>")
     repo = Path(sys.argv[1])
     cat = json.loads((repo / "system" / "mcp-catalog.json").read_text(encoding="utf-8"))
     logo_dir = repo / "dashboard" / "logos"
@@ -160,7 +160,7 @@ def main() -> int:
     # Giữ nguyên mục KHÔNG phải connector sinh từ catalog; thay sạch phần connector để chạy lại
     # lệnh này không đẻ ra bản trùng.
     giu = [g for g in idx.get("packs", [])
-           if g.get("kind") != "connector" or not str(g.get("id", "")).startswith("naota.")]
+           if g.get("kind") != "connector" or not str(g.get("id", "")).startswith("vanhanh.")]
     idx["packs"] = giu + muc
     idx["updated"] = "2026-09-05"
     (GOC / "index.json").write_text(json.dumps(idx, ensure_ascii=False, indent=2) + "\n",

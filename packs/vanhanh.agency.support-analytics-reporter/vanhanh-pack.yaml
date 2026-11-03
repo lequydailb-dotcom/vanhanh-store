@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.support-analytics-reporter
+version: 1.0.0
+name: {vi: "Người báo cáo phân tích", en: "Analytics Reporter"}
+description: {vi: "Biến dữ liệu thô thành insight kinh doanh dùng được: dựng dashboard, phân tích thống kê, theo dõi KPI, hỗ trợ quyết định bằng trực quan hoá và báo cáo.",
+              en: "Expert data analyst transforming raw data into actionable business insights. Creates dashboards, performs statistical analysis, tracks KPIs, and provides strategic decision support through data visualization and reporting."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/support/support-analytics-reporter.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-support-analytics-reporter]

@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-network-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư mạng", en: "Network Engineer"}
+description: {vi: "Thiết bị Cisco IOS/IOS-XE, ASA/FTD, Juniper Junos, Palo Alto PAN-OS: định tuyến, chuyển mạch, tường lửa và xử lý sự cố mạng.",
+              en: "Expert network engineer for Cisco IOS/IOS-XE, Cisco ASA/FTD, Juniper Junos, and Palo Alto PAN-OS routing, switching, firewalling, and troubleshooting."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-network-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-network-engineer]

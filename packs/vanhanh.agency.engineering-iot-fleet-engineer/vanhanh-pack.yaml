@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-iot-fleet-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư đội thiết bị IoT", en: "IoT Fleet Engineer"}
+description: {vi: "Cấp phát và định danh thiết bị, đường ống MQTT/telemetry, cập nhật firmware từ xa theo đợt có quay lui, xử lý ở biên, giám sát cả đội thiết bị chập chờn.",
+              en: "Expert IoT and edge fleet engineer - device provisioning and identity, MQTT/telemetry pipelines, staged over-the-air (OTA) firmware updates with rollback, edge compute, and observability across fleets of unreliable, intermittently-connected devices."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-iot-fleet-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-iot-fleet-engineer]

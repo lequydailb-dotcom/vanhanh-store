@@ -1,0 +1,72 @@
+{
+  "id": "lark",
+  "name": "Lark",
+  "icon": "assets/lark.png",
+  "category": "Văn phòng",
+  "description": "Nhắn tin, tài liệu (Docs), bảng dữ liệu (Base/Bitable), wiki và danh bạ trong Lark qua MCP chính chủ. Chạy local bằng app của bạn (dán App ID + App Secret). Cần tạo một Lark app và cấp quyền tương ứng.",
+  "status": "beta",
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "@larksuiteoapi/lark-mcp@latest",
+    "mcp",
+    "-d",
+    "https://open.larksuite.com"
+  ],
+  "lenh_cu": [
+    {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@larksuiteoapi/lark-mcp",
+        "mcp",
+        "-d",
+        "https://open.larksuite.com"
+      ]
+    }
+  ],
+  "requires": {
+    "node": ">=18"
+  },
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "app_id",
+        "label": "App ID (Lark app)",
+        "placeholder": "Ví dụ: cli_xxxxxxxxxxxx",
+        "env": "APP_ID"
+      },
+      {
+        "key": "app_secret",
+        "label": "App Secret",
+        "placeholder": "Dán app secret...",
+        "env": "APP_SECRET"
+      }
+    ],
+    "guide": "Cần trước: Node.js 18+ trên máy chạy Vanhanh.\n\nLàm 1 lần:\n1. Vào open.larksuite.com/app > Create custom app.\n2. Ở 'Credentials & Basic Info' lấy App ID + App Secret.\n3. Vào 'Permissions & Scopes' cấp các quyền cần dùng (vd im:message, im:chat, docx:document, bitable:app, contact:user.id).\n4. Bấm 'Create version' để phát hành app. Có thể cần admin duyệt.\n5. Dán App ID + App Secret vào đây.\n\nVanhanh chỉ đọc và làm được đúng những quyền bạn đã cấp cho app.",
+    "guide_url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/mcp_introduction"
+  },
+  "tool_meta": {
+    "read": [
+      "*_list",
+      "*_search",
+      "*_get",
+      "*batchGetId",
+      "*rawContent",
+      "*getNode"
+    ],
+    "write": [
+      "*_create",
+      "*_update",
+      "docx_builtin_import"
+    ],
+    "danger": [
+      "im_v1_message_create",
+      "drive_v1_permissionMember_create"
+    ]
+  },
+  "default_perm": "readonly",
+  "risk": "Mức Ghi nháp cho phép Vanhanh TẠO và SỬA bảng dữ liệu, tài liệu, nhóm chat thật trong Lark.\n\nMức Toàn quyền thêm quyền GỬI TIN NHẮN vào chat và CẤP QUYỀN truy cập file.\n\nChỉ cần xem và tìm thì giữ mức Chỉ đọc. Vanhanh chỉ làm được đúng phạm vi quyền bạn cấp cho Lark app."
+}

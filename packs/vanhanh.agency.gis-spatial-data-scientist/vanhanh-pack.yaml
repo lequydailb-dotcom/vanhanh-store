@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.gis-spatial-data-scientist
+version: 1.0.0
+name: {vi: "Nhà khoa học dữ liệu không gian", en: "Spatial Data Scientist"}
+description: {vi: "Phân tích không gian nâng cao: mô hình thống kê, kinh tế lượng không gian, gom cụm, dự báo, tìm ra quy luật mà nhìn bản đồ không thấy.",
+              en: "Advanced spatial analytics specialist who applies statistical modeling, spatial econometrics, clustering, and predictive analytics to geospatial data - finding patterns that aren't visible on a map."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/gis/gis-spatial-data-scientist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-gis-spatial-data-scientist]

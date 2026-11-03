@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.paid-media-ppc-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia chiến dịch PPC", en: "PPC Campaign Strategist"}
+description: {vi: "Kiến trúc chiến dịch tìm kiếm, mua sắm và Performance Max quy mô lớn trên Google, Microsoft, Amazon: cấu trúc tài khoản, phân bổ ngân sách, chiến lược giá thầu.",
+              en: "Senior paid media strategist specializing in large-scale search, shopping, and performance max campaign architecture across Google, Microsoft, and Amazon ad platforms. Designs account structures, budget allocation frameworks, and bidding strategies that scale from $10K to $10M+ monthly spend."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/paid-media/paid-media-ppc-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-paid-media-ppc-strategist]

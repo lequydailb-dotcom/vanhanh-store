@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.testing-test-results-analyzer
+version: 1.0.0
+name: {vi: "Người phân tích kết quả kiểm thử", en: "Test Results Analyzer"}
+description: {vi: "Đánh giá kết quả kiểm thử toàn diện, phân tích chỉ số chất lượng và rút insight làm được ngay từ hoạt động kiểm thử.",
+              en: "Expert test analysis specialist focused on comprehensive test result evaluation, quality metrics analysis, and actionable insight generation from testing activities"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-test-results-analyzer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-testing-test-results-analyzer]

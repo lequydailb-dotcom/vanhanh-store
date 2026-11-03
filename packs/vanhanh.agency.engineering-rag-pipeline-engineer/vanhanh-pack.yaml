@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-rag-pipeline-engineer
+version: 1.0.0
+name: {vi: "Kỹ sư đường ống RAG", en: "RAG Pipeline Engineer"}
+description: {vi: "RAG cho sản phẩm thật: chiến lược cắt đoạn, chất lượng truy xuất, tìm kiếm lai, xếp hạng lại, cải tiến dựa trên đánh giá. Lấy đúng ngữ cảnh chứ không chỉ chạy được.",
+              en: "Production RAG specialist focused on chunking strategy, retrieval quality, hybrid search, re-ranking, and eval-driven iteration. Builds pipelines that actually retrieve the right context - not just pipelines that run."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-rag-pipeline-engineer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-rag-pipeline-engineer]

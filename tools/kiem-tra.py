@@ -6,17 +6,17 @@ Không chạm mạng, không cần thư viện ngoài.
 
 Vì sao repo này cần một trình kiểm
 ----------------------------------
-Kho là DỮ LIỆU MÀ NGƯỜI DÙNG SẼ CÀI, và nó tới máy họ mà không qua một bản Naota mới. Nghĩa là
+Kho là DỮ LIỆU MÀ NGƯỜI DÙNG SẼ CÀI, và nó tới máy họ mà không qua một bản Vanhanh mới. Nghĩa là
 không có lần review nào của app đứng chắn phía sau: sửa một dòng trong `packs/` là mọi máy đang
-chạy Naota thấy ngay ở lần làm mới danh mục kế tiếp.
+chạy Vanhanh thấy ngay ở lần làm mới danh mục kế tiếp.
 
-Điều đó đặc biệt đúng với PHÂN LOẠI QUYỀN. Naota xếp một tool vào ba nhóm đọc / ghi / nguy hiểm,
+Điều đó đặc biệt đúng với PHÂN LOẠI QUYỀN. Vanhanh xếp một tool vào ba nhóm đọc / ghi / nguy hiểm,
 và mức "Ghi nháp" tự chạy được mọi thứ trong nhóm ghi. Nhưng `mcp_catalog.classify` KHÔNG có
 nhánh nào tự đoán ra "nguy hiểm": tool nào không được khuôn khai rõ thì cùng lắm rơi vào nhóm
 ghi. Nên một tool xoá dữ liệu hay tiêu tiền mà khuôn quên khai `danger` sẽ tự chạy được ở mức
 Ghi nháp, im lặng, cho tới lúc nó xoá thật.
 
-Trước 1.0.0 những phép kiểm này nằm trong repo NAOTA (`test_hostinger_connector.py`,
+Trước 1.0.0 những phép kiểm này nằm trong repo VANHANH (`test_hostinger_connector.py`,
 `test_n8n_connector.py`, `test_shopify_mcp.py`, `test_webcake_env.py`). Khuôn connector dọn sang
 đây thì phép kiểm dọn theo - giữ lại bên đó chỉ canh được bản chụp lúc dọn nhà, không canh được
 thứ người dùng thật sự cài.
@@ -27,7 +27,7 @@ Kiểm những gì
 2. Khuôn connector: JSON hợp lệ, đủ trường bắt buộc, icon hợp lệ (xem `tu-catalog.py`).
 3. AN TOÀN: mặc định chỉ đọc, và không tool nào có tên kiểu phá huỷ / tiêu tiền mà lại nằm ở
    nhóm đọc hay ghi.
-4. Bí mật: không nhét credential vào `url` (Naota không che `url`, nó ra thẳng giao diện và log).
+4. Bí mật: không nhét credential vào `url` (Vanhanh không che `url`, nó ra thẳng giao diện và log).
 5. Danh mục: mọi mục trong `index.json` có gói thật, có tệp zip thật, sha256 và size khớp,
    nội dung zip khớp thư mục nguồn, và mục kết nối có `icon` trỏ vào logo thật nằm trong gói.
 6. Không có ký tự em dash (luật của chủ kho, vì nó làm trình đọc màn hình vấp).
@@ -39,8 +39,8 @@ Kiểm những gì
    `mcp_dong_goi.py`.
 10. Gói theo repo gốc: mục `upstream` trong danh mục khớp `theo-goc/<id>.json`, và gói lẻ tách ra từ
     một gói gộp (`thuoc_goi`) trỏ đúng gói gộp đó. Lý do ở `theo-goc.py`.
-11. Mã gói bằng tiếng Anh (Naota dùng ở nhiều nước). Mã là đường dẫn và tên trong
-    mọi máy, đổi về sau phải đi qua `replaces` (Naota 1.1.0), nên chặn ngay từ lúc thêm gói. Tên hiển
+11. Mã gói bằng tiếng Anh (Vanhanh dùng ở nhiều nước). Mã là đường dẫn và tên trong
+    mọi máy, đổi về sau phải đi qua `replaces` (Vanhanh 1.1.0), nên chặn ngay từ lúc thêm gói. Tên hiển
     thị vẫn có cả tiếng Việt lẫn tiếng Anh như cũ.
 """
 import hashlib
@@ -73,7 +73,7 @@ import mcp_dong_goi  # noqa: E402
 
 
 def doc_manifest(thu_muc: Path):
-    """Đọc `naota-pack.yaml` mà không cần PyYAML.
+    """Đọc `vanhanh-pack.yaml` mà không cần PyYAML.
 
     Manifest trong kho có hai kiểu viết: kiểu MỘT DÒNG do `tu-catalog.py` sinh ra
     (`name: {vi: "..."}`), và kiểu KHỐI người ta viết tay (`name:` rồi thụt vào `vi: ...`).
@@ -81,7 +81,7 @@ def doc_manifest(thu_muc: Path):
     thầm hiểu sai. Tự đọc để CI không phải cài thư viện, và cái giá của lựa chọn đó nằm gọn
     trong đúng hàm này.
     """
-    tep = thu_muc / "naota-pack.yaml"
+    tep = thu_muc / "vanhanh-pack.yaml"
     if not tep.exists():
         return None
     d, khoa, khoi = {}, None, []
@@ -154,7 +154,7 @@ if not thu_muc_goi:
 AM_TIET_VIET = {"tro", "khach", "noi", "dung", "quang", "lieu", "pham", "tinh", "nghien", "cuu", "kinh",
                 "doanh", "trinh", "luong", "linh", "viet", "trong", "pheu", "ngay", "cham", "hoi", "thoai",
                 "nguoi", "tien", "hieu", "nhan", "tuong", "chien", "dich", "giao", "nhom"}
-MA_THUONG_HIEU = {"naota.nhanh", "naota.kiotviet", "naota.haravan", "naota.sapo", "naota.lemo-opuscar"}
+MA_THUONG_HIEU = {"vanhanh.nhanh", "vanhanh.kiotviet", "vanhanh.haravan", "vanhanh.sapo", "vanhanh.lemo-opuscar"}
 
 connector_theo_goi = {}
 for tm in thu_muc_goi:
@@ -163,12 +163,12 @@ for tm in thu_muc_goi:
         viet = sorted(set(re.split(r"[.-]", ten)) & AM_TIET_VIET)
         check(f"{ten}: mã gói bằng tiếng Anh (đổi mã cũ thì khai `replaces` trong manifest)", not viet, viet)
     man = doc_manifest(tm)
-    if not check(f"{ten}: có naota-pack.yaml đọc được", man is not None):
+    if not check(f"{ten}: có vanhanh-pack.yaml đọc được", man is not None):
         continue
     check(f"{ten}: id khớp tên thư mục", man.get("id") == ten, man.get("id"))
     check(f"{ten}: có version", bool(man.get("version")))
     check(f"{ten}: có name", bool(man.get("name")))
-    check(f"{ten}: format đúng", man.get("format") == "naota-pack", man.get("format"))
+    check(f"{ten}: format đúng", man.get("format") == "vanhanh-pack", man.get("format"))
     check(f"{ten}: spec = 1", str(man.get("spec")) == "1", man.get("spec"))
 
     duong_con = (man.get("provides") or {}).get("connectors") or []
@@ -196,7 +196,7 @@ for tm in thu_muc_goi:
         if icon.startswith("assets/"):
             check(f"{ten}/{cid}: tệp icon có thật", (tm / icon).exists(), icon)
 
-        # Bí mật không được nằm trong url: Naota lưu `url` KHÔNG qua secrets_store và trả
+        # Bí mật không được nằm trong url: Vanhanh lưu `url` KHÔNG qua secrets_store và trả
         # nguyên nó ra giao diện, nên token trong url là rơi thẳng ra dashboard và ra log.
         u = str(con.get("url") or "").lower()
         for tham in ("jwt=", "token=", "api_key=", "apikey=", "secret=", "password=", "access_token="):
@@ -205,7 +205,7 @@ for tm in thu_muc_goi:
         # An toàn: mặc định KHÔNG được là toàn quyền. `readonly` và `safe` đều hợp lệ - vài
         # dịch vụ chỉ có nghĩa khi ghi được bản nháp (Sheets, Tasks, Docs), và bắt chúng về
         # chỉ-đọc là đẩy người dùng đi nâng quyền tay ngay lần dùng đầu, tức làm mòn chính
-        # thao tác nâng quyền. Naota vẫn ép gói về chỉ đọc ở phía nó; dòng này canh chuyện gói
+        # thao tác nâng quyền. Vanhanh vẫn ép gói về chỉ đọc ở phía nó; dòng này canh chuyện gói
         # KHAI toàn quyền, vì đó là lời nói dối với người đọc gói.
         dp = con.get("default_perm", "readonly")
         check(f"{ten}/{cid}: default_perm không phải full", dp in ("readonly", "safe"), dp)
@@ -231,7 +231,7 @@ for tm in thu_muc_goi:
         for l in loi_ban(con):
             sai(f"{ten}/{cid}: {l}")
         # `lenh_cu`: lệnh mặc định đã từng phát hành. Kết nối tạo từ bản cũ còn lưu đúng lệnh đó thì
-        # Naota (từ 1.0.0) chạy lệnh hiện hành; lệnh hiện hành mà nằm trong danh sách là vô nghĩa.
+        # Vanhanh (từ 1.0.0) chạy lệnh hiện hành; lệnh hiện hành mà nằm trong danh sách là vô nghĩa.
         for cu in (con.get("lenh_cu") or []):
             check(f"{ten}/{cid}: mỗi mục `lenh_cu` có command và args",
                   isinstance(cu, dict) and cu.get("command") and isinstance(cu.get("args"), list), cu)
@@ -243,7 +243,7 @@ for tm in thu_muc_goi:
 # 5. Danh mục khớp gói và khớp zip
 # ============================================================
 idx = json.loads((GOC / "index.json").read_text(encoding="utf-8"))
-check("index.json đúng format", idx.get("format") == "naota-pack-index", idx.get("format"))
+check("index.json đúng format", idx.get("format") == "vanhanh-pack-index", idx.get("format"))
 check("index.json đúng format_version", int(idx.get("format_version") or 0) == 1)
 
 ids = [g.get("id") for g in idx.get("packs") or []]
@@ -278,7 +278,7 @@ for g in idx.get("packs") or []:
     khac = [k for k in (set(trong_zip) & set(tren_dia)) if trong_zip[k] != tren_dia[k]]
     check(f"danh mục: {gid} nội dung từng tệp khớp thư mục nguồn", not khac, khac)
 
-    # Logo trên thẻ trong Kho cài đặt. Naota đọc `icon` của mục danh mục và ghép với địa chỉ
+    # Logo trên thẻ trong Kho cài đặt. Vanhanh đọc `icon` của mục danh mục và ghép với địa chỉ
     # của chính file index (như `download.url`), nên nó phải là đường dẫn TƯƠNG ĐỐI trỏ vào
     # một tệp ảnh có thật trong repo - và là ảnh nằm TRONG gói, để logo trong kho và logo trên
     # trang Kết nối sau khi cài là cùng một tệp, không bao giờ lệch nhau. Không nhận .svg vì
@@ -332,7 +332,7 @@ for f in sorted((GOC / "packs").glob("*/connectors/*.json")):
 
 # ============================================================
 # 10. Gói theo repo gốc (`theo-goc/*.json`, xem `theo-goc.py`). Ở đây chỉ kiểm hai bên khớp
-#     nhau; so với repo gốc là việc của job `theo-goc` (cần mạng). Naota hiện mục `upstream`
+#     nhau; so với repo gốc là việc của job `theo-goc` (cần mạng). Vanhanh hiện mục `upstream`
 #     thành nhãn "Theo repo gốc" kèm link, nên một mục khai sai repo là một link dẫn sai chỗ.
 # ============================================================
 _REPO = re.compile(r"^[A-Za-z0-9_.-]{1,100}/[A-Za-z0-9_.-]{1,100}$")
@@ -377,7 +377,7 @@ for g in idx.get("packs") or []:
 # ============================================================
 EM = chr(0x2014)
 SOI = ["index.json", "README.md", "CONTRIBUTING.md", "mcp/nguon.json"]
-for f in (sorted(GOC.rglob("naota-pack.yaml")) + sorted((GOC / "packs").rglob("connectors/*.json"))
+for f in (sorted(GOC.rglob("vanhanh-pack.yaml")) + sorted((GOC / "packs").rglob("connectors/*.json"))
           + sorted((GOC / "tools").glob("*.py")) + chinh_chu.cac_tep() + sorted((GOC / "theo-goc").glob("*.json"))
           + sorted((GOC / "theo-goc" / "dich").glob("*.json")) + [GOC / x for x in SOI]):
     if not f.is_file():

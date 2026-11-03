@@ -1,0 +1,13 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.anthropic-ui-report
+version: 1.0.0
+name: {vi: "Claude: Giao diện & báo cáo", en: "Claude: UI & reports"}
+description: {vi: "5 skill chính chủ Anthropic về thứ nhìn được: định hướng thiết kế UI, playground HTML tương tác, trang trạng thái dự án nhiều tab, báo cáo phiên làm việc, và bản tổng kết mức dùng Claude Code.",
+              en: "Anthropic's 5 official skills for visible output: deliberate UI design direction, interactive HTML playgrounds, tabbed project status pages, session usage reports, and Claude Code usage receipts."}
+author: {name: "Anthropic", url: "https://github.com/anthropics/claude-plugins-official"}
+license: Apache-2.0
+homepage: "https://github.com/anthropics/claude-plugins-official"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [frontend-design, playground, project-artifact, session-report, receipts]

@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.xr-interface-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư giao diện XR", en: "XR Interface Architect"}
+description: {vi: "Thiết kế tương tác không gian và chiến lược giao diện cho môi trường AR/VR/XR nhập vai.",
+              en: "Spatial interaction designer and interface strategist for immersive AR/VR/XR environments"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/spatial-computing/xr-interface-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-xr-interface-architect]

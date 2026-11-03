@@ -1,0 +1,13 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.deepseek-review
+version: 1.0.0
+name: {vi: "DeepSeek: Review & chuẩn viết", en: "DeepSeek: Review & prose standard"}
+description: {vi: "4 skill dùng chung được, lọc từ deepseek-harness: review pull request theo thứ tự đúng-đắn trước, chuẩn viết comment và tài liệu, tìm chỗ code rút gọn được, và quay lại phiên trình duyệt thành GIF.",
+              en: "4 reusable skills lifted from deepseek-harness: review a pull request correctness-first, an editorial standard for comments and docs, find code that can be simplified, and record a browser session as a GIF."}
+author: {name: "DeepSeek", url: "https://github.com/deepseek-ai/deepseek-harness"}
+license: MIT
+homepage: "https://github.com/deepseek-ai/deepseek-harness/tree/master/.agents/skills"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [dsh-code-review, dsh-prose-standard, dsh-find-simplifications, record-browser-gif]

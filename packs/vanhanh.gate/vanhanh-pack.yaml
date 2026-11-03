@@ -1,0 +1,34 @@
+# Gói "Vanhanh Gate": cổng cho ChatGPT, Claude và AI khác làm việc cùng Vanhanh.
+#
+# Tiền thân là "Vanhanh trong ChatGPT" (mã cũ vanhanh.vanhanh-trong-chatgpt, plugin vanhanh-trong-chatgpt).
+# 2.0.0 đổi mã sang tiếng Anh, thêm Claude, và cho AI bên ngoài nhắn thẳng vào hội thoại của Vanhanh
+# (Vanhanh 1.1.0) thay vì giao việc qua Kanban. `replaces` báo cho Vanhanh biết đây là bản cập nhật của
+# gói cũ: cài lên là token, mức quyền và địa chỉ đã dán vào ChatGPT được giữ nguyên.
+format: vanhanh-pack
+spec: 1
+
+id: vanhanh.gate
+version: 2.1.0
+replaces:
+  - vanhanh.vanhanh-trong-chatgpt
+
+name:
+  vi: Vanhanh Gate
+  en: Vanhanh Gate
+description:
+  vi: Cổng cho ChatGPT, Claude và AI khác làm việc cùng Vanhanh. AI đó đọc hội thoại của Vanhanh, tư vấn cho bạn, và khi bạn đồng ý thì nhắn thẳng vào khung chat để Vanhanh làm tiếp. Bạn xem được tiến độ, Vanhanh nhớ lại cho lần sau. Cần Vanhanh 1.1.0 trở lên, mật khẩu quản trị và tên miền https.
+  en: A gate for ChatGPT, Claude and other AIs to work with Vanhanh. The AI reads your Vanhanh chats, advises you, and once you agree posts straight into the chat so Vanhanh carries on. You watch the progress, Vanhanh remembers it next time. Needs Vanhanh 1.1.0 or newer, an admin password and an https domain.
+
+author:
+  name: Vanhanh
+license: MIT
+homepage: https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.gate
+
+# 1.1.0 mở bốn tool chat cho cửa Gate (`mcp_hub.tra_loi_jsonrpc(gate=...)`) và cơ chế đổi mã gói
+# (`replaces`). Bản cũ hơn thì gói bị tắt kèm lý do đọc được.
+compat:
+  app: ">=1.1.0"
+
+provides:
+  plugins:
+    - plugins/vanhanh-gate

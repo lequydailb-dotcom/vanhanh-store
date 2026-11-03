@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.sales-discovery-coach
+version: 1.0.0
+name: {vi: "Huấn luyện viên khai thác nhu cầu", en: "Discovery Coach"}
+description: {vi: "Dạy đội bán hàng cách khai thác nhu cầu: thiết kế câu hỏi, vẽ hiện trạng, lượng hoá khoảng trống và cấu trúc cuộc gọi để lộ ra động lực mua thật.",
+              en: "Coaches sales teams on elite discovery methodology - question design, current-state mapping, gap quantification, and call structure that surfaces real buying motivation."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/sales/sales-discovery-coach.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-sales-discovery-coach]

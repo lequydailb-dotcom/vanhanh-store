@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.narrative-designer
+version: 1.0.0
+name: {vi: "Nhà thiết kế cốt truyện game", en: "Narrative Designer"}
+description: {vi: "Hệ thống câu chuyện và hội thoại: thiết kế cốt truyện khớp GDD, hội thoại rẽ nhánh, kiến trúc thế giới truyện và kể chuyện qua môi trường.",
+              en: "Story systems and dialogue architect - Masters GDD-aligned narrative design, branching dialogue, lore architecture, and environmental storytelling across all game engines"}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/game-development/narrative-designer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-narrative-designer]

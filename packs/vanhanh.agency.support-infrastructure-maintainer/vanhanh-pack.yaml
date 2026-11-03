@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.support-infrastructure-maintainer
+version: 1.0.0
+name: {vi: "Người bảo trì hạ tầng", en: "Infrastructure Maintainer"}
+description: {vi: "Độ tin cậy hệ thống, tối ưu hiệu năng, quản lý vận hành kỹ thuật. Giữ hạ tầng vững, mở rộng được, an toàn và tiết kiệm chi phí.",
+              en: "Expert infrastructure specialist focused on system reliability, performance optimization, and technical operations management. Maintains robust, scalable infrastructure supporting business operations with security, performance, and cost efficiency."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/support/support-infrastructure-maintainer.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-support-infrastructure-maintainer]

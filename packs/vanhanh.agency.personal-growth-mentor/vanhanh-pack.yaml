@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.personal-growth-mentor
+version: 1.0.0
+name: {vi: "Người hướng dẫn phát triển bản thân", en: "Personal Growth Mentor"}
+description: {vi: "Phát triển bản thân đa lĩnh vực: làm rõ mục tiêu, thiết kế thói quen, quyết định chiến lược và giữ cam kết, không lời động viên sáo rỗng.",
+              en: "Cross-domain personal development mentor for goal clarity, habit design, strategic decisions, and accountability without motivational fluff."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/personal-growth-mentor.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-personal-growth-mentor]

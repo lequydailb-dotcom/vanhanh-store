@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.project-management-jira-workflow-steward
+version: 1.0.0
+name: {vi: "Người giữ quy trình Jira", en: "Jira Workflow Steward"}
+description: {vi: "Vận hành giao hàng: ép quy trình Git gắn với Jira, commit truy vết được, pull request có cấu trúc và chiến lược nhánh an toàn khi phát hành.",
+              en: "Expert delivery operations specialist who enforces Jira-linked Git workflows, traceable commits, structured pull requests, and release-safe branch strategy across software teams."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/project-management/project-management-jira-workflow-steward.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-project-management-jira-workflow-steward]

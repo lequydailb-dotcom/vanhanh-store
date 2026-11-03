@@ -1,0 +1,92 @@
+{
+  "id": "pancake-chat",
+  "name": "Pancake hội thoại",
+  "icon": "assets/pancake-chat.png",
+  "category": "Nhắn tin",
+  "description": "Hộp thư fanpage trên Pancake (pages.fm): đọc hội thoại, tin nhắn, bình luận, khách hàng, thẻ và thống kê nhân viên; gắn thẻ, phân công, ghi chú khách, trả lời khách bằng chữ hoặc ảnh. Mỗi page một kết nối, dán Page ID và Page Access Token là xong.",
+  "status": "beta",
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "--package=https://raw.githubusercontent.com/lequydailb-dotcom/vanhanh-store/main/mcp/pancake-chat-mcp-1.1.0.tgz",
+    "pancake-chat-mcp"
+  ],
+  "ngoai_le_ban_chinh_thuc": "MCP do kho tự viết (mcp-nguon/pancake-chat-mcp) vì không có MCP Pancake hội thoại nào dùng được; không có bản npm nào để đi theo. Xem tools/mcp_dong_goi.py.",
+  "requires": {
+    "node": ">=18"
+  },
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "page_id",
+        "label": "Page ID",
+        "placeholder": "Dãy số id của page trên Pancake",
+        "env": "PANCAKE_PAGE_ID"
+      },
+      {
+        "key": "page_access_token",
+        "label": "Page Access Token",
+        "placeholder": "Dán Page Access Token...",
+        "env": "PANCAKE_PAGE_ACCESS_TOKEN"
+      }
+    ],
+    "guide": "Làm 1 lần cho mỗi page, cần quyền quản trị page trên Pancake:\n1. Mở page trên pages.fm, vào Cài đặt > Công cụ.\n2. Ở mục Page Access Token: page đã có token thì copy token đó. Chưa có thì bấm tạo.\n3. Page ID là dãy số của page, thấy ngay trên địa chỉ trình duyệt khi mở page (pages.fm/<Page ID>) hoặc trong Cài đặt.\n4. Dán hai giá trị vào ô dưới.\n\nĐã có token thì ĐỪNG bấm tạo lại: token mới có thể làm hỏng các ứng dụng khác đang dùng token cũ của page.\n\nToken không hết hạn và thấy mọi hội thoại của page. Lộ thì vào lại Cài đặt > Công cụ tạo token mới rồi cập nhật ở đây.\n\nNhiều page thì thêm mỗi page một kết nối.",
+    "guide_url": "https://developer.pancake.biz",
+    "steps": [
+      {
+        "text": "Mở page trên pages.fm bằng tài khoản quản trị page.",
+        "link": "https://pages.fm",
+        "link_label": "Mở Pancake"
+      },
+      {
+        "text": "Vào Cài đặt > Công cụ, copy Page Access Token (chưa có thì bấm tạo; đã có thì đừng tạo lại)."
+      },
+      {
+        "text": "Lấy Page ID: dãy số trên địa chỉ trình duyệt khi mở page (pages.fm/<Page ID>)."
+      },
+      {
+        "text": "Dán Page ID và token vào ô dưới rồi bấm Kết nối.",
+        "link": "https://developer.pancake.biz",
+        "link_label": "Tài liệu API của Pancake"
+      }
+    ]
+  },
+  "validate": {
+    "tool": "pancake_tags_list",
+    "args": {}
+  },
+  "tool_meta": {
+    "read": [
+      "pancake_conversations_list",
+      "pancake_messages_get",
+      "pancake_customers_list",
+      "pancake_tags_list",
+      "pancake_posts_list",
+      "pancake_staff_list",
+      "pancake_stats_page",
+      "pancake_stats_tags",
+      "pancake_stats_staff",
+      "pancake_stats_engagement"
+    ],
+    "write": [
+      "pancake_conversation_tag",
+      "pancake_conversation_mark_read",
+      "pancake_conversation_assign",
+      "pancake_customer_add_note"
+    ],
+    "danger": [
+      "pancake_send_message",
+      "pancake_send_image",
+      "*send*",
+      "*reply*",
+      "*delete*"
+    ]
+  },
+  "ghi_da_can_nhac": [
+    "pancake_posts_list"
+  ],
+  "default_perm": "readonly",
+  "risk": "Mức Chỉ đọc (mặc định) chỉ xem hội thoại, tin nhắn, khách hàng và thống kê. An toàn.\n\nMức Ghi nháp cho phép Vanhanh gắn hoặc gỡ thẻ, đánh dấu đã đọc, phân công hội thoại cho nhân viên và thêm ghi chú khách. Nhân viên của page thấy ngay các thay đổi này.\n\nMức Toàn quyền thêm quyền GỬI TIN và GỬI ẢNH cho khách thật dưới tên page, cả trả lời bình luận công khai. Ảnh chỉ lấy từ file ảnh trong máy (jpg, png, gif, webp). Tin đã gửi không thu hồi được.\n\nChỉ nâng quyền khi bạn thật sự muốn Vanhanh trả lời khách thay mình."
+}

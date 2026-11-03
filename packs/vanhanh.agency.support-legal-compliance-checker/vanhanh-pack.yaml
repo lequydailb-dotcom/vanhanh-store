@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.support-legal-compliance-checker
+version: 1.0.0
+name: {vi: "Người kiểm tuân thủ pháp lý", en: "Legal Compliance Checker"}
+description: {vi: "Đảm bảo hoạt động kinh doanh, xử lý dữ liệu và tạo nội dung tuân thủ luật, quy định và chuẩn ngành ở nhiều khu vực pháp lý.",
+              en: "Expert legal and compliance specialist ensuring business operations, data handling, and content creation comply with relevant laws, regulations, and industry standards across multiple jurisdictions."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/support/support-legal-compliance-checker.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-support-legal-compliance-checker]

@@ -1,7 +1,0 @@
-# Nguồn của agent `agency-blender-addon-engineer`
-
-Một agent lẻ của gói `naota.agency-agents`, lấy từ [msitarzewski/agency-agents/game-development/blender/blender-addon-engineer.md](https://github.com/msitarzewski/agency-agents/blob/main/game-development/blender/blender-addon-engineer.md).
-Thân prompt chép nguyên văn, phần đầu tệp thêm khoá cho Naota (xem `docs/NGUON.md` của gói gộp).
-Repo gốc đổi agent này thì gói lên một bản vá, Naota báo trong chuông.
-
-Giấy phép gốc: **MIT**, nguyên văn ở `docs/LICENSE-goc*`.

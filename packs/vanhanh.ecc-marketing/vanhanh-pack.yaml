@@ -1,0 +1,13 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.ecc-marketing
+version: 1.0.0
+name: {vi: "ECC: Marketing & nội dung", en: "ECC: Marketing & content"}
+description: {vi: "9 skill marketing của ECC: lên chiến dịch đa kênh, viết bài dài đúng giọng thương hiệu, phỏng vấn dựng brandbook, hệ thống nội dung social, đăng chéo nền tảng, SEO, tạo ảnh/video AI qua fal.ai, X API.",
+              en: "9 marketing skills from ECC: multi-channel campaigns, long-form writing in a brand voice, a brandbook interview, social content systems, cross-posting, SEO, fal.ai media, the X API."}
+author: {name: "Affaan Mustafa", url: "https://github.com/affaan-m/ECC"}
+license: MIT
+homepage: "https://github.com/affaan-m/ECC"
+compat: {app: ">=1.0.0"}
+provides:
+  skills: [marketing-campaign, article-writing, brand-discovery, brand-voice, content-engine, crosspost, seo, fal-ai-media, x-api]

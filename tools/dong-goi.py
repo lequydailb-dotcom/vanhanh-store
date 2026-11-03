@@ -1,6 +1,6 @@
 """Đóng một thư mục gói thành .zip và in dấu vân tay để dán vào danh mục kho.
 
-    python tools/dong-goi.py naota.pricing
+    python tools/dong-goi.py vanhanh.pricing
 
 Có script này thay vì một dòng `zip -r` trong tài liệu vì ba lý do nhỏ mà mỗi cái đều đủ
 làm hỏng một lần phát hành:
@@ -41,7 +41,7 @@ def _phien_ban(src: Path) -> str:
 
     Tên có phiên bản là điều kiện để giữ được bản cũ: người dùng cần tải lại bản trước khi bản
     mới hỏng, mà ghi đè một tệp thì bản trước biến mất khỏi mọi máy cùng lúc."""
-    for dong_ in (src / "naota-pack.yaml").read_text(encoding="utf-8").splitlines():
+    for dong_ in (src / "vanhanh-pack.yaml").read_text(encoding="utf-8").splitlines():
         if dong_.strip().startswith("version:"):
             return dong_.split(":", 1)[1].strip().strip('"' + "'")
     return "0.0.0"
@@ -49,8 +49,8 @@ def _phien_ban(src: Path) -> str:
 
 def dong(ten: str) -> Path:
     src = NGUON / ten
-    if not (src / "naota-pack.yaml").is_file():
-        raise SystemExit(f"Không thấy {src / 'naota-pack.yaml'}")
+    if not (src / "vanhanh-pack.yaml").is_file():
+        raise SystemExit(f"Không thấy {src / 'vanhanh-pack.yaml'}")
     ra = RA / f"{ten.replace('.', '-')}-{_phien_ban(src)}.zip"
     ra.parent.mkdir(exist_ok=True)
     n = 0
@@ -77,7 +77,7 @@ def dong(ten: str) -> Path:
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         co = sorted(d.name for d in NGUON.iterdir()
-                    if d.is_dir() and (d / "naota-pack.yaml").is_file()) if NGUON.is_dir() else []
+                    if d.is_dir() and (d / "vanhanh-pack.yaml").is_file()) if NGUON.is_dir() else []
         raise SystemExit("Cách dùng: python dong-goi.py <tên thư mục gói>\nCó sẵn: "
                          + (", ".join(co) or "chưa có gói nào"))
     dong(sys.argv[1])

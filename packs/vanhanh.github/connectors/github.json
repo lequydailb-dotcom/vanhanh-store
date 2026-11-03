@@ -1,0 +1,147 @@
+{
+  "id": "github",
+  "name": "GitHub",
+  "icon": "assets/github.png",
+  "category": "Lập trình",
+  "description": "Làm việc với code trên GitHub qua MCP chính chủ: đọc và sửa file, tạo nhánh, đẩy commit, mở và trộn Pull Request, issue, review, xem và chạy GitHub Actions, đọc log CI, cảnh báo bảo mật. Bật đủ mọi bộ công cụ, dán Personal Access Token là xong.",
+  "status": "beta",
+  "transport": "http",
+  "url": "https://api.githubcopilot.com/mcp/x/all",
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "pat",
+        "label": "Personal Access Token (GitHub)",
+        "placeholder": "Dán token dạng github_pat_... hoặc ghp_...",
+        "header": "Authorization: Bearer {pat}"
+      }
+    ],
+    "guide": "Làm 1 lần:\n1. Vào github.com > Settings > Developer settings > Personal access tokens > Fine-grained tokens > Generate new token.\n2. Đặt tên (ví dụ 'Vanhanh'), chọn hạn dùng. Repository access: All repositories, hoặc chỉ các repo muốn Vanhanh đụng tới.\n3. Repository permissions, muốn Vanhanh làm code trọn vẹn thì cấp Read and write cho: Contents, Pull requests, Issues, Actions, Workflows, Commit statuses. Metadata để Read. Thêm Administration nếu muốn Vanhanh tạo hoặc xoá repo.\n4. Bấm Generate, copy token NGAY (đóng là không xem lại được) rồi dán vào ô dưới.\n\nDùng token cổ điển (ghp_...) cũng được: tick repo, workflow, read:org, gist.\n\nToken là hàng rào thật: Vanhanh chỉ làm được đúng những gì token cho phép, trên đúng các repo bạn chọn. Hết hạn thì tạo token mới và cập nhật ở đây.",
+    "guide_url": "https://github.com/github/github-mcp-server/blob/main/docs/remote-server.md",
+    "steps": [
+      {
+        "text": "Mở trang tạo Fine-grained token của GitHub.",
+        "link": "https://github.com/settings/personal-access-tokens/new",
+        "link_label": "Tạo token GitHub"
+      },
+      {
+        "text": "Đặt tên, chọn hạn dùng, chọn All repositories hoặc chỉ các repo cần dùng."
+      },
+      {
+        "text": "Cấp Read and write cho Contents, Pull requests, Issues, Actions, Workflows, Commit statuses. Thêm Administration nếu muốn Vanhanh tạo hoặc xoá repo."
+      },
+      {
+        "text": "Bấm Generate, copy token ngay, dán vào ô bên dưới rồi bấm Kết nối.",
+        "link": "https://github.com/github/github-mcp-server/blob/main/docs/remote-server.md",
+        "link_label": "Hướng dẫn của GitHub"
+      }
+    ]
+  },
+  "validate": {
+    "tool": "get_me",
+    "args": {},
+    "label_paths": ["login"]
+  },
+  "tool_meta": {
+    "read": [
+      "get_*",
+      "list_*",
+      "search_*",
+      "actions_get",
+      "actions_list",
+      "projects_get",
+      "projects_list",
+      "issue_read",
+      "pull_request_read",
+      "repository_ruleset_read",
+      "custom_properties_read",
+      "ui_get",
+      "github_support_docs_search",
+      "issue_dependency_read",
+      "find_duplicate"
+    ],
+    "write": [
+      "create_*",
+      "update_*",
+      "add_*",
+      "*_write",
+      "push_files",
+      "create_or_update_file",
+      "create_branch",
+      "fork_repository",
+      "star_repository",
+      "unstar_repository",
+      "request_copilot_review",
+      "resolve_review_thread",
+      "unresolve_review_thread",
+      "dismiss_notification",
+      "mark_all_notifications_read",
+      "manage_*",
+      "run_secret_scanning",
+      "hide_*",
+      "unhide_*",
+      "set_*",
+      "submit_*",
+      "remove_*",
+      "reprioritize_*",
+      "request_pull_request_reviewers"
+    ],
+    "danger": [
+      "delete_*",
+      "*delete*",
+      "merge_pull_request",
+      "*merge*",
+      "actions_run_trigger",
+      "*_trigger",
+      "*auto_merge*",
+      "create_repository_ruleset",
+      "custom_properties_write",
+      "assign_copilot_to_issue*",
+      "create_pull_request_with_copilot",
+      "label_write",
+      "projects_write",
+      "discussion_comment_write"
+    ]
+  },
+  "call_rules": {
+    "label_write": {
+      "key": "method",
+      "else": "danger",
+      "write_values": ["create", "update"],
+      "danger_values": ["delete"]
+    },
+    "projects_write": {
+      "key": "method",
+      "else": "danger",
+      "write_values": [
+        "add_project_item",
+        "update_project_item",
+        "update_project_items",
+        "create_project_status_update",
+        "create_project_view",
+        "update_project_view",
+        "create_project",
+        "create_iteration_field"
+      ],
+      "danger_values": ["delete_project_item", "delete_project_view"]
+    },
+    "discussion_comment_write": {
+      "key": "method",
+      "else": "danger",
+      "write_values": ["add", "reply", "update", "mark_answer", "unmark_answer"],
+      "danger_values": ["delete"]
+    }
+  },
+  "ghi_da_can_nhac": [
+    "run_secret_scanning",
+    "remove_issue_reaction",
+    "remove_issue_comment_reaction",
+    "remove_pull_request_review_comment_reaction",
+    "remove_sub_issue",
+    "manage_notification_subscription",
+    "manage_repository_notification_subscription"
+  ],
+  "default_perm": "readonly",
+  "risk": "Mức Chỉ đọc: đọc code, issue, Pull Request, log CI, tìm kiếm. Không đổi gì.\n\nMức Ghi nháp: Vanhanh SỬA THẬT trên GitHub, gồm đẩy commit thẳng vào nhánh, tạo nhánh, sửa file, mở Pull Request, viết issue và bình luận, gửi review, ẩn hoặc hiện bình luận, mời người review, gỡ reaction và gỡ issue con, tạo và sửa nhãn, thêm và sửa mục Project, trả lời thảo luận. Mọi thứ vẫn nằm trong lịch sử git nên quay lại được, nhưng bình luận và review thì người khác đã thấy.\n\nMức Toàn quyền mở thêm nhóm nguy hiểm: TRỘN Pull Request vào nhánh chính, CHẠY lại hoặc huỷ workflow GitHub Actions (có thể deploy thật, tốn phút Actions), xoá file, XOÁ REPO, xoá nhãn, xoá mục và view trong Project, xoá bình luận thảo luận, đặt luật bảo vệ nhánh, giao việc cho Copilot (tiêu lượt Copilot trả phí).\n\nToken là hàng rào thật: chỉ chọn những repo và quyền bạn muốn Vanhanh đụng tới. Không cấp Administration thì Vanhanh không xoá được repo dù đang ở Toàn quyền."
+}

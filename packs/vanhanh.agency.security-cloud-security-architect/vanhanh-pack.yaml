@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.security-cloud-security-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư bảo mật đám mây", en: "Cloud Security Architect"}
+description: {vi: "Kiến trúc zero trust, phòng thủ nhiều lớp trên AWS, Azure, GCP và bảo mật đường ống hạ tầng dạng code ngay từ ngày đầu.",
+              en: "Cloud-native security specialist designing zero trust architectures, implementing defense-in-depth across AWS, Azure, and GCP, and securing infrastructure-as-code pipelines from day one."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/security/security-cloud-security-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-security-cloud-security-architect]

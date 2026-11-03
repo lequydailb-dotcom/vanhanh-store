@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.real-estate-buyer-seller
+version: 1.0.0
+name: {vi: "Trợ lý môi giới bất động sản", en: "Real Estate Buyer & Seller"}
+description: {vi: "Đại diện người mua và người bán, quản lý tin đăng, thương lượng giá, điều phối giao dịch và hỗ trợ tới lúc ký kết, trải nghiệm khách hàng chuẩn mực.",
+              en: "Comprehensive real estate agent assistant for buyer representation, seller representation, listing management, offer negotiation, transaction coordination, and closing support - delivering a world-class client experience from first showing to final closing across residential and investment real..."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/specialized/real-estate-buyer-seller.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-real-estate-buyer-seller]

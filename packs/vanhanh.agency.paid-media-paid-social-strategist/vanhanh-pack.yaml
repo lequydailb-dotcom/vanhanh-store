@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.paid-media-paid-social-strategist
+version: 1.0.0
+name: {vi: "Chiến lược gia quảng cáo mạng xã hội", en: "Paid Social Strategist"}
+description: {vi: "Quảng cáo trên Meta (Facebook, Instagram), LinkedIn, TikTok, Pinterest, X, Snapchat. Thiết kế cả phễu từ tìm khách mới tới bám đuổi, mẫu riêng từng nền tảng.",
+              en: "Cross-platform paid social advertising specialist covering Meta (Facebook/Instagram), LinkedIn, TikTok, Pinterest, X, and Snapchat. Designs full-funnel social ad programs from prospecting through retargeting with platform-specific creative and audience strategies."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/paid-media/paid-media-paid-social-strategist.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-paid-media-paid-social-strategist]

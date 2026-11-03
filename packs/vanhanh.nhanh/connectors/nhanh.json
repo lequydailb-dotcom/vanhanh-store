@@ -1,0 +1,81 @@
+{
+  "id": "nhanh",
+  "name": "Nhanh.vn",
+  "icon": "assets/nhanh.png",
+  "category": "Bán hàng",
+  "description": "Đơn hàng, doanh thu, sản phẩm bán chạy, tồn kho và khách hàng từ Nhanh.vn. Chỉ đọc, không sửa được gì trên cửa hàng. Cần Access Token, App ID và Business ID.",
+  "status": "beta",
+  "transport": "stdio",
+  "command": "npx",
+  "args": [
+    "-y",
+    "--package=https://raw.githubusercontent.com/lequydailb-dotcom/vanhanh-store/main/mcp/nhanh-mcp-1.0.0-aa47d76.tgz",
+    "nhanh-mcp"
+  ],
+  "ngoai_le_ban_chinh_thuc": "nhanh-mcp (của Junokyo) chưa phát hành bản nào lên npm, và npx không chạy được thẳng từ GitHub vì gói không khai lệnh chạy (bin); kho thêm đúng dòng đó, xem `va` trong mcp/nguon.json. Kho build một lần từ commit ghim trong mcp/nguon.json rồi chạy tệp đó, xem tools/mcp_dong_goi.py.",
+  "requires": {
+    "node": ">=18"
+  },
+  "auth": {
+    "type": "apikey",
+    "fields": [
+      {
+        "key": "access_token",
+        "label": "Access Token",
+        "placeholder": "Dán Access Token Nhanh.vn...",
+        "env": "NHANH_ACCESS_TOKEN"
+      },
+      {
+        "key": "app_id",
+        "label": "App ID",
+        "placeholder": "Dãy số App ID",
+        "env": "NHANH_APP_ID"
+      },
+      {
+        "key": "business_id",
+        "label": "Business ID (mã doanh nghiệp)",
+        "placeholder": "Dãy số Business ID",
+        "env": "NHANH_BUSINESS_ID"
+      }
+    ],
+    "guide": "Nhanh.vn cấp Access Token qua một bước đăng nhập, làm 1 lần (token dùng được 1 năm):\n1. Vào open.nhanh.vn, tạo app mới, ghi lại App ID và Secret Key.\n2. Đăng nhập Nhanh.vn bằng tài khoản Giám đốc, vào Cài đặt chung > Cài đặt Open API, bật Cho phép kết nối Open API.\n3. Đổi App ID + Secret Key lấy Access Token theo hướng dẫn của Nhanh.vn. Kết quả trả về có cả Access Token lẫn Business ID.\n4. Dán Access Token, App ID và Business ID vào ba ô dưới.\n\nCách nhanh hơn ở bước 3: trình hướng dẫn của tác giả MCP này (resproxy.io/nhanh) làm hộ việc đổi token, rồi trả về một địa chỉ có dạng ...?token=...&appId=...&businessId=... Ba giá trị trong địa chỉ đó chính là ba ô dưới. Lưu ý: dùng đường này là bạn đưa Secret Key cho trang của bên thứ ba.\n\nMCP này chỉ đọc: không tạo, sửa hay xoá gì trên Nhanh.vn.",
+    "guide_url": "https://open.nhanh.vn",
+    "steps": [
+      {
+        "text": "Vào open.nhanh.vn, tạo app mới, ghi lại App ID và Secret Key.",
+        "link": "https://open.nhanh.vn",
+        "link_label": "Mở open.nhanh.vn"
+      },
+      {
+        "text": "Đăng nhập Nhanh.vn bằng tài khoản Giám đốc: Cài đặt chung > Cài đặt Open API, bật Cho phép kết nối Open API."
+      },
+      {
+        "text": "Đổi App ID + Secret Key lấy Access Token theo hướng dẫn của Nhanh.vn (hoặc dùng trình hướng dẫn resproxy.io/nhanh của tác giả MCP, kết quả là một địa chỉ chứa token, appId, businessId).",
+        "link": "https://resproxy.io/nhanh/huong-dan",
+        "link_label": "Trình hướng dẫn của tác giả MCP"
+      },
+      {
+        "text": "Dán Access Token, App ID và Business ID vào ba ô dưới rồi bấm Kết nối."
+      }
+    ]
+  },
+  "validate": {
+    "tool": "check_token",
+    "args": {}
+  },
+  "tool_meta": {
+    "read": [
+      "check_token",
+      "get_orders",
+      "get_revenue_report",
+      "get_top_products",
+      "get_inventory",
+      "get_customers"
+    ]
+  },
+  "default_perm": "readonly",
+  "ghi_da_can_nhac": [
+    "get_orders"
+  ],
+  "risk": "MCP này hiện chỉ có tool đọc (đơn hàng, doanh thu, tồn kho, khách hàng), nên ở mức nào Vanhanh cũng không sửa được gì trên Nhanh.vn.\n\nAccess Token thấy mọi dữ liệu bán hàng của doanh nghiệp trong 1 năm. Lộ thì vào open.nhanh.vn tạo lại token."
+}

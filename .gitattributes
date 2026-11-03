@@ -2,7 +2,7 @@
 #
 # Không ràng buộc chỗ này thì Windows checkout ra CRLF, `tools/dong-goi.py` đóng gói đúng những
 # byte đó, và tệp .zip ra một `sha256` KHÁC con số trong index.json - dù không ai sửa một chữ
-# nào. Naota đối chiếu dấu vân tay ngay khi tải xong nên nó sẽ từ chối cài, và người đóng góp
+# nào. Vanhanh đối chiếu dấu vân tay ngay khi tải xong nên nó sẽ từ chối cài, và người đóng góp
 # không tài nào hiểu vì sao.
 * text=auto eol=lf
 

@@ -1,0 +1,71 @@
+{
+  "id": "mineflow",
+  "name": "Mineflow",
+  "icon": "assets/mineflow.png",
+  "category": "Marketing",
+  "description": "Nền tảng dữ liệu khách hàng (CDP) & tự động hóa marketing all-in-one trên Zalo, qua MCP chính chủ của Mineflow. Để AI xem và dựng landing page, mini app, biểu mẫu, bảng dữ liệu khách hàng và workflow tự động hóa trên Zalo. Đăng nhập Mineflow 1 chạm - không cần dán key.",
+  "status": "beta",
+  "transport": "http",
+  "url": "https://mcp.mineflow.dev/mcp",
+  "auth": {
+    "type": "oauth",
+    "fields": [],
+    "guide": "Bấm Kết nối rồi đăng nhập tài khoản Mineflow và chọn tổ chức (organization) muốn cấp quyền.\n\nVanhanh tự đăng ký ứng dụng theo chuẩn OAuth của Mineflow, không cần tạo app hay dán key. Mỗi lần kết nối chỉ thao tác trên đúng MỘT tổ chức Mineflow; có nhiều tổ chức thì kết nối thêm tài khoản.\n\nNgười dùng Vanhanh có ưu đãi riêng khi đăng ký Mineflow (3 tháng gói Pro và các gói setup Zalo OA, ZNS, Mini App): xem trang hướng dẫn.",
+    "guide_url": "https://github.com/lequydailb-dotcom/vanhanh-store/blob/main/huong-dan/mineflow.md"
+  },
+  "tool_meta": {
+    "read": [
+      "get_*",
+      "list_*"
+    ],
+    "write": [
+      "add_column",
+      "add_step",
+      "apply_color_map",
+      "batch_operations",
+      "copy_component",
+      "create_brand_kit",
+      "create_landing_page",
+      "create_media_folder",
+      "create_page",
+      "create_table",
+      "create_workflow",
+      "duplicate_mini_app",
+      "insert_component",
+      "insert_section",
+      "insert_step",
+      "reorder_components",
+      "reorder_pages",
+      "reorder_steps",
+      "report_issue",
+      "search_and_replace_styles",
+      "set_customer_mapping",
+      "set_default_brand_kit",
+      "set_landing_seo",
+      "set_page_seo",
+      "set_portal_theme",
+      "snapshot_page",
+      "toggle_customer_mapping",
+      "update_brand_kit",
+      "update_component",
+      "update_page_config",
+      "update_step",
+      "upload_media"
+    ],
+    "danger": [
+      "delete_*",
+      "remove_*",
+      "restore_snapshot",
+      "set_status",
+      "set_homepage",
+      "update_workflow",
+      "add_trigger",
+      "update_trigger",
+      "add_custom_domain",
+      "verify_domain"
+    ]
+  },
+  "ghi_da_can_nhac": ["report_issue", "toggle_customer_mapping"],
+  "default_perm": "readonly",
+  "risk": "Mineflow chạy thật trên trang và khách hàng của bạn: trang đã xuất bản không có bản nháp, nên mọi chỉnh sửa trên trang đó LÊN MẠNG NGAY; workflow khi bật có thể tự nhắn tin Zalo cho khách hàng thật.\n\nVì vậy mặc định để Chỉ đọc: Vanhanh xem được trang, mini app, bảng dữ liệu và workflow nhưng không sửa gì. Nâng lên Ghi nháp thì Vanhanh dựng và sửa nội dung trang, bảng, bước workflow; vẫn chặn xoá, xuất bản hoặc gỡ trang, bật hoặc tắt workflow, thêm hoặc đổi trigger của workflow, đổi trang chủ, khôi phục bản chụp và đổi tên miền. Muốn Vanhanh làm cả những việc đó thì nâng Toàn quyền.\n\nreport_issue chỉ gửi phản hồi lỗi về cho Mineflow; toggle_customer_mapping bật hoặc tắt việc ghép dữ liệu khách hàng và bật lại được, nên xếp vào Ghi nháp.\n\nTên tool lấy từ máy chủ MCP của Mineflow; phân loại quyền dựa trên các tên đó."
+}

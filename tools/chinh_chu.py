@@ -36,7 +36,7 @@ from pathlib import Path
 
 GOC = Path(__file__).resolve().parent.parent
 THU_MUC = GOC / "chinh-chu"
-_UA = {"User-Agent": "naota-store-soi"}
+_UA = {"User-Agent": "vanhanh-store-soi"}
 TRAN_GIAY = 60
 
 # Thứ tự nặng dần, để gộp các biến thể của cùng một tool (GitHub có tệp snapshot riêng cho bản
@@ -80,7 +80,7 @@ def ban_moi_nhat(repo):
 def lenh_can_theo_doi(con):
     """{tên tool: tham số chọn lệnh} cho các tool khuôn phân loại theo TỪNG LỆNH (`call_rules` không
     có `items`, ví dụ GitHub `label_write` chọn lệnh bằng `method`). Bên chính chủ thêm một lệnh
-    vào những tool này thì Naota xếp lệnh đó về mức `else` của luật: an toàn, nhưng kho phải biết."""
+    vào những tool này thì Vanhanh xếp lệnh đó về mức `else` của luật: an toàn, nhưng kho phải biết."""
     return {t: str(r.get("key")) for t, r in ((con or {}).get("call_rules") or {}).items()
             if isinstance(r, dict) and r.get("key") and not r.get("items")}
 

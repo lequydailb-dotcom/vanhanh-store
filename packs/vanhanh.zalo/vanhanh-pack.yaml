@@ -1,0 +1,37 @@
+# Gói "Zalo mở rộng": các tool đi kèm kết nối Zalo Agent MCP (zalo-agent-cli) của VANHANH.
+#
+# Kết nối Zalo và phần quét QR nằm trong LÕI Vanhanh (đăng nhập QR không khai bằng gói được), nên
+# gói này không chứa connector. Nó chỉ chứa ba plugin bù chỗ MCP chuẩn còn thiếu: gửi ảnh/file,
+# tag người + ghi chú + nhắc hẹn + poll trong nhóm, và ĐỌC ẢNH người ta gửi trong nhóm. Cả ba gọi
+# lại chính CLI zalo-agent-cli bằng phiên đã quét QR (`server/zalo_cli.py` của lõi), không đăng
+# nhập lần hai, không gọi đi đâu ngoài Zalo (và ChatGPT của chính người dùng khi tả ảnh).
+#
+# Ai đấu Zalo thì Vanhanh mời cài gói này ngay sau khi quét QR.
+format: vanhanh-pack
+spec: 1
+
+id: vanhanh.zalo
+version: 1.5.0
+
+name:
+  vi: Zalo mở rộng
+  en: Zalo extras
+description:
+  vi: Đi kèm kết nối Zalo. Gửi ảnh và file, tag đúng người trong nhóm, tạo ghi chú, đọc và sửa ghi chú ghim (giữ nguyên ghim), nhắc hẹn, poll, đọc ảnh người ta gửi trong nhóm, và kết bạn (tìm người theo số điện thoại hay tên bạn bè, xem lời mời chờ duyệt và đã gửi, gửi, nhận, từ chối, rút lại lời mời, đổi tên khách bằng tên gợi nhớ). Cần Vanhanh 1.0.0 trở lên và đã quét QR Zalo ở trang Kết nối.
+  en: Goes with the Zalo connection. Send images and files, tag the right people in a group, create notes, read and edit pinned notes (the pin stays), reminders and polls, read the images people post in a group, and handle friends (find people by phone or by a friend's name, see pending and sent requests, send, accept, reject and withdraw requests, rename a contact with a nickname). Needs Vanhanh 1.0.0 or newer and Zalo scanned on the Connections page.
+
+author:
+  name: Vanhanh
+license: MIT
+homepage: https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.zalo
+
+# Plugin đọc ảnh dùng `image_vision` của lõi.
+compat:
+  app: ">=1.0.0"
+
+provides:
+  plugins:
+    - plugins/zalo-image
+    - plugins/zalo-group
+    - plugins/zalo-read-images
+    - plugins/zalo-friend

@@ -1,0 +1,15 @@
+format: vanhanh-pack
+spec: 1
+id: vanhanh.agency.engineering-autonomous-optimization-architect
+version: 1.0.0
+name: {vi: "Kiến trúc sư tối ưu tự động", en: "Autonomous Optimization Architect"}
+description: {vi: "Bộ điều phối liên tục chạy thử ngầm các API để đo hiệu năng, đồng thời giữ rào chắn chặt về chi phí và bảo mật, chống chi tiêu vượt kiểm soát.",
+              en: "Intelligent system governor that continuously shadow-tests APIs for performance while enforcing strict financial and security guardrails against runaway costs."}
+author: {name: "msitarzewski", url: "https://github.com/msitarzewski/agency-agents"}
+license: MIT
+homepage: "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-autonomous-optimization-architect.md"
+compat: {app: ">=1.0.0"}
+# Một agent lẻ của gói theo repo gốc vanhanh.agency-agents: tools/theo-goc.py dựng lại mỗi ngày, đừng sửa tay.
+thuoc_goi: vanhanh.agency-agents
+provides:
+  agents: [agency-engineering-autonomous-optimization-architect]
