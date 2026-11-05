@@ -1,7 +1,7 @@
 {
   "format": "vanhanh-pack-index",
   "format_version": 1,
-  "updated": "2026-11-02",
+  "updated": "2026-11-05",
   "store": {
     "name": "Kho cài đặt Vanhanh",
     "url": "https://github.com/lequydailb-dotcom/vanhanh-store"
@@ -2950,7 +2950,7 @@
         "vi": "Bộ skill chính chủ của Remotion (remotion.dev): tạo dự án video bằng React, hoạt hình, chữ và hiệu ứng, phụ đề, bản đồ, xem trước và xuất video. Theo repo gốc, cập nhật mỗi khi Remotion sửa skill.",
         "en": "Remotion's official skills (remotion.dev): create React video projects, animation, type and effects, captions, maps, preview and render. Follows the source repo and updates whenever Remotion changes its skills."
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": {
         "name": "Remotion",
         "url": "https://github.com/remotion-dev/skills"
@@ -2962,15 +2962,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-02",
+      "updated": "2026-11-05",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.remotion",
       "source": "https://github.com/remotion-dev/skills",
       "license": "Remotion License",
       "upstream": {
         "repo": "remotion-dev/skills",
         "ref": "main",
-        "commit": "c7cb2fdcacd134fb2ccb9b7a44f9ffa44e467271",
-        "synced": "2026-11-02"
+        "commit": "a2824c67f8b4585c294a8101db9f9f0ad3c643f8",
+        "synced": "2026-11-05"
       },
       "provides": {
         "skills": [
@@ -2990,9 +2990,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-remotion-1.0.1.zip",
-        "sha256": "d684a640a84d69bb85fb2e9adcc41733c28ef8730c12e3598dd09259a21c4ca1",
-        "size": 869752
+        "url": "dist/vanhanh-remotion-1.0.2.zip",
+        "sha256": "6d235fb2d25a3344a524990366c5bd2b7e5f831ece689c764075afabbc653091",
+        "size": 880759
       }
     },
     {
@@ -3278,7 +3278,7 @@
         "vi": "12 skill của GitNexus: dựng đồ thị phụ thuộc của cả codebase rồi dùng nó để khám phá mã, gỡ lỗi, đánh giá tác động trước khi sửa, refactor, review PR. Cần chạy npx gitnexus analyze. Giấy phép chỉ cho dùng phi thương mại.",
         "en": "12 GitNexus skills: index the whole codebase into a dependency graph and use it to explore code, debug, check impact before an edit, refactor and review PRs. Needs npx gitnexus analyze. Licensed for noncommercial use only."
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": {
         "name": "Abhigyan Patwari",
         "url": "https://github.com/abhigyanpatwari/GitNexus"
@@ -3290,15 +3290,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-01",
+      "updated": "2026-11-05",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.gitnexus",
       "source": "https://github.com/abhigyanpatwari/GitNexus",
       "license": "PolyForm-Noncommercial-1.0.0",
       "upstream": {
         "repo": "abhigyanpatwari/GitNexus",
         "ref": "main",
-        "commit": "21298f24234e538dc0d0b5369c410e76da77e70e",
-        "synced": "2026-11-01"
+        "commit": "fb85794c621f89217ceb7fc9e708459e4f21ba77",
+        "synced": "2026-11-05"
       },
       "provides": {
         "skills": [
@@ -3317,9 +3317,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-gitnexus-1.0.1.zip",
-        "sha256": "2c30d61bb5bcfd4595bd936efab72a31d2310ed80db6d6acbaf78d8b8d13cf3a",
-        "size": 149373
+        "url": "dist/vanhanh-gitnexus-1.0.2.zip",
+        "sha256": "b37046c21e800eddf84d696e83ba219d4801f62ae8146368024ba6591928ec29",
+        "size": 150024
       }
     },
     {
@@ -3592,7 +3592,7 @@
         "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
         "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
       },
-      "version": "1.0.5",
+      "version": "1.0.6",
       "author": {
         "name": "morluto",
         "url": "https://github.com/morluto/rea"
@@ -3604,15 +3604,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-02",
+      "updated": "2026-11-05",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.rea",
       "source": "https://github.com/morluto/rea",
       "license": "MIT",
       "upstream": {
         "repo": "morluto/rea",
         "ref": "main",
-        "commit": "93b8b82db70279e40f484114cff9dc1958dc14ee",
-        "synced": "2026-11-02"
+        "commit": "fe677f6cf9853fb12490dfb8ef23ccae3a551049",
+        "synced": "2026-11-05"
       },
       "provides": {
         "skills": [
@@ -3620,9 +3620,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-rea-1.0.5.zip",
-        "sha256": "1b68b5dfdca8bf3b551bf0c4b695911c9391df305c651e52b6b56e9c28569e9b",
-        "size": 64409
+        "url": "dist/vanhanh-rea-1.0.6.zip",
+        "sha256": "a6e3d07397c24f5e29aa4e464d5e15e86163212131d4a174d0701aaec08bcf6b",
+        "size": 66758
       }
     },
     {
