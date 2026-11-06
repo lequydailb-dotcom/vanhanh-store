@@ -1,7 +1,7 @@
 format: vanhanh-pack
 spec: 1
 id: vanhanh.agency.support-finance-tracker
-version: 1.0.0
+version: 1.0.1
 name: {vi: "Người theo dõi tài chính", en: "Finance Tracker"}
 description: {vi: "Kế hoạch tài chính, quản lý ngân sách, phân tích hiệu quả kinh doanh. Giữ tài chính lành mạnh, tối ưu dòng tiền, đưa góc nhìn tài chính cho tăng trưởng.",
               en: "Expert financial analyst and controller specializing in financial planning, budget management, and business performance analysis. Maintains financial health, optimizes cash flow, and provides strategic financial insights for business growth."}

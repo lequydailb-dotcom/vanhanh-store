@@ -1,7 +1,7 @@
 {
   "format": "vanhanh-pack-index",
   "format_version": 1,
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "store": {
     "name": "Kho cài đặt Vanhanh",
     "url": "https://github.com/lequydailb-dotcom/vanhanh-store"
@@ -3592,7 +3592,7 @@
         "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
         "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
       },
-      "version": "1.0.6",
+      "version": "1.0.7",
       "author": {
         "name": "morluto",
         "url": "https://github.com/morluto/rea"
@@ -3604,15 +3604,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-05",
+      "updated": "2026-11-06",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.rea",
       "source": "https://github.com/morluto/rea",
       "license": "MIT",
       "upstream": {
         "repo": "morluto/rea",
         "ref": "main",
-        "commit": "fe677f6cf9853fb12490dfb8ef23ccae3a551049",
-        "synced": "2026-11-05"
+        "commit": "abdbaa544ad3e63444a58bebd1708cc51b136a8b",
+        "synced": "2026-11-06"
       },
       "provides": {
         "skills": [
@@ -3620,9 +3620,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-rea-1.0.6.zip",
-        "sha256": "a6e3d07397c24f5e29aa4e464d5e15e86163212131d4a174d0701aaec08bcf6b",
-        "size": 66758
+        "url": "dist/vanhanh-rea-1.0.7.zip",
+        "sha256": "1f4e7a56a159d2c5821359d09b3b306210200fbe6244719125c36d1ab0ad07df",
+        "size": 67558
       }
     },
     {
@@ -3950,7 +3950,7 @@
         "vi": "Trọn bộ agency-agents, hơn 280 agent chuyên gia theo 18 nhóm: lập trình, thiết kế, marketing, quảng cáo, bán hàng, tài chính, bảo mật, làm game, bản đồ GIS, chuyên gia ngành. Mỗi agent có tính cách, quy trình và đầu ra rõ ràng. Muốn cài lẻ từng agent thì tìm ở tab Agent.",
         "en": "The full agency-agents set, 280+ expert agents in 18 divisions: engineering, design, marketing, paid media, sales, finance, security, game development, GIS, industry specialists. Each has a personality, process and clear deliverables. To install one at a time, see the Agents tab."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -3962,15 +3962,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-06",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency-agents",
       "source": "https://github.com/msitarzewski/agency-agents",
       "license": "MIT",
       "upstream": {
         "repo": "msitarzewski/agency-agents",
         "ref": "main",
-        "commit": "b37b5bb33b78f2c1d6567d98e25ca818e3259219",
-        "synced": "2026-10-29"
+        "commit": "b859c515d813efcfc4755d3471dd9e7686c7706d",
+        "synced": "2026-11-06"
       },
       "provides": {
         "agents": [
@@ -4260,9 +4260,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-agents-1.0.0.zip",
-        "sha256": "db6a27dec3b6dd82c30f3b67051fe881949070f72ea1ffc6333a8e6c5af08529",
-        "size": 1760501
+        "url": "dist/vanhanh-agency-agents-1.0.1.zip",
+        "sha256": "dada405ebeed269a11b57700ed7f474b06a3c8e4e91400acaba14cb996c4fe35",
+        "size": 1766128
       }
     },
     {
@@ -9346,7 +9346,7 @@
         "vi": "Vận hành đồ thị danh tính dùng chung cho nhiều AI agent, để agent nào hỏi \"thực thể này là ai\" cũng nhận cùng một câu trả lời, kể cả khi ghi đồng thời.",
         "en": "Operates a shared identity graph that multiple AI agents resolve against. Ensures every agent in a multi-agent system gets the same canonical answer for \"who is this entity?\" - deterministically, even under concurrent writes."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -9358,7 +9358,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-06",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.identity-graph-operator",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/specialized/identity-graph-operator.md",
       "license": "MIT",
@@ -9369,9 +9369,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-identity-graph-operator-1.0.0.zip",
-        "sha256": "34b88b911894f8dd674ec1501e2041219bf4323a1675c692214e1cec7c7f6f05",
-        "size": 8429
+        "url": "dist/vanhanh-agency-identity-graph-operator-1.0.1.zip",
+        "sha256": "48a9ce9ca19bf893b49de69ed57dd0169941c59b76610b1f3e13384f4f43a1f7",
+        "size": 8688
       }
     },
     {
@@ -13285,7 +13285,7 @@
         "vi": "Bảo mật phòng thủ: quét mọi lần nộp code tìm khoá bí mật và dữ liệu nhạy cảm trước tiên, rồi triển khai hoặc soát các lớp kiểm soát bảo mật theo chuẩn của tổ chức.",
         "en": "Defensive application security specialist who scans every code submission for secrets and sensitive data exposure before anything else, then implements or audits security controls following the organization's security standard - covering authentication, authorization, tokens, cookies, HTTP..."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -13297,7 +13297,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-06",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.security-senior-secops",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/security/security-senior-secops.md",
       "license": "MIT",
@@ -13308,9 +13308,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-security-senior-secops-1.0.0.zip",
-        "sha256": "415b98e52ff9f008a0c2cf905fa0f92cb3cafbaea357d73622c1bee10c19a482",
-        "size": 14672
+        "url": "dist/vanhanh-agency-security-senior-secops-1.0.1.zip",
+        "sha256": "4527c1c73cd04b06591d87ba8af3efeb943e15fde8cf72fd2578bd26b40d0e60",
+        "size": 14872
       }
     },
     {
@@ -14221,7 +14221,7 @@
         "vi": "Kế hoạch tài chính, quản lý ngân sách, phân tích hiệu quả kinh doanh. Giữ tài chính lành mạnh, tối ưu dòng tiền, đưa góc nhìn tài chính cho tăng trưởng.",
         "en": "Expert financial analyst and controller specializing in financial planning, budget management, and business performance analysis. Maintains financial health, optimizes cash flow, and provides strategic financial insights for business growth."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -14233,7 +14233,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-06",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.support-finance-tracker",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/support/support-finance-tracker.md",
       "license": "MIT",
@@ -14244,9 +14244,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-support-finance-tracker-1.0.0.zip",
-        "sha256": "489858865bca0ef4defd0e0c2646feebd732e5c1e5daa08ef336a6c3a2b7f949",
-        "size": 9038
+        "url": "dist/vanhanh-agency-support-finance-tracker-1.0.1.zip",
+        "sha256": "9e8da0ba25a66acb5e3ff1ec41b7c9dc6985386feaf7d8b42c82628e81dc41a1",
+        "size": 9291
       }
     },
     {
@@ -14767,7 +14767,7 @@
         "vi": "Phân tích, tối ưu và tự động hoá quy trình ở mọi bộ phận để năng suất và hiệu quả cao nhất.",
         "en": "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -14779,7 +14779,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-06",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.testing-workflow-optimizer",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-workflow-optimizer.md",
       "license": "MIT",
@@ -14790,9 +14790,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-testing-workflow-optimizer-1.0.0.zip",
-        "sha256": "3707a0e1fd04b64b9d2efdab46a588e8e6fdb39b5ffe8f5be68f6164dde76b35",
-        "size": 8704
+        "url": "dist/vanhanh-agency-testing-workflow-optimizer-1.0.1.zip",
+        "sha256": "d1d8be53d0bc0855ef87eab9324d7975a98c41bf414d565f434df06f21a06cec",
+        "size": 9030
       }
     },
     {

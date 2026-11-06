@@ -1,7 +1,7 @@
 format: vanhanh-pack
 spec: 1
 id: vanhanh.agency.testing-workflow-optimizer
-version: 1.0.0
+version: 1.0.1
 name: {vi: "Người tối ưu quy trình", en: "Workflow Optimizer"}
 description: {vi: "Phân tích, tối ưu và tự động hoá quy trình ở mọi bộ phận để năng suất và hiệu quả cao nhất.",
               en: "Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business functions for maximum productivity and efficiency"}
