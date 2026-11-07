@@ -1864,7 +1864,7 @@
         "vi": "Bộ skill quy trình làm việc nổi nhất cho dân lập trình (obra/superpowers): brainstorm trước khi code, viết và thực thi plan, TDD, gỡ lỗi có hệ thống, review code hai chiều, git worktree, kiểm chứng trước khi báo xong.",
         "en": "The most popular workflow skills for developers (obra/superpowers): brainstorm before coding, write and execute plans, TDD, systematic debugging, both sides of code review, git worktrees, verify before claiming done."
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": {
         "name": "Jesse Vincent",
         "url": "https://github.com/obra/superpowers"
@@ -1876,15 +1876,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-28",
+      "updated": "2026-11-07",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.superpowers",
       "source": "https://github.com/obra/superpowers",
       "license": "MIT",
       "upstream": {
         "repo": "obra/superpowers",
         "ref": "main",
-        "commit": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
-        "synced": "2026-10-28"
+        "commit": "22f0b463e7a5e579904dd6211a520321035526f7",
+        "synced": "2026-11-07"
       },
       "provides": {
         "skills": [
@@ -1906,9 +1906,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-superpowers-1.0.1.zip",
-        "sha256": "886370eae1c743c4d0d33530c3282e992faf1db7ef690320d29b094d9072f75e",
-        "size": 196653
+        "url": "dist/vanhanh-superpowers-1.0.2.zip",
+        "sha256": "d6ca24d085e4431640b078d7fc56a3c6a7cabcc351199cc87617991b08622836",
+        "size": 195455
       }
     },
     {
@@ -2906,7 +2906,7 @@
         "vi": "Skill của Lemomo dựng phim ngắn hoàn toàn bằng code theo 59 phong cách (sơn dầu, màu nước, ukiyo-e, ảnh vệ tinh...): kịch bản, hình, nhạc, lồng tiếng. Cần Node 20+, ffmpeg, Python 3.11+; chạy tốt nhất với Claude.",
         "en": "Lemomo's skill for short films made entirely in code in 59 styles (oil paint, watercolor, ukiyo-e, satellite...): story, picture, score, narration. Needs Node 20+, ffmpeg, Python 3.11+; tuned for Claude."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Lemomo",
         "url": "https://github.com/lemomo-ai/lemo-opuscar"
@@ -2918,15 +2918,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-28",
+      "updated": "2026-11-07",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.lemo-opuscar",
       "source": "https://github.com/lemomo-ai/lemo-opuscar",
       "license": "MIT",
       "upstream": {
         "repo": "lemomo-ai/lemo-opuscar",
         "ref": "main",
-        "commit": "413a6bd6d78ebd3bdd5abaec9538a26867f890df",
-        "synced": "2026-10-28"
+        "commit": "5c05490cc55dfb54f8f4c333f0f0e79cb6500564",
+        "synced": "2026-11-07"
       },
       "provides": {
         "skills": [
@@ -2934,9 +2934,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-lemo-opuscar-1.0.0.zip",
-        "sha256": "7cc8ca39620f689172a61bafc0028c308b08e4f37b39fbd5b6d2cb9d2774c2ca",
-        "size": 6945
+        "url": "dist/vanhanh-lemo-opuscar-1.0.1.zip",
+        "sha256": "481e48ea57bc7ab8687a7ec2f2216fd0026514c0f1b5fce749a1a06a9715a3c4",
+        "size": 8064
       }
     },
     {
@@ -3377,7 +3377,7 @@
         "vi": "Bộ skill của HeyGen để AI làm video bằng HTML: lên ý tưởng, dựng cảnh, hoạt hình, slideshow, lấy thiết kế từ Figma, chuyển dự án Remotion sang, rồi xuất video. Cần Node 22+ và ffmpeg.",
         "en": "HeyGen's skills for making video in HTML: plan, build scenes, animate, slideshows, pull designs from Figma, migrate Remotion projects, then render. Needs Node 22+ and ffmpeg."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "HeyGen",
         "url": "https://github.com/heygen-com/hyperframes"
@@ -3389,15 +3389,15 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-10-28",
+      "updated": "2026-11-07",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.hyperframes",
       "source": "https://github.com/heygen-com/hyperframes",
       "license": "Apache-2.0",
       "upstream": {
         "repo": "heygen-com/hyperframes",
         "ref": "main",
-        "commit": "7758d9b8fd507384573eb56ba84cc62fb20444c6",
-        "synced": "2026-10-28"
+        "commit": "555c788a333c592e9878139db318ea52f1315cec",
+        "synced": "2026-11-07"
       },
       "provides": {
         "skills": [
@@ -3407,13 +3407,15 @@
           "hyperframes-registry",
           "media-use",
           "remotion-to-hyperframes",
-          "slideshow"
+          "reverse-any-video",
+          "slideshow",
+          "style-sampling"
         ]
       },
       "download": {
-        "url": "dist/vanhanh-hyperframes-1.0.0.zip",
-        "sha256": "4b48c4bced78b18ef2236974383579d587e0326cd35eceb88354d2086fa6c2b8",
-        "size": 2075566
+        "url": "dist/vanhanh-hyperframes-1.0.1.zip",
+        "sha256": "0d45d92404f0bc62a35ff490381d15c14cbf6e3066b7847c39a2229bf03d92bb",
+        "size": 2104356
       }
     },
     {
@@ -3427,7 +3429,7 @@
         "vi": "52 skill marketing của Corey Haines, repo marketing nhiều sao nhất: viết copy, tối ưu chuyển đổi, SEO và SEO cho AI, quảng cáo, email, định giá, ra mắt sản phẩm, giới thiệu bạn bè, đo lường, chống rời bỏ.",
         "en": "Corey Haines's 52 marketing skills, the most-starred marketing repo: copywriting, conversion, SEO and AI search, ads, email, pricing, launches, referrals, analytics and churn prevention."
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": {
         "name": "Corey Haines",
         "url": "https://github.com/coreyhaines31/marketingskills"
@@ -3439,15 +3441,15 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-10-30",
+      "updated": "2026-11-07",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.marketingskills",
       "source": "https://github.com/coreyhaines31/marketingskills",
       "license": "MIT",
       "upstream": {
         "repo": "coreyhaines31/marketingskills",
         "ref": "main",
-        "commit": "820ad2c1c0ac4cc350158bd7912c753681a7d173",
-        "synced": "2026-10-30"
+        "commit": "96798cf38736ecdba015a1d2b0521b0c8f8f41dd",
+        "synced": "2026-11-07"
       },
       "provides": {
         "skills": [
@@ -3494,6 +3496,7 @@
           "prospecting",
           "public-relations",
           "referrals",
+          "reverse-engineer-marketing",
           "revops",
           "sales-enablement",
           "schema",
@@ -3506,9 +3509,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-marketingskills-1.0.1.zip",
-        "sha256": "8f353bf905b24f7abc5cc083a100177be7d71fb15aa346cdbeef7ca6e031e6da",
-        "size": 1681983
+        "url": "dist/vanhanh-marketingskills-1.0.2.zip",
+        "sha256": "1ee7e7e2bae65a3d1eebf05e50eb212a8b2d60a33799f92d002dfca068f182c9",
+        "size": 1885989
       }
     },
     {
@@ -3636,7 +3639,7 @@
         "vi": "Bộ skill thiết kế giao diện nổi nhất: kho phong cách, bảng màu, cặp font và quy tắc UX để AI dựng trang web, landing page, banner, slide và hệ thống thiết kế đẹp ngay lần đầu. Cần Python 3.",
         "en": "The most popular interface design skills: a library of styles, palettes, font pairings and UX rules so the AI builds websites, landing pages, banners, slides and design systems that look right first time. Needs Python 3."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Next Level Builder",
         "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
@@ -3648,15 +3651,15 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-10-28",
+      "updated": "2026-11-07",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.ui-ux-pro-max",
       "source": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
       "license": "MIT",
       "upstream": {
         "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
         "ref": "main",
-        "commit": "28b3b8dee8c976df4fa3e94aed4e092ad43fcb03",
-        "synced": "2026-10-28"
+        "commit": "b7d5353e0130feb8c5574ef1251f8a1db1873ccb",
+        "synced": "2026-11-07"
       },
       "provides": {
         "skills": [
@@ -3670,9 +3673,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-ui-ux-pro-max-1.0.0.zip",
-        "sha256": "2a92c7eba34daef04d5ed108a794036a89d8a0e495188370a2050e562465ea28",
-        "size": 3595087
+        "url": "dist/vanhanh-ui-ux-pro-max-1.0.1.zip",
+        "sha256": "00d5b0ee4a3fffb7417c05ad0f8262f5d7af5c2d70991c528a61a460f35b73c4",
+        "size": 3559073
       }
     },
     {
@@ -3783,7 +3786,7 @@
         "vi": "Skill lập kế hoạch kiểu Manus: việc dài được chia thành kế hoạch, ghi chú và tiến độ trong tệp markdown, nên AI không quên mục tiêu giữa chừng và làm tiếp được sau khi gián đoạn.",
         "en": "Manus-style planning: long tasks keep their plan, findings and progress in markdown files, so the AI does not lose the goal halfway and can pick up after an interruption."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Ahmad Othman Adi",
         "url": "https://github.com/OthmanAdi/planning-with-files"
@@ -3795,15 +3798,15 @@
       },
       "tier": "code",
       "verified": true,
-      "updated": "2026-10-28",
+      "updated": "2026-11-07",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.planning-with-files",
       "source": "https://github.com/OthmanAdi/planning-with-files",
       "license": "MIT",
       "upstream": {
         "repo": "OthmanAdi/planning-with-files",
         "ref": "master",
-        "commit": "dcdfb278de53fdb69b2067ea173dbb1de45345a3",
-        "synced": "2026-10-28"
+        "commit": "8eef6dc6540dde5eef3fdc0ac487ad9c48ef3ba5",
+        "synced": "2026-11-07"
       },
       "provides": {
         "skills": [
@@ -3811,9 +3814,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-planning-with-files-1.0.0.zip",
-        "sha256": "37ec0c1024ea1494d31be2f3d5b00d9fa3154310178f28a2eb5ab850758a5563",
-        "size": 161599
+        "url": "dist/vanhanh-planning-with-files-1.0.1.zip",
+        "sha256": "2d1e4a62c7f4119f1ec321cb13f5c950c11e3ad8e90bfc12d34bab38afd3a898",
+        "size": 179962
       }
     },
     {

@@ -18,4 +18,6 @@ Giấy phép gốc: **Apache-2.0**, nguyên văn ở `docs/LICENSE-goc*` nếu r
 | `hyperframes-registry` | `skills/hyperframes-registry` |
 | `media-use` | `skills/media-use` |
 | `remotion-to-hyperframes` | `skills/remotion-to-hyperframes` |
+| `reverse-any-video` | `skills/reverse-any-video` |
 | `slideshow` | `skills/slideshow` |
+| `style-sampling` | `skills/style-sampling` |
