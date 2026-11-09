@@ -1,7 +1,7 @@
 format: vanhanh-pack
 spec: 1
 id: vanhanh.agency.testing-performance-benchmarker
-version: 1.0.0
+version: 1.0.1
 name: {vi: "Người đo hiệu năng", en: "Performance Benchmarker"}
 description: {vi: "Đo, phân tích và cải thiện hiệu năng hệ thống trên mọi ứng dụng và hạ tầng.",
               en: "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure"}

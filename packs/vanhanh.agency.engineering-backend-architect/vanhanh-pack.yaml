@@ -1,7 +1,7 @@
 format: vanhanh-pack
 spec: 1
 id: vanhanh.agency.engineering-backend-architect
-version: 1.0.0
+version: 1.0.1
 name: {vi: "Kiến trúc sư backend", en: "Backend Architect"}
 description: {vi: "Thiết kế hệ thống mở rộng được, kiến trúc cơ sở dữ liệu, phát triển API và hạ tầng đám mây. Xây ứng dụng máy chủ và microservice vững, an toàn, nhanh.",
               en: "Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infrastructure. Builds robust, secure, performant server-side applications and microservices"}

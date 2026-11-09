@@ -1,7 +1,7 @@
 format: vanhanh-pack
 spec: 1
 id: vanhanh.agency.testing-api-tester
-version: 1.0.0
+version: 1.0.1
 name: {vi: "Người kiểm thử API", en: "API Tester"}
 description: {vi: "Kiểm thử API toàn diện, kiểm thử hiệu năng và đảm bảo chất lượng cho mọi hệ thống và tích hợp bên thứ ba.",
               en: "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations"}

@@ -1,7 +1,7 @@
 {
   "format": "vanhanh-pack-index",
   "format_version": 1,
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "store": {
     "name": "Kho cài đặt Vanhanh",
     "url": "https://github.com/lequydailb-dotcom/vanhanh-store"
@@ -2950,7 +2950,7 @@
         "vi": "Bộ skill chính chủ của Remotion (remotion.dev): tạo dự án video bằng React, hoạt hình, chữ và hiệu ứng, phụ đề, bản đồ, xem trước và xuất video. Theo repo gốc, cập nhật mỗi khi Remotion sửa skill.",
         "en": "Remotion's official skills (remotion.dev): create React video projects, animation, type and effects, captions, maps, preview and render. Follows the source repo and updates whenever Remotion changes its skills."
       },
-      "version": "1.0.2",
+      "version": "1.0.3",
       "author": {
         "name": "Remotion",
         "url": "https://github.com/remotion-dev/skills"
@@ -2962,15 +2962,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-05",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.remotion",
       "source": "https://github.com/remotion-dev/skills",
       "license": "Remotion License",
       "upstream": {
         "repo": "remotion-dev/skills",
         "ref": "main",
-        "commit": "a2824c67f8b4585c294a8101db9f9f0ad3c643f8",
-        "synced": "2026-11-05"
+        "commit": "1af7e69a2a613437d46095924057970a6a7df40d",
+        "synced": "2026-11-09"
       },
       "provides": {
         "skills": [
@@ -2990,9 +2990,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-remotion-1.0.2.zip",
-        "sha256": "6d235fb2d25a3344a524990366c5bd2b7e5f831ece689c764075afabbc653091",
-        "size": 880759
+        "url": "dist/vanhanh-remotion-1.0.3.zip",
+        "sha256": "fcd8264277e180cdf5960f8f6ef6ab6bfe5f3e7e16926c17bd1f8e64b5a92c16",
+        "size": 884555
       }
     },
     {
@@ -3592,7 +3592,7 @@
         "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
         "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
       },
-      "version": "1.0.9",
+      "version": "1.0.10",
       "author": {
         "name": "morluto",
         "url": "https://github.com/morluto/rea"
@@ -3604,15 +3604,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-08",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.rea",
       "source": "https://github.com/morluto/rea",
       "license": "MIT",
       "upstream": {
         "repo": "morluto/rea",
         "ref": "main",
-        "commit": "72d5e72e6d7b7997c4ecb11972fc405be8ec67d2",
-        "synced": "2026-11-08"
+        "commit": "dda2d4029548f820bf5621b3bc1dd1ce381446a2",
+        "synced": "2026-11-09"
       },
       "provides": {
         "skills": [
@@ -3620,9 +3620,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-rea-1.0.9.zip",
-        "sha256": "2d8c785e6e4188ffefa3c558959722debf390380742e597de5175dd1d9660f65",
-        "size": 68666
+        "url": "dist/vanhanh-rea-1.0.10.zip",
+        "sha256": "8af5d5ec3cd63aa569113f7b3a963023289a4429956b6bde105e491e9386839a",
+        "size": 75919
       }
     },
     {
@@ -3950,7 +3950,7 @@
         "vi": "Trọn bộ agency-agents, hơn 280 agent chuyên gia theo 18 nhóm: lập trình, thiết kế, marketing, quảng cáo, bán hàng, tài chính, bảo mật, làm game, bản đồ GIS, chuyên gia ngành. Mỗi agent có tính cách, quy trình và đầu ra rõ ràng. Muốn cài lẻ từng agent thì tìm ở tab Agent.",
         "en": "The full agency-agents set, 280+ expert agents in 18 divisions: engineering, design, marketing, paid media, sales, finance, security, game development, GIS, industry specialists. Each has a personality, process and clear deliverables. To install one at a time, see the Agents tab."
       },
-      "version": "1.0.1",
+      "version": "1.0.2",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -3962,15 +3962,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-06",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency-agents",
       "source": "https://github.com/msitarzewski/agency-agents",
       "license": "MIT",
       "upstream": {
         "repo": "msitarzewski/agency-agents",
         "ref": "main",
-        "commit": "b859c515d813efcfc4755d3471dd9e7686c7706d",
-        "synced": "2026-11-06"
+        "commit": "8ae6164602c95ca78828b148b9052460ee426885",
+        "synced": "2026-11-09"
       },
       "provides": {
         "agents": [
@@ -4260,9 +4260,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-agents-1.0.1.zip",
-        "sha256": "dada405ebeed269a11b57700ed7f474b06a3c8e4e91400acaba14cb996c4fe35",
-        "size": 1766128
+        "url": "dist/vanhanh-agency-agents-1.0.2.zip",
+        "sha256": "023f244139b46bf5fa57f1b5a264de976cd8f06d82591b936fab14180ff19fdc",
+        "size": 1768157
       }
     },
     {
@@ -5641,7 +5641,7 @@
         "vi": "Thiết kế hệ thống mở rộng được, kiến trúc cơ sở dữ liệu, phát triển API và hạ tầng đám mây. Xây ứng dụng máy chủ và microservice vững, an toàn, nhanh.",
         "en": "Senior backend architect specializing in scalable system design, database architecture, API development, and cloud infrastructure. Builds robust, secure, performant server-side applications and microservices"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -5653,7 +5653,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.engineering-backend-architect",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-backend-architect.md",
       "license": "MIT",
@@ -5664,9 +5664,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-engineering-backend-architect-1.0.0.zip",
-        "sha256": "710428891c22d95e9a9770ff2ee7c38d4818e63218365b24f829c634ef39fe96",
-        "size": 6823
+        "url": "dist/vanhanh-agency-engineering-backend-architect-1.0.1.zip",
+        "sha256": "80c1532dd4af289b6ae0ff97f646b8b109fb75d013a84da7fbf45cee67eb9951",
+        "size": 6842
       }
     },
     {
@@ -5836,7 +5836,7 @@
         "vi": "Xây đường ống dữ liệu tin cậy, kiến trúc lakehouse, hạ tầng dữ liệu mở rộng được. Thành thạo ETL/ELT, Spark, dbt, streaming để biến dữ liệu thô thành dữ liệu phân tích được.",
         "en": "Expert data engineer specializing in building reliable data pipelines, lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT, Apache Spark, dbt, streaming systems, and cloud data platforms to turn raw data into trusted, analytics-ready assets."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -5848,7 +5848,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.engineering-data-engineer",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-data-engineer.md",
       "license": "MIT",
@@ -5859,9 +5859,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-engineering-data-engineer-1.0.0.zip",
-        "sha256": "891fbd52ef5597a2f183f5db2b7ff6e6fc5cf60987b87589f6dc19034eea1477",
-        "size": 8890
+        "url": "dist/vanhanh-agency-engineering-data-engineer-1.0.1.zip",
+        "sha256": "6b3cc4ca0b3074396ffef0957c0eac4a69bd17ec1a27b3307f9409cb2221569b",
+        "size": 9668
       }
     },
     {
@@ -6421,7 +6421,7 @@
         "vi": "Công nghệ web hiện đại, React/Vue/Angular, dựng giao diện và tối ưu hiệu năng.",
         "en": "Expert frontend developer specializing in modern web technologies, React/Vue/Angular frameworks, UI implementation, and performance optimization"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -6433,7 +6433,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.engineering-frontend-developer",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/engineering/engineering-frontend-developer.md",
       "license": "MIT",
@@ -6444,9 +6444,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-engineering-frontend-developer-1.0.0.zip",
-        "sha256": "f0cd7b32a876c2f266f86de07c61d92b719ce361fe99a18a84cc22b5665687f8",
-        "size": 5944
+        "url": "dist/vanhanh-agency-engineering-frontend-developer-1.0.1.zip",
+        "sha256": "6c6f4d4174cff563360c602ecd62096f19a4502fa47b8e2a02af58b6b95082a7",
+        "size": 6442
       }
     },
     {
@@ -11881,7 +11881,7 @@
         "vi": "Thiết kế thử nghiệm, theo dõi triển khai và ra quyết định theo dữ liệu. Quản lý A/B test, thử nghiệm tính năng và kiểm chứng giả thuyết bài bản.",
         "en": "Expert project manager specializing in experiment design, execution tracking, and data-driven decision making. Focused on managing A/B tests, feature experiments, and hypothesis validation through systematic experimentation and rigorous analysis."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -11893,7 +11893,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.project-management-experiment-tracker",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/project-management/project-management-experiment-tracker.md",
       "license": "MIT",
@@ -11904,9 +11904,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-project-management-experiment-tracker-1.0.0.zip",
-        "sha256": "93467eee0992c3386e3be402895757a3cffd93852e3fc9d856ecd6e2b2519642",
-        "size": 5908
+        "url": "dist/vanhanh-agency-project-management-experiment-tracker-1.0.1.zip",
+        "sha256": "e890bdcaf01e3f1d72aa474dacc3526a86bdc0241ba6f14ae94c556e696f99cf",
+        "size": 6023
       }
     },
     {
@@ -14494,7 +14494,7 @@
         "vi": "Kiểm thử API toàn diện, kiểm thử hiệu năng và đảm bảo chất lượng cho mọi hệ thống và tích hợp bên thứ ba.",
         "en": "Expert API testing specialist focused on comprehensive API validation, performance testing, and quality assurance across all systems and third-party integrations"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -14506,7 +14506,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.testing-api-tester",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-api-tester.md",
       "license": "MIT",
@@ -14517,9 +14517,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-testing-api-tester-1.0.0.zip",
-        "sha256": "f4656e5b2f85dc328116a771a12d30f4c1fa3ed5059968525a7dbf242c3e06c8",
-        "size": 7057
+        "url": "dist/vanhanh-agency-testing-api-tester-1.0.1.zip",
+        "sha256": "224dfe85b315cc8aaef42538e86f9b9c9b7298537e5755611832e14873edf86e",
+        "size": 7490
       }
     },
     {
@@ -14572,7 +14572,7 @@
         "vi": "Đo, phân tích và cải thiện hiệu năng hệ thống trên mọi ứng dụng và hạ tầng.",
         "en": "Expert performance testing and optimization specialist focused on measuring, analyzing, and improving system performance across all applications and infrastructure"
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "msitarzewski",
         "url": "https://github.com/msitarzewski/agency-agents"
@@ -14584,7 +14584,7 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-29",
+      "updated": "2026-11-09",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.agency.testing-performance-benchmarker",
       "source": "https://github.com/msitarzewski/agency-agents/blob/main/testing/testing-performance-benchmarker.md",
       "license": "MIT",
@@ -14595,9 +14595,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-agency-testing-performance-benchmarker-1.0.0.zip",
-        "sha256": "78077ff20256c78547b135b3551bb4a09318f3081805d6dd87251125c96d955b",
-        "size": 7226
+        "url": "dist/vanhanh-agency-testing-performance-benchmarker-1.0.1.zip",
+        "sha256": "5bd04a61e64389f389e5f5ebee64e1d69a01687a8417e0dc3fca5495beaea4cb",
+        "size": 7414
       }
     },
     {
