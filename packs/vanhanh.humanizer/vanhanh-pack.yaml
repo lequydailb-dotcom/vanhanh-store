@@ -1,7 +1,7 @@
 format: vanhanh-pack
 spec: 1
 id: vanhanh.humanizer
-version: 1.0.0
+version: 1.0.1
 name: {vi: "Humanizer: Bỏ giọng văn AI", en: "Humanizer: Remove AI writing tells"}
 description: {vi: "Skill sửa văn bản cho bớt mùi AI: nhận ra và gỡ các dấu hiệu quen thuộc (từ sáo rỗng, câu ba vế, kết luận chung chung) để bài viết đọc như người thật viết. Dùng tốt nhất với nội dung tiếng Anh.",
               en: "Edits text so it stops sounding like AI: spots and removes the familiar tells (stock words, rule of three, vague wrap-ups) so the piece reads as written by a person. Works best on English."}
