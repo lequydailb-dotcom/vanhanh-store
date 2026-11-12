@@ -1,7 +1,7 @@
 {
   "format": "vanhanh-pack-index",
   "format_version": 1,
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "store": {
     "name": "Kho cài đặt Vanhanh",
     "url": "https://github.com/lequydailb-dotcom/vanhanh-store"
@@ -2950,7 +2950,7 @@
         "vi": "Bộ skill chính chủ của Remotion (remotion.dev): tạo dự án video bằng React, hoạt hình, chữ và hiệu ứng, phụ đề, bản đồ, xem trước và xuất video. Theo repo gốc, cập nhật mỗi khi Remotion sửa skill.",
         "en": "Remotion's official skills (remotion.dev): create React video projects, animation, type and effects, captions, maps, preview and render. Follows the source repo and updates whenever Remotion changes its skills."
       },
-      "version": "1.0.4",
+      "version": "1.0.5",
       "author": {
         "name": "Remotion",
         "url": "https://github.com/remotion-dev/skills"
@@ -2962,15 +2962,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-11",
+      "updated": "2026-11-12",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.remotion",
       "source": "https://github.com/remotion-dev/skills",
       "license": "Remotion License",
       "upstream": {
         "repo": "remotion-dev/skills",
         "ref": "main",
-        "commit": "1fc074b74b95cfecf7b1e419132f2cfe23dafebe",
-        "synced": "2026-11-11"
+        "commit": "7e541aa4d7361dfaca0780a565a47307eb7bdfbb",
+        "synced": "2026-11-12"
       },
       "provides": {
         "skills": [
@@ -2990,9 +2990,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-remotion-1.0.4.zip",
-        "sha256": "3878a30d67a8b14e3089f2f7abe6ca21741ac96475042b3c6839de8821b28566",
-        "size": 884552
+        "url": "dist/vanhanh-remotion-1.0.5.zip",
+        "sha256": "7c53ff2b5251e1ab8a0d230806e15ce9094e44dbf5ae087cef59944e86e07c8e",
+        "size": 887264
       }
     },
     {
@@ -3592,7 +3592,7 @@
         "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
         "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
       },
-      "version": "1.0.12",
+      "version": "1.0.13",
       "author": {
         "name": "morluto",
         "url": "https://github.com/morluto/rea"
@@ -3604,15 +3604,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-11",
+      "updated": "2026-11-12",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.rea",
       "source": "https://github.com/morluto/rea",
       "license": "MIT",
       "upstream": {
         "repo": "morluto/rea",
         "ref": "main",
-        "commit": "0e0af455f29d470e5e47bbee73442fe35d9276a0",
-        "synced": "2026-11-11"
+        "commit": "653c49419e65515d5567ebf13c0e6dd2ac794f7e",
+        "synced": "2026-11-12"
       },
       "provides": {
         "skills": [
@@ -3620,9 +3620,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-rea-1.0.12.zip",
-        "sha256": "325eef0eb92360a26629488f85b6ee3424f7336ba37186bf4b2ae9730ecbcca4",
-        "size": 92804
+        "url": "dist/vanhanh-rea-1.0.13.zip",
+        "sha256": "49eabcc00cdb16e5b9c4d3d7c9d285fd0f95a04ea68bf0f3478fffb5e3c024e0",
+        "size": 93386
       }
     },
     {
