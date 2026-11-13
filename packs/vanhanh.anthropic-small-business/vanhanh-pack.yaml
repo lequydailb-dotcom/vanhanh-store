@@ -1,7 +1,7 @@
 format: vanhanh-pack
 spec: 1
 id: vanhanh.anthropic-small-business
-version: 1.0.0
+version: 1.0.1
 name: {vi: "Claude cho Doanh nghiệp nhỏ", en: "Claude for Small Business"}
 description: {vi: "44 skill chính chủ Anthropic cho chủ doanh nghiệp nhỏ: tình hình kinh doanh, dòng tiền, đòi công nợ, trả hoá đơn, quảng cáo, nội dung mạng xã hội, tìm khách, tuyển người, tồn kho, chốt sổ tháng và thuế.",
               en: "44 official Anthropic skills for small business owners: business pulse, cash flow, invoice chasing, paying bills, ads, social content, finding leads, hiring, inventory, month-end close and taxes."}

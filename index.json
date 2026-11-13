@@ -1,7 +1,7 @@
 {
   "format": "vanhanh-pack-index",
   "format_version": 1,
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "store": {
     "name": "Kho cài đặt Vanhanh",
     "url": "https://github.com/lequydailb-dotcom/vanhanh-store"
@@ -3191,7 +3191,7 @@
         "vi": "44 skill chính chủ Anthropic cho chủ doanh nghiệp nhỏ: tình hình kinh doanh, dòng tiền, đòi công nợ, trả hoá đơn, quảng cáo, nội dung mạng xã hội, tìm khách, tuyển người, tồn kho, chốt sổ tháng và thuế.",
         "en": "44 official Anthropic skills for small business owners: business pulse, cash flow, invoice chasing, paying bills, ads, social content, finding leads, hiring, inventory, month-end close and taxes."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Anthropic",
         "url": "https://github.com/anthropics/knowledge-work-plugins"
@@ -3203,15 +3203,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-28",
+      "updated": "2026-11-13",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.anthropic-small-business",
       "source": "https://github.com/anthropics/knowledge-work-plugins",
       "license": "Apache-2.0",
       "upstream": {
         "repo": "anthropics/knowledge-work-plugins",
         "ref": "main",
-        "commit": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d",
-        "synced": "2026-10-28"
+        "commit": "02717ef04446b6ef5aa4b8af15bb536d79f42ed0",
+        "synced": "2026-11-13"
       },
       "provides": {
         "skills": [
@@ -3262,9 +3262,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-anthropic-small-business-1.0.0.zip",
-        "sha256": "0353295eea1ad835c4599afef22d3ac878c4576bc78148ab07a1f8aa3e32ec6c",
-        "size": 569930
+        "url": "dist/vanhanh-anthropic-small-business-1.0.1.zip",
+        "sha256": "175af66b5184aa4b6e59a947fbb903c38ab7f3ee6ab6bd3c2aae299ea9be40c8",
+        "size": 574458
       }
     },
     {
