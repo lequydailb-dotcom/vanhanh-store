@@ -756,6 +756,24 @@ def smart_plan_extract(data):
 # The injector: twin of inject-plan.sh.
 # --------------------------------------------------------------------------
 
+def hook_is_main(payload):
+    """Classify raw Claude metadata before identity validation or state access.
+
+    Opted-in tool hooks fail closed when classification is unavailable.
+    agent_type also describes main sessions started with --agent, so ignore it.
+    """
+    try:
+        data = json.loads(payload)
+    except (ValueError, UnicodeError):
+        return False
+    if not isinstance(data, dict):
+        return False
+    if "agent_id" not in data:
+        return True
+    agent = data["agent_id"]
+    return isinstance(agent, str) and not agent
+
+
 def hook_identity(payload, env):
     """Native identity wins; empty stdin preserves the explicit legacy binding."""
     result = dict(env)
@@ -960,7 +978,8 @@ class Injector(object):
             if context == "userprompt":
                 self.echo(
                     "[planning-with-files] Multiple plans are available. Set PLAN_ID=<slug> "
-                    "for this session; nothing injected."
+                    "for this session; nothing injected. Finished plans can be archived "
+                    "with set-active-plan --archive <slug>."
                 )
             raise Bail()
         if plan_id:
@@ -1059,7 +1078,8 @@ class Injector(object):
                     self.echo(
                         "[planning-with-files] Multiple plans are available while session "
                         "isolation is armed. Set PLAN_ID=<slug> for this session; nothing "
-                        "injected."
+                        "injected. Finished plans can be archived with set-active-plan "
+                        "--archive <slug>."
                     )
                 raise Bail()
 
@@ -1719,6 +1739,9 @@ def parse_args(argv):
 
 
 def main(argv):
+    if argv and argv[0] == "--hook-main-agent":
+        print("main" if hook_is_main(sys.stdin.read()) else "skip")
+        return 0
     if argv and argv[0] == "--hook-identity":
         env = hook_identity(sys.stdin.read(), os.environ)
         print("|".join(env.get(name, "") for name in ("PWF_SESSION_ID", "PWF_PRETOOL_AGENT", "PWF_PRETOOL_PROMPT")))
@@ -1737,7 +1760,12 @@ def main(argv):
     context, event = parse_args(argv)
     try:
         if event is not None:
-            output = ClaudeDispatcher(hook_identity(sys.stdin.read(), os.environ)).dispatch(event)
+            payload = sys.stdin.read()
+            if (os.environ.get("PWF_SKIP_SUBAGENTS") == "1"
+                    and event in ("pre-tool-use", "post-tool-use")
+                    and not hook_is_main(payload)):
+                return 0
+            output = ClaudeDispatcher(hook_identity(payload, os.environ)).dispatch(event)
         else:
             output = inject(context)
     except Exception:

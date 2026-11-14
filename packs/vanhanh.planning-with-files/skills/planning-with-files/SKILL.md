@@ -28,7 +28,7 @@ hooks:
         - type: command
           command: "[ -n \"${CLAUDE_PLUGIN_ROOT:-}\" ] && exit 0; SH=\"${CLAUDE_SKILL_DIR}/scripts/skill-hook.sh\"; [ -f \"$SH\" ] || SH=$(ls \"$HOME/.claude/skills/planning-with-files/scripts/skill-hook.sh\" \"$HOME/.claude/plugins/marketplaces/planning-with-files/scripts/skill-hook.sh\" 2>/dev/null | head -1); [ -n \"$SH\" ] && [ -f \"$SH\" ] && sh \"$SH\" --event=precompact; exit 0"
 metadata:
-  version: "3.25.2"
+  version: "3.28.2"
 ---
 
 # Planning with Files
@@ -248,9 +248,13 @@ Helper scripts for automation:
 
 ### List saved plans
 
+For agent-readable paths and state, add `--json` (PowerShell: `-Json`) to the listing command. This optional read-only mode includes root files, selection uncertainty and bounded paging. See [the inventory schema and worker handoff](plan-inventory.md). It never runs during ordinary activation.
+
 To find a task before resuming it, run `sh "<skill-dir>/scripts/set-active-plan.sh" --list` or, in Windows PowerShell, `& "<skill-dir>/scripts/set-active-plan.ps1" -List`. Replace `<skill-dir>` with this installed skill directory and keep your current directory at the project root.
 
 This read-only command lists named plans and phase progress under the current directory's `.planning/`. `[active]` marks the shared default pointer; it does not bind a session. Concurrent tasks still require each host's `PLAN_ID` or separate worktrees.
+
+When hooks report that multiple plans are available, or every phase of a named plan is complete, run the listing command and tell the user which plans look finished. Archive only the plans the user approves: `--archive <id>` (PowerShell: `-Archive <id>`) previews the move to `.planning/.archive/`, `--yes` (`-Yes`) applies it, and `--restore <id>` (`-Restore <id>`) moves it back. Never archive on age or completion alone.
 
 ### Parallel task workflow
 
@@ -310,9 +314,9 @@ Both slash commands carry `disable-model-invocation: true`, so invoke them expli
 
 ### PreCompact hook (auto)
 
-Both supported routes register a `PreCompact` hook with matcher `"*"`. It fires for manual and automatic compaction after the relevant hook route is active. With a selected plan, it prints a diagnostic reminder and the recorded `Plan-SHA256` when present. It stays silent without a plan and never blocks compaction.
+Both supported routes register a `PreCompact` hook with matcher `"*"`. It fires for manual and automatic compaction after the relevant hook route is active. With a selected plan, it prints a progress reminder and the recorded `Plan-SHA256` when present. It stays silent without a plan and never blocks compaction.
 
-Claude Code does not support `additionalContext` for PreCompact. Successful stdout from this event is diagnostic output, so the hook cannot make the model flush progress before compaction. Keep progress current during the task and recover from the selected files on the next prompt. The recorded digest can be compared with the plan bytes; it does not establish human approval.
+The current [Claude Code hook reference](https://code.claude.com/docs/en/hooks#precompact-output) describes successful PreCompact stdout as instructions for the compaction summary. This hook does not write planning files or start a separate tool-writing turn, so its reminder does not guarantee that unsaved progress reaches disk. Keep progress current during the task and recover from the selected files after compaction. The recorded digest can be compared with the plan bytes; it does not establish human approval.
 
 ### `/plan-goal` slash command
 
