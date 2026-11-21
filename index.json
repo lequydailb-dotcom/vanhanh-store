@@ -1,7 +1,7 @@
 {
   "format": "vanhanh-pack-index",
   "format_version": 1,
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "store": {
     "name": "Kho cài đặt Vanhanh",
     "url": "https://github.com/lequydailb-dotcom/vanhanh-store"
@@ -3592,7 +3592,7 @@
         "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
         "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
       },
-      "version": "1.0.20",
+      "version": "1.0.21",
       "author": {
         "name": "morluto",
         "url": "https://github.com/morluto/rea"
@@ -3604,15 +3604,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-20",
+      "updated": "2026-11-21",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.rea",
       "source": "https://github.com/morluto/rea",
       "license": "MIT",
       "upstream": {
         "repo": "morluto/rea",
         "ref": "main",
-        "commit": "ad2b34ca9b30769ec8ff8ef26025a38a9a32c589",
-        "synced": "2026-11-20"
+        "commit": "5b04c74ae05d3c5acf739f2941cd8d9145761f3d",
+        "synced": "2026-11-21"
       },
       "provides": {
         "skills": [
@@ -3620,9 +3620,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-rea-1.0.20.zip",
-        "sha256": "c09d6f5e50f673d808725e4c697165318219db5cf64c483dda31bff4e550ebcc",
-        "size": 97709
+        "url": "dist/vanhanh-rea-1.0.21.zip",
+        "sha256": "ec271a900d5a54a85cca58f0f93a2ea00d54d7c48b15cb476363ac94d5dbafe3",
+        "size": 97796
       }
     },
     {
@@ -3686,7 +3686,7 @@
         "vi": "Skill chính chủ của Vercel: thực hành tốt nhất cho React và Next.js, React Native, hiệu ứng chuyển trang, nguyên tắc thiết kế giao diện web, viết nội dung rõ ràng, và triển khai lên Vercel.",
         "en": "Vercel's official skills: React and Next.js best practices, React Native, view transitions, web interface design guidelines, clear writing, and deploying to Vercel."
       },
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": {
         "name": "Vercel",
         "url": "https://github.com/vercel-labs/agent-skills"
@@ -3698,15 +3698,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-28",
+      "updated": "2026-11-21",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.vercel-skills",
       "source": "https://github.com/vercel-labs/agent-skills",
       "license": "MIT",
       "upstream": {
         "repo": "vercel-labs/agent-skills",
         "ref": "main",
-        "commit": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
-        "synced": "2026-10-28"
+        "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+        "synced": "2026-11-21"
       },
       "provides": {
         "skills": [
@@ -3722,9 +3722,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-vercel-skills-1.0.0.zip",
-        "sha256": "40144e4d9569443d0c5e837290d657253e11e59795bd2b97fd7c5cba21465cb9",
-        "size": 552897
+        "url": "dist/vanhanh-vercel-skills-1.0.1.zip",
+        "sha256": "c89879bb8483ed1d2e4ffaa24fe0ce794ee2359df78a6510ba12408ef3a4dd60",
+        "size": 558718
       }
     },
     {
