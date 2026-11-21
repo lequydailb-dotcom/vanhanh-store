@@ -55,6 +55,7 @@ Giấy phép gốc: **MIT**, nguyên văn ở `docs/LICENSE-goc*` nếu repo có
 | `prospecting` | `skills/prospecting` |
 | `public-relations` | `skills/public-relations` |
 | `referrals` | `skills/referrals` |
+| `reverse-engineer-marketing` | `skills/reverse-engineer-marketing` |
 | `revops` | `skills/revops` |
 | `sales-enablement` | `skills/sales-enablement` |
 | `schema` | `skills/schema` |
