@@ -1,7 +1,7 @@
 {
   "format": "vanhanh-pack-index",
   "format_version": 1,
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "store": {
     "name": "Kho cài đặt Vanhanh",
     "url": "https://github.com/lequydailb-dotcom/vanhanh-store"
@@ -3592,7 +3592,7 @@
         "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
         "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
       },
-      "version": "1.0.21",
+      "version": "1.0.22",
       "author": {
         "name": "morluto",
         "url": "https://github.com/morluto/rea"
@@ -3604,15 +3604,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-21",
+      "updated": "2026-11-22",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.rea",
       "source": "https://github.com/morluto/rea",
       "license": "MIT",
       "upstream": {
         "repo": "morluto/rea",
         "ref": "main",
-        "commit": "5b04c74ae05d3c5acf739f2941cd8d9145761f3d",
-        "synced": "2026-11-21"
+        "commit": "91195338d07d4bb7398afa29fc1a8550f555827d",
+        "synced": "2026-11-22"
       },
       "provides": {
         "skills": [
@@ -3620,9 +3620,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-rea-1.0.21.zip",
-        "sha256": "ec271a900d5a54a85cca58f0f93a2ea00d54d7c48b15cb476363ac94d5dbafe3",
-        "size": 97796
+        "url": "dist/vanhanh-rea-1.0.22.zip",
+        "sha256": "8bbea43ae07f900df13b005b9a4781e1b4c61dc1f9891604c3ce3f4f17afa9d7",
+        "size": 97790
       }
     },
     {
