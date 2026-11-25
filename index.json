@@ -1,7 +1,7 @@
 {
   "format": "vanhanh-pack-index",
   "format_version": 1,
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "store": {
     "name": "Kho cài đặt Vanhanh",
     "url": "https://github.com/lequydailb-dotcom/vanhanh-store"
@@ -3522,7 +3522,7 @@
         "vi": "Bộ skill của Matt Pocock: thiết kế codebase, chẩn đoán lỗi, TDD, viết spec và chia ticket, review code, nguyên mẫu nhanh, cùng các skill làm việc như hỏi vặn ý tưởng (grill-me), bàn giao, viết cho AI agent.",
         "en": "Matt Pocock's skills: codebase design, diagnosing bugs, TDD, writing specs and splitting tickets, code review, quick prototypes, plus working skills such as grill-me, handoffs and writing for agents."
       },
-      "version": "1.0.2",
+      "version": "1.0.3",
       "author": {
         "name": "Matt Pocock",
         "url": "https://github.com/mattpocock/skills"
@@ -3534,15 +3534,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-10-30",
+      "updated": "2026-11-25",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.mattpocock",
       "source": "https://github.com/mattpocock/skills",
       "license": "MIT",
       "upstream": {
         "repo": "mattpocock/skills",
         "ref": "main",
-        "commit": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
-        "synced": "2026-10-30"
+        "commit": "6f7f7831a625f040a8e06a0e7954826b87ce775a",
+        "synced": "2026-11-25"
       },
       "provides": {
         "skills": [
@@ -3576,9 +3576,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-mattpocock-1.0.2.zip",
-        "sha256": "3c7405465f4015f11611da3bb90055d5ccfb2acb814f6586a163880f766b9fc5",
-        "size": 112716
+        "url": "dist/vanhanh-mattpocock-1.0.3.zip",
+        "sha256": "9978a2ad6086059f5b7df755f8bef2203f8c1956a2e3a3a60299c6d7ddd94b70",
+        "size": 113580
       }
     },
     {
@@ -3592,7 +3592,7 @@
         "vi": "Skill của REA (Reverse Engineer Anything), repo AI đang nổi nhất GitHub: phân tích app Electron/JavaScript, tệp chạy, firmware và trang web khi không có mã nguồn, so sánh phiên bản, dịch ngược. Cần cài công cụ rea (npm rea-agents).",
         "en": "The REA (Reverse Engineer Anything) skill, GitHub's top trending AI repo: analyse Electron/JavaScript apps, binaries, firmware and web apps without their source, compare versions, decompile. Needs the rea tool (npm rea-agents)."
       },
-      "version": "1.0.23",
+      "version": "1.0.24",
       "author": {
         "name": "morluto",
         "url": "https://github.com/morluto/rea"
@@ -3604,15 +3604,15 @@
       },
       "tier": "data",
       "verified": true,
-      "updated": "2026-11-24",
+      "updated": "2026-11-25",
       "homepage": "https://github.com/lequydailb-dotcom/vanhanh-store/tree/main/packs/vanhanh.rea",
       "source": "https://github.com/morluto/rea",
       "license": "MIT",
       "upstream": {
         "repo": "morluto/rea",
         "ref": "main",
-        "commit": "a7f8ab89a0fa73067d9ebb5d3b9c42b1f57b555a",
-        "synced": "2026-11-24"
+        "commit": "3124e6b7e2cb99f45dd88035eb2da84df5092940",
+        "synced": "2026-11-25"
       },
       "provides": {
         "skills": [
@@ -3620,9 +3620,9 @@
         ]
       },
       "download": {
-        "url": "dist/vanhanh-rea-1.0.23.zip",
-        "sha256": "161eca4abe023fe9b77aa0f35617933fc933c4ecd0eb87017172405de697e412",
-        "size": 92913
+        "url": "dist/vanhanh-rea-1.0.24.zip",
+        "sha256": "ff59650efb8e18d89b46d1a7ca030bc3fa2a441d9de5d0405715232491d7c83c",
+        "size": 93607
       }
     },
     {
