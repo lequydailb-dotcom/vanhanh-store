@@ -162,17 +162,32 @@ Loops are grouped by function. Naming follows the "The X loop" convention.
 
 ### The niche-outlier loop
 - **Check cadence**: Weekly
-- **Acts when**: A post in your niche performs far above its author's usual reach (for example 100K+ views, or 10× their median).
+- **Acts when**: A post in your niche reaches 2× or more its author's median for that platform and format (5× or more is the strongest signal).
 - **Purpose**: Adapt formats that already proved themselves with your audience, instead of guessing at new ones.
 - **Skills used**: `social` (see its `references/reverse-engineering.md`), `content-strategy`, `ad-creative`
 - **Loop body**:
-  1. Search the niche on X (Grok works well here), LinkedIn, TikTok, or YouTube for outliers since the last run.
+  1. Search the niche on X (Grok works well here), LinkedIn, TikTok, or YouTube for outliers since the last run. Score each against its author's own median, from at least 10 recent posts (method in the social skill's listening reference).
   2. For each, name what carried it: the hook, the format, the topic, the timing.
   3. Draft your own version in another format or channel, with your own idea and evidence in the proven structure.
 - **Self-check**: Is the draft your own take in a proven format, or a rewrite of their post? Never copy wording, footage, or images.
 - **State / idempotency**: Track outliers already adapted; one adaptation per outlier.
 - **Stop / bail-out**: No outlier clears the bar → skip. Drafts go to the queue for approval.
 - **Output**: A short list of outliers, why each worked, and drafted adaptations.
+
+### The format-finding loop
+- **Check cadence**: Daily, reading posts that are at least 48 hours old
+- **Acts when**: A format clears the view floor and moves signups or installs, or an account stalls below the floor.
+- **Purpose**: Find the short-form format that drives signups for your product, then scale volume only once posts earn it.
+- **Skills used**: `social` (see its `references/short-form-video.md`), `video`, `analytics`
+- **Loop body**:
+  1. Pull views, watch time, comments, and link clicks for each post at 48 hours from the scheduler's or platform's analytics, and signups or installs by day from analytics.
+  2. Log each post against its format in the format sheet.
+  3. Per account, apply the staged cadence: stay at 1 a day until most posts clear the floor, go to up to 3 a day spaced 3-4 hours apart once they do, and propose a new warmed account rather than more posts per account after that.
+  4. Name the current winning format (clears the floor repeatedly and moves signups), and keep about one in five drafts testing new formats from the niche-outlier loop.
+- **Self-check**: Is the winner chosen on signups or installs, not views alone? Is any account posting faster than its views support?
+- **State / idempotency**: The format sheet, keyed by post ID; each account's current stage and last stage change.
+- **Stop / bail-out**: An account that can't break a few hundred views for 7 days → pause it 2-3 days and flag a format change. An account between that and the floor stays at 1 a day and keeps testing formats. Cadence increases and new accounts go to a human for approval.
+- **Output**: Today's numbers per format, any stage change per account, and tomorrow's drafts split between the winner and tests.
 
 ### The content-calendar refill loop
 - **Check cadence**: Weekly
@@ -194,7 +209,7 @@ Loops are grouped by function. Naming follows the "The X loop" convention.
 
 ### The weekly ads-check loop
 - **Check cadence**: Weekly (Monday), or daily on accounts spending enough to move in a day
-- **Acts when**: Spend, traffic, conversion, creative, landing page, or tracking metrics move past the account's thresholds versus the prior 7 days or the targets in the context doc.
+- **Acts when**: Spend, traffic, conversion, creative, landing page, or tracking metrics move past the account's thresholds outside the account's trailing 6–8 period range (weeks on a weekly run, the same weekday on a daily run, not just the prior 7 days), move the same way for three or more periods, or cross the targets in the context doc. Spend, tracking, and broken-page problems, target-based stop thresholds, and the `ads` skill's Meta fatigue bands and reach guardrail act right away, without the range check.
 - **Purpose**: Make the weekly account review end in one decision per account.
 - **Skills used**: `ads`, `analytics`, `ad-creative`, `cro`
 - **Loop body**:
@@ -357,6 +372,21 @@ Loops are grouped by function. Naming follows the "The X loop" convention.
 - **Stop / bail-out**: No meaningful diffs → log "no change."
 - **Output**: A change digest + recommended responses.
 
+### The growth-move watch loop
+- **Check cadence**: Monthly
+- **Acts when**: A company already torn down with `reverse-engineer-marketing` makes a new growth move: a new ad network, page family, product loop, pricing change, content format, or hiring burst in one channel.
+- **Purpose**: Keep a teardown current, so the user's plays track what the company is doing now, not what it did a year ago.
+- **Skills used**: `reverse-engineer-marketing`, plus whichever skill a new move routes to
+- **Loop body**:
+  1. Rerun the teardown script's `stack`, `history`, `hero`, `site`, `dns`, and `subdomains` commands plus the industry pack's commands, check the ad libraries and paid promotion, and pull the last month's posts and new interviews.
+  2. Append new dated moves to a fresh move log.
+  3. Run the script's `diff` against the previous month's log.
+  4. For each new move, decide whether it changes a play, and name the skill to hand it to.
+- **Self-check**: Is the move real and dated, with a link? A pixel alone is inferred, so confirm it in the ad library before calling it a new paid channel.
+- **State / idempotency**: One dated move log per month in `teardowns/<target>/`; the diff only reports moves missing from the previous log, so nothing is flagged twice.
+- **Stop / bail-out**: No new moves → log "no new moves" and exit. Three straight quiet months → suggest dropping to quarterly.
+- **Output**: A short watch report: new moves with links, which plays they change, and where to hand them.
+
 ### The backlink-prospecting loop
 - **Check cadence**: Weekly
 - **Acts when**: New relevant link/guest-post/mention targets appear (or the pipeline is thin).
@@ -477,6 +507,25 @@ Loops are grouped by function. Naming follows the "The X loop" convention.
 - **State / idempotency**: Keep each week's results; log which recommendations were adopted.
 - **Stop / bail-out**: Too few sends to judge → report volumes only. Never judge on open rates.
 - **Output**: A one-screen retro with 3 recommendations.
+
+### The reply-fed expansion loop
+- **Check cadence**: Monthly
+- **Acts when**: Roughly 30 or more positive replies and booked meetings have built up since the last run, enough to see a pattern.
+- **Purpose**: Let the people who actually reply correct who gets targeted next, and source new accounts that look like them.
+- **Skills used**: `prospecting`, `cold-email`, `revops`
+- **Loop body**:
+  1. Pull positive replies and booked meetings from the reply-triage log since the last run, each with its sequence, segment, and signal.
+  2. Enrich each replier: role, seniority, company size, industry, stack, and the signal that was live when they replied.
+  3. Compare the repliers with everyone who was sent to. For each trait, set its share of positive replies against its share of sends.
+  4. Group the over-represented traits into two to four micro-segments, each sharing one trait and one pain. Drop any group built on fewer than about 8 repliers.
+  5. Source lookalike accounts for each micro-segment (see the prospecting skill's sourcing reference). Remove customers, open deals, accounts already in a sequence, and everyone on the suppression list.
+  6. Propose each as a named segment with its size, the evidence behind it, and a draft angle built on what its repliers said. Stage it for approval.
+- **Self-check**: Is the trait over-represented among repliers, or just common on the list? Were the replies positive, or only polite? Did one campaign, one sender, or one week produce most of them? Does the micro-segment still pass the ICP's disqualifiers?
+- **State / idempotency**: Tag each expansion segment with the run date and the repliers behind it. Never source the same lookalike set twice. Record which segments were approved, so the sequence-retro loop reports them separately from the base list.
+- **Stop / bail-out**: Too few positive replies → log "not enough replies yet" and exit. No trait over-represented → report "repliers match the ICP" and change nothing. Never enroll an expansion segment without human approval, and never re-add anyone who opted out or received a breakup email. Retire an expansion segment that trails the base list after about 300 sends.
+- **Output**: One table: micro-segment, defining trait, repliers behind it, share of sends against share of positive replies, lookalike count, and draft angle. Add one line if the evidence says the ICP itself should change.
+
+*Adapted from Julien Lieben's autoresearch loop playbook (ColdIQ, November 2026).*
 
 ## Activation
 

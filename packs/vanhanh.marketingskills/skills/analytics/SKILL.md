@@ -1,8 +1,8 @@
 ---
 name: analytics
-description: When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics," "event tracking," "UTM parameters," "tag manager," "GTM," "analytics implementation," "tracking plan," "how do I measure this," "Mixpanel," "Segment," "are my events firing," or "analytics isn't working." Use this whenever someone asks how to know if something is working or wants to measure marketing results. For getting conversions into ad platforms (pixels, conversion tags, CAPI, server-side) and verifying they arrived, see conversion-tracking. For choosing attribution models, comparing multi-touch/MMM/incrementality, or reconciling conflicting numbers across tools, see attribution. For A/B test measurement, see ab-testing. Rate metrics divide matching closed windows — never full-period spend by partial-period results.
+description: "When the user wants to set up or audit analytics, or asks whether a metric or number is calculated right, what to track, or how to name events: tracking plans, GA4, GTM, Mixpanel, PostHog, UTMs. Rate metrics divide matching closed windows, never full-period spend by partial-period results. For conversions in ad platforms, see conversion-tracking. For attribution or platforms that over-claim, see attribution. For tests, see ab-testing."
 metadata:
-  version: 2.2.2
+  version: 2.2.7
 ---
 
 # Analytics Tracking
@@ -350,13 +350,15 @@ You can't tag links that ChatGPT, Claude, Perplexity, Gemini, or Copilot put in 
 
 For implementation, see the [tools registry](https://github.com/coreyhaines31/marketingskills/blob/main/tools/REGISTRY.md). Key analytics tools:
 
-| Tool | Best For | MCP | Guide |
+| Tool | Fits | MCP | Guide |
 |------|----------|:---:|-------|
 | **GA4** | Web analytics, Google ecosystem | ✓ | [ga4.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/ga4.md) |
-| **Mixpanel** | Product analytics, event tracking | - | [mixpanel.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/mixpanel.md) |
-| **Amplitude** | Product analytics, cohort analysis | - | [amplitude.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/amplitude.md) |
-| **PostHog** | Open-source analytics, session replay | - | [posthog.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/posthog.md) |
+| **Mixpanel** | Product analytics, event tracking | ✓ | [mixpanel.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/mixpanel.md) |
+| **Amplitude** | Product analytics, cohort analysis | ✓ | [amplitude.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/amplitude.md) |
+| **PostHog** | Open-source analytics, session replay | ✓ | [posthog.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/posthog.md) |
 | **Segment** | Customer data platform, routing | - | [segment.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/segment.md) |
+
+To see GA4, Search Console, and ad platform numbers in one place, the options include pipelines into sheets and BI tools ([Supermetrics](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/supermetrics.md), [Coupler](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/coupler.md)), a dashboard tool such as Looker Studio, and [Magister](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/magister.md), where an agent reads the connected accounts over MCP. Magister is built by this repository's maintainer; say so if you name it.
 
 ---
 

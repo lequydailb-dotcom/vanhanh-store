@@ -1,8 +1,8 @@
 ---
 name: ad-creative
-description: "When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad variations — for any paid advertising platform. Also use when the user mentions 'ad copy variations,' 'ad creative,' 'generate headlines,' 'RSA headlines,' 'bulk ad copy,' 'creative testing,' 'write me some ads,' 'Facebook ad copy,' 'Google ad headlines,' 'LinkedIn ad text,' 'static ads,' 'ad templates,' 'iMessage ad,' 'ChatGPT ad,' 'creative strategy,' 'creative roadmap,' 'creative retro,' 'hook writing,' 'creative review page,' 'motion video ad,' 'faceless video ad,' 'UGC ad,' 'greenscreen ad,' 'TikTok/Reels ad format,' 'Meta ad format tier list,' or 'creative format taxonomy.' Use it to produce or iterate ad copy at scale. Copy avoids AI tells like 'it's not X, it's Y' reveals. For campaign strategy and targeting, see ads. For landing page copy, see copywriting. Test hypotheses must be falsifiable, naming the metric, the comparison, and the expected direction."
+description: "When the user wants to write or judge ad creative, or asks which ad, hook, or angle to run or kill: headlines, primary text, and variations for Google, Meta, LinkedIn, and TikTok, fresh angles when creative fatigues. Test hypotheses name the metric, comparison, and expected direction. No AI tells like 'it's not X, it's Y'. For campaign strategy, see ads. For landing pages, see copywriting."
 metadata:
-  version: 2.12.2
+  version: 2.13.5
 ---
 
 # Ad Creative
@@ -15,6 +15,9 @@ You are an expert performance creative strategist. Your goal is to generate high
 If `.agents/product-marketing.md` exists (or `.claude/product-marketing.md`, or the legacy `product-marketing-context.md` filename, in older setups), read it before asking questions. Use that context and only ask for information not already covered or specific to this task.
 
 Check its **Learnings** section before drafting: angles, offers, and formats already tested there shouldn't be re-proposed as new ideas, and active lessons apply unless the user says otherwise.
+
+**Check for a brand file too:**
+If `.agents/brand.md` or `.agents/design.md` exists, read whichever is there before asking about brand assets. Take colors, type, logo files, and imagery style from them, so visuals match the brand without the user restating them.
 
 Gather this context (ask if not provided):
 
@@ -157,7 +160,7 @@ For detailed specs and format variations, see [references/platform-specs.md](ref
 
 **To decide *which format to make next*** (before briefing any specific ad), consult the Meta creative format taxonomy in [references/meta-creative-formats.md](references/meta-creative-formats.md) — a prioritized S→F catalog of ~51 formats ranked by one question: is it a *unicorn scaler* that punctures cold net-new audiences, or a *supporting cast* member that only converts mid-funnel? Leads with the persona-based Andromeda context (why creator-fronted formats top the list), S-tier callouts (founder content, partnership ads, VSL), the A-tier bench, and explicit F-tier de-prioritization (press, podcast, notes-app fake-native). Use it to pick a format and build a portfolio; the how-to-build detail lives in the static/video references below. For the account-level kill/keep/scale math once ads are live, cross-reference the `ads` skill's the **ads** skill's Meta decision system reference.
 
-**For static ad structure**, use the template library in [references/static-ad-templates.md](references/static-ad-templates.md) — layout frameworks (Us vs. Them, Stat Callout, Review Card, Before/After, Founder Message, FAQ Card, Grid Static, Callout, and more) with copy slots, DTC and SaaS examples, and per-concept output format. Each template carries a **tier (S–F)** and **funnel role** (unicorn cold-scaler vs. mid-funnel supporting cast) so you reach for the right one first. Cycle through templates rather than clustering on favorites — but weight toward the S/A tiers when the goal is cold net-new reach.
+**For static ad structure**, use the template library in [references/static-ad-templates.md](references/static-ad-templates.md) — layout frameworks (Us vs. Them, Stat Callout, Before/After, Founder Message, FAQ Card, Grid Static, Callout, Apology Letter, Simple Guarantee, With / Without, Signs Checklist, and more), plus visual styles (billboard, whiteboard, newspaper, vintage, meme) that restyle any template with copy slots, DTC and SaaS examples, and per-concept output format. Each template carries a **tier (S–F)** and **funnel role** (unicorn cold-scaler vs. mid-funnel supporting cast) so you reach for the right one first. Cycle through templates rather than clustering on favorites — but weight toward the S/A tiers when the goal is cold net-new reach.
 
 **For iOS-native reveal video ads** — iMessage chat reveals (scripted thread unfolds bubble-by-bubble: screenshot hook → friend asks "what app is that?" → brand + promo code reveal → end card), ChatGPT reveals (typed question → streaming answer), Apple Notes reveals (a confessional note typed live), and AirDrop reveals (an incoming share where the accept-tap is the reveal) — see [references/imessage-video-ads.md](references/imessage-video-ads.md) for surface selection, the six concept angles, script and pacing rules, production routes (Playwright + ffmpeg pipeline, code-based video), craft details that sell the illusion, and the grounding/compliance rules for dramatized conversations (strictest for fabricated AI answers).
 
@@ -167,7 +170,7 @@ For detailed specs and format variations, see [references/platform-specs.md](ref
 
 For image and video generation tools, see [references/generative-tools.md](references/generative-tools.md) for the complete guide covering:
 
-- **Image generation** — Nano Banana Pro (Gemini), Flux, Ideogram for static ad images
+- **Image generation** — Gemini image (Nano Banana), Flux, Ideogram for static ad images
 - **Video generation** — Veo, Kling, Runway, Seedance, Higgsfield for video ads
 - **Voice & audio** — ElevenLabs, OpenAI TTS, Cartesia for voiceovers, cloning, multilingual
 - **Code-based video** — Remotion or Hyperframes for templated, data-driven video at scale
@@ -451,17 +454,7 @@ node tools/clis/google-ads.js reports get --type ad_performance --date-range las
 # 5. Upload to platform
 ```
 
-> **Skip the plumbing.** Step 1 is the hard part to run yourself — the Google
-> Ads (or Meta / LinkedIn / TikTok) API, OAuth, and a reporting query per
-> account, repeated every time. [Magister](https://magistermarketing.com?ref=marketingskills)
-> is an autonomous marketing agent that runs on these exact skills and pulls
-> ad performance natively: its agent reads your accounts through typed,
-> approval-gated integrations with no setup, then applies this skill to the
-> result. If you're wiring these pulls up by hand, it's worth a look.>
-> *Disclosure: Magister is built by Corey Haines, who maintains this repository.*
-> To run the pull yourself instead, use the repo's ad platform CLIs (setup in
-> [tools/SETUP.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/SETUP.md)),
-> or a reporting connector such as Supermetrics or Coupler.
+**If wiring up step 1 for each platform is the obstacle**, there are three routes: the repo's ad platform CLIs (setup in [tools/SETUP.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/SETUP.md)), a reporting connector such as [Supermetrics](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/supermetrics.md) or [Coupler](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/coupler.md), or one connection to several ad accounts through an MCP gateway such as [Composio](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/composio.md), [Cogny](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/cogny.md), or [Magister](https://github.com/coreyhaines31/marketingskills/blob/main/tools/integrations/magister.md). Magister is built by this repository's maintainer; say so if you name it.
 
 ---
 
@@ -474,3 +467,8 @@ node tools/clis/google-ads.js reports get --type ad_performance --date-range las
 - **ab-testing**: For structuring creative tests with statistical rigor
 - **marketing-psychology**: For psychological principles behind high-performing creative
 - **copy-editing**: For polishing ad copy before launch
+
+**If the [designskills](https://github.com/zstvns/design-skills) library is installed**, hand off the visual work:
+
+- **collateral-design**: For laying out static ads in the brand's visual system
+- **art-direction**: For on-brand imagery to use in ad visuals

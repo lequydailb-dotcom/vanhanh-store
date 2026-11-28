@@ -49,27 +49,41 @@ class ShadcnInstaller:
             return []
 
         try:
-            with open(self.components_json) as f:
+            with open(self.components_json, encoding="utf-8") as f:
                 config = json.load(f)
 
-            components_dir = self.project_root / config.get("aliases", {}).get(
-                "components", "components"
-            ).replace("@/", "")
-            ui_dir = components_dir / "ui"
+            aliases = config.get("aliases", {})
+            ui_alias = aliases.get("ui") or (
+                aliases.get("components", "components").rstrip("/") + "/ui"
+            )
+            ui_dir = self._resolve_alias_dir(ui_alias)
 
-            if not ui_dir.exists():
+            if ui_dir is None:
                 return []
 
             return [f.stem for f in ui_dir.glob("*.tsx") if f.is_file()]
         except (json.JSONDecodeError, KeyError, OSError):
             return []
 
+    def _resolve_alias_dir(self, alias: str) -> Optional[Path]:
+        """Map a components.json import alias (e.g. "@/components/ui") to a directory.
+
+        The "@/" and "~/" prefixes point at the project root, or at src/ when
+        the project uses a src directory (the shadcn default for Next.js).
+        """
+        relative = alias[2:] if alias[:2] in ("@/", "~/") else alias
+        for base in (self.project_root, self.project_root / "src"):
+            candidate = base / relative
+            if candidate.is_dir():
+                return candidate
+        return None
+
     def _get_shadcn_version(self) -> str:
         """Read shadcn version from project package.json; fall back to a pinned default."""
         pkg_json = self.project_root / "package.json"
         if pkg_json.exists():
             try:
-                pkg = json.loads(pkg_json.read_text())
+                pkg = json.loads(pkg_json.read_text(encoding="utf-8"))
                 for section in ("dependencies", "devDependencies"):
                     version = pkg.get(section, {}).get("shadcn")
                     if version:
@@ -128,6 +142,8 @@ class ShadcnInstaller:
                 cwd=self.project_root,
                 capture_output=True,
                 text=True,
+                encoding="utf-8",
+                errors="replace",
                 check=True,
             )
 
@@ -174,6 +190,8 @@ class ShadcnInstaller:
                 cwd=self.project_root,
                 capture_output=True,
                 text=True,
+                encoding="utf-8",
+                errors="replace",
                 check=True,
             )
 

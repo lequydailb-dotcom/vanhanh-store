@@ -1,7 +1,7 @@
 format: vanhanh-pack
 spec: 1
 id: vanhanh.superpowers
-version: 1.0.1
+version: 1.0.2
 name: {vi: "Superpowers", en: "Superpowers"}
 description: {vi: "Bộ skill quy trình làm việc nổi nhất cho dân lập trình (obra/superpowers): brainstorm trước khi code, viết và thực thi plan, TDD, gỡ lỗi có hệ thống, review code hai chiều, git worktree, kiểm chứng trước khi báo xong.",
               en: "The most popular workflow skills for developers (obra/superpowers): brainstorm before coding, write and execute plans, TDD, systematic debugging, both sides of code review, git worktrees, verify before claiming done."}

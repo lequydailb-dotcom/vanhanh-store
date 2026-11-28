@@ -16,6 +16,7 @@ Giấy phép gốc: **Remotion License**, nguyên văn ở `docs/LICENSE-goc*` n
 | `remotion-captions` | `skills/remotion-captions` |
 | `remotion-create` | `skills/remotion-create` |
 | `remotion-docs` | `skills/remotion-docs` |
+| `remotion-elements` | `skills/remotion-elements` |
 | `remotion-interactivity` | `skills/remotion-interactivity` |
 | `remotion-license` | `skills/remotion-license` |
 | `remotion-maps` | `skills/remotion-maps` |

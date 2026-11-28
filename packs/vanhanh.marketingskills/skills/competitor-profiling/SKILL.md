@@ -1,8 +1,8 @@
 ---
 name: competitor-profiling
-description: "When the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor research,' 'competitor analysis,' 'profile this competitor,' 'analyze competitor,' 'competitive intelligence,' 'competitor deep dive,' 'who are my competitors,' 'competitor landscape,' 'competitor dossier,' 'competitive audit,' or 'research these competitors.' Input is a list of competitor URLs. Output is structured competitor profile markdown files. For creating comparison/alternative pages from profiles, see competitors. For sales-specific battle cards, see sales-enablement. For researching accounts you're selling to, see prospecting."
+description: "When the user wants to research competitors into dated profiles, or asks what a rival charges, claims, or is doing, or whether a conclusion about them is fair: positioning, pricing, features, reviews, SEO, observed facts kept apart from inference. For comparison pages, see competitors. For battle cards, see sales-enablement. For accounts you sell to, see prospecting. For how a competitor grew, see reverse-engineer-marketing."
 metadata:
-  version: 2.1.4
+  version: 2.1.9
 ---
 
 # Competitor Profiling
@@ -31,7 +31,7 @@ This skill supports two data source stacks. Check which MCPs are active before s
 
 | Stack | Scraping | SEO & Market Data | When to use |
 |---|---|---|---|
-| **Primary** | Firecrawl MCP | DataForSEO MCP | Preferred — richer data, site mapping, structured extraction |
+| **Primary** | Firecrawl MCP | DataForSEO MCP | When both are connected; adds site mapping and structured extraction |
 | **Alternative** | WebFetch (built-in) | Whatever SEO data source is connected: Ahrefs or Semrush MCP, Ubersuggest MCP, or similar | When Firecrawl or DataForSEO are unavailable |
 
 If neither Firecrawl nor DataForSEO is available but another SEO data source is, use the alternative stack; most cover the core profile fields. If no SEO data source is available, mark those metrics unavailable (never estimate them) and proceed with qualitative observations only.
@@ -430,6 +430,7 @@ Only ask if not answered by context or input:
 ## Related Skills
 
 - **competitors**: For creating comparison/alternative pages from these profiles
+- **reverse-engineer-marketing**: For a dated teardown of how a competitor grew, which moves lined up with growth, and plays to copy
 - **prospecting**: For broader list-building qualification (this skill does deep research on specific accounts; prospecting builds the initial list)
 - **customer-research**: For mining reviews and community sentiment in depth
 - **content-strategy**: For using competitor content gaps to plan your own content
